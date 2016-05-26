@@ -1,0 +1,419 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PrivatFinance</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vendor/modernizr-custom.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--[if lt IE 9]>
+    <p class="browserupgrade">Вы используете <b>устаревший</b> браузер. Пожалуйста, <a href="http://browsehappy.com/?locale=ru_ru">обновите свой браузер</a> чтобы улучшить опыт работы с сайтом.</p>
+<![endif]-->
+<div class="b-wrapper">
+    <header class="header-main">
+        <div class="container b-rel">
+            <div class="header-main_logo">
+                <h2 class="header-main_heading"><a href="#"><img src="images/logotype.png" alt="PrivatFinance">PrivatFinance</a></h2>
+                <p class="header-main_subhead">Твой путеводитель в мире инвестиций!</p>
+            </div>
+            <button id="navBtn" class="btn btn-nav visible-xs"><i class="fa fa-bars"></i></button>
+        </div><!--ct-->
+        <nav class="nav-main container">
+            <ul id="navigation" class="list-nav">
+                <li class="list-nav-itm"><a href="#">Главная</a></li>
+                <li class="list-nav-itm"><a href="#">Каталог компаний</a></li>
+                <li class="list-nav-itm"><a href="#" aria-haspopup="true">Инвест. отчеты</a>
+                    <ul class="list-nav_inner">
+                        <li class="list-nav-itm_inner"><a href="#">Экономический календарь</a></li>
+                        <li class="list-nav-itm_inner"><a href="#">Рекомендуемые брокеры</a></li>
+                        <li class="list-nav-itm_inner"><a href="#">Торговые стратегии</a></li>
+                        <li class="list-nav-itm_inner"><a href="#">Аналитика</a></li>
+                        <li class="list-nav-itm_inner"><a href="#">Статьи</a></li>
+                    </ul>
+                </li>
+                <li class="list-nav-itm"><a href="#" aria-haspopup="true">Форекс</a>
+                    <ul class="list-nav_inner">
+                        <li class="list-nav-itm_inner"><a href="#">Экономический календарь</a></li>
+                        <li class="list-nav-itm_inner"><a href="#">Рекомендуемые брокеры</a></li>
+                        <li class="list-nav-itm_inner"><a href="#">Торговые стратегии</a></li>
+                        <li class="list-nav-itm_inner"><a href="#">Аналитика</a></li>
+                        <li class="list-nav-itm_inner"><a href="#">Статьи</a></li>
+                    </ul>
+                </li>
+                <li class="list-nav-itm"><a href="#">Рефбек</a></li>
+                <li class="list-nav-itm"><a href="#">О проекте</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="b-main container">
+        <section>
+            <h2 class="h-section">Последние новости</h2>
+            <article class="b-art row">
+                <div class="col-sm-5"><img src="images/photo_0.jpg" alt="pic"></div>
+                <div class="col-sm-7">
+                    <h1 class="h-latest"><a href="#">Рубль в минусе на фоне снижения Brent под отметку $50 за баррель</a></h1>
+                    <p>Рубль утром понедельника торгуется в минусе на фоне дешевеющей после слабой китайской статистики нефти Brent; поддержку ему в течение сегодняшней сессии и в ближайшие дни может оказывать продажа экспортной выручки под уплату налогов.</p>
+                    <footer class="row b-art-footer">
+                        <div class="col-xs-6 col-sm-4 col-md-3">Сегодня в 14:15</div>
+                        <div class="b-tags col-xs-6 col-sm-8 col-md-9"><a href="#">Форекс</a></div>
+                    </footer>
+                </div>
+            </article>
+
+            <div class="b-carousel_w">
+                <div class="b-carousel">
+                    <div class="b-carousel_i">
+                        <div class="b-carousel-itm">
+                            <a href="#" class="b-carousel-img"><img src="images/photo_1.jpg" alt="pic"></a>
+                            <a href="#" class="b-carousel-ttl">Биржевые индикаторы США начали понедельник снижением</a>
+                            <p class="b-carousel-cat">Фондовый рынок</p>
+                        </div>
+                        <div class="b-carousel-itm">
+                            <a href="#" class="b-carousel-img"><img src="images/photo_2.jpg" alt="pic"></a>
+                            <a href="#" class="b-carousel-ttl">Barclays: в этом квартале макроконъюнктура благоприятна для золота</a>
+                            <p class="b-carousel-cat">Фондовый рынок</p>
+                        </div>
+                        <div class="b-carousel-itm">
+                            <a href="#" class="b-carousel-img"><img src="images/photo_3.jpg" alt="pic"></a>
+                            <a href="#" class="b-carousel-ttl">Экономисты ожидают, что ФРС повысит ставку в этом году - опрос FT</a>
+                            <p class="b-carousel-cat">Фондовый рынок</p>
+                        </div>
+                        <div class="b-carousel-itm">
+                            <a href="#" class="b-carousel-img"><img src="images/photo_4.jpg" alt="pic"></a>
+                            <a href="#" class="b-carousel-ttl">Индексы РФ продолжают снижение во главе с акциями Сбербанка</a>
+                            <p class="b-carousel-cat">Фондовый рынок</p>
+                        </div>
+                        <div class="b-carousel-itm">
+                            <a href="#" class="b-carousel-img"><img src="images/photo_4.jpg" alt="pic"></a>
+                            <a href="#" class="b-carousel-ttl">Индексы РФ продолжают снижение во главе с акциями Сбербанка</a>
+                            <p class="b-carousel-cat">Фондовый рынок</p>
+                        </div>
+                        <div class="b-carousel-itm">
+                            <a href="#" class="b-carousel-img"><img src="images/photo_1.jpg" alt="pic"></a>
+                            <a href="#" class="b-carousel-ttl">Биржевые индикаторы США начали понедельник снижением</a>
+                            <p class="b-carousel-cat">Фондовый рынок</p>
+                        </div>
+                        <div class="b-carousel-itm">
+                            <a href="#" class="b-carousel-img"><img src="images/photo_2.jpg" alt="pic"></a>
+                            <a href="#" class="b-carousel-ttl">Barclays: в этом квартале макроконъюнктура благоприятна для золота</a>
+                            <p class="b-carousel-cat">Фондовый рынок</p>
+                        </div>
+                    </div><!--b-carousel_i-->
+                </div><!--carousel-->
+                <i class="carousel-control-prev fa fa-angle-left"></i>
+                <i class="carousel-control-next fa fa-angle-right"></i>
+            </div><!--carousel_w-->
+        </section>
+        <hr class="page">
+        <div class="row">
+            <div class="col-sm-8 col-md-9">
+
+                <div class="b-tabs">
+                    <ul id="js-tabs" class="nav nav-tabs nav-tabs-desktop visible-md visible-lg" role="tablist">
+                        <li role="presentation" class="active"><a href="#tab-pop" role="tab" data-toggle="tab">Самое популярное</a></li>
+                        <li role="presentation"><a href="#tab-forex" role="tab" data-toggle="tab">Форекс</a></li>
+                        <li role="presentation"><a href="#tab-tovari" role="tab" data-toggle="tab">Сырьевые товары</a></li>
+                        <li role="presentation"><a href="#tab-fond" role="tab" data-toggle="tab">Фондовый рынок</a></li>
+                        <li class="dropdown" role="presentation">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span>Другие категории</span> <i class="caret"></i></a>
+                            <ul id="tabDrop-contents" class="dropdown-menu">
+                                <li><a data-toggle="tab" role="tab" href="#tab-pokaz">Экономпоказатели</a></li>
+                                <li><a data-toggle="tab" role="tab" href="#tab-oblig">Облигации</a></li>
+                                <li><a data-toggle="tab" role="tab" href="#tab-obschie">Общие новости</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div id="js-tabs_mob" class="b-tabs-mobNav visible-xs visible-sm">
+                        <p class="b-tabs-mobNav-ttl" id="js-tabs_mob-ttl"><span>Самое популярное</span> <i class="caret"></i></p>
+                        <ul id="js-tabs-mob" class="nav nav-tabs nav-tabs-mob" role="tablist">
+                            <li role="presentation"><a href="#tab-pop" role="tab" data-toggle="tab">Самое популярное</a></li>
+                            <li role="presentation"><a href="#tab-forex" role="tab" data-toggle="tab">Форекс</a></li>
+                            <li role="presentation"><a href="#tab-tovari" role="tab" data-toggle="tab">Сырьевые товары</a></li>
+                            <li role="presentation"><a href="#tab-fond" role="tab" data-toggle="tab">Фондовый рынок</a></li>                            
+                            <li role="presentation"><a data-toggle="tab" id="dropdown1-tab" role="tab" href="#tab-pokaz">Экономпоказатели</a></li>
+                            <li role="presentation"><a data-toggle="tab" id="dropdown2-tab" role="tab" href="#tab-oblig">Облигации</a></li>
+                            <li role="presentation"><a data-toggle="tab" id="dropdown3-tab" role="tab" href="#tab-obschie">Общие новости</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="tab-pop">
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_5.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">РФ обвиняет Францию в "опасном" инциденте с самолетом российских депутатов</a></h3>
+                                <p>Самолет французских ВВС в понедельник утром над Францией совершил "опасное сближение" с авиалайнером, на котором летела делегация российской Госдумы во...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_6.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">Рубль будет стабильным до конца года и сильно укрепится в 2016-м − Credit Suisse</a></h3>
+                                <p>Аналитики Credit Suisse ожидают стабильного курса рубля до конца текущего года и укрепления российской валюты в первом квартале 2016 года. По мнению...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_7.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">Евро растет к доллару накануне совещания ЕЦБ</a></h3>
+                                <p>ТОКИО (Рейтер) - Курс евро к доллару растет накануне совещания Европейского центробанка, на котором он, по мнению аналитиков, может подготовить почву для дополнительных...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_5.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">РФ обвиняет Францию в "опасном" инциденте с самолетом российских депутатов</a></h3>
+                                <p>Самолет французских ВВС в понедельник утром над Францией совершил "опасное сближение" с авиалайнером, на котором летела делегация российской Госдумы во...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_6.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">Рубль будет стабильным до конца года и сильно укрепится в 2016-м − Credit Suisse</a></h3>
+                                <p>Аналитики Credit Suisse ожидают стабильного курса рубля до конца текущего года и укрепления российской валюты в первом квартале 2016 года. По мнению...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_7.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">Евро растет к доллару накануне совещания ЕЦБ</a></h3>
+                                <p>ТОКИО (Рейтер) - Курс евро к доллару растет накануне совещания Европейского центробанка, на котором он, по мнению аналитиков, может подготовить почву для дополнительных...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_5.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">РФ обвиняет Францию в "опасном" инциденте с самолетом российских депутатов</a></h3>
+                                <p>Самолет французских ВВС в понедельник утром над Францией совершил "опасное сближение" с авиалайнером, на котором летела делегация российской Госдумы во...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_6.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">Рубль будет стабильным до конца года и сильно укрепится в 2016-м − Credit Suisse</a></h3>
+                                <p>Аналитики Credit Suisse ожидают стабильного курса рубля до конца текущего года и укрепления российской валюты в первом квартале 2016 года. По мнению...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_7.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">Евро растет к доллару накануне совещания ЕЦБ</a></h3>
+                                <p>ТОКИО (Рейтер) - Курс евро к доллару растет накануне совещания Европейского центробанка, на котором он, по мнению аналитиков, может подготовить почву для дополнительных...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                        </div><!--tab-pane-->
+                        <div role="tabpanel" class="tab-pane active" id="tab-forex">
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_7.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">Евро растет к доллару накануне совещания ЕЦБ</a></h3>
+                                <p>ТОКИО (Рейтер) - Курс евро к доллару растет накануне совещания Европейского центробанка, на котором он, по мнению аналитиков, может подготовить почву для дополнительных...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_5.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">РФ обвиняет Францию в "опасном" инциденте с самолетом российских депутатов</a></h3>
+                                <p>Самолет французских ВВС в понедельник утром над Францией совершил "опасное сближение" с авиалайнером, на котором летела делегация российской Госдумы во...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_6.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">Рубль будет стабильным до конца года и сильно укрепится в 2016-м − Credit Suisse</a></h3>
+                                <p>Аналитики Credit Suisse ожидают стабильного курса рубля до конца текущего года и укрепления российской валюты в первом квартале 2016 года. По мнению...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                        </div><!--tab-pane-->
+                        <div role="tabpanel" class="tab-pane active" id="tab-tovari">
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_5.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">РФ обвиняет Францию в "опасном" инциденте с самолетом российских депутатов</a></h3>
+                                <p>Самолет французских ВВС в понедельник утром над Францией совершил "опасное сближение" с авиалайнером, на котором летела делегация российской Госдумы во...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_7.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">Евро растет к доллару накануне совещания ЕЦБ</a></h3>
+                                <p>ТОКИО (Рейтер) - Курс евро к доллару растет накануне совещания Европейского центробанка, на котором он, по мнению аналитиков, может подготовить почву для дополнительных...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_6.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">Рубль будет стабильным до конца года и сильно укрепится в 2016-м − Credit Suisse</a></h3>
+                                <p>Аналитики Credit Suisse ожидают стабильного курса рубля до конца текущего года и укрепления российской валюты в первом квартале 2016 года. По мнению...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                        </div><!--tab-pane-->
+                        <div role="tabpanel" class="tab-pane active" id="tab-fond">
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_6.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">Рубль будет стабильным до конца года и сильно укрепится в 2016-м − Credit Suisse</a></h3>
+                                <p>Аналитики Credit Suisse ожидают стабильного курса рубля до конца текущего года и укрепления российской валюты в первом квартале 2016 года. По мнению...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_7.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">Евро растет к доллару накануне совещания ЕЦБ</a></h3>
+                                <p>ТОКИО (Рейтер) - Курс евро к доллару растет накануне совещания Европейского центробанка, на котором он, по мнению аналитиков, может подготовить почву для дополнительных...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_5.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">РФ обвиняет Францию в "опасном" инциденте с самолетом российских депутатов</a></h3>
+                                <p>Самолет французских ВВС в понедельник утром над Францией совершил "опасное сближение" с авиалайнером, на котором летела делегация российской Госдумы во...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                        </div><!--tab-pane-->
+                        <div role="tabpanel" class="tab-pane active" id="tab-pokaz">
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_6.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">Рубль будет стабильным до конца года и сильно укрепится в 2016-м − Credit Suisse</a></h3>
+                                <p>Аналитики Credit Suisse ожидают стабильного курса рубля до конца текущего года и укрепления российской валюты в первом квартале 2016 года. По мнению...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_5.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">РФ обвиняет Францию в "опасном" инциденте с самолетом российских депутатов</a></h3>
+                                <p>Самолет французских ВВС в понедельник утром над Францией совершил "опасное сближение" с авиалайнером, на котором летела делегация российской Госдумы во...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_7.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">Евро растет к доллару накануне совещания ЕЦБ</a></h3>
+                                <p>ТОКИО (Рейтер) - Курс евро к доллару растет накануне совещания Европейского центробанка, на котором он, по мнению аналитиков, может подготовить почву для дополнительных...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                        </div><!--tab-pane-->
+                        <div role="tabpanel" class="tab-pane active" id="tab-oblig">
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_6.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">Рубль будет стабильным до конца года и сильно укрепится в 2016-м − Credit Suisse</a></h3>
+                                <p>Аналитики Credit Suisse ожидают стабильного курса рубля до конца текущего года и укрепления российской валюты в первом квартале 2016 года. По мнению...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_7.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">Евро растет к доллару накануне совещания ЕЦБ</a></h3>
+                                <p>ТОКИО (Рейтер) - Курс евро к доллару растет накануне совещания Европейского центробанка, на котором он, по мнению аналитиков, может подготовить почву для дополнительных...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_5.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">РФ обвиняет Францию в "опасном" инциденте с самолетом российских депутатов</a></h3>
+                                <p>Самолет французских ВВС в понедельник утром над Францией совершил "опасное сближение" с авиалайнером, на котором летела делегация российской Госдумы во...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                        </div><!--tab-pane-->
+                        <div role="tabpanel" class="tab-pane active" id="tab-obschie">
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_7.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">Евро растет к доллару накануне совещания ЕЦБ</a></h3>
+                                <p>ТОКИО (Рейтер) - Курс евро к доллару растет накануне совещания Европейского центробанка, на котором он, по мнению аналитиков, может подготовить почву для дополнительных...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_6.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">Рубль будет стабильным до конца года и сильно укрепится в 2016-м − Credit Suisse</a></h3>
+                                <p>Аналитики Credit Suisse ожидают стабильного курса рубля до конца текущего года и укрепления российской валюты в первом квартале 2016 года. По мнению...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                            <article class="b-brief clearfix">
+                                <a href="#" class="b-brief-img"><img src="images/photo_5.jpg" alt="pic"></a>
+                                <h3 class="b-brief-ttl"><a href="#">РФ обвиняет Францию в "опасном" инциденте с самолетом российских депутатов</a></h3>
+                                <p>Самолет французских ВВС в понедельник утром над Францией совершил "опасное сближение" с авиалайнером, на котором летела делегация российской Госдумы во...</p>
+                                <footer class="b-brief-footer">19.10.2015  от Reuters</footer>
+                            </article>
+                        </div><!--tab-pane-->
+                    </div><!--tabs_i-->
+                </div>
+
+                <a href="#" class="a-banner hidden-xs"><img src="images/banner_2.jpg" alt="Alpari - Зарегистрироваться"></a>
+
+                <article class="b-mg">
+                    <h1>Заголовок H1</h1>
+                    <p>Здесь замечательно будет смотреться длинный текст о вашей компании и тех услугах, которые вы предоставляете Все это место можно использовать, чтобы болееподробно описать вашу компанию. Расскажите о вашей команде и предоставляемых услугах. Расскажите посетителям историю о том,как вам в голову пришла идея собственного дела, и объясните, чем ваша компания лучше конкурентов. Сделайте так, чтобы ваша компаниявыделялась: покажите себя посетителям во всей красе.</p>
+                    <p>Расскажите о вашей команде и предоставляемых услугах. Расскажите посетителям историю о том,как вам в голову пришла идея собственного дела, и объясните, чем ваша компания лучше конкурентов.</p>
+                </article>
+            </div><!--col-->
+            <div class="b-sbar col-sm-4 col-md-3">
+                <a href="#" class="a-banner-sbar b-sbar_itm hidden-xs"><img src="images/banner.jpg" alt="Баннер"></a>
+
+                <div class="b-subscribe b-sbar_itm">
+                    <form action="#" class="b-subscribe-form">
+                        <p class="b-subscribe-ttl">Хотите быть в курсе актуальных финансовых новостей?</p>
+                        <input type="email" placeholder="Введите свой E-mail" required>
+                        <button class="btn btn-action" type="submit">Подписаться</button>
+                    </form>
+                </div>
+
+                <div class="b-sbar_itm hidden-xs">
+                    <img src="images/placeholder-vk.png" alt="pic">
+                </div>
+
+                <section class="b-pop b-sbar_itm hidden-xs">
+                    <header class="b-pop-hdr">популярное за неделю</header>
+                    <ul class="b-pop-list">
+                        <li class="b-pop-list-itm">
+                            <a href="#">
+                                <img src="images/thumb_1.jpg" alt="pic">
+                                Евро укрепил позиции накануне заседания ЕЦБ
+                            </a>
+                        </li>
+                        <li class="b-pop-list-itm">
+                            <a href="#">
+                                <img src="images/thumb_2.jpg" alt="pic">
+                                Цены на нефть растут за счет покрытия коротких позиций
+                            </a>
+                        </li>
+                        <li class="b-pop-list-itm">
+                            <a href="#">
+                                <img src="images/thumb_3.jpg" alt="pic">
+                                Доллар ослаб против конкурентов накануне выпуска американской статистики
+                            </a>
+                        </li>
+                        <li class="b-pop-list-itm">
+                            <a href="#">
+                                <img src="images/thumb_4.jpg" alt="pic">
+                                Brent торгуется ниже $48 накануне старта технической встречи ОПЕК
+                            </a>
+                        </li>
+                        <li class="b-pop-list-itm">
+                            <a href="#">
+                                <img src="images/thumb_1.jpg" alt="pic">
+                                Евро укрепил позиции накануне заседания ЕЦБ
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div><!--col-->
+        </div><!--row-->
+    </main><!--main ct-->
+    <footer class="footer-main container">
+        <div class="footer-main_i">
+            <div class="row">
+                <div class="col-sm-3 footer-main-logo">
+                    <img src="images/logotype_2.png" alt="PrivatFinance">
+                </div><!--col-->
+                <div class="col-sm-7">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-7 col-lg-8 footer-main-copy">
+                            <small>2015 &#169; PrivatFinance.com Твой путеводитель в мире инвестиций! <br> Копирование информации строго запрещено!</small>
+                        </div>
+                        <div class="col-sm-4 col-md-5 col-lg-4">
+                            <ul class="footer-main-links">
+                                <li><a href="#">О проекте</a></li>
+                                <li><a href="#">Карта сайта</a></li>
+                            </ul>
+                        </div><!--col-->
+                    </div><!--row-->
+                    <a href="#" class="footer-main-devlink">Разработка сайта</a>
+                </div><!--col-->
+                <div class="col-sm-2 footer-main-count hidden-xs"><a href="#"><img src="images/counter.png" alt="pic"></a></div><!--col-->
+            </div><!--row-->
+        </div><!--i-->
+    </footer><!--ct-->
+    <div class="b-social hidden-xs"><a href="#"><img src="images/placeholder-social.png" alt="pic"></a></div>
+</div><!--wrapper-->
+</body>
+</html>

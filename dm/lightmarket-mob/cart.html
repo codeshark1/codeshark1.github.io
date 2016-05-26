@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Корзина - LightMarket</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<header class="b-header">
+    <div class="b-header_ctrl">
+        <div class="b-header_ctrl_i">
+            <div class="b-header_ctrl-main">
+                <div class="b-header_navBtn">
+                    <a id="navBtn" class="but btn-nav">
+                        <svg class="svg-inject" viewBox="0 0 32 32"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+                    </a>
+                </div>
+                <div class="b-header_ttl-box"><p class="b-header_ttl">Корзина</p></div>
+                <div class="b-header_cartBtn">
+                    <a href="#" class="but btn-cart">
+                        <span>3</span>
+                        <img class="svg-inject" src="images/i-cart.svg">
+                    </a>
+                </div>
+                <div class="b-header_searchBtn">
+                    <a class="but btn-search" id="btn-search"><img class="svg-inject" src="images/i-search.svg"></a>
+                </div>
+            </div><!--ctrl-main-->
+            <div class="b-header_ctrl-search" id="search-panel">
+                <form action="#" class="f-search">
+                    <input type="search" class="searchField" required>
+                    <button type="submit" class="submitBtn"><img class="svg-inject" src="images/i-search.svg"></button>
+                    <button type="reset" class="resetBtn">Удалить</button>
+                </form><!--wrp-->
+            </div><!--ctrl-search-->
+        </div><!--i-->
+    </div><!--b-header_ctrl-->
+    <div class="b-header_logo">
+        <div class="container">
+            <div class="b-header_lft"><img src="images/logotype.png" alt="LightMarket - легкие решения светлых идей"></div>
+            <div class="b-header_rgt">
+                <a class="b-header_call-num" href="tel:74994093838"><span>+7 (499)</span> 409 38 38</a>
+            </div>
+        </div><!--ct-->
+    </div>
+
+    <div class="b-nav" id="navPanel">
+        <div class="b-nav_login">
+            <a href="#">Войти</a>
+            <a href="#">Регистрация</a>
+        </div>
+        <div class="b-nav_i" id="navScroll">
+            <nav class="b-nav_wrp">
+                <h3 class="hidden">Навигация по сайту</h3>
+                <a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-home.svg"></i>Главная</a>
+                <h4 class="nav-ttl">Каталог товаров</h4>
+                <ul class="nav-list">
+                    <li class="nav-itm">
+                        <a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product1.svg" alt="pic"></i>Люстры</a>
+                        <div class="inside">
+                            <p class="heading">Люстры</p>
+                            <ul>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product1.svg" alt="pic"></i>Люстры</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product2.svg" alt="pic"></i>Светильники</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product3.svg" alt="pic"></i>Уличные светильники</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product4.svg" alt="pic"></i>Светодиолные светильники</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-itm">
+                        <a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product2.svg" alt="pic"></i>Светильники</a>
+                        <div class="inside">
+                            <p class="heading">Светильники</p>
+                            <ul>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product1.svg" alt="pic"></i>Люстры</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product2.svg" alt="pic"></i>Светильники</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product3.svg" alt="pic"></i>Уличные светильники</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product4.svg" alt="pic"></i>Светодиолные светильники</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-itm">
+                        <a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product3.svg" alt="pic"></i>Уличные светильники</a>
+                        <div class="inside">
+                            <p class="heading">Уличные светильники</p>
+                            <ul>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product1.svg" alt="pic"></i>Люстры</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product2.svg" alt="pic"></i>Светильники</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product3.svg" alt="pic"></i>Уличные светильники</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product4.svg" alt="pic"></i>Светодиолные светильники</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-itm">
+                        <a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product4.svg" alt="pic"></i>Светодиодные светильники</a>
+                        <div class="inside">
+                            <p class="heading">Светодиодные светильники</p>
+                            <ul>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product1.svg" alt="pic"></i>Люстры</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product2.svg" alt="pic"></i>Светильники</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product3.svg" alt="pic"></i>Уличные светильники</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product4.svg" alt="pic"></i>Светодиолные светильники</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <h4 class="nav-ttl">Помощь</h4>
+                <ul class="nav-list">
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-price.svg" alt="pic"></i>Распродажа</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-cart.svg" alt="pic"></i>Корзина</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-write.svg" alt="pic"></i>Мои заказы</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-view.svg" alt="pic"></i>Просмотренные товары</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-delivery.svg" alt="pic"></i>Доставка</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-cart.svg" alt="pic"></i>Возврат</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-garant.svg" alt="pic"></i>Гарантия</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-payment.svg" alt="pic"></i>Оплата</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-help.svg" alt="pic"></i>Помощь</a></li>
+                </ul>
+                <h4 class="nav-ttl">Помощь</h4>
+                <ul class="nav-list">
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-price.svg" alt="pic"></i>Распродажа</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-cart.svg" alt="pic"></i>Корзина</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-write.svg" alt="pic"></i>Мои заказы</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-view.svg" alt="pic"></i>Просмотренные товары</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-delivery.svg" alt="pic"></i>Доставка</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-cart.svg" alt="pic"></i>Возврат</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-garant.svg" alt="pic"></i>Гарантия</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-payment.svg" alt="pic"></i>Оплата</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-help.svg" alt="pic"></i>Помощь</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<ul class="b-tabNav clearfix">
+    <li class="b-tabNav_itm"><a href="#" class="active"><span>Корзина</span></a></li>
+    <li class="b-tabNav_itm"><a href="#"><span>Отложено <i>7</i></span></a></li>
+</ul>
+
+<main class="b-main container">
+    <div class="b-orderList">
+        <table class="orders">
+            <tbody>
+                <tr>
+                    <td class="pic">
+                        <img class="photo" src="images/product-thumb.jpg" alt="pic">
+                        <img src="images/tag-new.png" alt="NEW" class="tag">
+                    </td>
+                    <td class="det">
+                        <a href="#" class="ttl">Настольная лампа 19 Настольная лампа 19 078989
+                            078989 декоративная Настольная лампа 19 078989
+                            078989 декоративная Настольная лампа 19 078989 </a>
+                        <p class="price"><b>14 790</b> руб.</p>
+                        <p class="price_old">18 600 р.</p>
+                        <div class="b-quant">
+                            <input type='button' value='-' class='but qtyminus' field='quantity'>
+                            <input type='text' name='quantity' value='999' class='qty'>
+                            <input type='button' value='+' class='but qtyplus' field='quantity'>
+                        </div><!--quant-->
+                        <a href="#" class="del">&#x2716;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pic">
+                        <img class="photo" src="images/product-thumb.jpg" alt="pic">
+                    </td>
+                    <td class="det">
+                        <a href="#" class="ttl">Настольная лампа 19 Настольная лампа 19 078989
+                            078989 декоративная Настольная лампа 19 078989
+                            078989 декоративная Настольная лампа 19 078989 </a>
+                        <p class="price"><b>14 790</b> руб.</p>
+                        <p class="price_old">18 600 р.</p>
+                        <div class="b-quant">
+                            <input type='button' value='-' class='but qtyminus' field='quantity'>
+                            <input type='text' name='quantity' value='1' class='qty'>
+                            <input type='button' value='+' class='but qtyplus' field='quantity'>
+                        </div><!--quant-->
+                        <a href="#" class="del">&#x2716;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pic">
+                        <img class="photo" src="images/product-thumb.jpg" alt="pic">
+                        <img src="images/tag-new.png" alt="NEW" class="tag">
+                    </td>
+                    <td class="det">
+                        <a href="#" class="ttl">Настольная лампа 19 Настольная лампа 19 078989
+                            078989 декоративная Настольная лампа 19 078989
+                            078989 декоративная Настольная лампа 19 078989 </a>
+                        <p class="price"><b>14 790</b> руб.</p>
+                        <p class="price_old">18 600 р.</p>
+                        <div class="b-quant">
+                            <input type='button' value='-' class='but qtyminus' field='quantity'>
+                            <input type='text' name='quantity' value='999' class='qty'>
+                            <input type='button' value='+' class='but qtyplus' field='quantity'>
+                        </div><!--quant-->
+                        <a href="#" class="del">&#x2716;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pic">
+                        <img class="photo" src="images/product-thumb.jpg" alt="pic">
+                    </td>
+                    <td class="det">
+                        <a href="#" class="ttl">Настольная лампа 19 Настольная лампа 19 078989
+                            078989 декоративная Настольная лампа 19 078989
+                            078989 декоративная Настольная лампа 19 078989 </a>
+                        <p class="price"><b>14 790</b> руб.</p>
+                        <p class="price_old">18 600 р.</p>
+                        <div class="b-quant">
+                            <input type='button' value='-' class='but qtyminus' field='quantity'>
+                            <input type='text' name='quantity' value='1' class='qty'>
+                            <input type='button' value='+' class='but qtyplus' field='quantity'>
+                        </div><!--quant-->
+                        <a href="#" class="del">&#x2716;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pic">
+                        <img class="photo" src="images/product-thumb.jpg" alt="pic">
+                        <img src="images/tag-new.png" alt="NEW" class="tag">
+                    </td>
+                    <td class="det">
+                        <a href="#" class="ttl">Настольная лампа 19 Настольная лампа 19 078989
+                            078989 декоративная Настольная лампа 19 078989
+                            078989 декоративная Настольная лампа 19 078989 </a>
+                        <p class="price"><b>14 790</b> руб.</p>
+                        <p class="price_old">18 600 р.</p>
+                        <div class="b-quant">
+                            <input type='button' value='-' class='but qtyminus' field='quantity'>
+                            <input type='text' name='quantity' value='999' class='qty'>
+                            <input type='button' value='+' class='but qtyplus' field='quantity'>
+                        </div><!--quant-->
+                        <a href="#" class="del">&#x2716;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pic">
+                        <img class="photo" src="images/product-thumb.jpg" alt="pic">
+                    </td>
+                    <td class="det">
+                        <a href="#" class="ttl">Настольная лампа 19 Настольная лампа 19 078989
+                            078989 декоративная Настольная лампа 19 078989
+                            078989 декоративная Настольная лампа 19 078989 </a>
+                        <p class="price"><b>14 790</b> руб.</p>
+                        <p class="price_old">18 600 р.</p>
+                        <div class="b-quant">
+                            <input type='button' value='-' class='but qtyminus' field='quantity'>
+                            <input type='text' name='quantity' value='1' class='qty'>
+                            <input type='button' value='+' class='but qtyplus' field='quantity'>
+                        </div><!--quant-->
+                        <a href="#" class="del">&#x2716;</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pic">
+                        <img class="photo" src="images/product-thumb.jpg" alt="pic">
+                        <img src="images/tag-new.png" alt="NEW" class="tag">
+                    </td>
+                    <td class="det">
+                        <a href="#" class="ttl">Настольная лампа 19 Настольная лампа 19 078989
+                            078989 декоративная Настольная лампа 19 078989
+                            078989 декоративная Настольная лампа 19 078989 </a>
+                        <p class="price"><b>14 790</b> руб.</p>
+                        <p class="price_old">18 600 р.</p>
+                        <div class="b-quant">
+                            <input type='button' value='-' class='but qtyminus' field='quantity'>
+                            <input type='text' name='quantity' value='999' class='qty'>
+                            <input type='button' value='+' class='but qtyplus' field='quantity'>
+                        </div><!--quant-->
+                        <a href="#" class="del">&#x2716;</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div><!--orderList-->
+
+    <div class="b-box">
+        <h2 class="h-box2"><i><img class="svg-inject" src="images/i-write.svg" alt="pic"></i> Оформление заказа</h2>
+        <form class="b-box_i b-box_i2" id="orderForm">
+            <input type="tel" placeholder="Ваш номер телефона:" required>
+            <input type="email" placeholder="E-mail" required>
+            <input type="text" placeholder="Ваше имя:" required>
+            <button type="submit" class="but btn-action">отправить заказ</button>
+        </form>
+    </div><!--box-->
+</main><!--ct-->
+
+<div class="b-total">
+    <div class="container">
+        <div class="left">
+            <p class="total-line"><span>ИТОГО:</span> <b class="price-total">38 476 руб.</b></p>
+        </div>
+        <div class="right">
+            <a id="jumpTo" href="#orderForm" class="but btn-action">Оформить заказ</a>
+        </div>
+    </div>
+</div><!--total-->
+
+<footer id="footer" class="b-footer">
+    <div class="container">
+        <div class="b-footer_logo">
+            <img src="images/logotype_2.png" alt="LightMarket.ru">
+        </div>
+    </div>
+</footer>
+<div id="screen"></div>
+</body>
+</html>

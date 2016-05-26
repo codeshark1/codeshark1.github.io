@@ -1,0 +1,258 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,cyrillic);
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+// Extra small screen / phone
+//** Deprecated `@screen-xs` as of v3.0.1
+@screen-xs:                  480px;
+//** Deprecated `@screen-xs-min` as of v3.2.0
+@screen-xs-min:              @screen-xs;
+//** Deprecated `@screen-phone` as of v3.0.1
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `@screen-md` as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+/* ==========================================================================
+   VARS
+   ========================================================================== */
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+.resetUL {list-style: none;padding: 0;margin: 0;}
+
+.roboto {font-family: 'Roboto Condensed', sans-serif;}
+
+/* ==========================================================================
+   BASE
+   ========================================================================== */
+html {position: relative;min-height: 100%;}
+
+body {font-family: Arial,Helvetica,sans-serif;}
+img {max-width: 100%;}
+a {text-decoration: underline;
+  &:hover {}
+}
+table {width: 100%;}
+/* ==========================================================================
+  COMMON
+  ========================================================================== */
+.container {max-width: 1000px;}
+.b-rel {position: relative}
+p.center {text-align: center;}
+p.right {text-align: right;}
+p.bold {font-weight: 700;}
+.b-lightbox {z-index: 2000;background: #fff;border-radius: 5px;max-width: 480px; margin-left: auto;margin-right: auto;
+  form {padding: 2em}
+  .btn {font-size: 24px !important;}
+}
+
+/* BUTTONS */
+.btn {text-decoration: none;border-radius: 5px;}
+
+.btn-action {
+  //background: @orange;
+  //.ubuntu;
+  color: #fff;
+  text-shadow: 1px 1px 0 fade(black,30%);text-transform: uppercase;font-size: 14px;
+  &:hover,&:focus {color: #fff;}
+}
+.btn-nav {width: 34px;height: 34px; background: url('../img/sprite.png') 0 -679px no-repeat;border: none; position: absolute;top: 12px;right: 5px;border-radius: 0;z-index: 5;
+  &:active {background: url('../img/sprite.png') 0 -679px no-repeat;}
+  &_active {background-position: 0 -738px;}
+}
+button.close {background: url('../img/sprite.png') 0 -1368px no-repeat;width: 35px; height: 35px; right: -10px;top: -10px; opacity: 1;position: absolute;float: none;
+  &:hover {opacity: 1;}
+  span {display: none;}
+}
+
+/* FORMS */
+input[type="text"],input[type="tel"],input[type="search"],input[type="email"],input[type="url"],textarea,select {
+  height: 45px;
+  border: 2px solid #d2d2d2;
+  padding: 4px 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/*HEADINGS*/
+
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+
+/* ==========================================================================
+   CONTENT
+   ========================================================================== */
+.list-bread {.resetUL;
+  @media (max-width: @screen-xs-max) {text-align: center}
+  li {display: inline-block;font-size: 12px;
+    &:after {content: "→";margin: 0 5px 0 7px;}
+    &:last-child:after {content: none;}
+  }
+  a {}
+}
+
+
+/* RESPONSIVE TABLE */
+.table-rwd {
+  @media (max-width: 600px), (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    thead td {
+      visibility: hidden;
+      height: 0;
+      padding: 0;
+    }
+    td {
+      display: block;
+      &:before {
+        content: attr(data-th) ": ";
+        font-weight: bold;
+        margin-right: 5px;
+        display: inline-block;
+      }
+    }
+    tbody tr {
+      display: block;
+      margin-bottom: 20px;
+      border: 1px solid;
+    }
+
+    tbody td:first-child {font-size: 1em;text-align: center;
+      &:before {content: none;}
+    }
+  }
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+/* ==========================================================================
+   PLUGINS
+   ========================================================================== */
+/* jCarousel (responsive mode)*/
+.carousel_i {overflow: hidden;}
+.carousel_itm {float: left;}
+
+.jcarousel-wrapper {
+  position: relative;
+}
+
+/** Carousel **/
+.carousel,.carousel2 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  &_i {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    //padding: 0 100px;
+  }
+}
+.carousel {
+  &_itm {
+    width: 250px !important;
+    @media (min-width: 360px) {width: 320px !important;}
+    @media (min-width: 480px) {width: 200px !important;}
+    @media (min-width: @screen-sm-min) {width: 200px !important;}
+  }
+}
+.carousel2 {
+  &_itm {float: left;padding: 2px 0;
+    width: 300px !important;
+    @media (min-width: 480px) {width: 200px !important;}
+    @media (min-width: @screen-sm-min) {width: 300px !important;margin: 20px 30px 0;}
+    @media (min-width: @screen-md-min) {width: 352px !important;margin: 0 70px;}
+  }
+}
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+  position: absolute;
+  top: 10%;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size:100px;
+  font-weight: 300;
+  color: #d9d9d9;transition: color .3s;
+  &:hover {}
+}
+
+.jcarousel-control-prev {
+  left: 0;
+  background-position: 0 -2486px;
+  &:hover {background-position: 0 -2540px;}
+}
+.jcarousel-control-next {
+  right: 0;
+  background-position: 0 -2594px;
+  &:hover {background-position: 0 -2648px;}
+}
+.jcarousel-control-prev2,.jcarousel-control-next2{top: 20%;}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.browserupgrade {margin: 0.2em 0;background: #ccc;color: #000;padding: 0.2em 0;}
+.hidden{display:none!important;}
+.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
+.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}
+.invisible{visibility:hidden}
+.cf:before,.cf:after{content:" ";display:table}
+.cf:after{clear:both}
+.cf{*zoom:1}
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  *,:before,:after{background:transparent!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}
+  a,a:visited{text-decoration:underline}
+  a[href]:after{content:" (" attr(href) ")"}
+  abbr[title]:after{content:" (" attr(title) ")"}
+  a[href^="#"]:after,a[href^="javascript:"]:after{content:""}
+  pre,blockquote{border:1px solid #999;page-break-inside:avoid}
+  thead{display:table-header-group}
+  tr,img{page-break-inside:avoid}
+  img{max-width:100%!important}
+  p,h2,h3{orphans:3;widows:3}
+  h2,h3{page-break-after:avoid}
+}

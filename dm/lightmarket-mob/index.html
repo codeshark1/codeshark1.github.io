@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LightMarket</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<header class="b-header">
+    <div class="b-header_ctrl">
+        <div class="b-header_ctrl_i">
+            <div class="b-header_ctrl-main">
+                <div class="b-header_navBtn">
+                    <a id="navBtn" class="but btn-nav">
+                        <svg class="svg-inject" viewBox="0 0 32 32"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+                    </a>
+                </div>
+                <div class="b-header_ttl-box"><p class="b-header_ttl">Главная</p></div>
+                <div class="b-header_cartBtn">
+                    <a href="#" class="but btn-cart">
+                        <span>3</span>
+                        <img class="svg-inject" src="images/i-cart.svg">
+                    </a>
+                </div>
+                <div class="b-header_searchBtn">
+                    <a class="but btn-search" id="btn-search"><img class="svg-inject" src="images/i-search.svg"></a>
+                </div>
+            </div><!--ctrl-main-->
+            <div class="b-header_ctrl-search" id="search-panel">
+                <form action="#" class="f-search">
+                    <input type="search" class="searchField" required>
+                    <button type="submit" class="submitBtn"><img class="svg-inject" src="images/i-search.svg"></button>
+                    <button type="reset" class="resetBtn">Удалить</button>
+                </form><!--wrp-->
+            </div><!--ctrl-search-->
+        </div><!--i-->
+    </div><!--b-header_ctrl-->
+
+    <div class="b-header_logo">
+        <div class="container">
+            <div class="b-header_lft"><img src="images/logotype.png" alt="LightMarket - легкие решения светлых идей"></div>
+            <div class="b-header_rgt">
+                <a class="b-header_call-num" href="tel:74994093838"><span>+7 (499)</span> 409 38 38</a>
+            </div>
+        </div><!--ct-->
+    </div>
+
+    <div class="b-nav" id="navPanel">
+        <div class="b-nav_login">
+            <a href="#">Войти</a>
+            <a href="#">Регистрация</a>
+        </div>
+        <div class="b-nav_i" id="navScroll">
+            <nav class="b-nav_wrp">
+                <h3 class="hidden">Навигация по сайту</h3>
+                <a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-home.svg"></i>Главная</a>
+                <h4 class="nav-ttl">Каталог товаров</h4>
+                <ul class="nav-list">
+                    <li class="nav-itm">
+                        <a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product1.svg" alt="pic"></i>Люстры</a>
+                        <div class="inside">
+                            <p class="heading">Люстры</p>
+                            <ul>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product1.svg" alt="pic"></i>Люстры</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product2.svg" alt="pic"></i>Светильники</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product3.svg" alt="pic"></i>Уличные светильники</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product4.svg" alt="pic"></i>Светодиолные светильники</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-itm">
+                        <a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product2.svg" alt="pic"></i>Светильники</a>
+                        <div class="inside">
+                            <p class="heading">Светильники</p>
+                            <ul>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product1.svg" alt="pic"></i>Люстры</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product2.svg" alt="pic"></i>Светильники</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product3.svg" alt="pic"></i>Уличные светильники</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product4.svg" alt="pic"></i>Светодиолные светильники</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-itm">
+                        <a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product3.svg" alt="pic"></i>Уличные светильники</a>
+                        <div class="inside">
+                            <p class="heading">Уличные светильники</p>
+                            <ul>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product1.svg" alt="pic"></i>Люстры</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product2.svg" alt="pic"></i>Светильники</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product3.svg" alt="pic"></i>Уличные светильники</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product4.svg" alt="pic"></i>Светодиолные светильники</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-itm">
+                        <a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product4.svg" alt="pic"></i>Светодиодные светильники</a>
+                        <div class="inside">
+                            <p class="heading">Светодиодные светильники</p>
+                            <ul>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product1.svg" alt="pic"></i>Люстры</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product2.svg" alt="pic"></i>Светильники</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product3.svg" alt="pic"></i>Уличные светильники</a></li>
+                                <li><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/product4.svg" alt="pic"></i>Светодиолные светильники</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <h4 class="nav-ttl">Помощь</h4>
+                <ul class="nav-list">
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-price.svg" alt="pic"></i>Распродажа</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-cart.svg" alt="pic"></i>Корзина</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-write.svg" alt="pic"></i>Мои заказы</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-view.svg" alt="pic"></i>Просмотренные товары</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-delivery.svg" alt="pic"></i>Доставка</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-cart.svg" alt="pic"></i>Возврат</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-garant.svg" alt="pic"></i>Гарантия</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-payment.svg" alt="pic"></i>Оплата</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-help.svg" alt="pic"></i>Помощь</a></li>
+                </ul>
+                <h4 class="nav-ttl">Помощь</h4>
+                <ul class="nav-list">
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-price.svg" alt="pic"></i>Распродажа</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-cart.svg" alt="pic"></i>Корзина</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-write.svg" alt="pic"></i>Мои заказы</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-view.svg" alt="pic"></i>Просмотренные товары</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-delivery.svg" alt="pic"></i>Доставка</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-cart.svg" alt="pic"></i>Возврат</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-garant.svg" alt="pic"></i>Гарантия</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-payment.svg" alt="pic"></i>Оплата</a></li>
+                    <li class="nav-itm"><a href="#" class="nav-lnk"><i><img class="svg-inject" src="images/i-help.svg" alt="pic"></i>Помощь</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+<div class="b-slider">
+    <div class="container">
+        <ul id="slider" class="b-slider_i">
+            <li class="slide slide_1">
+                <div class="slide_i">
+                    <div class="text">
+                        <p><img src="images/dostavka.png" alt="Доставка от 4000 р. БЕСПЛАТНО"></p>
+                        <a href="#" class="btn-action">Ещё предложения</a>
+                    </div>
+                </div>
+            </li>
+            <li class="slide slide_1">
+                <div class="slide_i">
+                    <div class="text">
+                        <p><img src="images/dostavka.png" alt="Доставка от 4000 р. БЕСПЛАТНО"></p>
+                        <a href="#" class="btn-action">Ещё предложения</a>
+                    </div>
+                </div>
+            </li>
+            <li class="slide slide_1">
+                <div class="slide_i">
+                    <div class="text">
+                        <p><img src="images/dostavka.png" alt="Доставка от 4000 р. БЕСПЛАТНО"></p>
+                        <a href="#" class="btn-action">Ещё предложения</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div><!--ct-->
+</div><!--slider-->
+<main class="b-main container">
+    <section class="b-box">
+        <h2 class="h-box h-sectionLnk"><a href="#">Популярные категории</a></h2>
+        <ul class="list-popCat">
+            <li class="list-popCat_itm"><a href="#"><i><img class="svg-inject" src="images/product1.svg" alt="pic"></i>потолочные <br> люстры</a></li>
+            <li class="list-popCat_itm"><a href="#"><i><img class="svg-inject" src="images/product2.svg" alt="pic"></i>уличные светильники</a></li>
+            <li class="list-popCat_itm"><a href="#"><i><img class="svg-inject" src="images/product3.svg" alt="pic"></i>Люстры <br> для кухни</a></li>
+            <li class="list-popCat_itm"><a href="#"><i><img class="svg-inject" src="images/product4.svg" alt="pic"></i>Люстры хрустальные</a></li>
+            <li class="list-popCat_itm"><a href="#"><i><img class="svg-inject" src="images/product5.svg" alt="pic"></i>потолочные люстры</a></li>
+            <li class="list-popCat_itm"><a href="#"><i><img class="svg-inject" src="images/product6.svg" alt="pic"></i>уличные светильники</a></li>
+        </ul>
+    </section>
+
+    <hr class="page">
+
+    <section>
+        <h2 class="h-section">Популярные товары</h2>
+        <div class="b-prodPrevs clearfix">
+            <div class="b-prodPrev">
+                <a class="b-prodPrev_img" href="#"><img src="images/product-thumb_01.jpg" alt="pic"></a>
+                <div class="b-prodPrev_ttl">
+                    <a class="b-prodPrev_lnk" href="#">Подвесная люстра Georgeous A8223LM</a>
+                </div>
+                <div class="b-prodPrev_mid">
+                    <p class="b-prodPrev_priceOld">18 600 р.</p>
+                    <p class="b-prodPrev_nal-1">В наличии</p>
+                </div>
+                <div class="b-prodPrev_btm">
+                    <p class="b-prodPrev_price"><b>30 000</b> руб.</p>
+                    <img class="b-prodPrev_rating" src="images/rating.png" alt="5/5">
+                </div>
+            </div><!--prodPrev-->
+            <div class="b-prodPrev">
+                <a class="b-prodPrev_img" href="#"><img src="images/product-thumb_01.jpg" alt="pic"></a>
+                <div class="b-prodPrev_ttl">
+                    <a class="b-prodPrev_lnk" href="#">Подвесная люстра Georgeous A8223LM</a>
+                </div>
+                <div class="b-prodPrev_mid">
+                    <p class="b-prodPrev_priceOld">18 600 р.</p>
+                    <p class="b-prodPrev_nal-1">В наличии</p>
+                </div>
+                <div class="b-prodPrev_btm">
+                    <p class="b-prodPrev_price"><b>30 000</b> руб.</p>
+                    <img class="b-prodPrev_rating" src="images/rating.png" alt="5/5">
+                </div>
+            </div><!--prodPrev-->
+            <div class="b-prodPrev">
+                <a class="b-prodPrev_img" href="#"><img src="images/product-thumb_01.jpg" alt="pic"></a>
+                <div class="b-prodPrev_ttl">
+                    <a class="b-prodPrev_lnk" href="#">Подвесная люстра Georgeous A8223LM</a>
+                </div>
+                <div class="b-prodPrev_mid">
+                    <p class="b-prodPrev_priceOld">18 600 р.</p>
+                    <p class="b-prodPrev_nal-1">В наличии</p>
+                </div>
+                <div class="b-prodPrev_btm">
+                    <p class="b-prodPrev_price"><b>30 000</b> руб.</p>
+                    <img class="b-prodPrev_rating" src="images/rating.png" alt="5/5">
+                </div>
+            </div><!--prodPrev-->
+            <div class="b-prodPrev">
+                <a class="b-prodPrev_img" href="#"><img src="images/product-thumb_01.jpg" alt="pic"></a>
+                <div class="b-prodPrev_ttl">
+                    <a class="b-prodPrev_lnk" href="#">Подвесная люстра Georgeous A8223LM</a>
+                </div>
+                <div class="b-prodPrev_mid">
+                    <p class="b-prodPrev_priceOld">18 600 р.</p>
+                    <p class="b-prodPrev_nal-1">В наличии</p>
+                </div>
+                <div class="b-prodPrev_btm">
+                    <p class="b-prodPrev_price"><b>30 000</b> руб.</p>
+                    <img class="b-prodPrev_rating" src="images/rating.png" alt="5/5">
+                </div>
+            </div><!--prodPrev-->
+        </div><!--cf-->
+        <div class="b-prodNews clearfix">
+            <div class="b-prodNew">
+                <a class="b-prodNew_img" href="#"><img src="images/product-thumb.jpg" alt="pic"></a>
+                <div class="b-prodNew_mid">
+                    <div class="clearfix">
+                        <img class="b-prodNew_logo" src="images/blitz.png" alt="blitz">
+                        <p class="b-prodNew_nal-1">В наличии</p>
+                        <p class="articul">арт: KIT9080</p>
+                    </div>
+                    <a class="b-prodNew_lnk" href="#">Настольная лампа декоративная Layer 1907 Layer 19 blitz 078989</a>
+                </div><!--mid-->
+                <div class="b-prodNew_btm">
+                    <p class="b-prodNew_price"><b>30 000</b> руб.</p>
+                    <p class="b-prodNew_priceOld">18 600 р.</p>
+                    <img class="b-prodNew_rating" src="images/rating4.png" alt="4/5">
+                </div>
+            </div><!--prodNew-->
+            <div class="b-prodNew">
+                <a class="b-prodNew_img" href="#"><img src="images/product-thumb.jpg" alt="pic"></a>
+                <div class="b-prodNew_mid">
+                    <div class="clearfix">
+                        <img class="b-prodNew_logo" src="images/blitz.png" alt="blitz">
+                        <p class="b-prodNew_nal-1">В наличии</p>
+                        <p class="articul">арт: KIT9080</p>
+                    </div>
+                    <a class="b-prodNew_lnk" href="#">Настольная лампа декоративная Layer 1907 Layer 19 blitz 078989</a>
+                </div><!--mid-->
+                <div class="b-prodNew_btm">
+                    <p class="b-prodNew_price"><b>30 000</b> руб.</p>
+                    <p class="b-prodNew_priceOld">18 600 р.</p>
+                    <img class="b-prodNew_rating" src="images/rating.png" alt="5/5">
+                </div>
+            </div><!--prodNew-->
+        </div><!--cf-->
+        <a href="#" class="btn btn-more">Посмотреть ещё</a>
+        <div class="icon-loading"><img src="images/i-load.png" alt="pic"></div>
+    </section>
+
+    <section class="b-box">
+        <h2 class="h-box">Наши преимущества:</h2>
+        <ul class="list-ben b-box_i">
+            <li class="list-ben_itm">
+                <i class="list-ben_icn"><img class="svg-inject" src="images/i-quick.svg" alt="pic"></i>
+                <div>
+                    <h3 class="list-ben_h">Быстрая доставка</h3>
+                    <p>Понравившиеся товары для дома очень легко отложить в корзину покупок – одним щелчком. Причем на сайте есть не только кнопка «купить», но и «отложить».</p>
+                </div>
+            </li>
+            <li class="list-ben_itm">
+                <i class="list-ben_icn"><img class="svg-inject" src="images/i-obmen.svg" alt="pic"></i>
+                <div>
+                    <h3 class="list-ben_h">Бесплатный обмен</h3>
+                    <p>Понравившиеся товары для дома очень легко отложить в корзину покупок – одним щелчком. Причем на сайте есть не только кнопка «купить», но и «отложить».</p>
+                </div>
+            </li>
+            <li class="list-ben_itm">
+                <i class="list-ben_icn"><img class="svg-inject" src="images/i-garant.svg" alt="pic"></i>
+                <div>
+                    <h3 class="list-ben_h">Гарантия качества</h3>
+                    <p>Понравившиеся товары для дома очень легко отложить в корзину покупок – одним щелчком. Причем на сайте есть не только кнопка «купить», но и «отложить».</p>
+                </div>
+            </li>
+        </ul>
+        <div class="list-ben_itm b-box_i">
+            <i class="list-ben_icn"><img class="svg-inject" src="images/i-new.svg" alt="pic"></i>
+            <div>
+                <a href="#">Новым покупателям</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="b-box">
+        <h2 class="h-box">Способы оплаты:</h2>
+        <div class="b-box_i2"><img src="images/payment.png" alt="Maestro, Cirrus, MasterCard, Visa, Western Union, PayPal"></div>
+    </section>
+
+    <section class="b-box">
+        <h2 class="h-box">Мы в социальных сетях :</h2>
+        <ul class="b-box_i2 list-social">
+            <li class="list-social_itm"><a class="fb" href="#"><img src="images/soc-fb.png" alt="Facebook"></a></li>
+            <li class="list-social_itm"><a class="vk" href="#"><img src="images/soc-vk.png" alt="Vkontakte"></a></li>
+            <li class="list-social_itm"><a class="ok" href="#"><img src="images/soc-ok.png" alt="Odnoklassniki"></a></li>
+            <li class="list-social_itm"><a class="tw" href="#"><img src="images/soc-tw.png" alt="Twitter"></a></li>
+        </ul>
+    </section>
+</main><!--ct-->
+
+<footer id="footer" class="b-footer">
+    <div class="container">
+        <div class="b-footer_logo">
+            <img src="images/logotype_2.png" alt="LightMarket.ru">
+        </div>
+    </div>
+</footer>
+<div id="screen"></div>
+</body>
+</html>
