@@ -1,0 +1,168 @@
+@charset "UTF-8";
+@import 'modules/variables';
+@import 'modules/base+common';
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.site-header {padding-top: 5px;
+	nav {margin-top: 25px;}
+}
+.navigation{
+	@include resetUl();
+	text-align: right;
+	li {
+		display: inline-block; 
+		text-align: center;
+		margin-right: 40px;
+		&:last-child {margin-right: 0;}
+	}
+	a {
+		text-transform: uppercase;
+		font-weight: 700;
+		display: block;
+		&:before {
+			content: "";			
+			height: 30px;
+			display: block;
+			opacity: .5;
+			transition: opacity .3s;
+			margin-bottom: 15px;
+			background: url('../images/sprite.png') 50% 0 no-repeat;
+		}
+		&:hover:before {opacity: 1;}
+	}
+	.nav-home a:before {background-position: 50% -6px}
+	.nav-history a:before {background-position: 50% -70px}
+	.nav-honest a:before {background-position: 50% -134px}
+	.nav-support a:before {background-position: 50% -197px}
+	.nav-partner a:before {background-position: 50% -262px}
+	.nav-howto a:before {background-position: 50% -325px}
+}
+
+.b-intro {
+	@include block();
+	@include clearfix();
+	background: $blue;
+	background: $blue-transp;
+	padding: 15px;
+	margin-top: 30px;
+	p {line-height: 1.6;margin: -3px 0 0 0;}
+	&_1, &_2, &_3 {float: left;position: relative;}
+	&_1:after, &_2:after {
+		content: "\203A";
+		color: #e28538;
+		font-size: 40px;
+		position: absolute;
+		right: 0;
+		top: 15px;
+		line-height: 0;
+	}
+	&_1 { width: 40%;padding: 0 30px 0 0;}
+	&_2 { width: 33%;padding: 0 60px 0 50px;}
+	&_3 { width: 27%;}
+}
+/* ==========================================================================
+   CONTENT
+   ========================================================================== */
+/* TABS */
+.b-tabs {margin-top: 30px;
+	&-btns {
+		@include resetUl();		
+		@include clearfix();				
+		@include block();			
+		background: $blue-transp;
+		li {
+			display: block;
+			float: left;
+			text-align: center;
+			width: 50%;
+			&:first-child {border-right: 1px solid $border;}
+		}
+		a {
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 1.7em;
+			@include textShadow();
+			display: block;
+			padding: 15px 0;	
+			&:hover {background: $blue-light}		
+		}
+		.active {background: $blue-light;}
+	}
+	&-tab {@include clearfix();}
+}
+
+/* PRODUCT */
+
+.b-prod {
+	@include block();
+	background: $blue;
+	position: relative;
+	font-size: .9em;			
+	p {margin-bottom: 0;}
+	&_i {padding: 0 10px 10px 10px;}
+	&_img {
+		height: 160px;
+		line-height: 190px;
+		text-align: center;
+		@include blueGrad();
+		display: block;
+		border-bottom: 1px solid $border;
+	}
+	&_spots-tag, &_price-tag {
+		font-weight: 700;		
+		padding: 5px 10px;		
+		border-radius: 3px;
+		@include textShadow();
+		display: inline-block;
+		position: absolute;
+		top: 10px;
+		span {font-size: .95em;}
+	}
+	&_spots-tag {background: #E6BC12;left: 10px;}
+	&_price-tag {background: #498E39; right: 10px;
+		&:last-of-type {color: red;}
+	}
+	&_name, &_cond {
+		border-bottom: 1px solid $border;
+		padding: 10px 0;
+		border-bottom: 1px solid $border;		
+	}
+	&_name {}
+	&_cond {}
+	&_cond-used {color: #ffe63f}
+	&_cond-new {color: #6cef2c}
+	&_cond-tested {color: #3fe6ff}
+	&_price {padding: 10px 0;
+		b {float: right;}
+	}
+	&_spots {margin-top: 5px;}
+	.but-buy {margin-top: 15px;display: block;}
+}
+
+.b-prod-list {
+	.b-prod {	
+		margin-top: 20px;	
+		float: left;
+		width: 18.4%;
+		margin-right: 2%;
+		&:nth-child(5n+5) {margin-right: 0;}
+	}
+}
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer {
+	background: url('../images/bg-footer.png') repeat-x;
+	margin-top: 75px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	p {margin-bottom: 0;}
+	.author {font-size: .9em;
+		text-align: right;
+		a {text-decoration: underline; color: #55d4c3;}
+	}
+}
+
+@import 'modules/plugins';

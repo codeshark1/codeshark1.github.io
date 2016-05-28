@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,700&subset=latin,cyrillic);
+/* ==========================================================================
+   BASE
+   ========================================================================== */
+html {position: relative;min-height: 100%;}
+body {
+  font-family: 'Roboto', sans-serif;   
+  background: $blue-dark url('../images/bg-body.jpg') 0 0 no-repeat;
+  color: #fff;
+  font-weight: 300;
+}
+img {max-width: 100%;}
+a {transition: all .3s; outline: 0 !important; color: #fff;
+  &:hover,&:focus {text-decoration: none;color: #fff;}
+}
+table {width: 100%;} 
+small {font-size: 100%;}
+/* ==========================================================================
+  COMMON
+  ========================================================================== */
+.container {width: 1100px;}
+.b-rel {position: relative}
+.b-mg {margin-top: 30px;}
+p.center {text-align: center;}
+p.right {text-align: right;}
+p.bold {font-weight: 700;}
+.p-all {text-align: center;margin-top: 1.5em}
+
+
+/* BUTTONS */
+.but {
+  display: inline-block;
+  padding: 8px 20px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 700;
+  @include textShadow();
+  border-radius: 3px;
+  position: relative;
+}
+.but:focus,
+.but:active:focus,
+.but.active:focus,
+.but.focus,
+.but:active.focus,
+.but.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.but:hover,
+.but:focus,
+.but.focus {text-decoration: none;}
+.but:active,
+.but.active {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.but-login {
+  background: #86a81d;
+  background: -moz-linear-gradient(top, #86a81d 0%, #62880c 100%);
+  background: -webkit-linear-gradient(top, #86a81d 0%,#62880c 100%);
+  background: linear-gradient(to bottom, #86a81d 0%,#62880c 100%);
+  box-shadow: 0 3px 0 0 #496605;  
+  padding-left: 50px;
+  &:before {
+    content: "";
+    width: 28px;
+    height: 23px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    background: url('../images/sprite.png') -10px -394px no-repeat;
+  }
+  &:hover {
+    background: #9cc520;
+    background: -moz-linear-gradient(top, #9cc520 0%, #75a30c 100%);
+    background: -webkit-linear-gradient(top, #9cc520 0%,#75a30c 100%);
+    background: linear-gradient(to bottom, #9cc520 0%,#75a30c 100%);    
+  }
+}
+.but-buy {
+  background: #539643;
+  background: -moz-linear-gradient(top, #539643 0%, #3c802d 100%);
+  background: -webkit-linear-gradient(top, #539643 0%,#3c802d 100%);
+  background: linear-gradient(to bottom, #539643 0%,#3c802d 100%);  
+  border: 1px solid #2c6c3d;
+  text-transform: uppercase;    
+  padding-left: 50px;
+  &:before {
+    content: "";
+    width: 24px;
+    height: 22px;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    background: url('../images/sprite.png') -13px -459px no-repeat;    }  
+  &:hover {
+    background: #63ad52;
+    background: -moz-linear-gradient(top, #63ad52 0%, #449733 100%);
+    background: -webkit-linear-gradient(top, #63ad52 0%,#449733 100%);
+    background: linear-gradient(to bottom, #63ad52 0%,#449733 100%);    
+  }
+}
+
+/* FORMS */
+input[type="text"],
+input[type="tel"],
+input[type="search"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
+textarea,
+select {
+  padding: 7px 10px 5px;
+  width: 100%;
+  margin-bottom: 15px;      
+  &:focus {}
+}
+
+.b-lBox {margin: 0 auto;position: relative;}
+
+/*HEADINGS*/
+h1, h2, h3, h4, h5 {
+	
+}
+
+/* PROGRESS BARS */
+.b-progr {
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.b-progr-normal {
+  border: 1px solid #41A1CA; background: #125A76;
+  .progress-bar {background: #41A1CA;}
+}
+.b-progr-warn {
+  border: 1px solid #D74E2E; background: #AC381C;
+  .progress-bar {background: #D74E2E;}
+}
+.progress-bar {
+  height: 7px;
+  float: none;  
+}
