@@ -18,11 +18,13 @@ function chatExpand() {
             $('#chatBody').slideUp().removeClass('open');
             //$('#chatScroll').fadeOut();
             //$('#chatScroll').css('visibility',0);
+            $('#container').animate({left: 0});
         } else {
-            $('#chatScroll').height( $(window).height() - 130 );
+            $('#chatScroll').height( $(window).height() - 213 );
             $('#chatBody').slideDown().addClass('open');
             //$('#chatScroll').fadeIn();
             //$('#chatScroll').css('visibility',1);
+            $('#container').animate({left: -150});
         }
     });
 }
