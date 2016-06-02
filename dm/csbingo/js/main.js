@@ -53,6 +53,19 @@ $(document).ready(function(){
     tabs_profile();
     chatExpand();
 
+    $('.b-data-url input').validate();
+
+    $(".b-data-url input").addClass('blank');
+    $(".b-data-url input").on("input", function() {
+        if($(".b-data-url input").is(":blank")) {
+          $(".b-data-url input").addClass('blank');
+        } else {
+            $(".b-data-url input").removeClass('blank');
+        }        
+    });
+
+
+
     $('#carousel-winners').slick({
         slidesToShow: 6,
         infinite: false,
