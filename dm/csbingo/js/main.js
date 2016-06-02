@@ -1,4 +1,4 @@
-function tabs() {
+function tabs_products() {
     $('.b-tabs-tab:not(:first)').hide();    
     $('.b-tabs-btns a').click(function(e) {
         e.preventDefault();
@@ -12,31 +12,62 @@ function tabs() {
     });
 }
 
+function tabs_profile() {
+    $('.b-profile-tabs-tab:not(:first)').hide();    
+    $('.b-profile-tabs-btns a').click(function(e) {
+        
+        if ( ! $(this).hasClass('mod') ) {
+            e.preventDefault();
+
+            if ( ! $(this).parent('li').hasClass('active') ) {
+                $('.b-profile-tabs-tab').hide();
+                $('.b-profile-tabs-btns .active').removeClass('active');
+                $(this).parent('li').addClass('active');
+                var clicked = $(this).attr('href');
+                $(clicked).fadeIn('fast');
+            }
+        }
+    });
+}
+
 function chatExpand() {
     $('#chatHeader').click(function(){
         if ( $('#chatBody').is(':visible') ) {
             $('#chatBody').slideUp().removeClass('open');
-            //$('#chatScroll').fadeOut();
-            //$('#chatScroll').css('visibility',0);
             $('#container').animate({left: 0});
         } else {
             $('#chatScroll').height( $(window).height() - 213 );
             $('#chatBody').slideDown().addClass('open');
-            //$('#chatScroll').fadeIn();
-            //$('#chatScroll').css('visibility',1);
             $('#container').animate({left: -150});
         }
     });
 }
 
 $(document).ready(function(){
-    tabs();
-    $('.b-carousel').slick({
-        infinite: false,
+    $('[data-toggle="tooltip"]').tooltip({
+       animated : 'fade',
+       container: 'body'
+    });
+
+    tabs_products();
+    tabs_profile();
+    chatExpand();
+
+    $('#carousel-winners').slick({
         slidesToShow: 6,
+        infinite: false,
         appendArrows: $('.b-winners_carousel'),
         prevArrow: "<button class='slick-prev'></button>",
         nextArrow: "<button class='slick-next'></button>",
     });   
-    chatExpand();
+
+    $('#carousel-shoplist').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        variableWidth: true,
+        appendArrows: $('#carousel-shoplist'),
+        prevArrow: "<button class='slick-prev'>&lt;</button>",
+        nextArrow: "<button class='slick-next'>&gt;</button>",
+    });   
 });

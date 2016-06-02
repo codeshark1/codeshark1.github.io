@@ -1,0 +1,315 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Топ 20 игроков - CS Bingo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vendor/modernizr-custom.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <![endif]--> 
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>      
+</head>
+<body>
+<!--[if lt IE 9]>
+    <p class="browserupgrade">Вы используете <b>устаревший</b> браузер. Пожалуйста, <a href="http://browsehappy.com/?locale=ru_ru">обновите свой браузер</a> чтобы улучшить опыт работы с сайтом.</p>
+<![endif]-->
+<div class="container" id="container">
+    <header class="site-header">
+        <div class="row">
+            <div class="col-xs-4">
+                <a href="#"><img src="images/logotype.png" alt="CS Bingo"></a>
+            </div><!-- col -->
+            <nav class="col-xs-8">
+                <ul class="navigation">
+                    <li class="nav-home"><a href="#">Главная</a></li>
+                    <li class="nav-history"><a href="#">История</a></li>
+                    <li class="nav-honest"><a href="#">Честная игра</a></li>
+                    <li class="nav-support"><a href="#">Поддержка</a></li>
+                    <li class="nav-partner"><a href="#">партнерка</a></li>
+                    <li class="nav-howto"><a href="#">Как играть</a></li>
+                </ul>
+            </nav><!-- col -->
+        </div><!-- /.row -->
+    </header>
+
+    <main role="main">
+        <div class="b-profile">
+            <div class="b-profile_col1">
+                <div class="b-profile_col1_1">
+                    <img src="images/ava4.jpg" alt="pic">
+                    <div class="b-profile-actions">
+                        <a href="#"><i class="icon icon-settings"></i></a>
+                        <a href="#" class="but but-def">выход</a>
+                    </div><!-- /.clearfix -->
+                </div><!-- /.b-profile_col1_1 -->
+
+                <div class="b-profile_col1_2">
+                    <div class="clearfix">
+                        <div class="b-profile_col1_2_1">
+                            <p class="b-profile-name">Терентий</p>
+                            <p class="b-profile-steam-ttl"><i class="icon icon-steam"></i>steam id :</p>
+                            <p class="b-profile-steam-id">123213213445545534534565467</p>
+                            
+                            <div class="clearfix">
+                                <div class="b-data-balance b-data">
+                                    <p class="b-data-ttl">на счету</p><!-- /.b-data-ttl -->
+                                    <span>0Р</span>
+                                </div><!-- /.b-profile-balance -->
+                                <div class="b-data-addFunds b-data">
+                                    <p class="b-data-ttl">пополнить</p><!-- /.b-data-ttl -->
+                                    <input type="text" placeholder="Сумма...">
+                                </div><!-- /.b-profile-addFunds -->
+                            </div><!-- /.clearfix -->
+                        </div><!-- /.b-profile_col1_2_1 -->
+                        <div class="b-profile_col1_2_2">
+                            <div class="b-data-points b-data">
+                                <p class="b-data-ttl">баллов</p><!-- /.b-data-ttl -->
+                                <span>12</span>
+                            </div><!-- /.b-profile-addFunds -->
+                            <button class="but but-main but-points">зачислить</button>
+                        </div><!-- /.b-profile_col1_2_2 -->                    
+                    </div><!-- /.clearfix -->
+                    <div class="clearfix">
+                        <div class="b-data-url">
+                            <input type="url" placeholder="Вставьте ссылку на обмен..." required>
+                            <span>&#10004;</span>
+                        </div>
+                        <a href="#" class="help">?</a>
+                    </div><!-- /.clearfix -->
+                </div><!-- /.b-profile_col1_2 -->
+            </div><!-- /.b-profile_col1 -->
+
+            <div class="b-profile_col2">
+                <ul class="b-profile-tabs-btns">
+                    <li class="active"><a href="#shoplist"><i class="icon icon-cart"></i>Текущие покупки</a></li>
+                    <li><a href="#" class="mod" data-toggle="modal" data-target="#modal-history"><i class="icon icon-check"></i>История покупок</a></li>
+                    <li><a href="#partner"><i class="icon icon-money"></i>Партнерка</a></li>
+                </ul><!-- b-profile-tabs-btns -->
+                <div class="b-profile-tabs-tabs">
+                    <div class="b-profile-tabs-tab b-shoplist" id="shoplist">
+                        <div class="b-carousel" id="carousel-shoplist">
+                            <div class="b-carousel-itm">
+                                <a href="#">
+                                    <img src="images/weapon_8.png" alt="pic">
+                                    <div class="b-progr b-progr-normal">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%"></div>
+                                    </div>
+                                </a>
+                            </div><!-- /.b-carousel-itm -->                             
+                            <div href="#" class="b-carousel-itm b-shoplist-empty">
+                                <a href="#">+</a>
+                            </div><!-- /.b-carousel-itm -->  
+                            <div class="b-carousel-itm">
+                                <a href="#">
+                                    <img src="images/weapon_8.png" alt="pic">
+                                    <div class="b-progr b-progr-normal">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%"></div>
+                                    </div>
+                                </a>
+                            </div><!-- /.b-carousel-itm -->                             
+                            <div href="#" class="b-carousel-itm b-shoplist-empty">
+                                <a href="#">+</a>
+                            </div><!-- /.b-carousel-itm -->                                                     
+                        </div><!-- /.b-carousel -->                        
+                    </div><!-- /.b-profile-tabs-tab -->
+                    <div class="b-profile-tabs-tab b-profile-partner" id="partner">
+                        <div class="clearfix">
+                            <div class="b-profile-partner-col1">
+                                <label class="lbl-main" for="url-partner">Ваша партнерская ссылка <i class="icon icon-link"></i></label>
+                            </div><!-- /.b-profile-partner-col1 -->
+                            <div class="b-profile-partner-col2">
+                                <input id="url-partner" class="inp-main inp-url" type="url" value="http://forum.unity3d.com/threads/released-sprite-mask-masking-system-for-unity-sprite.292453/">
+                            </div><!-- /.b-profile-partner-col2 -->
+                        </div><!-- /.clearfix -->
+                        
+                        <div class="clearfix">
+                            <div class="b-profile-partner-col1">
+                                <label class="lbl-main lbl-special" for="earned">Заработано <i class="icon icon-wallet"></i></label>
+                            </div><!-- /.b-profile-partner-col1 -->
+                            <div class="b-profile-partner-col2">
+                                <input id="earned" class="inp-main inp-earned" type="text" value="1250" disabled>
+                                <a href="#" class="but but-main">вывести на кошелек</a>
+                                <a href="#" class="but but-main">перевести на баланс</a>
+                            </div><!-- /.b-profile-partner-col2 -->
+                        </div><!-- /.clearfix -->
+
+                        <div class="clearfix">
+                            <div class="b-profile-partner-col1">
+                                <label class="lbl-main" for="referals">Привлечено рефералов <i class="icon icon-referal"></i></label>
+                            </div><!-- /.b-profile-partner-col1 -->
+                            <div class="b-profile-partner-col2">
+                                <input id="referals" class="inp-main inp-referals" type="text" value="3" disabled>
+
+                                <label class="lbl-main" for="ref-today">Сегодня <i class="icon icon-time"></i></label> <input id="ref-today" class="inp-main inp-ref-today" type="text" value="2" disabled>
+                            </div><!-- /.b-profile-partner-col2 -->
+                        </div><!-- /.clearfix -->
+                    </div><!-- /.b-profile-tabs-tab -->
+                </div><!-- /.b-profile-tabs-tabs -->
+            </div><!-- /.b-profile_col2-->
+        </div><!-- /.b-profile cf -->
+
+        <div class="b-winners">
+            <h1 class="h-winners">Новые победители</h1>
+            
+            <div class="b-winners_gamer">
+                <p class="b-winners_gamer-name">женя котов</p>
+                <div class="b-winners_gamer-ava"><a href="#"><img class="ava-small" src="images/ava0.jpg"></a></div>
+                <p class="b-winners_gamer-title">игрок дня</p>
+            </div><!-- /.b-winners_gamer -->
+            <div class="b-winners_carousel">
+                <div class="b-carousel" id="carousel-winners">
+                    <div class="b-carousel-itm">
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="вася карась"><img class="ava-small" src="images/ava1.jpg"></a>                        
+                    </div><!-- /.b-carousel-itm -->
+                    <div class="b-carousel-itm">
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="леха пупочкин"><img class="ava-small" src="images/ava2.jpg"></a>                        
+                    </div><!-- /.b-carousel-itm -->
+                    <div class="b-carousel-itm">
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="терентий"><img class="ava-small" src="images/ava3.jpg"></a>                        
+                    </div><!-- /.b-carousel-itm -->  
+                    <div class="b-carousel-itm">
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="вася карась"><img class="ava-small" src="images/ava1.jpg"></a>                        
+                    </div><!-- /.b-carousel-itm -->
+                    <div class="b-carousel-itm">
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="леха пупочкин"><img class="ava-small" src="images/ava2.jpg"></a>                        
+                    </div><!-- /.b-carousel-itm -->
+                    <div class="b-carousel-itm">
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="терентий"><img class="ava-small" src="images/ava3.jpg"></a>                        
+                    </div><!-- /.b-carousel-itm --> 
+                    <div class="b-carousel-itm">
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="вася карась"><img class="ava-small" src="images/ava1.jpg"></a>                        
+                    </div><!-- /.b-carousel-itm -->
+                    <div class="b-carousel-itm">
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="леха пупочкин"><img class="ava-small" src="images/ava2.jpg"></a>                        
+                    </div><!-- /.b-carousel-itm -->
+                    <div class="b-carousel-itm">
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="терентий"><img class="ava-small" src="images/ava3.jpg"></a>                        
+                    </div><!-- /.b-carousel-itm --> 
+
+                    <div class="b-carousel-itm">
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="вася карась"><img class="ava-small" src="images/ava1.jpg"></a>                        
+                    </div><!-- /.b-carousel-itm -->                                                                                                  
+                </div><!-- /.b-carousel -->
+                <!-- <span class="carousel-control-prev" data-jcarouselcontrol="true"></span>
+                <span class="carousel-control-next" data-jcarouselcontrol="true">&rsaquo;</span> -->
+            </div><!-- /.b-winners_carousel -->
+            <div class="b-winners_top20">
+                <img src="images/gamers-top.png" alt="pic">
+                <a href="#" class="but but-main">ТОП 20 ИГРОКОВ</a>
+            </div><!-- /.b-winners_top20 -->            
+        </div><!-- /.b-winners -->
+
+        <div class="b-top20-header_wrp">
+            <div class="b-top20-header">
+                <h1 class="b-top20-headline">топ 20 игроков</h1>
+                <div class="row b-top20-header_i">
+                    <div class="col-xs-4"><i class="icon icon-lot"></i> место</div><!-- /.col -->
+                    <div class="col-xs-4"><i class="icon icon-item"></i> игрок</div><!-- /.col -->
+                    <div class="col-xs-4"><i class="icon icon-winner"></i> выиграл на сумму</div><!-- /.col -->
+                </div><!-- / .row .b-top20-header_i -->
+            </div><!-- /.b-top20-header -->
+        </div><!-- /.b-top20-header_wrp -->
+        <div class="b-top20">
+            <table class="b-top20-table">
+                <tbody>
+                    <tr>
+                        <td><span class="place place-1">1</span></td>
+                        <td>
+                            <img class="ava-small" src="images/ava1.jpg" alt="pic">
+                            <a href="#">Илья Стольгиченко </a>
+                        </td>
+                        <td>18900</td>
+                    </tr>
+                    <tr>
+                        <td><span class="place place-2">2</span></td>
+                        <td>
+                            <img class="ava-small" src="images/ava1.jpg" alt="pic">
+                            <a href="#">Илья Стольгиченко </a>
+                        </td>
+                        <td>10500</td>
+                    </tr>
+                    <tr>
+                        <td><span class="place place-3">3</span></td>
+                        <td>
+                            <img class="ava-small" src="images/ava1.jpg" alt="pic">
+                            <a href="#">Илья Стольгиченко </a>
+                        </td>
+                        <td>800</td>
+                    </tr>
+                    <tr>
+                        <td><span class="place">4</span></td>
+                        <td>
+                            <img class="ava-small" src="images/ava1.jpg" alt="pic">
+                            <a href="#">Илья Стольгиченко </a>
+                        </td>
+                        <td>500</td>
+                    </tr>                    
+                </tbody>
+            </table><!-- /.b-top20-table -->            
+        </div><!-- /.b-top20 -->
+    </main>
+
+    <div class="modal fade" id="modal-history" tabindex="-1" role="dialog">
+        <section class="b-modal modal-dialog" role="document">
+            <div class="b-modal_head">
+                <i class="icon icon-check-big"></i>
+                <h3 class="b-modal-h">история покупок</h3>
+                <a href="#" class="b-modal-close" data-dismiss="modal" aria-label="Close">закрыть <span>&#9587;</span></a>
+            </div><!-- /.b-modal_head -->
+            <div class="b-modal_i">
+                <table class="t-history">
+                    <thead>
+                        <tr>
+                            <th><i class="icon icon-lot"></i>лот </th>
+                            <th><i class="icon icon-item"></i>ПРЕДМЕТ</th>
+                            <th><i class="icon icon-result"></i>результат</th>
+                            <th><i class="icon icon-watch"></i>статус отправки</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#955</td>
+                            <td>USP-S | Страж</td>
+                            <td><span class="win">выигрыш</span></td>
+                            <td><span class="sent">отправлено</span></td>
+                        </tr>
+                        <tr>
+                            <td>#955</td>
+                            <td>USP-S | Страж</td>
+                            <td><span class="lose">проигрыш</span></td>
+                            <td><span class="not-sent">не отправлено</span></td>
+                        </tr>
+                        <tr>
+                            <td>#955</td>
+                            <td>USP-S | Страж</td>
+                            <td><span class="win">выигрыш</span></td>
+                            <td><span class="sent">отправлено</span></td>
+                        </tr>
+                        <tr>
+                            <td>#955</td>
+                            <td>USP-S | Страж</td>
+                            <td><span class="win">выигрыш</span></td>
+                            <td><span class="sent">отправлено</span></td>
+                        </tr>                                                            
+                    </tbody>
+                </table>
+            </div><!-- /.b-modal_i -->
+        </section><!-- /.b-modal -->        
+    </div><!-- modal -->
+
+    <footer class="site-footer">
+        <div class="row">
+            <div class="col-xs-6"><small>&#169;2016 CSBingo.ru. Все права защищены</small></div><!-- col -->
+            <div class="col-xs-6"><p class="author">Дизайн и разработка сайта - <a href="#">Stylemix.net</a></p></div><!-- col -->
+        </div><!-- /.row -->
+    </footer>
+</div><!-- /.container -->
+</body>
+</html>
