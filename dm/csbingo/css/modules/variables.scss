@@ -1,0 +1,86 @@
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px;
+$screen-sm-min:              $screen-sm;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px;
+$screen-md-min:              $screen-md;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px;
+$screen-lg-min:              $screen-lg;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1);
+$screen-sm-max:              ($screen-md-min - 1);
+$screen-md-max:              ($screen-lg-min - 1);
+
+@mixin resetUl() {list-style: none;padding: 0;margin: 0;}
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+$border: #1c6786;
+@mixin block() {
+	border: 1px solid $border;
+	border-radius: 4px;
+	@include clearfix();
+}
+@mixin blueGrad() {
+	background: #031c2a;
+	background: -moz-linear-gradient(-45deg, #031c2a 0%, #093d52 100%);
+	background: -webkit-linear-gradient(-45deg, #031c2a 0%,#093d52 100%);
+	background: linear-gradient(135deg, #031c2a 0%,#093d52 100%);
+}
+@mixin mainGrad() {
+  background: #86a81d;
+  background: -moz-linear-gradient(top, #86a81d 0%, #62880c 100%);
+  background: -webkit-linear-gradient(top, #86a81d 0%,#62880c 100%);
+  background: linear-gradient(to bottom, #86a81d 0%,#62880c 100%);
+  &:hover {
+    background: #63ad52;
+    background: -moz-linear-gradient(top, #63ad52 0%, #449733 100%);
+    background: -webkit-linear-gradient(top, #63ad52 0%,#449733 100%);
+    background: linear-gradient(to bottom, #63ad52 0%,#449733 100%);  	
+  }
+}
+@mixin textShadow() {
+	text-shadow: 1px 1px 1px rgba(#000000, .10);
+}
+@mixin h-bold() {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.7em;
+	@include textShadow();
+}
+$blue: #073f57;
+$blue-transp: rgba(#04384e, .7);
+$blue-light: #184f67;
+$blue-text: #4898bc;
+$blue-dark: #031f2d;
+$blue-bright: #1C7EA9;
+$yellow: #e6bc12;
+$green: #84a61c;

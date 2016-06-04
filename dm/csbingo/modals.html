@@ -1,0 +1,376 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>модальные окна - CS Bingo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vendor/modernizr-custom.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>      
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <![endif]-->     
+</head>
+<body>
+<!--[if lt IE 9]>
+    <p class="browserupgrade">Вы используете <b>устаревший</b> браузер. Пожалуйста, <a href="http://browsehappy.com/?locale=ru_ru">обновите свой браузер</a> чтобы улучшить опыт работы с сайтом.</p>
+<![endif]-->
+<div class="container" id="container">
+    <header class="site-header">
+        <div class="row">
+            <div class="col-xs-4">
+                <a href="#"><img src="images/logotype.png" alt="CS Bingo"></a>
+            </div><!-- col -->
+            <nav class="col-xs-8">
+                <ul class="navigation">
+                    <li class="nav-home"><a href="#">Главная</a></li>
+                    <li class="nav-history"><a href="#">История</a></li>
+                    <li class="nav-honest"><a href="#">Честная игра</a></li>
+                    <li class="nav-support"><a href="#">Поддержка</a></li>
+                    <li class="nav-partner"><a href="#">партнерка</a></li>
+                    <li class="nav-howto"><a href="#">Как играть</a></li>
+                </ul>
+            </nav><!-- col -->
+        </div><!-- /.row -->
+    </header>
+
+    <main role="main">
+
+        <div tabindex="-1" role="dialog"> <!-- modal fade -->
+            <section class="b-modal modal-dialog" role="document">
+                <div class="b-modal_head">
+                    <i class="icon icon-support"></i>
+                    <h3 class="b-modal-h">поддержка</h3>
+                    <a href="#" class="b-modal-close" data-dismiss="modal" aria-label="Close">закрыть <span>&#9587;</span></a>
+                </div><!-- /.b-modal_head -->
+                <div class="b-modal_i">
+                    <div class="b-faq">
+                        <ul>
+                            <li><p><b>Вопрос:</b> Я победил, а мне не пришел предмет!</p></li>
+                            <li>
+                                <p><b>Ответ:</b> Отправка предметов может занимать от 5 до 2ч (в зависимости от онлайна операторов), 
+а также обратите внимание на то, что в настройках приватности вашего аккаунта <a href="#">Steam</a> ваш 
+инвентарь должен быть открыт: <a href="#">http://steamcommunity.com/id/me/edit/settings/</a>, а также 
+убедитесь, что у вас нет никаких ограничений на обмен в Steam.
+Если на вашей стороне все в порядке, тогда напишите нашему саппорту с описанием 
+проблемы, вашим ником на сайте и номером лота. </p>
+                            </li>
+                        </ul>
+                        <hr>
+                        <p class="special">Если вы здесь не нашли ответа на ваш вопрос, тогда вы можете задать егонашему консультанту
+через эту форму отправки сообщений </p>
+                        <div class="text-center"><a href="#" class="but but-main"><i class="icon icon-letter"></i>Задать вопрос</a></div><!-- /.text-center -->
+                    </div><!-- /.b-faq -->         
+                </div><!-- /.b-modal_i -->
+            </section><!-- /.b-modal -->        
+        </div><!-- modal -->
+
+        <div tabindex="-1" role="dialog"> <!-- modal fade -->
+            <section class="b-modal modal-dialog" role="document">
+                <div class="b-modal_head">
+                    <i class="icon icon-warn-big"></i>
+                    <h3 class="b-modal-h">честная игра</h3>
+                    <a href="#" class="b-modal-close" data-dismiss="modal" aria-label="Close">закрыть <span>&#9587;</span></a>
+                </div><!-- /.b-modal_head -->
+                <div class="b-modal_i">
+                    <div class="b-partner">
+                        <ul>
+                            <li><p>Технология «честной игры» на нашем сайте работает таким образом, что победителя выбирает не наша система, а сайт <a href="#">Random.org</a></p></li>
+                            <li><p><a href="#">Random.org</a> – самый популярный и авторитетный генератор случайных чисел в мире.</p></li>
+                            <li><p>Как только набирается необходимое количество пользователей на одном предмете - мы посылаем запрос на random.org с числом, которое является количеством всех пользователей, после чего <a href="#">random.org</a> возвращает нашей системе случайное число, под которым и выбирается обладатель предмета.</p></li>
+                            <li><p>После завершения, под выбраным победителем появится такая панель, в которой, нажав на кнопку «проверить» вас перебросит на сайт <a href="#">random.org</a>, где вы сможете все проверить сами.</p></li>
+                        </ul>           
+                    </div><!-- /.b-partner -->         
+                </div><!-- /.b-modal_i -->
+            </section><!-- /.b-modal -->        
+        </div><!-- modal -->
+
+        <div tabindex="-1" role="dialog"> <!-- modal fade -->
+            <section class="b-modal modal-dialog" role="document">
+                <div class="b-modal_head">
+                    <i class="icon icon-money-big"></i>
+                    <h3 class="b-modal-h">партнерка</h3>
+                    <a href="#" class="b-modal-close" data-dismiss="modal" aria-label="Close">закрыть <span>&#9587;</span></a>
+                </div><!-- /.b-modal_head -->
+                <div class="b-modal_i">
+                    <div class="b-partner">
+                        <p>партнерская программа позволит вам не только по выгдоной цене выигрывать уникальные товары для игры, но и зарабатывать реальные деньги по средством привлечения рефералов к проекту и получения за это приятных бонусов в денежном эквиваленте!</p>
+                        <h4 class="b-modal-h2">Для того что бы стать партнером и зарабатывать вам понадобится:</h4>
+                        <ul>
+                            <li class="b-mg">
+                                <p>Авторизироваться через систему steam</p>
+                                <a href="#" class="but but-login">Войти через STEAM</a>
+                            </li>
+                            <li>
+                                <p>получить свою уникальную партнерскую ссылку</p>
+                                <label class="reflink">
+                                    <i class="icon icon-link"></i>
+                                    <input type="text" class="inp-main" value="http://docs.unity3d.com/ru/curr">
+                                </label>
+                            </li>
+                            <li>помогать игрокам находить наш проект посредством вашей уникальной ссылки</li>
+                        </ul>
+
+                        <h4 class="b-modal-h2">внимание! начисления происходят в следующем порядке:</h4>
+                        <ul>
+                            <li>тут я хз че еще писать</li>
+                            <li>и тут тоже</li>
+                            <li>и тут</li>
+                        </ul>
+
+                        <h4 class="b-modal-h2">накопленные средства вы можете:</h4>
+                        <ul>
+                            <li>перевести на свой игровой баланс и полачивать с их помошью места</li>
+                            <li class="special">
+                                Вывести на свой электронный кошелек посредством 
+                                <img src="images/payment/webmoney.png" alt="webmoney" style="width: 115px">
+                                <img src="images/payment/qiwi.png" alt="Qiwi" style="width: 80px">
+                            </li>
+                        </ul>           
+                    </div><!-- /.b-partner -->         
+                </div><!-- /.b-modal_i -->
+            </section><!-- /.b-modal -->        
+        </div><!-- modal -->
+
+        <div tabindex="-1" role="dialog"> <!-- modal fade -->
+            <section class="b-modal modal-dialog" role="document">
+                <div class="b-modal_head">
+                    <i class="icon icon-settings-big"></i>
+                    <h3 class="b-modal-h">настройки</h3>
+                    <a href="#" class="b-modal-close" data-dismiss="modal" aria-label="Close">закрыть <span>&#9587;</span></a>
+                </div><!-- /.b-modal_head -->
+                <div class="b-modal_i">
+                    <div class="b-settings">
+                        <p class="warn"><i class="icon-warn icon"></i> Помните, администрация проекта никогда не попросит назвать ваш пароль</p>
+                        <p class="f-settings-ttl">персональные данные:</p>
+                        <form action="#" class="f-settings">
+                            <ul>
+                                <li>
+                                    <label for="settings-email">Электронная почта</label>
+                                    <input class="inp-main" type="email" id="settings-email">
+                                    <i class="icon icon-input-pen"></i>
+                                    <i class="icon icon-input-invalid"></i>
+                                </li>
+                                <li>
+                                    <label for="settings-qiwi">Qiwi кошелек</label>
+                                    <input class="inp-main" type="text" id="settings-qiwi">
+                                    <i class="icon icon-input-pen"></i>
+                                    <i class="icon icon-input-valid"></i>
+                                </li>
+                                <li>
+                                    <label for="settings-wmr">wmr кошелек</label>
+                                    <input class="inp-main" type="text" id="settings-wmr">
+                                    <i class="icon icon-input-pen"></i>
+                                    <i class="icon icon-input-warning"></i>
+                                </li>                                
+                            </ul>                   
+                            <p class="warning">Пожалуйста! Вводите номера кошельков предельно внимательно администрация сайта не несет ответственность за отправленные средства на неверно указанный номер</p>         
+                            <div class="text-center"><button type="submit" class="but but-main">сохранить</button></div>
+                        </form><!-- /.f-settings -->
+                    </div><!-- /.b-settings -->
+                </div><!-- /.b-modal_i -->
+            </section><!-- /.b-modal -->        
+        </div><!-- modal -->
+
+        <div tabindex="-1" role="dialog"> <!-- modal fade -->
+            <section class="b-modal modal-dialog" role="document">
+                <div class="b-modal_head">
+                    <i class="icon icon-help-big"></i>
+                    <h3 class="b-modal-h">Как начать играть?</h3>
+                    <a href="#" class="b-modal-close" data-dismiss="modal" aria-label="Close">закрыть <span>&#9587;</span></a>
+                </div><!-- /.b-modal_head -->
+                <div class="b-modal_i">
+                    <div class="b-steps">
+                        <div class="b-step">
+                            <div class="b-step_number"><span>1</span></div>
+                            <div class="b-step_descript"><p>Авторизируйтесь через steam</p></div>
+                            <div class="b-step_action"><a href="#" class="but but-login">Войти через STEAM</a></div>
+                        </div><!-- /.b-step -->
+                        <div class="b-step">
+                            <div class="b-step_number"><span>2</span></div>
+                            <div class="b-step_descript"><p>На странице аккаунта введите <a href="#">Trade-ссылку</a> так вы сможете получать выигранные предметы</p></div>
+                            <div class="b-step_action">
+                                <div class="b-data-url">
+                                    <input type="url" placeholder="Вставьте ссылку на обмен...">
+                                    <span>&#10004;</span>
+                                </div>                            
+                            </div>
+                        </div><!-- /.b-step -->                    
+                        <div class="b-step">
+                            <div class="b-step_number"><span>3</span></div>
+                            <div class="b-step_descript"><p>Пополните счёт на сайте любым удобным способом. За каждые 100 руб пополнения дается 1 балл</p></div>
+                            <div class="b-step_action">
+                                <div class="b-data-balance b-data">
+                                    <p class="b-data-ttl">на счету</p><!-- /.b-data-ttl -->
+                                    <span>0Р</span>
+                                </div><!-- /.b-profile-balance -->
+                                <div class="b-data-addFunds b-data">
+                                    <p class="b-data-ttl">пополнить</p><!-- /.b-data-ttl -->
+                                    <input type="text" placeholder="Сумма..." required>
+                                </div><!-- /.b-profile-addFunds -->                            
+                            </div>
+                        </div><!-- /.b-step -->         
+                        <div class="b-step">
+                            <div class="b-step_number"><span>4</span></div>
+                            <div class="b-step_descript"><p>Нажмите <span class="mark">"Купить за"</span> на оружии которое желаете выиграть.</p></div>
+                            <div class="b-step_action"><a href="#" class="but but-buy">Купить за 36 &#8381;</a></div>
+                        </div><!-- /.b-step -->         
+                        <div class="b-step">
+                            <div class="b-step_number"><span>5</span></div>
+                            <div class="b-step_descript"><p>Займите любую свободную ячейку.</p></div>
+                            <div class="b-step_action">
+                                <div class="b-cells-mini">
+                                    <div class="b-cell"><span>2</span></div>
+                                    <div class="b-cell"><span>3</span></div>
+                                    <div class="b-cell"><span>4</span></div>
+                                    <div class="b-cell"><span>5</span></div>
+                                    <div class="b-cell"><span>6</span></div>
+                                    <div class="b-cell"><span>7</span></div>
+                                    <div class="b-cell"><span>8</span></div>
+                                    <div class="b-cell"><span>9</span></div>
+                                </div>
+                            </div>
+                        </div><!-- /.b-step -->
+                    </div><!-- /.b-steps -->
+                    <div class="b-mg">
+                        <p class="random">* После того как все места будут заняты, системой случайных чисел  <a href="#">Random.org</a> будет выбран 1 победитель. </p>
+                    </div><!-- /.b-mg -->
+                </div><!-- /.b-modal_i -->
+            </section><!-- /.b-modal -->        
+        </div><!-- modal -->
+
+        <div tabindex="-1" role="dialog"> <!-- modal fade -->
+            <section class="b-modal modal-dialog" role="document">
+                <div class="b-modal_head">
+                    <i class="icon icon-wallet-big"></i>
+                    <h3 class="b-modal-h">вывести на кошелек</h3>
+                    <a href="#" class="b-modal-close" data-dismiss="modal" aria-label="Close">закрыть <span>&#9587;</span></a>
+                </div><!-- /.b-modal_head -->
+                <div class="b-modal_i">
+                    <ul>
+                        <li>перед тем как вывести средства выберите на какой кошелек вы желаете совершить перевод и  укажите сумму перевода</li>
+                        <li>если вы не указывали номер кошелька в нашей системе, пройдите пожалуйста в <a href="#" class="settings">настройки аккаунта <i class="icon icon-settings-color"></i></a> и заполните соответсвующие формы с номерами кошельков</li>
+                    </ul>
+                    <form action="#" class="f-widthraw b-mg">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <div class="b-data-balance b-data">
+                                    <p class="b-data-ttl">на счету</p><!-- /.b-data-ttl -->
+                                    <span>1250 Р</span>
+                                </div>                            
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="b-data">
+                                    <p class="b-data-ttl">Вывести</p><!-- /.b-data-ttl -->
+                                    <input type="text" placeholder="Сумма..." required>
+                                </div>                            
+                            </div>
+                            <div class="col-xs-5">
+                                <label class="radio">
+                                    <input type="radio" name="wallet" checked><span><b>Qiwi</b> (345345454656456567776)</span>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="wallet"><span><b>WMR</b> (не заполнен)</span>
+                                </label>                            
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="but but-main" type="submit" >ОТПРАВИТЬ</button>
+                            </div>
+                        </div><!-- /.row -->
+                    </form>
+                </div><!-- /.b-modal_i -->
+            </section><!-- /.b-modal -->        
+        </div><!-- modal -->
+
+        <div id="modal-history" tabindex="-1" role="dialog">
+            <section class="b-modal modal-dialog" role="document">
+                <div class="b-modal_head">
+                    <i class="icon icon-check-big"></i>
+                    <h3 class="b-modal-h">история покупок</h3>
+                    <a href="#" class="b-modal-close" data-dismiss="modal" aria-label="Close">закрыть <span>&#9587;</span></a>
+                </div><!-- /.b-modal_head -->
+                <div class="b-modal_i">
+                    <table class="t-history">
+                        <thead>
+                            <tr>
+                                <th><i class="icon icon-lot"></i>лот </th>
+                                <th><i class="icon icon-item"></i>ПРЕДМЕТ</th>
+                                <th><i class="icon icon-result"></i>результат</th>
+                                <th><i class="icon icon-watch"></i>статус отправки</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#955</td>
+                                <td>USP-S | Страж</td>
+                                <td><span class="win">выигрыш</span></td>
+                                <td><span class="sent">отправлено</span></td>
+                            </tr>
+                            <tr>
+                                <td>#955</td>
+                                <td>USP-S | Страж</td>
+                                <td><span class="lose">проигрыш</span></td>
+                                <td><span class="not-sent">не отправлено</span></td>
+                            </tr>
+                            <tr>
+                                <td>#955</td>
+                                <td>USP-S | Страж</td>
+                                <td><span class="win">выигрыш</span></td>
+                                <td><span class="sent">отправлено</span></td>
+                            </tr>
+                            <tr>
+                                <td>#955</td>
+                                <td>USP-S | Страж</td>
+                                <td><span class="win">выигрыш</span></td>
+                                <td><span class="sent">отправлено</span></td>
+                            </tr>                                                            
+                        </tbody>
+                    </table>
+                </div><!-- /.b-modal_i -->
+            </section><!-- /.b-modal --> 
+        </div> <!-- modal -->
+
+        <div tabindex="-1" role="dialog"> <!-- modal fade -->
+            <section class="b-modal modal-dialog" role="document">
+                <div class="b-modal_head">
+                    <i class="icon icon-ruble-big"></i>
+                    <h3 class="b-modal-h">Выберите способ оплаты</h3>
+                    <a href="#" class="b-modal-close" data-dismiss="modal" aria-label="Close">закрыть <span>&#9587;</span></a>
+                </div><!-- /.b-modal_head -->
+                <div class="b-modal_i">
+                    <div class="b-payment">
+                        <div class="row">
+                            <a href="#" class="col-xs-4 payment"><img src="images/payment/qiwi.png" alt="Qiwi" /></a>
+                            <a href="#" class="col-xs-4 payment"><img src="images/payment/webmoney.png" alt="Webmoney" /></a>
+                            <a href="#" class="col-xs-4 payment"><img src="images/payment/visa.png" alt="Visa" /></a>
+                        </div><!-- /.row -->
+                        <div class="row">
+                            <a href="#" class="col-xs-4 payment"><img src="images/payment/ym.png" alt="Яндекс Деньги" /></a>
+                            <a href="#" class="col-xs-4 payment"><img src="images/payment/mts.png" alt="MTC" /></a>
+                            <a href="#" class="col-xs-4 payment"><img src="images/payment/mc.png" alt="MasterCard" /></a>
+                        </div><!-- /.row -->
+                        <div class="row">
+                            <a href="#" class="col-xs-4 payment"><img src="images/payment/beeline.png" alt="Билайн" /></a>
+                            <a href="#" class="col-xs-4 payment"><img src="images/payment/megafon.png" alt="Мегафон" /></a>
+                            <a href="#" class="col-xs-4 payment"><img src="images/payment/sberbank.png" alt="Сбербанк" /></a>                                                
+                        </div><!-- /.row -->
+                    </div><!-- /.b-payment -->
+                    <div class="text-center b-mg"><a href="#" class="but but-main"><i class="icon icon-reload"></i> Другие сервисы оплаты</a></div>                    
+                </div><!-- /.b-modal_i -->
+            </section><!-- /.b-modal -->        
+        </div><!-- modal -->        
+    </main>
+
+    <footer class="site-footer">
+        <div class="row">
+            <div class="col-xs-6"><small>&#169;2016 CSBingo.ru. Все права защищены</small></div><!-- col -->
+            <div class="col-xs-6"><p class="author">Дизайн и разработка сайта - <a href="#">Stylemix.net</a></p></div><!-- col -->
+        </div><!-- /.row -->
+    </footer>
+</div><!-- /.container -->
+</body>
+</html>

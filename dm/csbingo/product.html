@@ -1,0 +1,152 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Розыгрыш - CS Bingo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vendor/modernizr-custom.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <![endif]-->     
+</head>
+<body>
+<!--[if lt IE 9]>
+    <p class="browserupgrade">Вы используете <b>устаревший</b> браузер. Пожалуйста, <a href="http://browsehappy.com/?locale=ru_ru">обновите свой браузер</a> чтобы улучшить опыт работы с сайтом.</p>
+<![endif]-->
+<div class="container" id="container">
+    <header class="site-header">
+        <div class="row">
+            <div class="col-xs-4">
+                <a href="#"><img src="images/logotype.png" alt="CS Bingo"></a>
+            </div><!-- col -->
+            <nav class="col-xs-8">
+                <ul class="navigation">
+                    <li class="nav-home"><a href="#">Главная</a></li>
+                    <li class="nav-history"><a href="#">История</a></li>
+                    <li class="nav-honest"><a href="#">Честная игра</a></li>
+                    <li class="nav-support"><a href="#">Поддержка</a></li>
+                    <li class="nav-partner"><a href="#">партнерка</a></li>
+                    <li class="nav-howto"><a href="#">Как играть</a></li>
+                </ul>
+            </nav><!-- col -->
+        </div><!-- /.row -->
+    </header>
+
+    <main role="main">
+        <div class="b-progr b-progr-spots">
+            <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:40%"></div>
+            <div class="taken info">
+                <p><b>30</b> мест занято</p>
+            </div>
+            <div class="vacant info">
+                <p><b>50</b> мест свободно</p>
+            </div>            
+        </div><!-- b-progr -->
+
+        <div class="clearfix b-mg">
+            <div class="col-20">
+                <div class="b-data b-data-specs">
+                    <p class="b-data-ttl">техническая информация</p><!-- /.b-data-ttl -->
+                </div><!-- /.b-profile-balance -->
+
+                <div class="b-prod">
+                    <a href="#" class="b-prod_img"><img src="images/weapon_0.png" alt="Фото"></a><!-- /.b-prod_img -->
+                    <div class="b-prod_i">
+                        <p class="b-prod_spots-tag">1200 мест</p>
+                        <p class="b-prod_price-tag">36 <span>&#8381;</span></p>
+                        <p class="b-prod_name">Керамбит. Дамасская сталь</p>
+                        <p class="b-prod_cond b-prod_cond-used">Немного поношенное</p>
+                        <p class="b-prod_type b-prod_type-hidden">Тайное</p>
+                        <p class="b-prod_price">Цена в Steam: <b>24000 &#8381;</b></p>
+                    </div><!-- /.b-prod_i -->
+                </div><!-- /.b-prod -->                
+            </div><!-- /.col -->
+
+            <div class="col-80">
+                <div class="b-drawing-results">        
+                    <div class="b-drawing-results_place">
+                        <span class="place-w">1</span>
+                        <p>победное место</p>
+                    </div>
+
+                    <div class="b-drawing-results_user">
+                        <a href="#"><img class="ava" src="images/ava1.jpg" alt="avatar"></a>
+                        <p class="winner">ПОБЕДИТЕЛЬ!</p>
+                        <p class="name">Вася карась</p>
+                    </div><!-- /.b-drawing-results_user -->
+
+                    <div class="b-drawing-results_check">
+                        <img src="images/shield.png" alt="pic">
+                        <p>проверить: <a href="#">Random.org</a></p>
+                    </div>
+                </div><!-- /.b-drawing-results -->
+
+                <div class="b-drawing-controls">                    
+                    <div class="col">
+                        <p class="ttl">Вы можете занять неограниченное количество мест</p>
+                        <p class="info">Вы занимаете <span>0 мест</span> для этого предмета </p>
+                    </div><!-- /.col -->
+                    <div class="col">
+                        <p class="ttl">Выберите свободное место, которые хотите занять</p>
+                        <p>
+                            <i class="icon icon-cubes"></i>
+                            <a href="#" class="but but-main">занять случайное место</a>
+                        </p>                        
+                    </div><!-- /.col -->
+                </div><!-- /.b-drawing-controls -->
+                
+                <div class="b-drawing-panel">                                        
+                    <div class="b-cell"><span>1</span></div>
+                    <div class="b-cell"><span>2</span></div>
+                    <div class="b-cell"><span>3</span></div>
+                    <div class="b-cell"><span>4</span></div>
+                    <div class="b-cell win"><img class="win-img" src="images/win.png" alt="pic" /><span>5</span></div>
+                    <div class="b-cell"><a href="#" data-toggle="tooltip" data-placement="top" title="вася карась"><img class="ava" src="images/ava1.jpg" alt="pic"></a></div>
+                    <div class="b-cell"></div>                   
+                    <div class="b-cell"></div>    
+                    <div class="b-cell"></div>                   
+                    <div class="b-cell"></div>
+                    <div class="b-cell"></div>                   
+                    <div class="b-cell"></div>    
+                    <div class="b-cell"></div>                   
+                    <div class="b-cell"></div>
+                    <div class="b-cell"></div>                   
+                    <div class="b-cell"></div>    
+                    <div class="b-cell"></div>                   
+                    <div class="b-cell"></div>
+                    <div class="b-cell"></div>                   
+                    <div class="b-cell"></div>    
+                    <div class="b-cell"></div>                   
+                    <div class="b-cell"></div>
+                    <div class="b-cell"></div>                   
+                    <div class="b-cell"></div>    
+                    <div class="b-cell"></div>                   
+                    <div class="b-cell"></div>
+                </div><!-- /.b-drawing-panel -->
+
+                <div class="b-drawing-log">                    
+                    <p class="b-drawing-log_itm"><i class="icon icon-time-big"></i> 21. Май 2016, 18:13:38 DEMON занял место #21</p>
+                    <p class="b-drawing-log_itm"><i class="icon icon-time-big"></i> 21. Май 2016, 18:13:38 DEMON занял место #31</p>
+                    <p class="b-drawing-log_itm"><i class="icon icon-time-big"></i> 21. Май 2016, 18:13:38 DEMON занял место #33</p>
+                    <p class="b-drawing-log_itm"><i class="icon icon-time-big"></i> 21. Май 2016, 18:13:38 DEMON занял место #33</p>
+                    <p class="b-drawing-log_itm"><i class="icon icon-time-big"></i> 21. Май 2016, 18:13:38 DEMON занял место #33</p>
+                </div><!-- /.b-drawing-log -->
+            </div><!-- /.col -->
+        </div><!-- /.cf -->
+    </main>
+
+    <footer class="site-footer">
+        <div class="row">
+            <div class="col-xs-6"><small>&#169;2016 CSBingo.ru. Все права защищены</small></div><!-- col -->
+            <div class="col-xs-6"><p class="author">Дизайн и разработка сайта - <a href="#">Stylemix.net</a></p></div><!-- col -->
+        </div><!-- /.row -->
+    </footer>
+</div><!-- /.container -->
+</body>
+</html>

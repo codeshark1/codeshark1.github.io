@@ -69,6 +69,7 @@ $(document).ready(function(){
     $('#carousel-winners').slick({
         slidesToShow: 6,
         infinite: false,
+        speed: 200,
         appendArrows: $('.b-winners_carousel'),
         prevArrow: "<button class='slick-prev'></button>",
         nextArrow: "<button class='slick-next'></button>",
