@@ -86,28 +86,39 @@
 	display: none;
 	a {
 		display: block;
-		@include bgGrad();
+		@include bgGrad();		
 		padding: 11px;
 		color: #fff;
 		position: relative;
 		text-decoration: none;
 		font-weight: 600;
 		overflow: hidden;		
-		 &:after {
-			content: "";
-			width: 1px;
-			height: 1px;
+
+		vertical-align: middle;
+		transform: translateZ(0);
+		backface-visibility: hidden;
+		-moz-osx-font-smoothing: grayscale;
+		transition-property: color;
+		transition-duration: 0.3s;
+
+		&:before {
+			content: "";			
 			position: absolute;			
-			top: 50%;
-			left: 50%;						
-			border-radius: 100%;
-			transition: all .5s;
+			@include mainGrad();						
+			border-radius: 100%;			
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+			transform: scale(0);
+			transition-property: transform;
+			transition-duration: 0.3s;
+			transition-timing-function: ease-out;
 		}
-		&:hover:after {		
-			@include mainGrad();			
-			transform: scale(800);
+		&:hover:before {
+			transform: scale(2);
 		}
-		span {position: relative;z-index: 2;}
 	}
 }
 
@@ -132,12 +143,14 @@
 	.b-bg {@include bgGrad();height: 60px}		
 
 	.b-menu {
-		display: block !important;
-		li {
-			display: inline-block;
-			position: relative;
-			margin-left: -4px;
+		display: flex !important;
+		
+		justify-content: center;
+		li {			
+			position: relative;			
 			height: 60px;
+			display: block;
+			flex-grow: 1;
 			&:after {
 				content: "|";
 				position: absolute;
@@ -147,25 +160,38 @@
 			}
 			&:first-child {margin-left: 0;}
 			&:last-child:after {content: none;}
+			&:hover:after {content: none;}
 		}
 		a {
-			padding: 25px 13px 0; 
+			padding-top: 25px;
 			line-height: 1;
 			font-size: .85em;
 			height: 60px;
-			background: none;
-			&:hover:after {		
-				transform: scale(200);
-			}			
+			background: none;		
 		}
 	}		
+	.no-flexbox {
+		.b-menu {
+			display: block !important;
+			li {
+				display: inline-block;
+				margin-left: -4px;
+				&:first-child {margin-left: 0;}
+			}
+			a {
+				padding: 25px 10px 0; 			
+			}
+		}
+	}
 }
 @media (min-width: $screen-lg-min) {
 	.header-plate {
 		margin-left: 110px;
 	}
-	.b-menu {
-		a {padding: 25px 24px 0;}
+	.no-flexbox {
+		.b-menu {
+			a {padding: 25px 22px 0;}
+		}		
 	}
 
 }
@@ -945,7 +971,8 @@ label.check {position: relative;padding-left: 15px;font-size: .9em;
 
 .b-modal {
 	background: #fff;
-	width: 370px;
+	max-width: 370px;
+	margin: 10px auto;
 	&_head {
 		@include bgGrad();
 		text-align: center;		
@@ -961,12 +988,13 @@ label.check {position: relative;padding-left: 15px;font-size: .9em;
 		height: 35px;
 		line-height: 35px;
 		margin: 0;
+		font-size: 1.5em;
 	}
 	&-close {position: absolute;right: 15px;top: 10px;text-decoration: none;color: #fff;font-size: 20px;}
 	&_i {padding: 30px;}
 	input, textarea {margin-bottom: 20px;}
 	textarea {height: 175px;}
-	.but {width: 230px;margin: 0 auto;font-size: 1.2em;display: block;}
+	.but {width:100%;max-width: 230px;margin: 0 auto;font-size: 1.2em;display: block;}
 }
 
 @import 'modules/plugins';
