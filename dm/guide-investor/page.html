@@ -1,0 +1,204 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Форма</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vendor/modernizr-custom.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4_min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>    
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--[if lt IE 9]>
+    <p class="browserupgrade">Вы используете <b>устаревший</b> браузер. Пожалуйста, <a href="http://browsehappy.com/?locale=ru_ru">обновите свой браузер</a> чтобы улучшить опыт работы с сайтом.</p>
+<![endif]-->
+<header id="header" class="site-header" itemscope itemtype="http://schema.org/WPHeader">    
+    <div class="container">
+        <div class="header-plate">
+            <div class="header-logo">
+                <img class="logo-logo" src="images/logotype.png" alt="logo">
+                <span class="logo-addr">guide-investor.com</span>
+            </div><!-- /.logo -->
+            <div class="header-headline">
+                <h1 class="site-title" itemprop="headline">Блог <b>инвестора</b></h1>    
+                <p class="site-description" itemprop="description">Зарабатываем в интеренете. Идем к финансовой свободе.</p>
+            </div><!-- /.headline -->
+        </div><!-- /.plate -->
+    </div><!-- /.container -->
+    
+    <div class="b-bg b-mg">
+        <nav class="site-navigation container" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <button class="but-nav visible-xs visible-sm" id="nav-toggle" href="#"><span>&#9776;</span> Меню</button>
+            <ul class="b-menu" id="nav-menu">
+                <li class="menu-item"><a href="#"><span>Главная</span></a></li>
+                <li class="menu-item"><a href="#"><span>Все статьи</span></a></li>
+                <li class="menu-item"><a href="#"><span>партнерам</span></a></li>
+                <li class="menu-item"><a href="#"><span>Мои результаты</span></a></li>
+                <li class="menu-item"><a href="#"><span>куда инвестировать?</span></a></li>
+                <li class="menu-item"><a href="#"><span>Новичкам</span></a></li>
+                <li class="menu-item"><a href="#"><span>обо мне</span></a></li>
+                <li class="menu-item"><a href="#"><span>Конатакты</span></a></li>
+                <li class="menu-item"><a href="#"><span>Конкурсы</span></a></li>
+            </ul>
+        </nav>        
+    </div><!-- /.b-bg -->
+
+    <a href="#" class="but but-question" data-toggle="modal" data-target="#form-question">Задать вопрос</a>
+</header>
+
+<main role="main" class="container">
+    <ul class="breadcrumb">
+        <li><a href="#">Главная</a></li>
+        <li>Мои результаты</li>
+    </ul>
+
+    <div class="row" id="core">        
+        <aside id="sidebar" class="site-sidebar widget-area col-md-3 " itemscope itemtype="http://schema.org/WPSideBar">                       
+            <a href="#" class="but but-home"><i></i>На главную</a>
+            
+            <div class="widget">               
+                <div class="widget-header">последние статьи блога</div><!-- /.widget-header -->
+                <ul class="news-list">
+                   <a class="list-item" href="#">
+                       <p class="news-list-ttl">Депозит</p>
+                       <p>Первоначальное вложение</p>
+                   </a> 
+                   <a class="list-item" href="#">
+                       <p class="news-list-ttl">Количество периодов</p>
+                       <p>Срок вклада (дни, месяцы, и т.д) Например: 12</p>
+                   </a>
+                   <a class="list-item" href="#">
+                       <p class="news-list-ttl">Процент за 1 период</p>
+                       <p>Какой процент начисляется за каждый период, например: 10%</p>
+                   </a> 
+                   <a class="list-item" href="#">
+                       <p class="news-list-ttl">Процент за 1 период</p>
+                       <p>Какой процент начисляется за каждый период, например: 10%</p>
+                   </a>      
+                   <a class="list-item" href="#">
+                       <p class="news-list-ttl">Депозит</p>
+                       <p>Первоначальное вложение</p>
+                   </a> 
+                   <a class="list-item" href="#">
+                       <p class="news-list-ttl">Количество периодов</p>
+                       <p>Срок вклада (дни, месяцы, и т.д) Например: 12</p>
+                   </a>                                
+                </ul><!-- /.b-news -->
+            </div><!-- widget -->
+        </aside><!-- site-sidebar -->  
+
+        <div id="content" class="col-md-6">
+            <div class="b-mainContent">
+                <form action="#" class="f-main b-article-body">
+                    <div class="clearfix">
+                        <label class="lbl" for="">Название проекта</label>
+                        <select class="input">
+                            <option disabled selected>выберите проект</option>
+                            <option>Проект 1</option>
+                            <option>Проект 2</option>
+                        </select>
+                    </div>
+                    <div class="clearfix">
+                        <label class="lbl" for="">Ваш логин в проект</label>
+                        <input type="text" class="input">
+                    </div>
+                    <div class="clearfix">
+                        <label class="lbl" for="">Ваш номер кошелька</label>
+                        <input type="text" class="input">
+                    </div>
+                    <div class="clearfix">
+                        <label class="lbl" for="">Платежная система</label>
+                        <select class="input">
+                            <option disabled selected>выберите систему</option>
+                            <option>Проект 1</option>
+                            <option>Проект 2</option>
+                        </select>
+                    </div>                                                            
+                    <div class="clearfix">
+                        <label class="lbl" for="">Дата транзакции (дд.мм.гг)</label>
+                        <input type="text" class="input" placeholder="12.02.16">
+                    </div>
+                    <div class="clearfix">
+                        <label class="lbl" for="">Сума ($, ВТС)</label>
+                        <input type="text" class="input">
+                    </div>
+                    <div class="clearfix">
+                        <label class="lbl" for="">Номер транзакци (batch #)</label>
+                        <input type="text" class="input">
+                    </div>
+                    <div class="clearfix">
+                        <label class="lbl" for="">Email</label>
+                        <input type="email" class="input">
+                    </div>                    
+                    <div class="text-right"><button type="submit" class="but">ОТПРАВИТЬ</button></div>
+                </form>
+            </div><!-- b-mainContent -->
+        </div><!-- col -->
+
+        <aside id="sidebar" class="site-sidebar widget-area col-md-3" itemscope itemtype="http://schema.org/WPSideBar">                       
+            <div class="widget widget-search">                
+                <form action="#" class="f-search">
+                    <input type="search" placeholder="Поиск по блогу" required>
+                    <button type="submit" class="but">&#128269</button>
+                </form>                
+            </div><!-- widget -->
+        </aside><!-- site-sidebar -->        
+    </div><!-- /.row #core -->
+</main><!-- container -->
+
+<footer class="site-footer" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="b-bg">
+        <div class="site-navigation container hidden-xs" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <ul class="b-menu" id="nav-menu">
+                <li class="menu-item"><a href="#"><span>Главная</span></a></li>
+                <li class="menu-item"><a href="#"><span>Все статьи</span></a></li>
+                <li class="menu-item"><a href="#"><span>партнерам</span></a></li>
+                <li class="menu-item"><a href="#"><span>Мои результаты</span></a></li>
+                <li class="menu-item"><a href="#"><span>куда инвестировать?</span></a></li>
+                <li class="menu-item"><a href="#"><span>Новичкам</span></a></li>
+                <li class="menu-item"><a href="#"><span>обо мне</span></a></li>
+                <li class="menu-item"><a href="#"><span>Конатакты</span></a></li>
+                <li class="menu-item"><a href="#"><span>Конкурсы</span></a></li>
+            </ul>
+        </div>
+    </div><!-- b-bg -->
+    <div class="container">
+        <div class="site-footer_i row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 copyright"><small>&#169; 2016 Блог Инвестора</small></div>
+            <div class="col-sm-3 counter"><a href="#"><img src="images/counter.png" alt="counter"></a></div>
+        </div><!-- /.site-footer_i -->
+    </div><!-- /.container -->
+</footer>
+
+<!--modals-->
+<div class="modal fade" id="form-question" tabindex="-1" role="dialog">
+    <section class="b-modal modal-dialog" role="document">
+        <div class="b-modal_head">
+            <i class="icon"></i>
+            <h3 class="b-modal-h">Задать вопрос</h3>
+            <a href="#" class="b-modal-close" data-dismiss="modal" aria-label="Close">&#9587;</a>
+        </div><!-- /.b-modal_head -->
+        <div class="b-modal_i">
+            <form class="f-call">
+                <input type="text" placeholder="Ваше имя *" required>
+                <input type="text" placeholder="Ваш Email *" required>
+                <textarea placeholder="Ваше собщение"></textarea>
+                <button type="submit" class="but">Отправить</button>
+            </form>
+        </div><!-- /.b-modal_i -->
+    </section><!-- /.b-modal -->        
+</div><!-- modal -->
+
+<a href="#header" class="but but-up" id="up">&#708;</a>
+
+</body>
+</html>

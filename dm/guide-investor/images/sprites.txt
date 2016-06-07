@@ -1,0 +1,9 @@
+.sprite { background: url('sprite.png') no-repeat top left;  } 
+.sprite.i-calendar { background-position: 0 0; width: 37px; height: 37px; } 
+.sprite.i-home { background-position: 0 -57px; width: 30px; height: 26px; } 
+.sprite.i-search { background-position: 0 -103px; width: 17px; height: 17px; } 
+.sprite.i-question { background-position: 0 -140px; width: 35px; height: 35px; } 
+.sprite.i-comments { background-position: 0 -195px; width: 21px; height: 23px; } 
+
+
+.sprite.i-yt2 { background-position: 0 -364px; width: 38px; height: 38px; } 
