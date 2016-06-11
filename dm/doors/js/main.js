@@ -1,3 +1,67 @@
+function responsiveIframe() {
+    $('iframe').each(function(){
+        var iw = $(this).width();
+        var ih = $(this).height();
+        var ip = $(this).parent().width();
+        var ipw = ip/iw;
+        var ipwh = Math.round(ih*ipw);
+        $(this).css({
+            'width': ip,
+            'height' : ipwh,
+        });
+    });
+}
+
+function tabs() {
+    $('#js-tabs .b-product:not(:first)').hide();
+    var button = $('#js-tabBtns a');
+    $(button).click(function(e) {
+        e.preventDefault();
+        if(!($(this).parent('li').hasClass('active'))){
+            $('#js-tabs .b-product').hide();
+            $('#js-tabBtns .active').removeClass('active');
+            $(this).parent('li').addClass('active');
+            var clicked = $(this).attr('href');
+            $(clicked).fadeIn();
+        }
+    });
+}
+
+function tabs_energy() {
+    $('.b-season-tab').not(':first-child').hide();
+    $('#seasons-slider').click(function(){
+        $('.b-season-tab').hide();
+        if ($(this).hasClass('winter')) {
+            $(this).removeClass('winter').addClass('summer');
+            $('.b-season-tab-summer').fadeIn();
+        } else {
+            $(this).removeClass('summer').addClass('winter');
+            $('.b-season-tab-winter').fadeIn();
+        }
+    });
+}
+
+//Custom form elements
+function setupLabel() {
+    if ($('label.check input').length) {
+        $('label.check').each(function(){
+            $(this).removeClass('c_on');
+        });
+        $('label.check input:checked').each(function(){
+            $(this).parent('label').addClass('c_on');
+        });
+    }
+    if ($('label.radio input').length) {
+        $('label.radio').each(function(){
+            $(this).removeClass('r_on');
+        });
+        $('label.radio input:checked').each(function(){
+            $(this).parent('label').addClass('r_on');
+        });
+    }
+}
+
+
 $(document).ready(function(){
     /* PLUGINS */
     $('input, textarea').placeholder();
@@ -7,6 +71,8 @@ $(document).ready(function(){
         prevText: "<",
         nextText: ">"
     });
+
+    tabs_energy();
 
     /*NAVIGATION*/
     $( "#js-nav li" ).has( "ul").addClass('drop');
@@ -36,41 +102,11 @@ $(document).ready(function(){
     });
 
 
-
-    // Responsive iframes
-    function responsiveIframe() {
-        $('iframe').each(function(){
-            var iw = $(this).width();
-            var ih = $(this).height();
-            var ip = $(this).parent().width();
-            var ipw = ip/iw;
-            var ipwh = Math.round(ih*ipw);
-            $(this).css({
-                'width': ip,
-                'height' : ipwh,
-            });
-        });
-    }
     responsiveIframe();
     $(window).resize(function(){
         responsiveIframe();
     });
 
-    /*tabs*/
-    function tabs() {
-        $('#js-tabs .b-product:not(:first)').hide();
-        var button = $('#js-tabBtns a');
-        $(button).click(function(e) {
-            e.preventDefault();
-            if(!($(this).parent('li').hasClass('active'))){
-                $('#js-tabs .b-product').hide();
-                $('#js-tabBtns .active').removeClass('active');
-                $(this).parent('li').addClass('active');
-                var clicked = $(this).attr('href');
-                $(clicked).fadeIn();
-            }
-        });
-    }
     tabs();
 
     /*TABLE HOVER EFFECT*/
@@ -99,26 +135,9 @@ $(document).ready(function(){
         }
     });
 
-    //Custom form elements
-    function setupLabel() {
-        if ($('label.check input').length) {
-            $('label.check').each(function(){
-                $(this).removeClass('c_on');
-            });
-            $('label.check input:checked').each(function(){
-                $(this).parent('label').addClass('c_on');
-            });
-        }
-        if ($('label.radio input').length) {
-            $('label.radio').each(function(){
-                $(this).removeClass('r_on');
-            });
-            $('label.radio input:checked').each(function(){
-                $(this).parent('label').addClass('r_on');
-            });
-        }
-    }
+
     setupLabel();
+
     $('label.check, label.radio').click(function(){
         setupLabel();
     });

@@ -16,6 +16,7 @@
     <!--[if lt IE 9]>
         <script type="text/javascript" src="js/selectivizr-min.js"></script>
     <![endif]-->
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>    
 </head>
 <body>
 <!--[if lt IE 9]>
@@ -58,44 +59,36 @@
     <h2 class="h-section">энергосберегающий стеклопакет</h2>
     <div class="b-explain">
         <div class="b-explain_col_1">
-            <div class="b-explain_col_1-1"><img src="img/doors/graphic-door-1.jpg" alt="pic"></div>
+            <div class="b-explain_col_1-1">
+                <img class="b-season-tab b-season-tab-winter" src="img/doors/graphic-door-2.jpg" alt="pic">
+                <img class="b-season-tab b-season-tab-summer" src="img/doors/graphic-door-1.jpg" alt="pic">
+            </div><!-- col -->            
             <div class="b-explain_col_1-2">
-                <h3 class="b-explain-h">Летом комфортнее</h3>
-                <p>С энергосберегающими стеклопакетами Вы будете сохранять до 30% прохлады и экономить на кондиционировании.</p>
-                <p><strong>До 30%</strong> эффективнее при сохранении прохлады в сравнении с обычными стеклопакетами.</p>
-            </div>
+                <div class="b-season-tab b-season-tab-winter">
+                    <h3 class="b-explain-h">Зимой теплее</h3>
+                    <p>С энергосберегающими стеклопакетами Вы будете сохранять до 90% тепла больше.</p>
+                    <p><strong>До 90%</strong> эффективнее по теплу в сравнении с обычными стеклопакетами.</p>
+                </div>
+                <div class="b-season-tab b-season-tab-summer">
+                    <h3 class="b-explain-h">Летом комфортнее</h3>
+                    <p>С энергосберегающими стеклопакетами Вы будете сохранять до 30% прохлады и экономить на кондиционировании.</p>
+                    <p><strong>До 30%</strong> эффективнее при сохранении прохлады в сравнении с обычными стеклопакетами.</p>
+                </div>                
+            </div><!-- col -->
         </div><!-- /.b-explain_col_1 -->
         <div class="b-explain_col_2">
             <h3 class="b-explain-h_2">Как работает энергопакет</h3>
             <div class="b-seasons">
                 <div class="season">Зимой <i class="icon icon-winter"></i></div>
-                <div class="seasons seasons-1"></div>                
+                <div id="seasons-slider" class="seasons winter"><span class="seasons-handle" id="seasons-handle"></span></div>
                 <div class="season"><i class="icon icon-summer"></i> Летом</div>
             </div>
-            <div class="b-explain-graphic"><img src="img/doors/graphic-energy-1.png" alt="pic"></div>            
+            <div class="b-explain-graphic">
+                <img class="b-season-tab b-season-tab-winter" src="img/doors/graphic-energy-2.png" alt="pic">
+                <img class="b-season-tab b-season-tab-summer" src="img/doors/graphic-energy-1.png" alt="pic">
+            </div>            
             <p class="b-explain-order"><a href="#" class="btn btn-action">Заказать</a></p>            
-        </div><!-- /.b-explain_col_2 -->
-    </div><!-- /.b-explain -->
-
-    <div class="b-explain">
-        <div class="b-explain_col_1">
-            <div class="b-explain_col_1-1"><img src="img/doors/graphic-door-2.jpg" alt="pic"></div>
-            <div class="b-explain_col_1-2">
-                <h3 class="b-explain-h">Зимой теплее</h3>
-                <p>С энергосберегающими стеклопакетами Вы будете сохранять до 90% тепла больше.</p>
-                <p><strong>До 90%</strong> эффективнее по теплу в сравнении с обычными стеклопакетами.</p>
-            </div>
-        </div><!-- /.b-explain_col_1 -->
-        <div class="b-explain_col_2">
-            <h3 class="b-explain-h_2">Как работает энергопакет</h3>
-            <div class="b-seasons">
-                <div class="season">Зимой <i class="icon icon-winter"></i></div>
-                <div class="seasons seasons-2"></div>                
-                <div class="season"><i class="icon icon-summer"></i> Летом</div>
-            </div>
-            <div class="b-explain-graphic"><img src="img/doors/graphic-energy-2.png" alt="pic"></div>            
-            <p class="b-explain-order"><a href="#" class="btn btn-action">Заказать</a></p>            
-        </div><!-- /.b-explain_col_2 -->
+        </div><!-- /.col -->
     </div><!-- /.b-explain -->
 
     <p class="summary">
