@@ -39,9 +39,9 @@
 .b-seasons .season:first-child { text-align: left; left: 0; }
 .b-seasons .season:last-child { text-align: right; right: 0; }
 .b-seasons .seasons { background: #ffd850; background: -webkit-linear-gradient(left, #ffd850 0%, #ef7f00 100%); background: linear-gradient(to right, #ffd850 0%, #ef7f00 100%); height: 42px; border-radius: 30px; position: relative; cursor: pointer; }
-.b-seasons .seasons-handle { width: 50px; height: 50px; border-radius: 100%; border: 3px solid #fff; display: block; position: absolute; top: -4px; background: url("../img/doors/sprite.png") no-repeat; -webkit-transition: all .3s ease-in; transition: all .3s ease-in; -webkit-transition-property: background-color, left,margin; transition-property: background-color, left,margin; }
+.b-seasons .seasons-handle { width: 50px; height: 50px; border-radius: 100%; border: 3px solid #fff; display: block; position: absolute; top: -4px; background: url("../img/doors/sprite.png") no-repeat; -webkit-transition: all .3s ease-in; transition: all .3s ease-in; -webkit-transition-property: background-color, left, margin, -webkit-transform; transition-property: background-color, left, margin, transform; }
 .b-seasons .winter .seasons-handle { left: -3px; right: auto; background-color: #78c9e7; background-position: 6px -37px; }
-.b-seasons .summer .seasons-handle { left: 100%; margin-left: -49px; background-color: #faaf3a; background-position: -32px -38px; }
+.b-seasons .summer .seasons-handle { left: 100%; margin-left: -49px; background-color: #faaf3a; background-position: -32px -38px; -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); }
 .b-seasons .seasons-1 { background-position: 0 0; }
 .b-seasons .seasons-2 { background-position: 0 -65px; }
 
