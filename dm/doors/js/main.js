@@ -63,7 +63,7 @@ function setupLabel() {
 
 function tableSpoiler() {
     $('#t-specs-spoiler').wrap( "<div id='table-wrapper'></div>" );
-    $("<div id='table-expander'>&#709;</div>").insertAfter('#table-wrapper');
+    $("<div id='table-expander'><i class='glyphicon glyphicon-menu-down'></i></div>").insertAfter('#table-wrapper');
     $("#table-expander").click(function(){
         $('#table-wrapper').css('height','auto');
         $(this).remove();
@@ -154,8 +154,8 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        prevArrow: "<span class='prevArr'>&#706;</span>",
-        nextArrow: "<span class='nextArr'>&#707;</span>",
+        prevArrow: "<span class='prevArr'><i class='glyphicon glyphicon-menu-left'></i></span>",
+        nextArrow: "<span class='nextArr'><i class='glyphicon glyphicon-menu-right'></i></span>",
         responsive: [
         {
             breakpoint: 800,
