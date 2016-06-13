@@ -61,6 +61,14 @@ function setupLabel() {
     }
 }
 
+function tableSpoiler() {
+    $('#t-specs-spoiler').wrap( "<div id='table-wrapper'></div>" );
+    $("<div id='table-expander'>&#709;</div>").insertAfter('#table-wrapper');
+    $("#table-expander").click(function(){
+        $('#table-wrapper').css('height','auto');
+        $(this).remove();
+    });
+}
 
 $(document).ready(function(){
     /* PLUGINS */
@@ -73,6 +81,7 @@ $(document).ready(function(){
     });
 
     tabs_energy();
+    tableSpoiler();
 
     /*NAVIGATION*/
     $( "#js-nav li" ).has( "ul").addClass('drop');
@@ -137,8 +146,34 @@ $(document).ready(function(){
 
 
     setupLabel();
-
     $('label.check, label.radio').click(function(){
         setupLabel();
     });
+
+    $('.b-gallery').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: "<span class='prevArr'>&#706;</span>",
+        nextArrow: "<span class='nextArr'>&#707;</span>",
+        responsive: [
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 3,
+            }            
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 2,
+            }            
+        }
+        ]
+    }); 
+});
+
+$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
 });
