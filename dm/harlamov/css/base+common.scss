@@ -1,0 +1,159 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,800';
+/* ==========================================================================
+   BASE
+   ========================================================================== */
+html {position: relative;min-height: 100%;}
+body {font-family: 'Open Sans', sans-serif;color: $font-base;}
+img {max-width: 100%;}
+a {color: $green;
+  &:hover,&:active,&:focus {text-decoration: none;color: lighten($green, 10%)}
+}
+table {width: 100%;}
+small {font-size: 100%;}
+
+/* ==========================================================================
+  COMMON
+  ========================================================================== */
+.container {max-width: 980px;}
+
+.b-rel {position: relative}
+.b-mg {margin-top: 30px;}
+p.center {text-align: center;}
+p.right {text-align: right;}
+p.bold {font-weight: 700;}
+.p-all {text-align: center;margin-top: 1.5em;}
+.italic {font-style: italic;}
+.tr-md {
+  @media (min-width: $screen-sm-min) {text-align: right;}
+}
+.mg-xs {
+  @media (max-width: $screen-xs-max) {margin-top: 15px !important;}
+}
+.tc-sm {
+  @media (min-width: $screen-sm-min) {text-align: center;}
+}
+
+
+/* BUTTONS */
+.but {
+  display: inline-block;
+  padding: 4px 7px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;  
+}
+.but:focus,
+.but:active:focus,
+.but.active:focus,
+.but.focus,
+.but:active.focus,
+.but.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.but:hover,
+.but:focus,
+.but.focus {text-decoration: none;}
+.but:active,
+.but.active {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.but-nav {
+  color: #fff;
+  width: 46px;
+  height: 38px;
+  background: $green url('images/sprite.png') 13px 12px no-repeat; 
+  border-radius: 35%; 
+}
+
+.but-email, .but-search {
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  width: 21px;
+  height: 21px;
+  background: url('images/sprite.png') no-repeat;
+}
+.but-email { background-position: 0 -347px;}
+.but-search {background-position: 0 -606px;}
+.but-main {
+  background: $green;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 20px;
+  box-shadow: 0 2px 0 0 #86a14e, inset 0 1px 5px 0 rgba(255,255,255,.5);
+  padding: 7px 20px;
+  &:hover,&:focus {color: #fff;}
+  &:active {box-shadow: inset 0 1px 5px 0 rgba(255,255,255,.5)}
+  &:hover {background: lighten($green, 5%);}
+}
+.but-up {width: 60px;height: 60px;background: url('images/sprite.png') 7px -447px no-repeat;border: 2px solid $green;border-radius: 100%;}
+
+/* FORMS */
+input[type="text"],
+input[type="tel"],
+input[type="search"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
+textarea,
+select {
+  padding: 8px 15px 6px;
+  width: 100%;
+  border: 1px solid #d7d7d7;
+  border-radius: 20px;
+  &:focus {}
+}
+label {font-weight: normal;cursor: pointer;}
+label.check {  
+  input {visibility: hidden;position: absolute;left: -200em;}
+  span {display: inline-block;position: relative;padding-left: 25px;
+    &:after {
+      content: "";
+      border: 1px solid #d7d7d7;
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      bottom: 4px;
+    }
+  }
+  input:checked+span:before {
+      content: "\2713";
+      color: $green;
+      font-size: 20px;            
+      font-family: 'Open Sans', TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
+      position: absolute;
+      left: 2px;
+      bottom: 2px;    
+  }
+}
+.f-subscribe, .f-search {position: relative;}
+input.subscribe, input.search {padding-right: 30px;}
+
+
+/*HEADINGS*/
+@mixin h-main() {font-size: 1.4em;text-transform: uppercase;font-weight: 600;line-height: 1;margin-top: 0;}
+
+.h-main {
+  @include h-main();
+}
+.comment-reply-title, .widget-header {
+  @include h-main();
+  text-align: center;
+  @media (min-width: $screen-md-min) {letter-spacing: 1px;}
+}

@@ -1,0 +1,344 @@
+@charset "UTF-8";
+@import 'css/variables';
+@import 'css/base+common';
+
+body {
+	@media (max-width: $screen-xs-max) {
+		background: url('images/bg-xs.jpg') 50% 0 no-repeat;
+		background-size: 100% auto;
+	}
+	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+		background: url('images/bg-sm.jpg') 50% 0 no-repeat;
+	}
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+		background: url('images/bg-md.jpg') 50% 0 no-repeat;
+	}
+	@media (min-width: $screen-lg-min) {
+		background: url('images/bg-lg.jpg') 50% 0 no-repeat;
+	}
+	@media (min-width: 1140px) {
+		//background: url('images/bg-lg.jpg') 50% 0 no-repeat;
+	}	
+}
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.site-header {
+	text-align: center;
+	padding-top: 15px;
+	.site-navigation{
+		margin-top: 20px;
+		@media (min-width: $screen-sm-min) {margin-top: 283px;}
+		@media (min-width: $screen-md-min) {margin-top: 366px;}
+		@media (min-width: $screen-lg-min) {margin-top: 432px;}
+	}
+}
+.site-title, .site-description {text-transform: uppercase;margin: 0;font-weight: 600;letter-spacing: 1px;}
+.site-title {font-size: .9em;}
+.site-description {font-size: 1.4em;}
+
+
+
+.b-siteControls {margin-top: 20px;position: relative; min-height: 38px; padding-right: 60px;
+	.but {position: absolute;right: 0;top: 0;}
+}
+
+.b-menu {
+	@include resetUl();
+	display: none;
+	text-align: center;
+	a {
+		text-transform: uppercase;
+		color: $font-base;
+		font-size: 1.1em;
+		padding: 15px;
+		display: block;	
+	}
+	a:active {@include mainGrad();color: #fff}
+	.current-menu-item a {color: $green}
+	@media (max-width: $screen-xs-max) {
+		li {border-bottom: 1px solid $green;}
+		a {background: #fff;}
+	}
+	@media (min-width: $screen-sm-min) {		
+		display: block !important;
+		li {display: inline-block;margin-left: -3px;}
+		a:hover {
+			@include mainGrad();
+			color: #fff;
+		}
+	}
+}
+
+.b-quote {position: relative;padding-bottom: 40px;border-top: 1px solid $green;
+	&:before, &:after {
+		position: absolute;
+		color: $green;
+		font-size: 100px;
+		font-style: italic;
+		font-weight: 300;
+		line-height: 25px;
+		height: 25px;
+	}
+	&:before {content: "\201C";left: 10px;top: 30px;}
+	&:after {content: "\201D";right: 25px;bottom: -30px;}
+	&-h {text-transform: uppercase;font-size: 1.1em;font-weight: 600;width: 160px;margin: 0 auto;
+		text-align: center;
+		padding: 10px 0 7px;
+		line-height: 1;
+		border-right: 1px solid $green;border-left: 1px solid $green;
+		position: relative;
+		&:before, &:after {
+			content: "";
+			width: 80px;
+			height: 1px;
+			display: block;
+			height: 1px;
+			background: $green;
+			position: absolute;
+			bottom: -8px;
+		}
+		&:before {left: 0;transform: rotate(10deg);}
+		&:after {right: 0;transform: rotate(-10deg);}
+	}
+	p {margin-top: 20px;font-style: italic;font-size: 1.4em;}
+}
+/* ==========================================================================
+   CONTENT
+   ========================================================================== */
+.b-main {margin-top: 15px;
+	@media (min-width: $screen-sm-min) {margin-top: 30px;}
+}
+.breadcrumb {background: none;padding: 0;font-size: .85em;}
+.breadcrumb > li + li::before {content: "\00F7";color: $green;padding: 0 5px 0 2px;}
+
+/* ARTICLE */
+.b-img {
+	position: relative;
+
+	@media (min-width: $screen-sm-min) {
+		display: inline-block;
+		float: left;
+		width: 31%;
+		margin: 0 20px 20px 0;		
+	}
+}
+
+.article-preview {margin-bottom: 30px;&:last-child{margin-bottom: 0;}}
+article {
+	img {border-radius: 5px;}
+	p, ol, ul {margin-bottom: 20px;}
+	b {font-weight: 600;color: #000}
+	.h-main {margin-bottom: 5px;}
+	.date {position: absolute;
+		top: -2px;  
+		left:5px;
+		background: url('images/sprite.png') 0 -504px no-repeat;
+		width: 43px; height: 49px;
+		display: block;
+		margin: 0;
+		text-align: center;
+		font-size: 10px;
+		text-shadow: 0 1px 0 #CFE259;
+		@media (min-width: $screen-sm-min) {right: 5px;left: auto;}
+		span {font-weight: 600;font-weight: 800;font-size: 20px;line-height: 15px;margin-top: 6px;display: block;letter-spacing: 1px}
+	}
+	.cat,
+	.author,
+	.comments,
+	.link {
+		font-size: .9em;
+		padding-left: 20px;
+		display: inline-block;
+		background: url('images/sprite.png') no-repeat;
+		font-weight: 600;
+		margin: 0;
+	}
+	.comments, .link {padding-left: 30px;font-size: 1em;height: 22px;}
+	.cat {background-position: 0 -426px;margin-right: 10px;}
+	.author {background-position: 0 -570px;}
+	.comments {background-position: 0 -253px;}
+	.link {background-position: 0 -387px;} 
+	.date-foot {background-position: 0 -429px;font-size: .9em;font-weight: 600;display: inline-block;margin: 0;}
+
+	header {margin-bottom: 20px;}
+	footer {border-top: 1px solid #d7d7d7;margin-top: 20px;padding-top: 15px;}
+	blockquote {border: none;font-style: italic;color:#717171;padding: 0 20px 0 8%;font-size: 1em;}
+	ol, ul {counter-reset: item; padding: 0;
+		li { display: block; margin: 5px 0;position: relative;padding-left: 25px;min-height: 25px;}
+		li:before {
+			position: absolute;
+			left: 0;
+			top: 0;			
+			display: inline-block;
+			color: $green;
+			width: 21px;height: 21px;
+			text-align: center;
+		}
+	}
+	ol li:before {
+		content: counter(item);
+		counter-increment: item;			
+		border: 1px solid $green;
+		border-radius: 100%;						
+	}
+	ul li:before {
+		content: "\2022";
+		color: $green;
+		font-size: 25px;
+		line-height: 20px;
+	}
+}
+table {
+	@media (max-width: 600px), (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+	  display: block;
+	  max-width: min-content;    
+	  overflow-x: auto;
+	  -webkit-overflow-scrolling: touch;
+	  white-space: nowrap;		
+	}
+}
+caption {font-weight: 600;text-transform: uppercase;color: #000;text-align: center;padding: 10px 0;}
+td {padding: 10px;}
+th {font-weight: 600; background: $green; color: #fff;padding: 15px 10px;}
+th:first-child {border-radius: 5px 0 0 0;}
+th:last-child {border-radius: 0 5px 0 0;}
+tbody {
+	td {border: 1px solid #d7d7d7; border-left: none;border-right: none;}
+	td:first-child {border-left: 1px solid #d7d7d7;}
+	td:last-child {border-right: 1px solid #d7d7d7;font-weight: 600;}
+}
+
+.b-sharing {
+	border: 5px solid #c8e0f5;
+	border-radius: 5px;
+	text-align: center;
+	padding: 25px 20px;
+	.buttons {margin: 20px 0;}
+	p {max-width: 400px;margin: 0 auto 15px;}
+	form {max-width: 240px;margin: 0 auto;}
+}
+
+.b-comments {margin-top: 40px;
+	.comment-form {margin-top: 30px;}
+	.subscribe-to-comments, .comment-reply-title {margin-top: 30px;}
+	textarea {margin-top: 10px;}
+	.smileys {margin-top: 10px;}
+	.but {margin-top: 20px;}
+}
+.commentlist {margin-top: 30px;}
+.comment {padding: 0; margin-top: 40px;
+	&:before {content: none;}
+	header {@include clearfix();margin-bottom: 0;}
+	.comment {margin-left: 15px;
+		.comment-body {padding-left: 15px;border-left: 3px solid #e5e5e5;}
+	}
+	.but {margin-top: 10px;}
+}
+
+.author-comment {margin-bottom: 0;}
+.author-comment, .date-comment {
+	font-weight: 600;
+	cite {color: $green;font-style: normal;}
+}
+.date-comment {font-size: .9em;}
+@media (min-width: 450px) {
+	.author-comment {float: left;width: 50%;}
+	.date-comment {float: right;width: 50%;text-align: right;}	
+}
+
+.pagination {
+	display: block;
+	text-align: center;
+	li {display: inline-block;vertical-align: middle;}
+	a {border: none !important; color: $green !important;font-weight: 600;font-size: 1.1em;border-radius: 100%;}	
+	a.current {border: 1px solid $font-base !important;color: $font-base;}
+	.prev,.next {
+		background: url('images/sprite.png') no-repeat;
+		width: 44px;
+	}
+	.prev {background-position: 0 -200px;}
+	.next {background-position: 0 -225px;}
+}
+/* ==========================================================================
+   SIDEBAR
+   ========================================================================== */
+.widget {
+	margin-top: 35px;
+	display: block;
+	&:first-child {margin-top: 0;}
+}
+.b-sharing-sbar {
+	.txt:last-child {font-size: .85em;margin-bottom: 0;color: $gray}
+}
+.list-social {
+	text-align: center;
+	@include resetUl();
+	margin: 15px 0 5px;
+	li {display: inline-block;margin: 0 5px;}
+	a {display: block;width: 36px;height: 36px;background: url('images/sprite.png') no-repeat;}
+	.gp { background-position: 0 -35px;}
+	.rss { background-position: 0 -91px;}
+	.vk { background-position: 0 -147px;}
+}
+.list-commenters {
+	padding:0;
+	counter-reset: item; 
+	margin-top: 20px;
+	li { display: block; position: relative;padding-left: 50px;min-height: 30px;}
+	li:before {
+		content: counter(item);
+		counter-increment: item;
+		color: $green;
+		position: absolute;
+		left: 3px;top: 7px;
+		text-align: center;
+		display: block;
+		width: 25px;
+		height: 25px;
+		line-height: 25px;
+		font-weight: 300;		
+		border-radius: 100%;
+		font-size: 15px;
+	}		
+	li:first-child:before {
+		background: $green;color: #fff;		
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		left: 0;
+		top: 3px
+	}
+	li:nth-child(2):before,li:nth-child(3):before {border: 1px solid $green;}
+	a {border-bottom: 1px solid #f2f2f2;display: block;color: $font-base; padding: 8px 0;font-size: 12px;
+		span {font-weight: 600;font-size: 15px;}
+		&:hover {color: $green}
+	}	
+}
+.i-top {
+	display: block;
+	width: 105px;
+	margin: 0 auto;
+	border-bottom: 2px solid $green;
+	padding-top: 45px;
+	margin-bottom: 10px;
+	background: url('images/sprite.png') 37px -295px no-repeat;
+}
+p.all {text-align: right;font-style: italic;font-size: .9em;}
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer {
+	border-top: 1px solid $green;
+	margin-top: 50px;	
+	padding-bottom: 10px;
+	.container {
+		@media (max-width: $screen-xs-max) {padding-right: 85px;position: relative;}
+	}
+	.but-up {position: absolute;top: 20px;right: 15px;}
+	.copyright {font-size: .9em; margin-top: 20px;}
+}
+.b-counters {margin: 10px 0;
+	> * {margin: 0 10px;display: inline-block;}
+}
+@import 'css/plugins';
