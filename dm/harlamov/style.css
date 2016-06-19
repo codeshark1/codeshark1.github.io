@@ -207,7 +207,7 @@ tbody td:last-child { border-right: 1px solid #d7d7d7; font-weight: 600; }
 
 @media (min-width: 450px) { .author-comment { float: left; width: 50%; }
   .date-comment { float: right; width: 50%; text-align: right; } }
-.pagination { display: block; text-align: center; }
+.pagination { display: block; text-align: center; margin-top: 50px; }
 .pagination li { display: inline-block; vertical-align: middle; }
 .pagination a { border: none !important; color: #9ecc56 !important; font-weight: 600; font-size: 1.1em; border-radius: 100%; }
 .pagination a.current { border: 1px solid #3a3a3a !important; color: #3a3a3a; }
