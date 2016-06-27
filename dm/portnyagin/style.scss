@@ -252,6 +252,16 @@ body {
 /* ==========================================================================
    CONTENT
    ========================================================================== */
+.b-main {background: #fafbfa;padding-top: 30px;}
+
+.breadcrumb {
+	margin-top: 40px;
+	background: none;
+	border-top: 1px solid $font-base;
+	border-bottom: 1px solid $font-base;	
+	border-radius: 0;
+}
+
 .b-hero {	
 	font-family: 'Roboto', sans-serif;		
 	letter-spacing: 1px;
@@ -433,8 +443,6 @@ body {
 	&:hover {color: $red}
 }
 
-
-
 .b-miscWrap {display: flex;}
 
 
@@ -489,14 +497,82 @@ body {
 	width: 315px; 
 	height: 195px; 	
 	background: #000;	
-	margin-left: -4px;
+	margin-left: -4px;	
 	&:first-child {margin-left: 0;}
+	&-img {opacity: .7;}	
 	&:hover &-img {opacity: 1;}	
 	
 	&-txt {position: absolute;bottom: 10px;left: 10px;right: 10px; color: #fff;font-size: .9em; background: #000; background: rgba(#000,.6);margin: 0;padding: 7px;}
 }
 
 .banner-bottom {display: block;text-align: center;}
+
+/* ARTICLE */
+
+.b-articles {
+	article, .banner {margin-bottom: 30px;}
+}
+
+article .date {position: absolute;top: 20px;left: -3px;background: $red-bright; color: #fff;display: inline-block;
+	width: 58px;height: 58px;
+	text-align: center;
+	font-size: 11px;
+	font-family: Roboto, sans-serif;
+	padding-top: 3px;
+	b {font-size: 20px;display: block;}
+}
+.article-img {position: relative;}
+
+.footer-article {
+	margin-top: 35px;
+	border-top: 1px solid $font-base;
+	border-bottom: 1px solid $font-base;
+	div {padding: 5px;}
+	@media (min-width: $screen-md-min) {
+		display: table;
+		width: 100%;
+		div {display: table-cell;text-align: center;}		
+	}
+}
+.footer-preview a {font-weight: bold;text-decoration: underline}
+.b-related {
+	p {margin-top: 10px;}
+	@media (max-width: $screen-sm-max) {
+		&:nth-child(3) {clear: left;}
+	}
+	@media (min-width: $screen-sm-min) {
+		p {font-size: 16px;}
+	}
+}
+/* COMMENTS */
+.commentlist, .commentlist ol {
+	@include resetUl();
+}
+.commentlist {
+	.comment {}
+	ol .comment {margin-left: 5%;}
+}
+.comment-body {border: 1px solid $font-base;margin-bottom: 15px;padding: 15px;position: relative;padding-left: 90px;
+	p {margin-bottom: 15px;}
+	.ava {position: absolute;left: 15px;top: 15px;
+		img {width: 53px;}
+	}
+	.header {@include clearfix();font-size: .9em;
+		p {margin-bottom: 10px;}
+	}
+	.author {float: left;font-weight: 600;}
+	.date {float: right;}
+	.footer {text-align: right;}
+	.reply {font-weight: 600;text-decoration: underline;}
+}
+
+/* COMMENT FORM */
+.comment-form {
+	input, textarea {margin-bottom: 20px;background: #efeeee; border: 1px solid $font-base;
+		&:focus {background: #fff;}
+	}
+	.but {font-size: 18px;padding: 10px 15px;}
+}
 
 /* ==========================================================================
    SIDEBAR
@@ -506,9 +582,62 @@ body {
 	display: block;
 	&:first-child {margin-top: 0;}
 }
+.widget-header {font-size: 36px;line-height: 1;margin-bottom: 20px;}
+
+.widget_subscribe {
+	border: 1px solid $font-base;
+	padding: 15px 15px 20px;
+	.widget-header {font-size: 18px;font-weight: bold;margin-bottom: 10px;}
+
+}
+.subscribe-form {position: relative; padding-right: 120px;margin-bottom: 0;
+	.but {text-transform: uppercase;font-weight: bold; position: absolute; top: 0;right: 0;width: 115px;height: 35px;}
+}
+
+.widget_categories {
+	ul {@include resetUl();}
+	a:hover {
+		background: $red;
+		color: #fff;
+		&:before {left: auto;right: 3px;color: #fff;}
+	}
+	a {color: $font-base;font-size: 18px;font-family: Roboto, sans-serif;font-weight: 300;display: block;
+		position: relative;
+		padding: 2px 15px 2px 20px;
+		border-radius: 0 5px 5px 0;
+		&:before {
+			content: ">";
+			position: absolute;
+			left: 0;
+			top: 2px;
+			color:$red;
+			font-family: Consolas, Roboto,sans-serif;
+			font-size: 23px;
+			line-height: 1;
+		}
+	}
+}
+
+.widget_articles {
+	.a-prev {margin-bottom: 15px;}
+	.a-prev-img {width: 43%;}
+	.headline {font-weight: bold;line-height: 1.2;margin-top: -3px;display: inline-block;min-height: 50px;}
+}
+
+.widget_commenters {
+	ul {@include resetUl();}
+	li {display: inline-block;margin-bottom: 3px;}
+	a {display: block;}
+	img {width: 80px;}
+}
+
+.widget_counters {text-align: center;
+	* {margin: 0 3px;}
+}
+
+.widget_banner {text-align: center;}
 
 
-.banner {display: block;text-align: center;}
 
 /* ==========================================================================
    FOOTER
@@ -516,7 +645,7 @@ body {
 
 .site-footer {
 	position: relative;
-	margin-top: 10px;
+	margin-top: 15px;
 	background: #000;
 	color: #fff;
 	@media (min-width: $screen-sm-min) {
@@ -526,7 +655,6 @@ body {
 		background-size: cover;
 		.but-up {position: absolute; top: -80px; right: 10px;}
 	}
-
 }
 
 .b-subscribe-footer {
@@ -535,14 +663,13 @@ body {
 	text-transform: uppercase;
 	@media (min-width: $screen-sm-min) {		
 		background: #910b13;		
-	}
-	
+	}	
 
 	.f-subscribe {
 		margin: 0 auto;		
 		text-align: center;
 		&-ttl {font-size: 18px;margin: 0;line-height: 35px;}
-		&-email {width: 220px;color: #000;margin: 10px 0 0 0;text-align: center;}
+		&-email {width: 220px;color: #000;margin: 10px 0 0 0;text-align: center;border-radius: 5px;}
 		.but {display: block; margin:20px auto 0;}
 		@media (min-width: $screen-sm-min) {
 			display: flex;
