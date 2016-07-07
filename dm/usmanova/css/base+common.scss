@@ -1,0 +1,252 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:400,400i,700&subset=cyrillic';
+@font-face {
+    font-family: 'Lasco';
+    src: local('fonts/lascobold'), url('fonts/lascobold.woff2') format('woff2'), url('fonts/lascobold.woff') format('woff'), url('fonts/lascobold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+/* ==========================================================================
+   BASE
+   ========================================================================== */
+html {position: relative;min-height: 100%;}
+body {font-family: Roboto, sans-serif;font-size: 14px;color: $base;overflow-x:hidden;
+  @media (min-width: $screen-sm-min) {font-size: 16px;}
+}
+img {max-width: 100%;}
+a {color: $link; transition: all .15s;
+  &:hover,&:active,&:focus {text-decoration: none;}
+}
+table {width: 100%;}
+small {font-size: 100%;}
+p {margin: 0 0 25px 0;}
+blockquote {}
+
+
+/* ==========================================================================
+  COMMON
+  ========================================================================== */
+.container {max-width: 1200px;}
+
+.b-rel {position: relative}
+.b-mg {margin-top: 30px;}
+p.center {text-align: center;}
+p.right {text-align: right;}
+p.bold {font-weight: 700;}
+.p-all {text-align: center;margin-top: 1.5em;}
+.italic {font-style: italic;}
+.tr-sm {
+  @media (min-width: $screen-sm-min) {text-align: right;}
+}
+.tr-md {
+  @media (min-width: $screen-md-min) {text-align: right;}
+}
+.mg-xs {
+  @media (max-width: $screen-xs-max) {margin-top: 15px !important;}
+}
+.mg-sm {
+  @media (min-width: $screen-sm-min) {margin-top: 15px !important;}
+}
+.tc-sm {
+  @media (min-width: $screen-sm-min) {text-align: center;}
+}
+.tc-xs {
+  @media (max-width: $screen-xs-max) {text-align: center;}
+}
+.b-flex {display: flex;}
+@media (min-width: $screen-sm-min) {
+  .col-50 {width: 50%;}
+  .col-55 {width: 55%;}
+  .col-45 {width: 45%}
+}
+
+/* ICONS */
+.icn {
+  display: inline-block;
+  vertical-align: text-top;  
+  background: url('images/sprite.png') no-repeat;  
+  margin-right: 7px;
+}
+.icn-comments {background-position: 0 -1460px; height: 15px;width: 17px;vertical-align: middle;}
+
+.icn-anat { background-position: 5px -464px; width: 25px; height: 30px; } 
+.icn-ingred { background-position: 3px -874px; width: 25px; height: 21px; } 
+.icn-art { background-position: 0 -512px; width: 25px; height: 30px;} 
+.icn-knigi { background-position: 3px -557px; width: 25px; height: 30px;} 
+.icn-bezop { background-position: 0 -605px; width: 25px; height: 26px;} 
+.icn-sred { background-position: 5px -651px; width: 25px; height: 22px;} 
+.icn-domov { background-position: 2px -692px; width: 25px; height: 30px;} 
+.icn-domuhod { background-position: 0 -737px; width: 25px; height: 30px;} 
+.icn-other { background-position: 2px -776px; width: 25px; height: 30px;} 
+.icn-zdor { background-position: 4px -819px; width: 25px; height: 30px;} 
+.icn-mylife { background-position: 0 -918px; width: 25px; height: 30px;} 
+.icn-mak { background-position: 0 -962px; width: 25px; height: 30px;} 
+.icn-moda { background-position: 0 -1011px;width: 25px; height: 30px;} 
+.icn-pitan { background-position: 3px -1056px; width: 25px; height: 30px;} 
+.icn-prof { background-position: 0 -1100px; width: 25px; height: 30px;} 
+.icn-psiho { background-position: 2px -1146px; width: 25px; height: 30px;} 
+.icn-rukodel { background-position: 0 -1194px; width: 25px; height: 30px;} 
+.icn-shopping { background-position: 3px -1242px; width: 25px; height: 30px;} 
+.icn-perev { background-position: 2px -1283px; width: 25px; height: 30px;} 
+.icn-podarki { background-position: 2px -1327px; width: 25px; height: 30px;}
+
+
+/* BUTTONS */
+.but {
+  display: inline-block;
+  padding: 4px 7px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;  
+  background: none;
+  @include font-second();
+}
+.but:focus,
+.but:active:focus,
+.but.active:focus,
+.but.focus,
+.but:active.focus,
+.but.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.but:hover,
+.but:focus,
+.but.focus {text-decoration: none;}
+.but:active,
+.but.active {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+/* BUT_NAV */
+.but-nav {width: 20px; height: 17px;background: url('images/sprite.png') no-repeat 0 -1374px;}
+
+/* BUT_MAIN */
+@mixin but-main() {
+  background: $action;
+  color: #fff;
+  border-radius: 5px;
+  transition: all .15s;
+  &:hover, &:focus {color: #fff; background: lighten($action,5%);}
+  &:active {background: darken($action,5%);}  
+}
+.but-main {
+  @include but-main();
+  padding: 7px 10px;
+}
+
+/* BUT_SECONDARY */
+@mixin but-second() {
+  background: $link;
+  font-weight: 700;
+  color: #fff;  
+  border-radius: 5px;
+  padding: 7px 10px;
+  text-transform: uppercase;
+  transition: all .15s;
+  &:hover, &:focus {color: #fff; background: lighten($link,5%);}
+  &:active {background: darken($link,5%);}
+}
+.but-second {
+  @include but-second();
+}
+
+/* BUT_UP */
+.but-up {
+  background: url('images/sprite.png') 18px -1736px no-repeat;
+  height: 104px;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 110px;
+  position: fixed;
+  left: 25px;
+  bottom: 50px;
+  z-index: 3;
+  @media (max-width: $screen-xs-max) {display: none !important;}
+}
+
+
+/* FORMS */
+input[type="text"],
+input[type="tel"],
+input[type="search"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
+textarea,
+select {  
+  width: 100%;  
+  padding: 6px 10px;
+  border: 1px solid #C0C0C0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  @include font-second();
+  font-size: .9em;
+  &:focus {}
+}
+.search-field {margin-bottom: 0 !important;}
+
+textarea {resize: vertical;}
+label {font-weight: normal;cursor: pointer;font-size: .9em;}
+
+.label-radio {  
+  font-size: 0.93em;
+  input {visibility: hidden;position: absolute;left: -200em;}
+  span {display: inline-block;position: relative;padding-left: 20px;
+    &:after {
+      content: "";
+      width: 13px;
+      height: 13px;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 4px;
+      background: url('images/sprite.png') -172px -259px no-repeat;
+    }
+  }
+  input:checked+span:after {
+      position: absolute;      
+      background-position: -172px -237px;
+  }
+}
+
+
+/*HEADINGS*/
+
+.h-main, .h-section {
+  font-weight: 700;  
+  margin: 0 0 15px 0;
+  @include font-second();
+  font-size: 1.68em;
+}
+.headline-comic {
+  @include font-special();
+  margin: 0;
+  font-size: 1.18em;
+  line-height: 1.2;
+}
+
+
+/* IMAGES */
+.aligncenter, .alignleft, .alignright {display: block;margin: 0 auto 20px;}
+@media (min-width: $screen-sm-min) {
+  .alignleft, .alignright {display: inline-block;max-width: 45%;}
+  .alignleft {float: left;margin: 0 20px 20px 0;}
+  .alignright {float: right;margin: 0 0 20px 20px;}  
+}
+
+.spanlink {
+    cursor: pointer;
+    /* любые стили, чтобы псевдо-ссылка выглядела как обычная */
+}
