@@ -191,10 +191,13 @@ body {
 .serv {
 	&-ttl-num, &-ttl {@include font-special();text-transform: uppercase; font-weight: 700;}
 	&-ttl-num {font-size: 60px;line-height: 1; margin-bottom: 10px;}
-	&-ttl {font-size: 40px;margin: 0 0 20px 0;
+	&-ttl {font-size: 40px;margin: 0; line-height: 1;
 		span {display: inline-block;margin: 0 -10px;}
 	}
 	&-descr {color: $font-darker}
+	@media (min-width: $screen-sm-min) {
+		&-ttl {margin: 0 0 15px 0 !important;}
+	}
 	@media (min-width: $screen-md-min) {
 		&-ttl {font-size: 50px;}
 		&-ttl-num {font-size: 70px;}
@@ -357,10 +360,14 @@ body {
 .h-contacts {color: $base;margin-bottom: 15px;}
 .tel-contacts {
 	@include font-special();
-	font-size: 40px;
+	font-size: 35px;
 	color: #fff;
 	font-weight: 700;
 	line-height: 1;
+	@media (min-width: $screen-sm-min) {font-size: 40px;}
+}
+.email-contacts {
+	@media (max-width: $screen-xs-max) {font-size: 20px;}
 }
 
 /* BLOG */

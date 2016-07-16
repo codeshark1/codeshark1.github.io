@@ -569,12 +569,16 @@ body {
   margin-bottom: 10px; }
 .serv-ttl {
   font-size: 40px;
-  margin: 0 0 20px 0; }
+  margin: 0;
+  line-height: 1; }
   .serv-ttl span {
     display: inline-block;
     margin: 0 -10px; }
 .serv-descr {
   color: #e6e6e6; }
+@media (min-width: 768px) {
+  .serv-ttl {
+    margin: 0 0 15px 0 !important; } }
 @media (min-width: 992px) {
   .serv-ttl {
     font-size: 50px; }
@@ -781,10 +785,17 @@ body {
 
 .tel-contacts {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   color: #fff;
   font-weight: 700;
   line-height: 1; }
+  @media (min-width: 768px) {
+    .tel-contacts {
+      font-size: 40px; } }
+
+@media (max-width: 767px) {
+  .email-contacts {
+    font-size: 20px; } }
 
 /* BLOG */
 .post-preview-img, .post-preview h2 {
