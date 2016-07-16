@@ -151,30 +151,6 @@ select {
 }
 textarea {resize: vertical;min-height: 135px;}
 label {font-weight: normal;cursor: pointer;}
-label.check {  
-  input {visibility: hidden;position: absolute;left: -200em;}
-  span {display: inline-block;position: relative;padding-left: 25px;
-    &:after {
-      content: "";
-      border: 1px solid #d7d7d7;
-      width: 15px;
-      height: 15px;
-      display: inline-block;
-      position: absolute;
-      left: 0;
-      bottom: 4px;
-    }
-  }
-  input:checked+span:before {
-      content: "\2713";
-      //color: $green;
-      font-size: 20px;            
-      font-family: 'Open Sans', TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
-      position: absolute;
-      left: 2px;
-      bottom: 2px;    
-  }
-}
 
 
 /*HEADINGS*/

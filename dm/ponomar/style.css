@@ -219,31 +219,6 @@ label {
   font-weight: normal;
   cursor: pointer; }
 
-label.check input {
-  visibility: hidden;
-  position: absolute;
-  left: -200em; }
-label.check span {
-  display: inline-block;
-  position: relative;
-  padding-left: 25px; }
-  label.check span:after {
-    content: "";
-    border: 1px solid #d7d7d7;
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    bottom: 4px; }
-label.check input:checked + span:before {
-  content: "\2713";
-  font-size: 20px;
-  font-family: 'Open Sans', TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
-  position: absolute;
-  left: 2px;
-  bottom: 2px; }
-
 /*HEADINGS*/
 h1, h2, .h2, h3 {
   font-family: 'Roboto Condensed', sans-serif;

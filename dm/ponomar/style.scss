@@ -23,7 +23,6 @@ body {
 .site-header {
 		padding-top: 30px;
 		padding-bottom: 60px;
-	@media (min-width: $screen-sm-min) {}
 	@media (min-width: $screen-md-min) {
 		padding-top: 70px;
 		padding-bottom: 60px;
@@ -32,7 +31,6 @@ body {
 		padding-top: 90px;
 		padding-bottom: 90px;		
 	}
-
 	.but-nav {position: absolute;right: 15px;top:30px;}
 }
             
@@ -98,25 +96,13 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .nav-social {
 	@include resetUl();		
 	a {
 		font-size: 20px; 
 		text-align: center;
 		width: 25px;
-		display: inline-block;
-		
+		display: inline-block;		
 	}
 	&-side {
 		margin-top: 10px;
@@ -390,6 +376,7 @@ body {
 	p {max-width: 650px;}
 	.but {text-transform: uppercase;font-weight: 500;padding: 0}
 }
+
 /* ==========================================================================
    FOOTER
    ========================================================================== */
@@ -450,7 +437,6 @@ body {
 		}		
 	}
 }
-
 
 @import 'css/plugins';
 @import 'css/other';
