@@ -1,0 +1,252 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400,500,700&subset=cyrillic';
+
+/* ==========================================================================
+   BASE
+   ========================================================================== */
+html {position: relative;min-height: 100%;}
+body {color: $base;font-family: Roboto, sans-serif;font-size: 16px;}
+img {max-width: 100%;}
+a {color: #fff; transition: all .2s;
+  &:hover,&:active,&:focus {text-decoration: none;color: darken(#fff,20%);
+    .fa {color: darken(#fff,20%)}
+  }
+}
+table {width: 100%;}
+p {margin: 0 0 25px 0;}
+blockquote {}
+
+
+/* ==========================================================================
+  COMMON
+  ========================================================================== */
+.container {max-width: 1200px;}
+
+hr {
+  border: none;
+  height: 1px;
+  background: rgba(#fff, .2);
+  margin: 40px 0;
+  @media (min-width: $screen-sm-min) {height: 3px;background: #fff;}
+}
+
+
+.b-rel {position: relative}
+.b-mg {margin-top: 75px;}
+.b-mg-l {margin-top: 25px !important;}
+p.center {text-align: center;}
+p.right {text-align: right;}
+p.bold {font-weight: 700;}
+.p-all {text-align: center;margin-top: 1.5em;}
+.italic {font-style: italic;}
+.tr-md {
+  @media (min-width: $screen-sm-min) {text-align: right;}
+}
+.mg-xs {
+  @media (max-width: $screen-xs-max) {margin-top: 25px !important;}
+}
+.mg-sm {
+  @media (min-width: $screen-sm-min) {margin-top: 75px !important;}
+}
+.tc-sm {
+  @media (min-width: $screen-sm-min) {text-align: center;}
+}
+.tc-xs {
+  @media (max-width: $screen-xs-max) {text-align: center;}
+}
+.b-flex {display: flex;}
+@media (min-width: $screen-sm-min) {
+  .col-50 {width: 50%;}
+  .col-55 {width: 55%;}
+  .col-45 {width: 45%}
+}
+
+.icon {display: inline-block;vertical-align: middle;
+  background: url('images/sprite.png') no-repeat;
+}
+
+.icn-dash, .icn-dash-sm {width: 22px;background: #fff;display: block;}
+.icn-dash {height: 5px;}
+.icn-dash-sm {height: 3px}
+.fa-angle-double-left {font-size: 30px !important;}
+.fa-futbol-o {font-size: 25px !important;}
+
+
+p b, .fa {color: #fff}
+
+
+/* BUTTONS */
+.but {
+  display: inline-block !important;
+  padding: 4px 7px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;  
+  background: none;
+  transition: all .2s;
+}
+.but:focus,
+.but:active:focus,
+.but.active:focus,
+.but.focus,
+.but:active.focus,
+.but.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.but:hover,
+.but:focus,
+.but.focus {text-decoration: none;}
+.but:active,
+.but.active {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.but-nav {background: none;border:none;font-size: 40px;
+  .fa-times {display: none;}
+  &.active {
+    .fa-bars {display: none;}
+    .fa-times {display: inline;}
+  }
+}
+.but-main {
+  border:1px solid #fff;
+  text-transform: uppercase;
+  @include font-special();
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  color: #fff;
+  &:hover {border:1px solid gray;}
+  &:active {border-color: transparent;}
+}
+.but-blog {width: 100%;}
+
+/* FORMS */
+input[type="text"],
+input[type="tel"],
+input[type="search"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
+textarea,
+select {  
+  width: 100%;  
+  padding: 15px;
+  background: none;
+  border:1px solid #fff;
+  margin-bottom: 20px;
+  @include font-special();
+  font-size: 1em;
+  &:focus {}
+}
+textarea {resize: vertical;min-height: 135px;}
+label {font-weight: normal;cursor: pointer;}
+label.check {  
+  input {visibility: hidden;position: absolute;left: -200em;}
+  span {display: inline-block;position: relative;padding-left: 25px;
+    &:after {
+      content: "";
+      border: 1px solid #d7d7d7;
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      bottom: 4px;
+    }
+  }
+  input:checked+span:before {
+      content: "\2713";
+      //color: $green;
+      font-size: 20px;            
+      font-family: 'Open Sans', TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
+      position: absolute;
+      left: 2px;
+      bottom: 2px;    
+  }
+}
+
+
+/*HEADINGS*/
+h1, h2,.h2, h3 {@include font-special();color: #fff;}
+h2, .h2 {text-transform: uppercase;font-weight: 700;letter-spacing: 2px;font-size: 25px;margin: 0 0 35px 0;
+  @media (min-width: $screen-sm-min) {line-height: 1.6em;font-size: 20px;}
+}
+
+.h-main {
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+  font-size: 38px;
+  letter-spacing: 3px;  
+  font-weight: 700;
+}
+.h-sub {font-weight: 300;font-size: 18px;color: $font-darker}
+.h-about {
+  text-transform: uppercase;  
+  @include font-special();
+  font-weight: 700;
+  line-height: 2em;
+  margin-bottom: 0;
+  color: #fff;
+  letter-spacing: 2px;  
+}
+
+
+@media (max-width: $screen-xs-max) {
+  .home .h-main {font-size: 55px;}
+}
+@media (min-width: $screen-sm-min) {
+  .h-main {line-height: 1;font-size: 55px;}
+  .col-sm-6 h2 {margin-bottom: 0;}
+  .h-about {font-size: 1.2em;}
+}
+@media (min-width: $screen-md-min) {
+  .h-main {font-size: 70px;}
+  .h-sub {font-size: 20px;max-width: 420px;}
+}
+@media (min-width: $screen-lg-min) {
+  .h-main {font-size: 80px;letter-spacing: 9px;}
+  .h-sub {font-size: 22px;}
+  .h-about {font-size: 1.4em;}
+}
+
+
+/* IMAGES */
+.aligncenter, .alignleft, .alignright {display: block;margin: 0 auto 20px;}
+@media (min-width: $screen-sm-min) {
+  .alignleft, .alignright {display: inline-block;}
+  .alignleft {float: left;margin: 0 20px 20px 0;}
+  .alignright {float: right;margin: 0 0 20px 20px;}  
+}
+
+.spanlink {
+    cursor: pointer;
+    /* любые стили, чтобы псевдо-ссылка выглядела как обычная */
+}
+
+@media (min-width: $screen-sm-min) {
+  .col-row {
+    display: table;
+    width: 100%;
+  }  
+  .col-aside, .col-main {display: table-cell;}
+  .col-aside {width: 18%; vertical-align: middle;padding-right: 5%;}
+  .col-main {width: 77%;}
+  .site-header .col-aside,  .col-social {vertical-align: top;}  
+}
+
+.pic {
+  -webkit-clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%);
+  clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%);
+  display: inline-block;
+}
