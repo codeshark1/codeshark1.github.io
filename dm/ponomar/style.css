@@ -287,7 +287,7 @@ h2, .h2 {
 @media (min-width: 768px) {
   .h-main {
     line-height: 1;
-    font-size: 55px; }
+    font-size: 49px; }
 
   .col-sm-6 h2 {
     margin-bottom: 0; }
@@ -296,7 +296,7 @@ h2, .h2 {
     font-size: 1.2em; } }
 @media (min-width: 992px) {
   .h-main {
-    font-size: 70px; }
+    font-size: 65px; }
 
   .h-sub {
     font-size: 20px;
