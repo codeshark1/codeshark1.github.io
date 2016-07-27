@@ -926,7 +926,9 @@ table.argon {
 		a {text-transform: uppercase;}
 	}
 	.b-profiles_img {text-align: center;}
-	.b-profiles_profile {min-height: 300px;}
+	.b-profiles_profile {min-height: 300px;border-color: #BFD5E2;box-shadow: none;
+		&:hover {box-shadow: 0 0 5px 0 $blue;}
+	}
 
 	@media (min-width: $screen-sm-min) {
 		.b-profiles_img {width: 35%;text-align: center;}
