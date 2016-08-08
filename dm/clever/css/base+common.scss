@@ -1,0 +1,258 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=cyrillic';
+
+/* ==========================================================================
+   BASE
+   ========================================================================== */
+html {position: relative;min-height: 100%;}
+body {font-family: Ubuntu,sans-serif;font-weight: 300;font-size: 16px;color: #000;}
+img {max-width: 100%;}
+a {transition: all .2s;
+  &:hover,&:active,&:focus {text-decoration: none;}
+}
+table {width: 100%;}
+small {font-size: 100%;}
+p {margin: 0 0 25px 0;}
+blockquote {}
+
+
+/* ==========================================================================
+  COMMON
+  ========================================================================== */
+.container {max-width: 980px;}
+
+.b-rel {position: relative}
+.b-mg {margin-top: 30px;}
+.b-pad {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  @media (min-width: $screen-sm-min) {
+    padding-top: 50px;
+    padding-bottom: 50px;    
+  }
+}
+p.center {text-align: center;}
+p.right {text-align: right;}
+p.bold {font-weight: 700;}
+.p-all {text-align: center;margin-top: 1.5em;}
+.italic {font-style: italic;}
+.tr-md {
+  @media (min-width: $screen-sm-min) {text-align: right;}
+}
+.mg-xs {
+  @media (max-width: $screen-xs-max) {margin-top: 15px !important;}
+}
+.mg-sm {
+  @media (min-width: $screen-sm-min) {margin-top: 15px !important;}
+}
+.tc-sm {
+  @media (min-width: $screen-sm-min) {text-align: center;}
+}
+.tc-xs {
+  @media (max-width: $screen-xs-max) {text-align: center;}
+}
+.b-flex {display: flex;}
+
+@media (min-width: $screen-sm-min) {
+  .col-50 {width: 50%;float: left;}
+  .col-55 {width: 55%;}
+  .col-45 {width: 45%}
+  .col-50.b-pad:last-child {padding-left: 40px;}
+}
+.b-cols {
+  @media (min-width: $screen-md-min) {
+    display: flex;
+    overflow-x:hidden;
+    .col-left, .col-right {width: 50%;}
+    .col-left {text-align: right;
+      &__i {width: 450px;display: inline-block;text-align: left;}
+    }
+    .col-right {
+      &__i {width: 450px;display: inline-block;padding-left: 40px;}
+    }
+  }
+  @media (min-width: $screen-lg-min) {
+    .col-left__i {width: 460px;}
+  }
+}
+
+
+.icon {display: inline-block;vertical-align: middle;
+  background: url('images/sprite.png') no-repeat;
+}
+
+
+/* BUTTONS */
+
+.but {
+  display: inline-block;
+  padding: 4px 7px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;  
+  background: none;
+  color: #000;
+  border: 2px solid #000;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.but:focus,
+.but:active:focus,
+.but.active:focus,
+.but.focus,
+.but:active.focus,
+.but.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.but:hover,
+.but:focus,
+.but.focus {text-decoration: none;}
+.but:active,
+.but.active {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.but-submit {
+  background: #0e0e0e;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #d6d6d6;
+
+}
+.but-nav {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-top: 7px solid transparent;
+    border-right: 10px solid #fff;
+    border-bottom: 7px solid transparent;
+    transition: all .2s;
+  }
+  &.active:after {transform: rotate(-90deg);}
+}
+
+.but-up {
+  display: inline-block;
+  background: url('images/sprite.png') 0 -2810px no-repeat;
+  height: 62px;
+  width: 62px;
+}
+
+
+/* FORMS */
+
+input[type="text"],
+input[type="tel"],
+input[type="search"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
+textarea,
+select {  
+  width: 100%;  
+  padding: 7px 10px;
+  border: 2px solid #000;
+  margin-bottom: 15px;
+  background: none;
+  &:focus {}
+}
+textarea {resize: vertical;}
+label {font-weight: normal;cursor: pointer;}
+label.check {  
+  input {visibility: hidden;position: absolute;left: -200em;}
+  span {display: inline-block;position: relative;padding-left: 25px;
+    &:after {
+      content: "";
+      border: 1px solid #d7d7d7;
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      bottom: 4px;
+    }
+  }
+  input:checked+span:before {
+      content: "\2713";
+      //color: $green;
+      font-size: 20px;            
+      font-family: 'Open Sans', TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
+      position: absolute;
+      left: 2px;
+      bottom: 2px;    
+  }
+}
+.label-file {
+  text-decoration: underline;
+  font-size: 14px;
+  background: url('images/sprite.png') 0 -2640px no-repeat;
+  padding-left: 40px;
+  width: 125px;
+}
+.input-file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+::-webkit-input-placeholder {color: #000}
+:-moz-placeholder {color: #000}
+::-moz-placeholder {color: #000}
+:-ms-input-placeholder {color: #000}
+
+/*HEADINGS*/
+
+h1, h2, h3, .widget-header {font-family: Roboto, sans-serif;font-weight: 300;}
+.h-main {font-weight: 300;font-size: 30px; position: relative;z-index: 1;text-transform: uppercase;
+  &:after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #000;
+    display: block;    
+    margin: 25px 0;
+  }
+}
+
+/* IMAGES */
+
+.aligncenter, .alignleft, .alignright {display: block;margin: 0 auto 20px;}
+@media (min-width: $screen-sm-min) {
+  .alignleft, .alignright {display: inline-block;}
+  .alignleft {float: left;margin: 0 20px 20px 0;}
+  .alignright {float: right;margin: 0 0 20px 20px;}  
+}
+
+/* OTHER */
+
+.spanlink {
+    cursor: pointer;
+    /* любые стили, чтобы псевдо-ссылка выглядела как обычная */
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 50px;
+  display: block;
+}
