@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=cyrillic';
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,500i,700&subset=cyrillic';
 
 /* ==========================================================================
    BASE
@@ -6,8 +6,8 @@
 html {position: relative;min-height: 100%;}
 body {font-family: Ubuntu,sans-serif;font-weight: 300;font-size: 16px;color: #000;}
 img {max-width: 100%;}
-a {transition: all .2s;
-  &:hover,&:active,&:focus {text-decoration: none;}
+a {transition: all .2s; color: #000; text-decoration: underline;
+  &:hover,&:active,&:focus {text-decoration: none;color: #000}
 }
 table {width: 100%;}
 small {font-size: 100%;}
@@ -21,7 +21,9 @@ blockquote {}
 .container {max-width: 980px;}
 
 .b-rel {position: relative}
-.b-mg {margin-top: 30px;}
+.b-mg {margin-top: 30px !important;}
+.b-mg-x {margin-top: 50px !important;}
+
 .b-pad {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -39,7 +41,7 @@ p.bold {font-weight: 700;}
   @media (min-width: $screen-sm-min) {text-align: right;}
 }
 .mg-xs {
-  @media (max-width: $screen-xs-max) {margin-top: 15px !important;}
+  @media (max-width: $screen-xs-max) {margin-top: 30px !important;}
 }
 .mg-sm {
   @media (min-width: $screen-sm-min) {margin-top: 15px !important;}
@@ -129,8 +131,9 @@ p.bold {font-weight: 700;}
   text-transform: uppercase;
   font-weight: 500;
   color: #d6d6d6;
-
+  padding: 9px 10px;
 }
+.but-full {width: 100%;}
 .but-nav {
   width: 100%;
   font-size: 18px;
@@ -174,7 +177,7 @@ select {
   background: none;
   &:focus {}
 }
-textarea {resize: vertical;}
+textarea {resize: vertical;min-height: 153px}
 label {font-weight: normal;cursor: pointer;}
 label.check {  
   input {visibility: hidden;position: absolute;left: -200em;}
@@ -215,6 +218,10 @@ label.check {
   position: absolute;
   z-index: -1;
 }
+.form-main {
+  @media (min-width: $screen-sm-min) {max-width: 290px;}
+  .but-submit {margin-top: 5px;}
+}
 
 ::-webkit-input-placeholder {color: #000}
 :-moz-placeholder {color: #000}
@@ -224,7 +231,14 @@ label.check {
 /*HEADINGS*/
 
 h1, h2, h3, .widget-header {font-family: Roboto, sans-serif;font-weight: 300;}
-.h-main {font-weight: 300;font-size: 30px; position: relative;z-index: 1;text-transform: uppercase;
+.h-main {
+  font-weight: 300;
+  font-size: 25px; 
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase; 
+  margin-top: 0;
+  @media (min-width: $screen-sm-min) {font-size: 30px; }
   &:after {
     content: "";
     width: 60px;

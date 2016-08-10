@@ -44,4 +44,11 @@ $screen-md-max:              ($screen-lg-min - 1);
     }
 }
 
+@mixin removeMargin() {
+	@media (max-width: $screen-xs-max) {
+		margin: 0 -15px;padding-left: 15px;padding-right: 15px;
+	}
+}
+
 $blue: #008ad1;
+
