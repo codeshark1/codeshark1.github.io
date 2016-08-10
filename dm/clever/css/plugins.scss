@@ -459,7 +459,6 @@ img.mfp-img {
 }
 .slick-slide {
     float: left;
-    //height: 100%;
     min-height: 1px;
     text-align: center;
     padding: 0 25px;
@@ -497,6 +496,6 @@ img.mfp-img {
     display: none;
 }
 
-.slick-arrow {font-size: 50px;color: #323232;cursor: pointer;position: absolute;top: 50%;margin-top: -25px;z-index: 1;}
+.slick-arrow {font-size: 50px;color: #323232;cursor: pointer;position: absolute;top: 50%;margin-top: -25px;z-index: 1;text-decoration: none;}
 .slick-prev {left: 0;}
 .slick-next {right: 0;}
