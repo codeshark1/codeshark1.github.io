@@ -27,10 +27,14 @@ function mainNav() {
 function nav() {    
     $('#nav-open').click(function(){
         $('#nav-section').fadeIn();
+        $('#page-wrapper').fadeOut();
+        $('html').css('background', '#2db1df');
     });
 
     $('#nav-close').click(function(){
         $('#nav-section').fadeOut();
+        $('#page-wrapper').fadeIn();
+        $('html').css('background', '#fff');
     });
 }
 
@@ -90,7 +94,7 @@ $(document).ready(function(){
     });
 
 
-    $('.b-gallery').slick({      
+    $('.b-gallery').slick({
       slidesToShow: 5,
       slidesToScroll: 1,
       dots:false,
@@ -121,5 +125,53 @@ $(document).ready(function(){
           }
         }
       ]
+    });
+
+    $('.b-carousel-complects').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots:false,
+      adaptiveHeight: true,
+      prevArrow: '<button type="button" class="slick-prev"></button>',
+      nextArrow: '<button type="button" class="slick-next"></button>',
+
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+
+    $('.potol-carousel').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots:false,
+      adaptiveHeight: true,
+      prevArrow: '<button type="button" class="slick-prev"></button>',
+      nextArrow: '<button type="button" class="slick-next"></button>',
+      vertical: true
+    });
+
+    $('#gallery-prod a').click(function(e){
+      e.preventDefault();
+      $("#gallery-prod-img").attr( "src", $(this).attr("href") );
     });
 });
