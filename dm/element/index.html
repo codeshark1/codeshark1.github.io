@@ -21,25 +21,27 @@
 <![endif]-->
 <div id="page-wrapper">
     <header class="site-header" itemscope itemtype="http://schema.org/WPHeader" id="header">
-        <div class="container">
-            <div class="b-top">
-                <div class="b-logo">
-                    <button id="nav-open" class="but-nav" href="#"><span></span></button>
-                    <img src="images/logo.png" alt="Пятый Элемент - Производственная компания">
-                </div><!-- /.b-logo -->
-                <div class="b-links hidden-xs">
-                    <div class="b-flexbox">
-                        <a href="#" class="but">НАТЯЖНЫЕ ПОТОЛКИ</a>
-                        <a href="#" class="but">КОМПЛЕКТЫ “СВОИМИ РУКАМИ”</a>                    
-                    </div>
-                </div><!-- /.b-links -->
-                <div class="b-tel">
-                    многоканальный:
-                    <p class="tel">+7 (812) 748-22-28</p>
-                    <a href="#" data-toggle="modal" data-target="#modal-call">Заказать обратный звонок</a>
-                </div><!-- /.b-tel -->
-            </div><!-- /.b-top -->
-        </div><!-- /.container -->
+        <div class="b-sticky">
+            <div class="container">
+                <div class="b-top">
+                    <div class="b-logo">
+                        <button id="nav-open" class="but-nav" href="#"><span></span></button>
+                        <img class="logo" src="images/logo.png" alt="Пятый Элемент - Производственная компания">
+                    </div><!-- /.b-logo -->
+                    <div class="b-links hidden-xs">
+                        <div class="b-flexbox">
+                            <a href="#" class="but">НАТЯЖНЫЕ ПОТОЛКИ</a>
+                            <a href="#" class="but">КОМПЛЕКТЫ “СВОИМИ РУКАМИ”</a>                    
+                        </div>
+                    </div><!-- /.b-links -->
+                    <div class="b-tel">
+                        многоканальный:
+                        <p class="tel">+7 (812) 748-22-28</p>
+                        <a href="#" data-toggle="modal" data-target="#modal-call">Заказать обратный звонок</a>
+                    </div><!-- /.b-tel -->
+                </div><!-- /.b-top -->
+            </div><!-- /.container -->
+        </div><!-- /.b-sticky -->
         
         <div class="bg-nav hidden-xs">
             <nav class="container" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
@@ -729,7 +731,7 @@
             </section><!-- /.container -->
         </div><!-- /.b-dec -->
     </main>
-    <footer class="site-footer">    
+    <div class="b-pre-footer">
         <div class="container">
             <address class="b-address">
                 <img src="images/logo.png" alt="Пятый Элемент" class="logo">
@@ -755,7 +757,9 @@
         <div class="b-map">
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=utflJd8Aa-p17AjLZzQBpMiLJGDsayG5&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
         </div><!-- /.b-map -->
-    </footer>
+    </div><!-- b-pre-footer -->
+
+    <footer class="site-footer"></footer><!-- /.site-footer -->
 </div><!-- /#page-wrapper -->
 
 <section class="b-overlay" id="nav-section">
