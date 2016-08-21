@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,500i,700&subset=cyrillic';
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,500,500i,700&subset=cyrillic';
 
 /* ==========================================================================
    BASE
@@ -12,7 +12,6 @@ a {transition: all .2s; color: #000; text-decoration: underline;
 table {width: 100%;}
 small {font-size: 100%;}
 p {margin: 0 0 25px 0;}
-blockquote {}
 
 
 /* ==========================================================================
@@ -105,6 +104,8 @@ p.bold {font-weight: 700;}
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover, &:focus, &:active {background: #0e0e0e;color:#fff;}
 }
 .but:focus,
 .but:active:focus,
@@ -133,6 +134,7 @@ p.bold {font-weight: 700;}
   font-weight: 500;
   color: #d6d6d6;
   padding: 9px 10px;
+  &:hover, &:focus, &:active {background: lighten(#0e0e0e,10%);color:#fff;}
 }
 .but-full {width: 100%;}
 .but-nav {
@@ -180,30 +182,7 @@ select {
 }
 textarea {resize: vertical;min-height: 153px}
 label {font-weight: normal;cursor: pointer;}
-label.check {  
-  input {visibility: hidden;position: absolute;left: -200em;}
-  span {display: inline-block;position: relative;padding-left: 25px;
-    &:after {
-      content: "";
-      border: 1px solid #d7d7d7;
-      width: 15px;
-      height: 15px;
-      display: inline-block;
-      position: absolute;
-      left: 0;
-      bottom: 4px;
-    }
-  }
-  input:checked+span:before {
-      content: "\2713";
-      //color: $green;
-      font-size: 20px;            
-      font-family: 'Open Sans', TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
-      position: absolute;
-      left: 2px;
-      bottom: 2px;    
-  }
-}
+
 .label-file {
   text-decoration: underline;
   font-size: 14px;
@@ -231,7 +210,6 @@ label.check {
 
 /*HEADINGS*/
 
-h1, h2, h3, .widget-header {font-family: Roboto, sans-serif;font-weight: 300;}
 .h-main {
   font-weight: 300;
   font-size: 25px; 
