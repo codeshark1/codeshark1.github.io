@@ -12,19 +12,7 @@ function responsiveIframe() {
     });
 }
 
-function mainNav() {    
-    $('#nav-toggle').click(function(){
-        if ( $('#nav-menu').is(':visible')){
-            $('#nav-menu').slideUp();
-            $(this).removeClass('active');
-        } else {
-            $(this).addClass('active');
-            $('#nav-menu').slideDown();
-        }
-    });    
-}
-
-function nav() {    
+function nav() {
     $('#nav-open').click(function(){
         $('#nav-section').fadeIn();
         $('#page-wrapper').fadeOut();
@@ -36,6 +24,21 @@ function nav() {
         $('#page-wrapper').fadeIn();
         $('html').css('background', '#fff');
     });
+}
+
+function menu() {
+  $('#nav-menu .menu-item > a').click(function(e){
+    if ( $(this).parent().has('ul') ) {
+      e.preventDefault();
+
+      if( $(this).siblings('ul').is(':visible') ) {
+        $(this).removeClass('active').siblings('ul').fadeOut(200);
+      } else {
+        $(this).parent().siblings().find('ul').fadeOut(200).siblings('.active').removeClass('active');
+        $(this).addClass('active').siblings('ul').fadeIn(200);
+      }
+    }
+  });
 }
 
 function up() {
@@ -76,6 +79,15 @@ function review() {
     });
 }
 
+function filter_type_tabs() {
+  $('.aj-links a').click(function(e){
+    e.preventDefault();
+    if (! $(this).hasClass('active') ) {
+      $(this).addClass('active').parent().siblings().find('.active').removeClass('active');      
+    } 
+  });
+}
+
 $(document).ready(function(){
     responsiveIframe();
     $(window).resize(function(){
@@ -84,6 +96,9 @@ $(document).ready(function(){
     nav();
     tabs();
     review();
+    menu();
+    filter_type_tabs();
+
 
 
     $('.image-popup').magnificPopup({type:'image'});
@@ -173,5 +188,11 @@ $(document).ready(function(){
     $('#gallery-prod a').click(function(e){
       e.preventDefault();
       $("#gallery-prod-img").attr( "src", $(this).attr("href") );
+    });
+
+    $(window).scroll(function(){
+      if ( $(this).scrollTop() > 10 ) {
+        $('body').css(background, 'green');
+      }
     });
 });
