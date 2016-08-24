@@ -14,9 +14,17 @@ function responsiveIframe() {
 
 function nav() {
     $('#nav-open').click(function(){
-        $('#nav-section').fadeIn();
-        $('#page-wrapper').fadeOut();
-        $('html').css('background', '#2db1df');
+        if( $('#nav-section').is(':visible') ) {
+          $('#nav-section').fadeOut(200);
+          $('#page-wrapper').fadeIn(200);
+          $('body').removeClass('menu-open');
+          $(this).removeClass('active');
+        } else {
+          $('#nav-section').fadeIn(200);
+          $('#page-wrapper').fadeOut(200);
+          $('body').addClass('menu-open');
+          $(this).addClass('active');
+        }
     });
 
     $('#nav-close').click(function(){
@@ -27,17 +35,26 @@ function nav() {
 }
 
 function menu() {
-  $('#nav-menu .menu-item > a').click(function(e){
-    if ( $(this).parent().has('ul') ) {
-      e.preventDefault();
+  function menu_close() {
+    $('#nav-menu .active').removeClass('active').siblings('ul').fadeOut(200);
+  }
 
+  $('#nav-menu a').click(function(e){
+    e.stopPropagation();
+    menu_close();
+  });
+
+  $('#nav-menu .menu-item:has(ul)').children('a').click(function(e){    
+      e.preventDefault();
       if( $(this).siblings('ul').is(':visible') ) {
         $(this).removeClass('active').siblings('ul').fadeOut(200);
-      } else {
-        $(this).parent().siblings().find('ul').fadeOut(200).siblings('.active').removeClass('active');
+      } else {        
         $(this).addClass('active').siblings('ul').fadeIn(200);
-      }
-    }
+      }    
+  });
+
+  $('body').click(function(){
+      menu_close();
   });
 }
 
@@ -80,7 +97,7 @@ function review() {
 }
 
 function filter_type_tabs() {
-  $('.aj-links a').click(function(e){
+  $('.aj-links a, .area-select a').click(function(e){
     e.preventDefault();
     if (! $(this).hasClass('active') ) {
       $(this).addClass('active').parent().siblings().find('.active').removeClass('active');      
@@ -89,6 +106,7 @@ function filter_type_tabs() {
 }
 
 $(document).ready(function(){
+
     responsiveIframe();
     $(window).resize(function(){
         responsiveIframe();
@@ -109,90 +127,11 @@ $(document).ready(function(){
     });
 
 
-    $('.b-gallery').slick({
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      dots:false,
-      adaptiveHeight: true,
-      prevArrow: '<button type="button" class="slick-prev"></button>',
-      nextArrow: '<button type="button" class="slick-next"></button>',
-
-      responsive: [
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    });
-
-    $('.b-carousel-complects').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      dots:false,
-      adaptiveHeight: true,
-      prevArrow: '<button type="button" class="slick-prev"></button>',
-      nextArrow: '<button type="button" class="slick-next"></button>',
-
-      responsive: [
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    });
-
-    $('.potol-carousel').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      dots:false,
-      adaptiveHeight: true,
-      prevArrow: '<button type="button" class="slick-prev"></button>',
-      nextArrow: '<button type="button" class="slick-next"></button>',
-      vertical: true
-    });
-
+  /*SLIDERS/CAROUSELS*/
     $('#gallery-prod a').click(function(e){
       e.preventDefault();
       $("#gallery-prod-img").attr( "src", $(this).attr("href") );
     });
 
-    $(window).scroll(function(){
-      if ( $(this).scrollTop() > 10 ) {
-        $('body').css(background, 'green');
-      }
-    });
+
 });
