@@ -13,6 +13,7 @@ function responsiveIframe() {
 }
 
 function nav() {
+  var bodyWidth = $('body').width();
     $('#nav-open').click(function(){
         if( $('#nav-section').is(':visible') ) {
           $('#nav-section').fadeOut(200);
@@ -22,7 +23,7 @@ function nav() {
         } else {
           $('#nav-section').fadeIn(200);
           $('#page-wrapper').fadeOut(200);
-          $('body').addClass('menu-open');
+          $('body').addClass('menu-open').css('max-width',bodyWidth);
           $(this).addClass('active');
         }
     });
