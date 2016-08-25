@@ -1,4 +1,4 @@
-function responsiveIframe() {
+  function responsiveIframe() {
     $('iframe').each(function(){
         var iw = $(this).width();
         var ih = $(this).height();
@@ -14,25 +14,23 @@ function responsiveIframe() {
 
 function nav() {
   var bodyWidth = $('body').width();
-    $('#nav-open').click(function(){
-        if( $('#nav-section').is(':visible') ) {
-          $('#nav-section').fadeOut(200);
-          $('#page-wrapper').fadeIn(200);
-          $('body').removeClass('menu-open');
-          $(this).removeClass('active');
-        } else {
-          $('#nav-section').fadeIn(200);
-          $('#page-wrapper').fadeOut(200);
-          $('body').addClass('menu-open').css('max-width',bodyWidth);
-          $(this).addClass('active');
-        }
-    });
 
-    $('#nav-close').click(function(){
-        $('#nav-section').fadeOut();
-        $('#page-wrapper').fadeIn();
-        $('html').css('background', '#fff');
-    });
+  $('#nav-open').click(function(){
+      if( $('.b-overlay').is(':visible') ) {
+        $('.b-overlay').fadeOut(200);
+        $('.menu-backdrop').fadeOut(200).remove();
+        $('body').removeClass('menu-open');
+        $(this).removeClass('active');
+        $('.b-sticky').css('padding-right',0);
+      } else {
+        $('body').addClass('menu-open');
+        $('.b-sticky').css('padding-right',scrollWidth);
+        $('<div class="menu-backdrop"></div>').appendTo('body').fadeIn(200);
+        $('.b-overlay').fadeIn(200);
+        $(this).addClass('active');
+      }
+  });
+
 }
 
 function menu() {
@@ -57,23 +55,6 @@ function menu() {
   $('body').click(function(){
       menu_close();
   });
-}
-
-function up() {
-    $('#up').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-            || location.hostname == this.hostname) {
-
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-               if (target.length) {
-                 $('html,body').animate({
-                     scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
-        }
-    });    
 }
 
 function tabs() {
@@ -106,8 +87,21 @@ function filter_type_tabs() {
   });
 }
 
-$(document).ready(function(){
+var scrollWidth = 0;
+function scrollbarWidth() {
+    var div = $('<div style="width:50px;height:50px;overflow:hidden;position:absolute;top:-200px;left:-200px;"><div style="height:100px;"></div>');    
+    $('body').append(div);
+    var w1 = $('div', div).innerWidth();
+    div.css('overflow-y', 'scroll');
+    var w2 = $('div', div).innerWidth();
+    $(div).remove();
+    scrollWidth = (w1 - w2);
+    return scrollWidth;
+     
+}
 
+
+$(document).ready(function(){
     responsiveIframe();
     $(window).resize(function(){
         responsiveIframe();
@@ -116,10 +110,8 @@ $(document).ready(function(){
     tabs();
     review();
     menu();
+
     filter_type_tabs();
-
-
-
     $('.image-popup').magnificPopup({type:'image'});
     $('.b-gallery, .b-sertifs').magnificPopup({
       delegate: 'a',
@@ -128,11 +120,37 @@ $(document).ready(function(){
     });
 
 
-  /*SLIDERS/CAROUSELS*/
+    /*SLIDERS/CAROUSELS*/
     $('#gallery-prod a').click(function(e){
       e.preventDefault();
       $("#gallery-prod-img").attr( "src", $(this).attr("href") );
     });
+    scrollbarWidth();
 
 
+    var height = $( window ).height();
+    var up = $('#up').hide();
+    $(window).on('scroll',function () {
+        var offset = up.offset();
+        if ((offset.top) > height) {
+            $(up).fadeIn(200);
+        } else {
+            $(up).fadeOut(200);
+        }
+    });
+
+    $('#up').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+               if (target.length) {
+                 $('html,body').animate({
+                     scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
 });
