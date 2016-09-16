@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Внутряк</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script src="js/vendor/modernizr-custom.js"></script>    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4_min.js"><\/script>')</script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--[if lt IE 10]>
+        <p class="browserupgrade">Вы используете <b>устаревший</b> браузер. Пожалуйста, <a href="http://browsehappy.com/?locale=ru_ru">обновите свой браузер</a> чтобы улучшить опыт работы с сайтом.</p>
+    <![endif]-->
+    <header class="site-header" itemscope itemtype="http://schema.org/WPHeader" id="header">
+        <div class="b-navWrap hidden-xs">
+            <nav class="site-navigation container" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <ul class="b-menu" id="nav-menu">
+                    <li class="menu-item"><a href="#">Главная</a></li>
+                    <li class="menu-item"><a href="#">сад</a></li>
+                    <li class="menu-item"><a href="#">огород</a></li>
+                    <li class="menu-item"><a href="#">в цветнике</a></li>
+                    <li class="menu-item"><a href="#">ландшафтный дизайн</a></li>
+                    <li class="menu-item"><a href="#">дачный погребок</a></li>
+                    <li class="menu-item"><a href="#">дачное строительство</a></li>
+                    <li class="menu-item"><a href="#">дачная ферма</a></li>
+                </ul>
+            </nav>
+        </div><!-- /.b-navWrap -->
+
+        <button id="nav-toggle" class="but but-nav visible-xs" href="#"><i class="icon menu"></i></button>        
+
+        <div class="header-wrapper">
+            <div class="container header-wrapper__i">
+               <div class="b-logo">
+                    <div class="logo">
+                        <div class="site-title" itemprop="headline">Современный Дачник</div>
+                        <p class="site-description" itemprop="description"><span>описание блога</span> <span>условный текст</span></p>               
+                    </div><!-- /.logo -->
+               </div><!-- /.b-logo -->
+               <div class="b-nav-search" id="b-nav-search">
+                    <p class="link-home"><a href="#">перейти на главную</a></p>
+               </div><!-- /.b-nav-search -->
+               <div class="b-fbook">
+                   <a href="#" class="but-facebook">Мне нравится</a>
+               </div><!-- /.b-fbook --> 
+               <div class="b-search hidden-xs">
+                    <form class="search-form" id="search-form">
+                        <input type="search" class="search-field" required placeholder="Поиск по сайту">
+                        <button type="submit" class="search-submit" id="searchsubmit"></button>
+                    </form>               
+               </div><!-- /.b-search -->
+
+                <div class="b-categs visible-xs">
+                    <a href="#" id="but-categs" class="but-categs">рубрики блога</a>
+                    <div class="b-categs-list" id="b-categs-list">
+                        <ul>
+                            <li class="cat-item cat-sad"><a href="#">сад</a></li>
+                            <li class="cat-item cat-ogorod"><a href="#">огород</a></li>
+                            <li class="cat-item cat-tsvetnik"><a href="#">в цветнике</a></li>
+                            <li class="cat-item cat-cat-design"><a href="#">ландшафтный дизайн</a></li>
+                            <li class="cat-item cat-pogreb"><a href="#">дачный погребок</a></li>
+                            <li class="cat-item cat-stroit"><a href="#">дачное строительство</a></li>
+                            <li class="cat-item cat-ferma"><a href="#">дачная ферма</a></li>
+                        </ul>
+                    </div><!-- /.b-categs-list -->
+                </div><!-- /.b-categs -->
+            </div><!-- /.container -->
+        </div><!-- /.header-wrapper -->
+
+        <div class="container hidden-xs">
+            <ul class="bread">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Все статьи</a></li>
+                <li><a href="#">Рубрика блога</a></li>
+            </ul>
+        </div><!-- /.container -->
+    </header>
+
+    <main class="b-main container"> 
+        <div class="row">
+            <article class="col-sm-7 col-md-8 art-main" itemscope itemtype="http://schema.org/Article">
+                <header class="art-header">
+                    <a href="#" class="art-categ categ-ogorod" itemprop="articleSection">огород</a>
+                    <h1 itemprop="name">Условный заголовок который придумал дизайнер</h1>
+                    <time class="art-time" class="date-count" itemprop="datePublished" datetime="2015-03-19">12.05.2016</time>
+                    <p class="art-comment-count">3896</p>
+                    <p class="art-view-count">3896</p>                                        
+                </header>
+                
+                <img src="images/photo.jpg" alt="фото огорода">
+
+                <div itemprop="articleBody">
+                    <p>Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании модели развития. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.</p>
+
+                    <blockquote>
+                        Обеспечение нашей деятельности играет важную роль в формировании модели развития. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. 
+                    </blockquote>
+
+                    <p>С другой стороны рамки и место обучения кадров позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. </p>
+
+                    <ol>
+                        <li>Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании модели развития. </li>
+
+                        <li>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, </li>
+
+                        <li>С другой стороны рамки и место обучения кадров позволяет выполнять важные задания по разработке ущественных финансовых и административных условий. </li>
+                    </ol>
+
+                    <p>Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании модели развития. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.</p>
+
+                    <ul>
+                        <li>Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании модели развития. </li>
+
+                        <li>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, </li>
+
+                        <li>С другой стороны рамки и место обучения кадров позволяет выполнять важные задания по разработке ущественных финансовых и административных условий. </li>
+                    </ul>
+
+                    <p>Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании модели развития. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.</p>
+
+                    <p>
+                        С другой стороны рамки и место обучения кадров позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Равным образом дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке дальнейших направлений развития.
+                    </p>
+
+                    <div class="row">
+                        <div class="col-md-6"><img src="images/photo.jpg" alt="pic"></div><!-- /.col-sm-6 -->
+                        <div class="col-md-6"><img src="images/photo.jpg" alt="pic"></div><!-- /.col-sm-6 -->
+                    </div><!-- /.row -->                   
+                    
+
+                    <p>Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании модели развития. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.</p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>значение</th>
+                                <th>значение</th>
+                                <th>значение</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>значение</td>
+                                <td>значение</td>
+                                <td>значение</td>
+                            </tr>
+                            <tr>
+                                <td>значение</td>
+                                <td>значение</td>
+                                <td>значение</td>
+                            </tr>
+                            <tr>
+                                <td>значение</td>
+                                <td>значение</td>
+                                <td>значение</td>
+                            </tr>
+                            <tr>
+                                <td>значение</td>
+                                <td>значение</td>
+                                <td>значение</td>
+                            </tr>
+                            <tr>
+                                <td>значение</td>
+                                <td>значение</td>
+                                <td>значение</td>
+                            </tr>
+                            <tr>
+                                <td>значение</td>
+                                <td>значение</td>
+                                <td>значение</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- articleBody -->
+
+                <section class="b-like">
+                    <div class="inner">
+                        <h3 class="title">Жми "Нравится" и получай только лучшие посты в Facebook &darr;</h3>
+                        <div class="buttons"><img src="images/like.png" alt="" /></div>
+                    </div><!-- /.inner -->
+                </section><!-- /.b-like -->
+
+                <section class="b-share">
+                    <h3 class="title">Понравилось? Поделись с друзьями:</h3>
+                    <ul class="list-social">
+                        <li><a href="#" class="fb"></a></li>
+                        <li><a href="#" class="ok"></a></li>
+                        <li><a href="#" class="gp"></a></li>
+                        <li><a href="#" class="tw"></a></li>
+                        <li><a href="#" class="vk"></a></li>
+                    </ul>
+                </section><!-- /.b-share -->
+
+                <section class="b-subscribe-page hidden-xs">
+                    <div class="inner">
+                        <div class="pic"><img src="images/graphic-subscribe-post.jpg" alt="pic"></div><!-- /.pic -->
+                        <div class="text">
+                            <h3 class="title">подпишись на обновления блога</h3>
+                            <form action="#" class="form">
+                                <input type="email" placeholder="Введите ваш E-mail" class="email-field">
+                                <button type="submit" class="but but-main">я хочу получать статьи на e-mail</button>
+                            </form>
+                            <p class="remark">Ваши данные не будут переданы третьим лицам</p>
+                        </div><!-- /.text -->
+                    </div><!-- /.inner -->
+                </section><!-- /.b-subscribe-page -->
+
+                <section class="b-mg">
+                    <h2>Вам так же может быть интересно:</h2>
+
+                    <div class="row">
+                        <div class="post-preview col-md-6 rel-row-itm">
+                            <article class="post-preview__i" itemscope itemtype="http://schema.org/Article">
+                                <a href="#" class="art-thumb"><img src="images/pic-9.jpg" alt="pic"></a>
+                                <a href="#" class="art-categ categ-ogorod" itemprop="articleSection">огород</a>
+                                <h2 class="art-title" itemprop="name"><a href="#">Условный заголовок который придумал дизайнер</a></h2>
+                                <time class="art-time" class="date-count" itemprop="datePublished" datetime="2015-03-19">12.05.2016</time>
+                                <p class="art-comment-count">3896</p>
+                                <p class="art-view-count">3896</p>                    
+                                <div itemprop="articleBody" class="visible-xs">
+                                    <p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.</p>
+                                </div>
+                            </article><!-- post-preview__i -->
+                        </div><!-- /.col --> 
+                        <div class="post-preview col-md-6 rel-row-itm">
+                            <article class="post-preview__i" itemscope itemtype="http://schema.org/Article">
+                                <a href="#" class="art-thumb"><img src="images/pic-9.jpg" alt="pic"></a>
+                                <a href="#" class="art-categ categ-ogorod" itemprop="articleSection">огород</a>
+                                <h2 class="art-title" itemprop="name"><a href="#">Условный заголовок который придумал дизайнер</a></h2>
+                                <time class="art-time" class="date-count" itemprop="datePublished" datetime="2015-03-19">12.05.2016</time>
+                                <p class="art-comment-count">3896</p>
+                                <p class="art-view-count">3896</p>                    
+                                <div itemprop="articleBody" class="visible-xs">
+                                    <p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.</p>
+                                </div>
+                            </article><!-- post-preview__i -->
+                        </div><!-- /.col --> 
+                        <div class="post-preview col-md-6 rel-row-itm">
+                            <article class="post-preview__i" itemscope itemtype="http://schema.org/Article">
+                                <a href="#" class="art-thumb"><img src="images/pic-9.jpg" alt="pic"></a>
+                                <a href="#" class="art-categ categ-ogorod" itemprop="articleSection">огород</a>
+                                <h2 class="art-title" itemprop="name"><a href="#">Условный заголовок который придумал дизайнер</a></h2>
+                                <time class="art-time" class="date-count" itemprop="datePublished" datetime="2015-03-19">12.05.2016</time>
+                                <p class="art-comment-count">3896</p>
+                                <p class="art-view-count">3896</p>                    
+                                <div itemprop="articleBody" class="visible-xs">
+                                    <p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.</p>
+                                </div>
+                            </article><!-- post-preview__i -->
+                        </div><!-- /.col --> 
+                        <div class="post-preview col-md-6 rel-row-itm">
+                            <article class="post-preview__i" itemscope itemtype="http://schema.org/Article">
+                                <a href="#" class="art-thumb"><img src="images/pic-9.jpg" alt="pic"></a>
+                                <a href="#" class="art-categ categ-ogorod" itemprop="articleSection">огород</a>
+                                <h2 class="art-title" itemprop="name"><a href="#">Условный заголовок который придумал дизайнер</a></h2>
+                                <time class="art-time" class="date-count" itemprop="datePublished" datetime="2015-03-19">12.05.2016</time>
+                                <p class="art-comment-count">3896</p>
+                                <p class="art-view-count">3896</p>                    
+                                <div itemprop="articleBody" class="visible-xs">
+                                    <p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.</p>
+                                </div>
+                            </article><!-- post-preview__i -->
+                        </div><!-- /.col --> 
+                    </div><!-- /.row -->
+                </section>
+
+                <hr>
+
+                <div id="comments" class="b-comments">
+                    <section>
+                        <h3>Комментариев: 3</h3>
+                        
+                        <ol class="commentlist">
+                            <li class="comment">
+                                <div class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+                                    <img src="images/userpic.jpg" alt="ava" class="userpic">
+                                    <header class="comment-header">
+                                        <cite class="comment-author" itemprop="creator" data-uri="http://site.ru/">Кирилл</cite>
+                                        <time class="comment-time" itemprop="datePublished">30 июня 2016 в 21:45</time>
+                                        <a href="#" class="comment-reply-link">Ответить</a>
+                                    </header>
+                                    <div class="comment-text" itemprop="text">
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. <br>
+                                        При создании генератора мы использовали небезызвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
+                                    </div>
+                                </div><!-- comment-body -->
+                            </li><!-- -comment -->
+
+                            <li class="comment">
+                                <div class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+                                    <img src="images/userpic.png" alt="ava" class="userpic">
+                                    <header class="comment-header">
+                                        <cite class="comment-author" itemprop="creator" data-uri="http://site.ru/">Кирилл</cite>
+                                        <time class="comment-time" itemprop="datePublished">30 июня 2016 в 21:45</time>
+                                        <a href="#" class="comment-reply-link">Ответить</a>
+                                    </header>
+                                    <div class="comment-text" itemprop="text">
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. <br>
+                                        При создании генератора мы использовали небезызвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
+                                    </div>
+                                </div><!-- comment-body -->
+
+                                <ol class="children">
+                                    <li class="comment depth-2 bypostauthor">
+                                        <div class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+                                            <img src="images/userpic.jpg" alt="ava" class="userpic">
+                                            <header class="comment-header">
+                                                <cite class="comment-author" itemprop="creator" data-uri="http://site.ru/">Кирилл</cite>
+                                                <time class="comment-time" itemprop="datePublished">30 июня 2016 в 21:45</time>
+                                                <a href="#" class="comment-reply-link">Ответить</a>
+                                            </header>
+                                            <div class="comment-text" itemprop="text">
+                                                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. <br>
+                                                При создании генератора мы использовали небезызвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
+                                            </div>                                    
+                                        </div>
+                                    </li>
+                                </ol>
+                            </li><!-- -comment -->
+                        </ol>
+                    </section>
+
+                    <hr>
+
+                    <section id="respond" class="comment-respond">
+                        <h3 id="reply-title" class="comment-reply-title">Оставить комментарий</h3>
+                        
+                        <form action="#" method="#" id="commentform" class="comment-form">
+                            <input id="author" class="comment-name" name="author" type="text" value="" aria-required="true" placeholder="Ваше имя">
+                            <input id="email" class="comment-email" name="email" type="email" value="" aria-required="true" placeholder="E-mail">
+                            <input id="url" class="comment-url" name="url" type="url" value="" placeholder="Сайт (если есть)">
+
+                            <textarea id="comment" class="comment-text" name="comment" aria-required="true" placeholder="Введите текст"></textarea>
+
+                            <p class="subscribe-to-comments">
+                                <input type="checkbox" name="subscribe" id="subscribe" value="subscribe">
+                                <label for="subscribe">Я хочу получать уведомления об ответах на e-mail</label>
+                            </p>
+
+                            <div class="clearfix">
+                                <div class="comment-respond-smileys">
+                                    <img src="images/smiley1.png" alt="pic">
+                                    <img src="images/smiley2.png" alt="pic">
+                                    <img src="images/smiley3.png" alt="pic">
+                                    <img src="images/smiley4.png" alt="pic">
+                                    <img src="images/smiley5.png" alt="pic">
+                                    <img src="images/smiley6.png" alt="pic">
+                                    <img src="images/smiley7.png" alt="pic">
+                                    <img src="images/smiley8.png" alt="pic">
+                                    <img src="images/smiley9.png" alt="pic">
+                                    <img src="images/smiley10.png" alt="pic">
+                                </div>
+                                <div class="comment-respond-submit">
+                                    <button type="submit" class="but but-main">Отправить комментарий</button>
+                                </div>
+                            </div><!-- .clearfix -->
+                        </form>
+                    </section><!-- #respond -->
+                </div><!-- b-comments -->
+            </article><!-- col -->
+
+            <aside class="col-sm-5 col-md-4 site-sidebar widget-area" itemscope itemtype="http://schema.org/WPSideBar">
+                <div class="widget b-subscribe-home">
+                    <div class="inner">
+                        <img class="pic" src="images/graphic-subscribe-index.png" alt="pic">
+                        <h2 class="headline">подпишись на обновления</h2>
+                        <form action="#" class="form">
+                            <input type="email" placeholder="Введите ваш E-mail" class="email-field">
+                            <button type="submit" class="but but-main">Подписаться</button>
+                        </form>
+                        <p class="remark">Ваши данные не будут переданы третьим лицам</p>
+                    </div><!-- /.inner -->
+                </div><!-- /.b-subscribe-home -->
+
+                <div class="widget">                    
+                    <ul class="tabs-links">
+                        <li class="active"><a href="#tab-pop">Популярное</a></li>
+                        <li><a href="#tab-new">Новое</a></li>
+                    </ul><!-- /.tabs-links -->
+
+                    <div class="tabs-wrapper">
+                        <div class="b-tab" id="tab-pop">
+                            <a href="#" class="post-preview-sbar">
+                                <img src="images/pic-sidebar.jpg" alt="pic">
+                                <div class="inner">
+                                    <h3 class="title">Условный заголовок который придумал дизайнер</h3>
+                                    <p class="art-comment-count">3896</p>
+                                    <p class="art-view-count">3896</p> 
+                                </div>
+                            </a>
+                            <a href="#" class="post-preview-sbar">
+                                <img src="images/pic-sidebar.jpg" alt="pic">
+                                <div class="inner">
+                                    <h3 class="title">Условный заголовок который придумал дизайнер</h3>
+                                    <p class="art-comment-count">3896</p>
+                                    <p class="art-view-count">3896</p> 
+                                </div>
+                            </a>
+                            <a href="#" class="post-preview-sbar">
+                                <img src="images/pic-sidebar.jpg" alt="pic">
+                                <div class="inner">
+                                    <h3 class="title">Условный заголовок который придумал дизайнер</h3>
+                                    <p class="art-comment-count">3896</p>
+                                    <p class="art-view-count">3896</p> 
+                                </div>
+                            </a>
+                            <a href="#" class="post-preview-sbar">
+                                <img src="images/pic-sidebar.jpg" alt="pic">
+                                <div class="inner">
+                                    <h3 class="title">Условный заголовок который придумал дизайнер</h3>
+                                    <p class="art-comment-count">3896</p>
+                                    <p class="art-view-count">3896</p> 
+                                </div>
+                            </a>
+                        </div><!-- /.b-tab -->
+                        <div class="b-tab" id="tab-new">
+                            <a href="#" class="post-preview-sbar">
+                                <img src="images/pic-sidebar.jpg" alt="pic">
+                                <div class="inner">
+                                    <h3 class="title">Условный заголовок который придумал дизайнер</h3>
+                                    <p class="art-comment-count">3896</p>
+                                    <p class="art-view-count">3896</p> 
+                                </div>
+                            </a>
+                            <a href="#" class="post-preview-sbar">
+                                <img src="images/pic-sidebar.jpg" alt="pic">
+                                <div class="inner">
+                                    <h3 class="title">Условный заголовок который придумал дизайнер</h3>
+                                    <p class="art-comment-count">3896</p>
+                                    <p class="art-view-count">3896</p> 
+                                </div>
+                            </a>
+                            <a href="#" class="post-preview-sbar">
+                                <img src="images/pic-sidebar.jpg" alt="pic">
+                                <div class="inner">
+                                    <h3 class="title">Условный заголовок который придумал дизайнер</h3>
+                                    <p class="art-comment-count">3896</p>
+                                    <p class="art-view-count">3896</p> 
+                                </div>
+                            </a>
+                            <a href="#" class="post-preview-sbar">
+                                <img src="images/pic-sidebar.jpg" alt="pic">
+                                <div class="inner">
+                                    <h3 class="title">Условный заголовок который придумал дизайнер</h3>
+                                    <p class="art-comment-count">3896</p>
+                                    <p class="art-view-count">3896</p> 
+                                </div>
+                            </a>
+                        </div><!-- /.b-tab -->
+                    </div><!-- tabs-wrapper -->
+                </div><!-- widget -->
+
+                <div class="widget">
+                    <a href="#"><img src="images/banner.png" alt="Баннер"></a>
+                </div><!-- widget -->
+
+                <div class="widget">
+                    <a href="#" class="but-facebook-sbar">Мы на Facebook</a>
+                    <img src="images/facebook.jpg" alt="pic">
+                </div><!-- widget -->
+
+                <div class="widget">
+                    <a href="#"><img src="images/banner.png" alt="Баннер"></a>
+                </div><!-- widget -->
+            </aside><!-- .col -->
+        </div><!-- /.row -->
+        <a href="#header" id="up" class="but-up hidden-xs" title="наверх">наверх</a>
+    </main><!-- container -->
+
+    <footer class="site-footer" itemscope itemtype="http://schema.org/WPFooter">
+        <div class="b-navWrap hidden-xs">
+            <div class="site-navigation container" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <ul class="b-menu" id="nav-menu">
+                    <li class="menu-item"><a href="#">Главная</a></li>
+                    <li class="menu-item"><a href="#">сад</a></li>
+                    <li class="menu-item"><a href="#">огород</a></li>
+                    <li class="menu-item"><a href="#">в цветнике</a></li>
+                    <li class="menu-item"><a href="#">ландшафтный дизайн</a></li>
+                    <li class="menu-item"><a href="#">дачный погребок</a></li>
+                    <li class="menu-item"><a href="#">дачное строительство</a></li>
+                    <li class="menu-item"><a href="#">дачная ферма</a></li>
+                </ul>
+            </div>
+        </div><!-- /.b-navWrap -->
+
+        <div class="container">
+            <div class="b-legal">
+                <p>&#169; 2016 Современный дачник <br>
+                    Все права защищены. Полное или частичное копирование материалов сайта без согласования с редакцией запрещено.
+                </p>
+            </div><!-- /.b-legal -->
+            <div class="b-counter"><img src="images/counter.png" alt=""></div><!-- /.b-counter -->
+        </div><!-- /.container -->
+    </footer>
+</body>
+</html>
