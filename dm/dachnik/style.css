@@ -588,6 +588,7 @@ h3 {
   color: #b2b2b2;
   display: inline-block;
   margin: 0 10px;
+  font-size: .9em;
   background: url("images/sprite.png") no-repeat; }
 
 .art-view-count {
