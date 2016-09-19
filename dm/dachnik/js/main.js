@@ -56,6 +56,9 @@ function up() {
 function cloneSearch() {
     $('#search-form').clone().prependTo('#b-nav-search');
 }
+function cloneSubscribe() {
+    $('.b-subscribe-home').clone().insertAfter('.b-subscribe-page').addClass('visible-xs');
+}
 
 function moveSubscribe() {
     var subscribe = $('#subscribe-home');
@@ -97,4 +100,5 @@ $(document).ready(function(){
         moveSubscribe();
     });
     tabs();
+    cloneSubscribe();
 });
