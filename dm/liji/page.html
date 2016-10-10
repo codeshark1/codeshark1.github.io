@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Статья - Вставай на лыжи</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/vendor/modernizr-custom.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4_min.js"><\/script>')</script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--[if lt IE 10]>
+        <p class="browserupgrade">Вы используете <b>устаревший</b> браузер. Пожалуйста, <a href="http://browsehappy.com/?locale=ru_ru">обновите свой браузер</a> чтобы улучшить опыт работы с сайтом.</p>
+    <![endif]-->
+    <header class="site-header" itemscope itemtype="http://schema.org/WPHeader" id="header">
+        <nav class="site-navigation container" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <ul class="b-menu" id="nav-menu">
+                <li class="menu-item"><a href="#">Главная</a></li>
+                <li class="menu-item"><a href="#">Об авторе</a></li>
+                <li class="menu-item"><a href="#">О блоге</a></li>
+                <li class="menu-item"><a href="#">Все статьи</a></li>
+                <li class="menu-item"><a href="#">Реклама</a></li>                        
+                <li class="menu-item"><a href="#">Контакты</a></li>
+                <li class="menu-item"><a href="#">Старт</a></li>
+                <li class="menu-item"><a href="#">Подготовка</a></li>
+                <li class="menu-item"><a href="#">Соревнования</a></li>
+                <li class="menu-item"><a href="#">Восстановление</a></li>
+                <li class="menu-item menu-item-has-children">
+                    <a href="#">Финиш</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Протоколы</a></li>
+                        <li class="menu-item"><a href="#">Интервью</a></li>
+                        <li class="menu-item"><a href="#">Репортажи</a></li>
+                        <li class="menu-item"><a href="#">Впечатления</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav><!-- container -->
+
+        <div class="b-header_ttl">
+            <div class="container">
+                <div class="b-logo">
+                    <div class="site-title" itemprop="headline">Вставай на лыжи</div>
+                    <p class="site-description" itemprop="description">Лыжи и здоровье от теории к практике</p>            
+                </div><!-- /.b-logo -->
+                <div class="b-search hidden-xs">
+                    <form role="search" method="get" class="search-form" id="searchform" action="/">
+                        <input type="search" class="search-field" value="" name="s" placeholder="Поиск по блогу">
+                        <input type="submit" class="search-submit" id="searchsubmit" value="">
+                    </form>
+                </div><!-- /.b-search -->
+                <div class="b-butNav"><button id="nav-toggle" class="but-nav visible-xs" href="#"><i class="hamburger icon"></i></button></div><!-- /.b-butNav -->                  
+            </div><!-- /.container -->
+        </div><!-- /.b-header_ttl -->
+
+        <div class="b-menu-categs-column visible-xs container" id="menu-categs-column">
+            <a href="#" class="but but-form" id="categ-toggle">рубрики блога</a>
+            <ul>
+                <li class="menu-item anons"><a href="#">Анонсы блога</a></li>
+                <li class="menu-item apt"><a href="#">Спорт-аптека</a></li>
+                <li class="menu-item extra"><a href="#">Экстрасенcы</a></li>
+                <li class="menu-item help"><a href="#">Помощь новичку</a></li>
+                <li class="menu-item hist"><a href="#">История лыж</a></li>
+                <li class="menu-item humor"><a href="#">Юмор</a></li>
+                <li class="menu-item lij-brand menu-item-has-children">
+                    <a href="#">Лыжные бренды</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Fischer</a></li>
+                        <li class="menu-item"><a href="#">Atomic</a></li>
+                        <li class="menu-item"><a href="#">Madshus</a></li>
+                        <li class="menu-item"><a href="#">Rossignol</a></li>
+                        <li class="menu-item"><a href="#">Salomon</a></li>
+                        <li class="menu-item"><a href="#">Swix</a></li>
+                        <li class="menu-item"><a href="#">Craft</a></li>
+                        <li class="menu-item"><a href="#">Bjorn daehlie</a></li>
+                        <li class="menu-item"><a href="#">One way</a></li>
+                        <li class="menu-item"><a href="#">Odlo</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item lij-stars"><a href="#">Лыжные звезды</a></li>
+                <li class="menu-item news"><a href="#">Новости</a></li>
+                <li class="menu-item recom"><a href="#">Рекомендую</a></li>
+                <li class="menu-item sport-school"><a href="#">Спорт-школа</a></li>
+                <li class="menu-item sprav"><a href="#">Справочник</a></li>
+                <li class="menu-item style"><a href="#">Спорт-стиль</a></li>
+                <li class="menu-item travel"><a href="#">Путешествия</a></li>
+                <li class="menu-item zoj"><a href="#">ЗОЖ</a></li>
+            </ul>
+        </div><!-- /.b-menu-categs-column -->
+
+        <div class="b-header_categs container hidden-xs" id="menu-categs-tiles">
+            <ul class="b-menu-categs">
+                <li class="menu-item"><a href="#">старт</a></li>
+                <li class="menu-item"><a href="#">подготовка</a></li>
+                <li class="menu-item"><a href="#">соревнования</a></li>
+                <li class="menu-item menu-item-has-children">
+                    <a href="#">восстановление</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="#">
+                                <img src="images/cat-vosst-1.jpg" alt="pic">
+                                <div class="wrapper">
+                                    <span class="cat-amount">13</span>
+                                    <p class="cat-title">Баня</p>
+                                </div><!-- /.wrapper -->
+                            </a>
+                        </li><!-- /.menu-item -->
+                        <li class="menu-item">
+                            <a href="#">
+                                <img src="images/cat-vosst-2.jpg" alt="pic">
+                                <div class="wrapper">
+                                    <span class="cat-amount">13</span>
+                                    <p class="cat-title">Массаж</p>
+                                </div><!-- /.wrapper -->
+                            </a>
+                        </li><!-- /.menu-item -->
+                        <li class="menu-item">
+                            <a href="#">
+                                <img src="images/cat-vosst-3.jpg" alt="pic">
+                                <div class="wrapper">
+                                    <span class="cat-amount">13</span>
+                                    <p class="cat-title">Психолог</p>
+                                </div><!-- /.wrapper -->
+                            </a>
+                        </li><!-- /.menu-item -->
+                        <li class="menu-item">
+                            <a href="#">
+                                <img src="images/cat-vosst-4.jpg" alt="pic">
+                                <div class="wrapper">
+                                    <span class="cat-amount">13</span>
+                                    <p class="cat-title">Отдых</p>
+                                </div><!-- /.wrapper -->
+                            </a>
+                        </li><!-- /.menu-item -->
+                        <li class="menu-item">
+                            <a href="#">
+                                <img src="images/cat-vosst-5.jpg" alt="pic">
+                                <div class="wrapper">
+                                    <span class="cat-amount">13</span>
+                                    <p class="cat-title">Развлечения</p>
+                                </div><!-- /.wrapper -->
+                            </a>
+                        </li><!-- /.menu-item -->
+                    </ul><!-- /.sub-menu -->
+                </li>
+                <li class="menu-item"><a href="#">финиш</a></li>
+            </ul>            
+        </div><!-- /.b-header_categs container -->
+    </header>
+
+    <main class="b-main container">        
+        <div class="b-main_i">
+            <div class="site-content">
+                <nav class="b-breadcrumbs hidden-xs">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Все статьи</a></li>
+                        <li><a href="#">Рубрика блога</a></li>
+                    </ul>
+                </nav>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="calc-link-lij">
+                            <a href="#">Калькулятор <br> подбора лыж</a>
+                        </div><!-- /.calc-link-lij -->
+                    </div><!-- col -->
+                    <div class="col-sm-6">
+                        <div class="calc-link-velo">
+                            <a href="#">Калькулятор <br> подбора велосипеда</a>
+                        </div><!-- /.calc-link-lij -->
+                    </div><!-- col -->
+                </div><!-- /.row -->
+
+                <article class="b-art-main" itemscope itemtype="http://schema.org/Article">
+                    <div class="art-img_w">
+                        <div class="art-img" style="background: url(images/photo-post.jpg) no-repeat 50% 50%;">
+                            <p class="art-categ categ-vosst">
+                                <a href="#" itemprop="articleSection">Восстановление</a>
+                            </p>
+                        </div><!-- /.art-img -->
+                    </div><!-- /.art-img_w -->
+                    <header class="art-header">
+                        <h1 itemprop="name" class="h-main">Условный заголовок который придумал дизайнер в две строки для поста</h1>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <p class="art-author"><span class="hidden-xs">Автор: </span><span itemprop="author">Терентьев Олег</span></p>
+                                <p class="art-time"><time itemprop="datePublished" datetime="2015-03-19">30 июня 2016</time> в 21:45</p>                                                        
+                            </div>
+                            <div class="col-sm-2">
+                                <p class="art-comments">98</p>
+                            </div>
+                        </div><!-- /.row -->
+                    </header>                        
+                    <div itemprop="articleBody" class="art-body">
+                        <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык</p>                        
+                        <blockquote>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык</blockquote>
+                        <p>При создании генератора мы использовали небезызвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+                        <ul>
+                            <li>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного </li>
+                            <li>Текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. </li>
+                            <li>Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более</li>
+                        </ul>
+                        <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык</p>                        
+                        <p>При создании генератора мы использовали небезызвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+                        <ol>
+                            <li>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного </li>
+                            <li>Текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. </li>
+                            <li>Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более</li>
+                        </ol>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Заголовок ячейки</th>
+                                    <th>Заголовок</th>
+                                    <th>Заголовок</th>
+                                    <th>Заголовок</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Текст ячейки</td>
+                                    <td>21</td>
+                                    <td>134</td>
+                                    <td>495</td>
+                                </tr>
+                                <tr>
+                                    <td>Текст ячейки</td>
+                                    <td>15</td>
+                                    <td>568</td>
+                                    <td>39</td>
+                                </tr>
+                                <tr>
+                                    <td>Текст ячейки</td>
+                                    <td>7</td>
+                                    <td>394</td>
+                                    <td>33</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- art-body -->
+
+                    <div class="art-footer b-mg">
+                        <img src="images/social.png" alt="pic">
+                    </div><!-- art-footer -->
+
+                    <section class="b-subscribe-article b-mg hidden-xs">
+                        <div class="inner">                        
+                            <h3 class="headline">Подпишись на обновления блога!</h3>
+                            <p class="subhead">И получай новые статьи на e-mail</p>
+                            <form action="#" class="form-subscribe">
+                                <input type="email" placeholder="Введите e-mail">
+                                <input type="submit" value="подписаться" class="but but-form">
+                            </form>                        
+                        </div><!-- /.inner -->
+                    </section><!-- /.b-subscribe -->
+
+                    <section class="b-mg">
+                        <h2 class="h-sec">Еще статьи по теме</h2>
+                        <ul class="list-art-related">
+                            <li>
+                                <a href="#" class="title">Американка Джессика Диггинс в прошлом сезоне была единственной, кто обыграл норвежек в дистанционной гонке</a>
+                                <p class="art-comments">454</p>
+                                <p class="art-views">98</p>
+                            </li>
+                            <li>
+                                <a href="#" class="title">Американка Джессика Диггинс в прошлом сезоне была единственной, кто обыграл норвежек в дистанционной гонке</a>
+                                <p class="art-comments">454</p>
+                                <p class="art-views">98</p>
+                            </li>
+                            <li>
+                                <a href="#" class="title">Американка Джессика Диггинс в прошлом сезоне была единственной, кто обыграл норвежек в дистанционной гонке</a>
+                                <p class="art-comments">454</p>
+                                <p class="art-views">98</p>
+                            </li>
+                            <li>
+                                <a href="#" class="title">Американка Джессика Диггинс в прошлом сезоне была единственной, кто обыграл норвежек в дистанционной гонке</a>
+                                <p class="art-comments">454</p>
+                                <p class="art-views">98</p>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section id="comments" class="b-comments">
+                        <div class="comments-title">Комментариев к статье: 3</div>
+
+                        <ol class="comment-list">
+                            <li class="comment">
+                                <div class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+                                    <header class="comment-header">
+                                        <div class="comment-userpic"><img class="userpic" src="images/userpic1.jpg" alt="pic"></div>
+                                        <cite class="comment-author" itemprop="creator" data-uri="http://site.ru/">Кирилл</cite>
+                                        <time class="comment-time" itemprop="datePublished">30 июня 2016 в 21:45</time>
+                                        <span class="comment-reply-link" data-href="#">Ответить</span>
+                                    </header>                                    
+                                    <div class="comment-text" itemprop="text">
+                                        Хъелмесету дали ответственность за лучшую лыжницу Америки, 
+                                        и эта неделя может поспособствовать тому, что впоследствии 
+                                        его обвинят в утечке норвежского золота в сторону США: 
+                                        в тренировочном лагере Диггинс находится на равных условиях 
+                                        с норвежками.публичных выступлений 
+                                    </div><!-- comment-text -->
+                                </div><!-- comment-body -->
+                            </li><!-- /.comment -->
+                            <li class="comment">
+                                <div class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+                                    <header class="comment-header">
+                                        <div class="comment-userpic"><img class="userpic" src="images/userpic2.jpg" alt="pic"></div>
+                                        <cite class="comment-author" itemprop="creator" data-uri="http://site.ru/">Кирилл</cite>
+                                        <time class="comment-time" itemprop="datePublished">30 июня 2016 в 21:45</time>                                        
+                                        <span class="comment-reply-link" data-href="#">Ответить</span>
+                                    </header>                                    
+                                    <div class="comment-text" itemprop="text">
+                                        Хъелмесету дали ответственность за лучшую лыжницу Америки, 
+                                        и эта неделя может поспособствовать тому, что впоследствии 
+                                        его обвинят в утечке норвежского золота в сторону США: 
+                                        в тренировочном лагере Диггинс находится на равных условиях 
+                                        с норвежками.публичных выступлений 
+                                    </div><!-- comment-text -->
+                                </div><!-- comment-body -->
+                                <ol class="children">
+                                    <li class="comment depth-2 bypostauthor">
+                                        <div class="comment-body" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+                                            <header class="comment-header">
+                                                <div class="comment-userpic"><img class="userpic" src="images/userpic1.jpg" alt="pic"></div>
+                                                <cite class="comment-author" itemprop="creator" data-uri="http://site.ru/">Кирилл</cite>
+                                                <time class="comment-time" itemprop="datePublished">30 июня 2016 в 21:45</time>                                        
+                                                <span class="comment-reply-link" data-href="#">Ответить</span>
+                                            </header>                                    
+                                            <div class="comment-text" itemprop="text">
+                                                Хъелмесету дали ответственность за лучшую лыжницу Америки, 
+                                                и эта неделя может поспособствовать тому, что впоследствии 
+                                                его обвинят в утечке норвежского золота в сторону США: 
+                                                в тренировочном лагере Диггинс находится на равных условиях 
+                                                с норвежками.публичных выступлений 
+                                            </div><!-- comment-text -->
+                                        </div><!-- comment-body -->
+                                    </li><!-- /.comment -->
+                                </ol><!-- /.children -->
+                            </li><!-- /.comment -->
+                        </ol><!-- commentlist -->
+
+                        <section id="respond" class="comment-respond">
+                            <h3 id="reply-title" class="comment-reply-title">Оставить комментарий</h3>
+                            
+                            <form action="#" method="#" id="commentform" class="comment-form">
+                                <div class="b-inputs">
+                                    <input id="author" name="author" type="text" value="" aria-required="true" placeholder="Введите имя">
+                                    <input id="email" name="email" type="email" value="" aria-required="true" placeholder="Введите e-mail">
+                                    <input id="url" name="url" type="url" value="" size="30" placeholder="Введите сайт (не обяз.)">
+                                </div><!-- inputs -->
+
+                                <textarea id="comment" name="comment" rows="7" aria-required="true" placeholder="Введите текст"></textarea>
+
+                                <p class="subscribe-to-comments">                                    
+                                    <label for="subscribe">
+                                        <input type="checkbox" name="subscribe" id="subscribe" value="subscribe">
+                                        <span>Я хочу получать уведомления об ответах на e-mail</span>
+                                    </label>
+                                </p>
+                                <div class="clearfix">
+                                    <div class="b-smileys">
+                                        <img src="images/smile1.png" alt="pic">
+                                        <img src="images/smile2.png" alt="pic">
+                                        <img src="images/smile3.png" alt="pic">
+                                        <img src="images/smile4.png" alt="pic">
+                                        <img src="images/smile5.png" alt="pic">
+                                        <img src="images/smile6.png" alt="pic">
+                                        <img src="images/smile7.png" alt="pic">
+                                        <img src="images/smile8.png" alt="pic">
+                                        <img src="images/smile9.png" alt="pic">
+                                        <img src="images/smile10.png" alt="pic">
+                                    </div>
+                                    <p class="form-submit">
+                                        <input name="submit" type="submit" id="submit" class="submit" value="Отправить">
+                                    </p>
+                                </div><!-- /.clearfix -->
+                            </form>
+                        </section><!-- #respond -->
+                    </section><!-- b-comments -->                    
+                </article>
+
+                <div class="row hidden-xs b-mg">
+                    <div class="col-sm-4"><img src="images/ad1.jpg" alt="pic"></div><!-- /.col-sm-4 -->
+                    <div class="col-sm-4"><img src="images/ad2.jpg" alt="pic"></div><!-- /.col-sm-4 -->
+                    <div class="col-sm-4"><img src="images/ad1.jpg" alt="pic"></div><!-- /.col-sm-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.site-content -->
+
+            <aside class="site-sidebar widget-area hidden-xs" itemscope itemtype="http://schema.org/WPSideBar">                
+                <div class="widget b-menu-categs-column" id="menu-categs-column-widget">
+                    <div class="widget-header">Рубрики блога</div>
+                    <ul>
+                        <li class="menu-item anons"><a href="#">Анонсы блога</a></li>
+                        <li class="menu-item apt"><a href="#">Спорт-аптека</a></li>
+                        <li class="menu-item extra"><a href="#">Экстрасенcы</a></li>
+                        <li class="menu-item help"><a href="#">Помощь новичку</a></li>
+                        <li class="menu-item hist"><a href="#">История лыж</a></li>
+                        <li class="menu-item humor"><a href="#">Юмор</a></li>
+                        <li class="menu-item lij-brand menu-item-has-children">
+                            <a href="#">Лыжные бренды</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">Fischer</a></li>
+                                <li class="menu-item"><a href="#">Atomic</a></li>
+                                <li class="menu-item"><a href="#">Madshus</a></li>
+                                <li class="menu-item"><a href="#">Rossignol</a></li>
+                                <li class="menu-item"><a href="#">Salomon</a></li>
+                                <li class="menu-item"><a href="#">Swix</a></li>
+                                <li class="menu-item"><a href="#">Craft</a></li>
+                                <li class="menu-item"><a href="#">Bjorn daehlie</a></li>
+                                <li class="menu-item"><a href="#">One way</a></li>
+                                <li class="menu-item"><a href="#">Odlo</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item lij-stars"><a href="#">Лыжные звезды</a></li>
+                        <li class="menu-item news"><a href="#">Новости</a></li>
+                        <li class="menu-item recom"><a href="#">Рекомендую</a></li>
+                        <li class="menu-item sport-school"><a href="#">Спорт-школа</a></li>
+                        <li class="menu-item sprav"><a href="#">Справочник</a></li>
+                        <li class="menu-item style"><a href="#">Спорт-стиль</a></li>
+                        <li class="menu-item travel"><a href="#">Путешествия</a></li>
+                        <li class="menu-item zoj"><a href="#">ЗОЖ</a></li>
+                    </ul>
+                </div><!-- /.widget -->
+
+                <div class="b-subscribe-widget widget" id="subscribe-widget">
+                    <div class="inner">
+                        <p class="headline">Подпишись на <br> обновления блога!</p>
+                        <form action="#" class="form-subscribe">
+                            <input type="email" placeholder="Введите e-mail">
+                            <input type="submit" value="подписаться" class="but but-form">
+                        </form>                        
+                    </div><!-- /.inner -->
+                </div><!-- /.widget b-subscribe -->
+
+                <div class="widget widget-pop">
+                    <div class="widget-header">Популярные статьи</div>
+                                        
+                    <div class="art-prev-sm">
+                        <div class="col-1"><a class="widg-thumb" href="#"><img src="images/thumb.jpg" alt="pic"></a></div>
+                        <div class="col-2">
+                            <a href="#" class="headline">Условный заголовок статьи </a>
+                            <div class="art-prev-sm_foot">
+                                <p class="art-comments">454</p>
+                                <p class="art-views">98</p>                                
+                            </div>
+                        </div><!-- col -->
+                    </div><!-- /.art-prev-sm -->                    
+                    <div class="art-prev-sm">
+                        <div class="col-1"><a class="widg-thumb" href="#"><img src="images/thumb.jpg" alt="pic"></a></div>
+                        <div class="col-2">
+                            <a href="#" class="headline">Условный заголовок статьи </a>
+                            <div class="art-prev-sm_foot">
+                                <p class="art-comments">454</p>
+                                <p class="art-views">98</p>                                
+                            </div>
+                        </div><!-- col -->
+                    </div><!-- /.art-prev-sm -->   
+                    <div class="art-prev-sm">
+                        <div class="col-1"><a class="widg-thumb" href="#"><img src="images/thumb.jpg" alt="pic"></a></div>
+                        <div class="col-2">
+                            <a href="#" class="headline">Условный заголовок статьи </a>
+                            <div class="art-prev-sm_foot">
+                                <p class="art-comments">454</p>
+                                <p class="art-views">98</p>                                
+                            </div>
+                        </div><!-- col -->
+                    </div><!-- /.art-prev-sm -->   
+                    <div class="art-prev-sm">
+                        <div class="col-1"><a class="widg-thumb" href="#"><img src="images/thumb.jpg" alt="pic"></a></div>
+                        <div class="col-2">
+                            <a href="#" class="headline">Условный заголовок статьи </a>
+                            <div class="art-prev-sm_foot">
+                                <p class="art-comments">454</p>
+                                <p class="art-views">98</p>                                
+                            </div>
+                        </div><!-- col -->
+                    </div><!-- /.art-prev-sm -->    
+                </div><!-- widget -->
+
+                <div class="widget widget-commenters">
+                    <div class="widget-header">Рейтинг авторов</div>
+                    <ul>
+                        <li>
+                            <a class="userpic" href="#"><img src="images/userpic1.jpg" alt="pic"></a>
+                            <a href="#" class="widget-commenter-name">Кирилл</a>
+                            <p class="wid-comments">36</p>
+                        </li>
+                        <li>
+                            <a class="userpic" href="#"><img src="images/userpic1.jpg" alt="pic"></a>
+                            <a href="#" class="widget-commenter-name">Кирилл</a>
+                            <p class="wid-comments">36</p>
+                        </li>
+                        <li>
+                            <a class="userpic" href="#"><img src="images/userpic1.jpg" alt="pic"></a>
+                            <a href="#" class="widget-commenter-name">Кирилл</a>
+                            <p class="wid-comments">36</p>
+                        </li>
+                        <li>
+                            <a class="userpic" href="#"><img src="images/userpic1.jpg" alt="pic"></a>
+                            <a href="#" class="widget-commenter-name">Кирилл</a>
+                            <p class="wid-comments">36</p>
+                        </li>
+                        <li>
+                            <a class="userpic" href="#"><img src="images/userpic1.jpg" alt="pic"></a>
+                            <a href="#" class="widget-commenter-name">Кирилл</a>
+                            <p class="wid-comments">36</p>
+                        </li>
+                        <li>
+                            <a class="userpic" href="#"><img src="images/userpic1.jpg" alt="pic"></a>
+                            <a href="#" class="widget-commenter-name">Кирилл</a>
+                            <p class="wid-comments">36</p>
+                        </li>
+                    </ul>
+                </div><!-- widget -->
+
+                <div class="widget widget-banner">
+                    <div class="widget-header">Обратите внимание</div>
+                    <img src="images/banner.png" alt="баннер">
+                </div><!-- /.widget -->                
+            </aside><!-- site-sidebar -->
+            <div class="b-but-up">
+                <a href="#header" id="up" class="but but-up hidden-xs" title="наверх">наверх</a>
+            </div><!-- /.b-but-up -->        
+        </div><!-- /.b-main_i -->
+    </main><!-- b-main container -->    
+
+    <footer class="site-footer" itemscope itemtype="http://schema.org/WPFooter">            
+        <div class="site-navigation container hidden-xs" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <ul class="b-menu" id="nav-menu">
+                <li class="menu-item"><a href="#">Главная</a></li>
+                <li class="menu-item"><a href="#">Об авторе</a></li>
+                <li class="menu-item"><a href="#">О блоге</a></li>
+                <li class="menu-item"><a href="#">Все статьи</a></li>
+                <li class="menu-item"><a href="#">Реклама</a></li>                        
+                <li class="menu-item"><a href="#">Контакты</a></li>
+                <li class="menu-item"><a href="#">Старт</a></li>
+                <li class="menu-item"><a href="#">Подготовка</a></li>
+                <li class="menu-item"><a href="#">Соревнования</a></li>
+                <li class="menu-item"><a href="#">Восстановление</a></li>
+                <li class="menu-item expanded">
+                    <a href="#">Финиш</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Протоколы</a></li>
+                        <li class="menu-item"><a href="#">Интервью</a></li>
+                        <li class="menu-item"><a href="#">Репортажи</a></li>
+                        <li class="menu-item"><a href="#">Впечатления</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- container -->        
+        <div class="site-footer-img"></div><!-- /.site-footer-img -->
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <small>
+                            &#169;2016 ВСТАВАЙ-НА-ЛЫЖИ. <br>
+                            При копировании статей,обязательны ссылки на первоисточник.
+                        </small>
+                    </div><!-- /.col -->
+                    <div class="col-sm-4 tr-md b-counter">
+                        <a href="#"><img src="images/counter.png" alt="счётчик"></a>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /.site-footer-bottom -->
+    </footer>
+</body>
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Вставай на лыжи</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/vendor/modernizr-custom.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4_min.js"><\/script>')</script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--[if lt IE 10]>
+        <p class="browserupgrade">Вы используете <b>устаревший</b> браузер. Пожалуйста, <a href="http://browsehappy.com/?locale=ru_ru">обновите свой браузер</a> чтобы улучшить опыт работы с сайтом.</p>
+    <![endif]-->
+    <header class="site-header" itemscope itemtype="http://schema.org/WPHeader" id="header">
+        <nav class="site-navigation container" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <ul class="b-menu" id="nav-menu">
+                <li class="menu-item"><a href="#">Главная</a></li>
+                <li class="menu-item"><a href="#">Об авторе</a></li>
+                <li class="menu-item"><a href="#">О блоге</a></li>
+                <li class="menu-item"><a href="#">Все статьи</a></li>
+                <li class="menu-item"><a href="#">Реклама</a></li>                        
+                <li class="menu-item"><a href="#">Контакты</a></li>
+                <li class="menu-item"><a href="#">Старт</a></li>
+                <li class="menu-item"><a href="#">Подготовка</a></li>
+                <li class="menu-item"><a href="#">Соревнования</a></li>
+                <li class="menu-item"><a href="#">Восстановление</a></li>
+                <li class="menu-item">
+                    <a href="#">Финиш</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Протоколы</a></li>
+                        <li class="menu-item"><a href="#">Интервью</a></li>
+                        <li class="menu-item"><a href="#">Репортажи</a></li>
+                        <li class="menu-item"><a href="#">Впечатления</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav><!-- container -->
+
+        <div class="b-header_ttl">
+            <div class="container">
+                <div class="b-logo">
+                    <h1 class="site-title" itemprop="headline">Вставай на лыжи</h1>
+                    <p class="site-description" itemprop="description">Лыжи и здоровье от теории к практике</p>            
+                </div><!-- /.b-logo -->
+                <div class="b-search hidden-xs">
+                    <form role="search" method="get" class="search-form" id="searchform" action="/">
+                        <input type="search" class="search-field" value="" name="s" placeholder="Поиск по блогу">
+                        <input type="submit" class="search-submit" id="searchsubmit" value="">
+                    </form>
+                </div><!-- /.b-search -->
+                <div class="b-butNav"><button id="nav-toggle" class="but-nav visible-xs" href="#"><i class="hamburger icon"></i></button></div><!-- /.b-butNav -->                  
+            </div><!-- /.container -->
+        </div><!-- /.b-header_ttl -->
+
+        <div class="b-header_categs container hidden-xs">
+            <ul class="b-menu-categs">
+                <li class="menu-item"><a href="#">старт</a></li>
+                <li class="menu-item"><a href="#">подготовка</a></li>
+                <li class="menu-item"><a href="#">соревнования</a></li>
+                <li class="menu-item"><a href="#">восстановление</a></li>
+                <li class="menu-item"><a href="#">финиш</a></li>
+            </ul>
+        </div><!-- /.b-header_categs container -->
+
+        <div class="b-tiles container hidden-xs">
+            <ul class="b-menu-tiles">
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="images/cat-news.jpg" alt="pic">
+                        <div class="wrapper">
+                            <span class="cat-amount">13</span>
+                            <p class="cat-title">Новости</p>
+                        </div><!-- /.wrapper -->
+                    </a>
+                </li><!-- /.menu-item -->
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="images/cat-sprav.jpg" alt="pic">
+                        <div class="wrapper">
+                            <span class="cat-amount">13</span>
+                            <p class="cat-title">Справочник</p>
+                        </div><!-- /.wrapper -->
+                    </a>
+                </li><!-- /.menu-item -->
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="images/cat-apt.jpg" alt="pic">
+                        <div class="wrapper">
+                            <span class="cat-amount">134</span>
+                            <p class="cat-title">Спорт-аптека</p>
+                        </div><!-- /.wrapper -->
+                    </a>
+                </li><!-- /.menu-item -->
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="images/cat-sportstil.jpg" alt="pic">
+                        <div class="wrapper">
+                            <span class="cat-amount">13</span>
+                            <p class="cat-title">Спорт-стиль</p>
+                        </div><!-- /.wrapper -->
+                    </a>
+                </li><!-- /.menu-item -->
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="images/cat-recom.jpg" alt="pic">
+                        <div class="wrapper">
+                            <span class="cat-amount">13</span>
+                            <p class="cat-title">Рекомендую</p>
+                        </div><!-- /.wrapper -->
+                    </a>
+                </li><!-- /.menu-item -->
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="images/cat-hist.jpg" alt="pic">
+                        <div class="wrapper">
+                            <span class="cat-amount">134</span>
+                            <p class="cat-title">История лыж</p>
+                        </div><!-- /.wrapper -->
+                    </a>
+                </li><!-- /.menu-item -->
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="images/cat-travel.jpg" alt="pic">
+                        <div class="wrapper">
+                            <span class="cat-amount">13</span>
+                            <p class="cat-title">Путешествия</p>
+                        </div><!-- /.wrapper -->
+                    </a>
+                </li><!-- /.menu-item -->
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="images/cat-zoj.jpg" alt="pic">
+                        <div class="wrapper">
+                            <span class="cat-amount">13</span>
+                            <p class="cat-title">ЗОЖ</p>
+                        </div><!-- /.wrapper -->
+                    </a>
+                </li><!-- /.menu-item -->
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="images/cat-humor.jpg" alt="pic">
+                        <div class="wrapper">
+                            <span class="cat-amount">134</span>
+                            <p class="cat-title">Юмор</p>
+                        </div><!-- /.wrapper -->
+                    </a>
+                </li><!-- /.menu-item -->
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="images/cat-extrasens.jpg" alt="pic">
+                        <div class="wrapper">
+                            <span class="cat-amount">13</span>
+                            <p class="cat-title">Экстрасенсы</p>
+                        </div><!-- /.wrapper -->
+                    </a>
+                </li><!-- /.menu-item -->
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="images/cat-lij-brand.jpg" alt="pic">
+                        <div class="wrapper">
+                            <span class="cat-amount">13</span>
+                            <p class="cat-title">Лыжные бренды</p>
+                        </div><!-- /.wrapper -->
+                    </a>
+                </li><!-- /.menu-item -->
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="images/cat-lij-stars.jpg" alt="pic">
+                        <div class="wrapper">
+                            <span class="cat-amount">13</span>
+                            <p class="cat-title">Лыжные звезды</p>
+                        </div><!-- /.wrapper -->
+                    </a>
+                </li><!-- /.menu-item -->
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="images/cat-sport-school.jpg" alt="pic">
+                        <div class="wrapper">
+                            <span class="cat-amount">13</span>
+                            <p class="cat-title">Спорт-школа</p>
+                        </div><!-- /.wrapper -->
+                    </a>
+                </li><!-- /.menu-item -->
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="images/cat-newbie.jpg" alt="pic">
+                        <div class="wrapper">
+                            <span class="cat-amount">13</span>
+                            <p class="cat-title">Помощь новичку</p>
+                        </div><!-- /.wrapper -->
+                    </a>
+                </li><!-- /.menu-item -->
+                <li class="menu-item">
+                    <a href="#">
+                        <img src="images/cat-anons.jpg" alt="pic">
+                        <div class="wrapper">
+                            <span class="cat-amount">13</span>
+                            <p class="cat-title">Анонсы блога</p>
+                        </div><!-- /.wrapper -->
+                    </a>
+                </li><!-- /.menu-item -->
+            </ul><!-- /.b-menu-tiles -->
+        </div><!-- /.b-tiles container -->
+    </header>
+
+    <main class="b-main container">        
+        <div class="b-main_i">
+            <div class="site-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="calc-link-lij">
+                            <a href="#">Калькулятор <br> подбора лыж</a>
+                        </div><!-- /.calc-link-lij -->
+                    </div><!-- col -->
+                    <div class="col-sm-6">
+                        <div class="calc-link-velo">
+                            <a href="#">Калькулятор <br> подбора велосипеда</a>
+                        </div><!-- /.calc-link-lij -->
+                    </div><!-- col -->
+                </div><!-- /.row -->
+
+                <article class="b-art-prev b-art-main" itemscope itemtype="http://schema.org/Article">
+                    <div class="art-img_w">
+                        <div class="art-img" style="background: url(images/photo-post.jpg) no-repeat 50% 50%;">
+                            <p class="art-categ categ-vosst">
+                                <a href="#" itemprop="articleSection">Восстановление</a>
+                            </p>
+                        </div><!-- /.art-img -->
+                    </div><!-- /.art-img_w -->
+                    <header class="art-header">
+                        <h2 itemprop="name" class="h-main"><a href="#">Условный заголовок который придумал дизайнер в две строки для поста</a></h2>
+                        <p class="art-author"><span class="hidden-xs">Автор: </span><span itemprop="author">Терентьев Олег</span></p>
+                        <p class="art-time"><time itemprop="datePublished" datetime="2015-03-19">30 июня 2016</time> в 21:45</p>                        
+                    </header>                        
+                    <div itemprop="articleBody" class="art-body">
+                        <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык</p>                        
+                    </div>
+                    <footer class="art-footer">
+                        <a href="#" class="but but-main">Читать далее</a>                        
+                        <p class="art-comments">98</p>
+                    </footer>
+                </article>
+
+                <article class="b-art-prev b-art-main" itemscope itemtype="http://schema.org/Article">
+                    <div class="art-img_w">
+                        <div class="art-img" style="background: url(images/photo-post.jpg) no-repeat 50% 50%;">
+                            <p class="art-categ categ-vosst">
+                                <a href="#" itemprop="articleSection">Восстановление</a>
+                            </p>
+                        </div><!-- /.art-img -->
+                    </div><!-- /.art-img_w -->
+                    <header class="art-header">
+                        <h2 itemprop="name" class="h-main"><a href="#">Условный заголовок который придумал дизайнер в две строки для поста</a></h2>
+                        <p class="art-author"><span class="hidden-xs">Автор: </span><span itemprop="author">Терентьев Олег</span></p>
+                        <p class="art-time"><time itemprop="datePublished" datetime="2015-03-19">30 июня 2016</time> в 21:45</p>                        
+                    </header>                        
+                    <div itemprop="articleBody" class="art-body">
+                        <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык</p>                        
+                    </div>
+                    <footer class="art-footer">
+                        <a href="#" class="but but-main">Читать далее</a>                        
+                        <p class="art-comments">98</p>
+                    </footer>
+                </article>
+
+                <article class="b-art-prev b-art-main" itemscope itemtype="http://schema.org/Article">
+                    <div class="art-img_w">
+                        <div class="art-img" style="background: url(images/photo-post.jpg) no-repeat 50% 50%;">
+                            <p class="art-categ categ-vosst">
+                                <a href="#" itemprop="articleSection">Восстановление</a>
+                            </p>
+                        </div><!-- /.art-img -->
+                    </div><!-- /.art-img_w -->
+                    <header class="art-header">
+                        <h2 itemprop="name" class="h-main"><a href="#">Условный заголовок который придумал дизайнер в две строки для поста</a></h2>
+                        <p class="art-author"><span class="hidden-xs">Автор: </span><span itemprop="author">Терентьев Олег</span></p>
+                        <p class="art-time"><time itemprop="datePublished" datetime="2015-03-19">30 июня 2016</time> в 21:45</p>                        
+                    </header>                        
+                    <div itemprop="articleBody" class="art-body">
+                        <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык</p>                        
+                    </div>
+                    <footer class="art-footer">
+                        <a href="#" class="but but-main">Читать далее</a>                        
+                        <p class="art-comments">98</p>
+                    </footer>
+                </article>
+
+                <article class="b-art-prev b-art-main" itemscope itemtype="http://schema.org/Article">
+                    <div class="art-img_w">
+                        <div class="art-img" style="background: url(images/photo-post.jpg) no-repeat 50% 50%;">
+                            <p class="art-categ categ-vosst">
+                                <a href="#" itemprop="articleSection">Восстановление</a>
+                            </p>
+                        </div><!-- /.art-img -->
+                    </div><!-- /.art-img_w -->
+                    <header class="art-header">
+                        <h2 itemprop="name" class="h-main"><a href="#">Условный заголовок который придумал дизайнер в две строки для поста</a></h2>
+                        <p class="art-author"><span class="hidden-xs">Автор: </span><span itemprop="author">Терентьев Олег</span></p>
+                        <p class="art-time"><time itemprop="datePublished" datetime="2015-03-19">30 июня 2016</time> в 21:45</p>                        
+                    </header>                        
+                    <div itemprop="articleBody" class="art-body">
+                        <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык</p>                        
+                    </div>
+                    <footer class="art-footer">
+                        <a href="#" class="but but-main">Читать далее</a>                        
+                        <p class="art-comments">98</p>
+                    </footer>
+                </article>
+
+                <article class="b-art-prev b-art-main" itemscope itemtype="http://schema.org/Article">
+                    <div class="art-img_w">
+                        <div class="art-img" style="background: url(images/photo-post.jpg) no-repeat 50% 50%;">
+                            <p class="art-categ categ-vosst">
+                                <a href="#" itemprop="articleSection">Восстановление</a>
+                            </p>
+                        </div><!-- /.art-img -->
+                    </div><!-- /.art-img_w -->
+                    <header class="art-header">
+                        <h2 itemprop="name" class="h-main"><a href="#">Условный заголовок который придумал дизайнер в две строки для поста</a></h2>
+                        <p class="art-author"><span class="hidden-xs">Автор: </span><span itemprop="author">Терентьев Олег</span></p>
+                        <p class="art-time"><time itemprop="datePublished" datetime="2015-03-19">30 июня 2016</time> в 21:45</p>                        
+                    </header>                        
+                    <div itemprop="articleBody" class="art-body">
+                        <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык</p>                        
+                    </div>
+                    <footer class="art-footer">
+                        <a href="#" class="but but-main">Читать далее</a>                        
+                        <p class="art-comments">98</p>
+                    </footer>
+                </article>
+                <nav class="navigation pagination hidden-xs" role="navigation">
+                    <div class="screen-reader-text">Навигация по записям</div>
+                    <div class="nav-links">
+                        <a class="prev page-numbers but but-second" href="#">назад</a>
+                        <a class="page-numbers" href="#">1</a>
+                        <span class="page-numbers current">2</span>
+                        <a class="page-numbers" href="#">3</a>
+                        <a class="page-numbers" href="#">4</a>
+                        <a class="page-numbers" href="#">5</a>
+                        <a class="page-numbers" href="#">6</a>
+                        <a class="page-numbers" href="#">7</a>
+                        <a class="page-numbers" href="#">8</a>
+                        <span class="page-numbers dots">…</span>                        
+                        <a class="page-numbers" href="#">99</a>
+                        <a class="next page-numbers but but-second" href="#">вперед</a>
+                    </div>
+                    <form action="#" class="pagination-form">
+                        <input type="text" class="input-page">
+                        <input type="submit" value="Перейти" class="submit but but-second">
+                    </form>
+                </nav>
+                <a href="#" class="but but-second but-more visible-xs">загрузить больше</a>
+
+                <div class="row hidden-xs b-mg">
+                    <div class="col-sm-4"><img src="images/ad1.jpg" alt="pic"></div><!-- /.col-sm-4 -->
+                    <div class="col-sm-4"><img src="images/ad2.jpg" alt="pic"></div><!-- /.col-sm-4 -->
+                    <div class="col-sm-4"><img src="images/ad1.jpg" alt="pic"></div><!-- /.col-sm-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.site-content -->
+            <aside class="site-sidebar widget-area hidden-xs" itemscope itemtype="http://schema.org/WPSideBar">                
+                <div class="b-subscribe-widget widget">
+                    <div class="inner">                        
+                        <p class="headline">Подпишись на <br> обновления блога!</p>
+                        <form action="#" class="form-subscribe">
+                            <input type="email" placeholder="Введите e-mail">
+                            <input type="submit" value="подписаться" class="but but-form">
+                        </form>                        
+                    </div><!-- /.inner -->
+                </div><!-- /.widget b-subscribe -->
+
+                <div class="widget widget-pop">
+                    <div class="widget-header">Популярные статьи</div>
+                                        
+                    <div class="art-prev-sm">
+                        <div class="col-1"><a class="widg-thumb" href="#"><img src="images/thumb.jpg" alt="pic"></a></div>
+                        <div class="col-2">
+                            <a href="#" class="headline">Условный заголовок статьи </a>
+                            <div class="art-prev-sm_foot">
+                                <p class="art-comments">454</p>
+                                <p class="art-views">98</p>                                
+                            </div>
+                        </div><!-- col -->
+                    </div><!-- /.art-prev-sm -->                    
+                    <div class="art-prev-sm">
+                        <div class="col-1"><a class="widg-thumb" href="#"><img src="images/thumb.jpg" alt="pic"></a></div>
+                        <div class="col-2">
+                            <a href="#" class="headline">Условный заголовок статьи </a>
+                            <div class="art-prev-sm_foot">
+                                <p class="art-comments">454</p>
+                                <p class="art-views">98</p>                                
+                            </div>
+                        </div><!-- col -->
+                    </div><!-- /.art-prev-sm -->   
+                    <div class="art-prev-sm">
+                        <div class="col-1"><a class="widg-thumb" href="#"><img src="images/thumb.jpg" alt="pic"></a></div>
+                        <div class="col-2">
+                            <a href="#" class="headline">Условный заголовок статьи </a>
+                            <div class="art-prev-sm_foot">
+                                <p class="art-comments">454</p>
+                                <p class="art-views">98</p>                                
+                            </div>
+                        </div><!-- col -->
+                    </div><!-- /.art-prev-sm -->   
+                    <div class="art-prev-sm">
+                        <div class="col-1"><a class="widg-thumb" href="#"><img src="images/thumb.jpg" alt="pic"></a></div>
+                        <div class="col-2">
+                            <a href="#" class="headline">Условный заголовок статьи </a>
+                            <div class="art-prev-sm_foot">
+                                <p class="art-comments">454</p>
+                                <p class="art-views">98</p>                                
+                            </div>
+                        </div><!-- col -->
+                    </div><!-- /.art-prev-sm -->    
+                </div><!-- widget -->
+
+                <div class="widget widget-commenters">
+                    <div class="widget-header">Рейтинг авторов</div>
+                    <ul>
+                        <li>
+                            <a class="userpic" href="#"><img src="images/userpic1.jpg" alt="pic"></a>
+                            <a href="#" class="widget-commenter-name">Кирилл</a>
+                            <p class="wid-comments">36</p>
+                        </li>
+                        <li>
+                            <a class="userpic" href="#"><img src="images/userpic1.jpg" alt="pic"></a>
+                            <a href="#" class="widget-commenter-name">Кирилл</a>
+                            <p class="wid-comments">36</p>
+                        </li>
+                        <li>
+                            <a class="userpic" href="#"><img src="images/userpic1.jpg" alt="pic"></a>
+                            <a href="#" class="widget-commenter-name">Кирилл</a>
+                            <p class="wid-comments">36</p>
+                        </li>
+                        <li>
+                            <a class="userpic" href="#"><img src="images/userpic1.jpg" alt="pic"></a>
+                            <a href="#" class="widget-commenter-name">Кирилл</a>
+                            <p class="wid-comments">36</p>
+                        </li>
+                        <li>
+                            <a class="userpic" href="#"><img src="images/userpic1.jpg" alt="pic"></a>
+                            <a href="#" class="widget-commenter-name">Кирилл</a>
+                            <p class="wid-comments">36</p>
+                        </li>
+                        <li>
+                            <a class="userpic" href="#"><img src="images/userpic1.jpg" alt="pic"></a>
+                            <a href="#" class="widget-commenter-name">Кирилл</a>
+                            <p class="wid-comments">36</p>
+                        </li>
+                    </ul>
+                </div><!-- widget -->
+
+                <div class="widget widget-banner">
+                    <div class="widget-header">Обратите внимание</div>
+                    <img src="images/banner.png" alt="баннер">
+                </div><!-- /.widget -->
+                
+            </aside><!-- site-sidebar -->
+            <div class="b-but-up">
+                <a href="#header" id="up" class="but but-up hidden-xs" title="наверх">наверх</a>
+            </div><!-- /.b-but-up -->        
+        </div><!-- /.b-main_i -->
+    </main><!-- b-main container -->    
+
+    <footer class="site-footer" itemscope itemtype="http://schema.org/WPFooter">            
+        <div class="site-navigation container hidden-xs" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <ul class="b-menu" id="nav-menu">
+                <li class="menu-item"><a href="#">Главная</a></li>
+                <li class="menu-item"><a href="#">Об авторе</a></li>
+                <li class="menu-item"><a href="#">О блоге</a></li>
+                <li class="menu-item"><a href="#">Все статьи</a></li>
+                <li class="menu-item"><a href="#">Реклама</a></li>                        
+                <li class="menu-item"><a href="#">Контакты</a></li>
+                <li class="menu-item"><a href="#">Старт</a></li>
+                <li class="menu-item"><a href="#">Подготовка</a></li>
+                <li class="menu-item"><a href="#">Соревнования</a></li>
+                <li class="menu-item"><a href="#">Восстановление</a></li>
+                <li class="menu-item expanded">
+                    <a href="#">Финиш</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Протоколы</a></li>
+                        <li class="menu-item"><a href="#">Интервью</a></li>
+                        <li class="menu-item"><a href="#">Репортажи</a></li>
+                        <li class="menu-item"><a href="#">Впечатления</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- container -->        
+        <div class="site-footer-img"></div><!-- /.site-footer-img -->
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <small>
+                            &#169;2016 ВСТАВАЙ-НА-ЛЫЖИ. <br>
+                            При копировании статей,обязательны ссылки на первоисточник.
+                        </small>
+                    </div><!-- /.col -->
+                    <div class="col-sm-4 tr-md b-counter">
+                        <a href="#"><img src="images/counter.png" alt="счётчик"></a>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /.site-footer-bottom -->
+    </footer>
+</body>
+</html>
