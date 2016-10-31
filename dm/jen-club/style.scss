@@ -194,7 +194,6 @@
 		background: -webkit-linear-gradient(left, #85377b 0%,#c75785 100%);
 		background: linear-gradient(to right, #85377b 0%,#c75785 100%);
 		border-top: 1px solid #ff9ddd;
-
 	}
 }
 
@@ -347,6 +346,7 @@
 		.art-categ {float: right;}
 	}
 	.art-comments {float: right; margin-top: 0;}
+	time, [itemprop="author"], .art-time .underline {color: #632e84}
 }
 
 .art-img {

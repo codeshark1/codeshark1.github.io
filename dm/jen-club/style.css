@@ -192,7 +192,7 @@ p.bold {
   width: 25px;
   height: 4px;
   background-color: #fffdf8;
-  margin-top: -3px;
+  margin-top: -1px;
   -webkit-transition: all .2s;
           transition: all .2s;
   display: inline-block;
@@ -706,6 +706,8 @@ label {
   .art-header .art-comments {
     float: right;
     margin-top: 0; }
+  .art-header time, .art-header [itemprop="author"], .art-header .art-time .underline {
+    color: #632e84; }
 
 .art-img {
   position: relative;
