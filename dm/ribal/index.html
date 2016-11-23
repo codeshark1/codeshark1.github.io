@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Блог Рыбальченко Александра</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="style.css">
+    <script src="js/vendor/modernizr-custom.js"></script>    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4_min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--[if lt IE 10]>
+        <p class="browserupgrade">Вы используете <b>устаревший</b> браузер. Пожалуйста, <a href="http://browsehappy.com/?locale=ru_ru">обновите свой браузер</a> чтобы улучшить опыт работы с сайтом.</p>
+    <![endif]-->
+    <header class="site-header container" itemscope itemtype="http://schema.org/WPHeader" id="header">                
+        <div class="b-logo">
+            <img class="logo" src="images/logotype.png" alt="logo">
+            <h1 class="site-title" itemprop="headline">Блог Рыбальченко Александра</h1>
+            <p class="site-description hidden-xs" itemprop="description">Сочи территория здорового образа жизни</p>
+        </div><!-- /.b-logo -->
+        <div class="b-graphic visible-xs"><img src="images/graphic-header-mb.jpg" alt="pic"></div>
+        <div class="b-nav-wrap" id="nav-main">
+            <form role="search" method="get" class="search-form visible-xs" id="searchform" action="/">
+                <input type="search" class="search-field" value="" name="s" placeholder="Поиск по блогу..." required>
+                <input type="submit" class="search-submit" id="searchsubmit" value="">
+            </form>
+
+            <nav class="site-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <ul class="b-menu">
+                    <li class="menu-item"><a href="#">Главная</a></li>
+                    <li class="menu-item"><a href="#">Авторы</a></li>
+                    <li class="menu-item"><a href="#">Все статьи</a></li>
+                    <li class="menu-item"><a href="#">Контакты</a></li>
+                    <li class="menu-item"><a href="#">Конкурс</a></li>
+                    <li class="menu-item"><a href="#">Прислать статью</a></li>
+                    <li class="menu-item"><a href="#">Отчёт</a></li>
+                </ul>
+            </nav>
+        </div><!-- /.b-nav-wrap-->
+        <div class="b-butNav"><button id="nav-toggle" class="but-nav visible-xs" href="#"><i class="hamburger icon"></i></button></div><!-- /.b-butNav -->
+
+        <div class="b-categs-header visible-xs">
+            <a href="#" class="but but-main" id="categs-toggle">Рубрики блога</a>
+
+            <div class="widget_categories">
+                <ul>
+                    <li class="cat-item zog"><a href="#">ЗОЖ <span class="post-count">12</span></a></li>
+                    <li class="cat-item med"><a href="#">Медицина <span class="post-count">12</span></a></li>
+                    <li class="cat-item narmed"><a href="#">Народная медицина <span class="post-count">12</span></a></li>
+                    <li class="cat-item put"><a href="#">Путешествия <span class="post-count">12</span></a></li>
+                    <li class="cat-item sport"><a href="#">Спорт <span class="post-count">12</span></a></li>
+                    <li class="cat-item trezv"><a href="#">Обретение трезвости <span class="post-count">12</span></a></li>
+                    <li class="cat-item uhod"><a href="#">Уход за собой <span class="post-count">12</span></a></li>
+                    <li class="cat-item sochi"><a href="#">Жильё в сочи <span class="post-count">12</span></a></li>
+                    <li class="cat-item pasek"><a href="#">Отдых на пасеке <span class="post-count">12</span></a></li>
+                    <li class="cat-item bio"><a href="#">Био едa <span class="post-count">12</span></a></li>
+                </ul>
+            </div><!-- /.widget -->
+        </div><!-- /.b-categs-header -->
+    </header><!-- /.container -->
+    
+    <main class="b-main container">        
+        <div class="b-main_i">            
+            <div class="site-content">
+                <div class="b-banner hidden-xs"><a href="#"><img src="images/placehold-ban.png" alt="banner"></a></div><!-- /.b-banner -->
+
+                <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+                    <div class="b-inner">
+                        <header class="art-header">
+                            <div class="h-wrap"><h2 itemprop="name" class="h-main"><a href="#">Условный заголовок который придумал дизайнер для названия</a></h2></div>
+                            <div class="b-inner">
+                                <p class="art-author"><span class="hidden-xs">Автор: </span><span itemprop="author" class="underline">Рыбальченко Александр</span></p>
+                                <p class="art-time hidden-xs"><time itemprop="datePublished" datetime="2015-03-19">17.12.2015</time> 15:54</p>
+                                <p class="art-categ"><span class="hidden-xs">Тема: </span><a href="#" itemprop="articleSection">ЗОЖ</a></p>
+                            </div><!-- /.inner -->                        
+                        </header>
+
+                        <div class="b-art-img" style="background-image: url(images/pic-post.jpg);">
+                            <div class="b-decor"></div>
+                            <div class="b-logo">
+                                <img class="image" src="images/logotype.png" alt="logo">
+                                <p class="name">Блог Рыбальченко Александра</p>
+                            </div><!-- b-logo -->
+                        </div><!-- /.art-img -->
+                           
+                        <div itemprop="articleBody" class="b-art-body">
+                            <p>Наука начинается там, где начинают измерять. И как мы знаем, точность, это характеристика качества измерений, отражающая степень близости</p>
+                        </div>
+
+                        <footer class="b-art-footer">
+                            <p class="art-comments">Комментариев <span class="comment-count">20</span></p>
+                            <div class="b-links">
+                                <a href="#" class="but but-second hidden-xs">Оставить комментарий</a>
+                                <a href="#" class="but but-main">Подробнее</a>                            
+                            </div><!-- /.b-links -->
+                        </footer>
+                    </div><!-- /.b-inner -->
+                </article><!-- b-art-prev -->
+                <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+                    <div class="b-inner">
+                        <header class="art-header">
+                            <div class="h-wrap"><h2 itemprop="name" class="h-main"><a href="#">Условный заголовок который придумал дизайнер для названия</a></h2></div>
+                            <div class="b-inner">
+                                <p class="art-author"><span class="hidden-xs">Автор: </span><span itemprop="author" class="underline">Рыбальченко Александр</span></p>
+                                <p class="art-time hidden-xs"><time itemprop="datePublished" datetime="2015-03-19">17.12.2015</time> 15:54</p>
+                                <p class="art-categ"><span class="hidden-xs">Тема: </span><a href="#" itemprop="articleSection">ЗОЖ</a></p>
+                            </div><!-- /.inner -->                        
+                        </header>
+
+                        <div class="b-art-img" style="background-image: url(images/pic-post.jpg);">
+                            <div class="b-decor"></div>
+                            <div class="b-logo">
+                                <img class="image" src="images/logotype.png" alt="logo">
+                                <p class="name">Блог Рыбальченко Александра</p>
+                            </div><!-- b-logo -->
+                        </div><!-- /.art-img -->
+                           
+                        <div itemprop="articleBody" class="b-art-body">
+                            <p>Наука начинается там, где начинают измерять. И как мы знаем, точность, это характеристика качества измерений, отражающая степень близости</p>
+                        </div>
+
+                        <footer class="b-art-footer">
+                            <p class="art-comments">Комментариев <span class="comment-count">20</span></p>
+                            <div class="b-links">
+                                <a href="#" class="but but-second hidden-xs">Оставить комментарий</a>
+                                <a href="#" class="but but-main">Подробнее</a>                            
+                            </div><!-- /.b-links -->
+                        </footer>
+                    </div><!-- /.b-inner -->
+                </article><!-- b-art-prev -->
+                <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+                    <div class="b-inner">
+                        <header class="art-header">
+                            <div class="h-wrap"><h2 itemprop="name" class="h-main"><a href="#">Условный заголовок который придумал дизайнер для названия</a></h2></div>
+                            <div class="b-inner">
+                                <p class="art-author"><span class="hidden-xs">Автор: </span><span itemprop="author" class="underline">Рыбальченко Александр</span></p>
+                                <p class="art-time hidden-xs"><time itemprop="datePublished" datetime="2015-03-19">17.12.2015</time> 15:54</p>
+                                <p class="art-categ"><span class="hidden-xs">Тема: </span><a href="#" itemprop="articleSection">ЗОЖ</a></p>
+                            </div><!-- /.inner -->                        
+                        </header>
+
+                        <div class="b-art-img" style="background-image: url(images/pic-post.jpg);">
+                            <div class="b-decor"></div>
+                            <div class="b-logo">
+                                <img class="image" src="images/logotype.png" alt="logo">
+                                <p class="name">Блог Рыбальченко Александра</p>
+                            </div><!-- b-logo -->
+                        </div><!-- /.art-img -->
+                           
+                        <div itemprop="articleBody" class="b-art-body">
+                            <p>Наука начинается там, где начинают измерять. И как мы знаем, точность, это характеристика качества измерений, отражающая степень близости</p>
+                        </div>
+
+                        <footer class="b-art-footer">
+                            <p class="art-comments">Комментариев <span class="comment-count">20</span></p>
+                            <div class="b-links">
+                                <a href="#" class="but but-second hidden-xs">Оставить комментарий</a>
+                                <a href="#" class="but but-main">Подробнее</a>                            
+                            </div><!-- /.b-links -->
+                        </footer>
+                    </div><!-- /.b-inner -->
+                </article><!-- b-art-prev -->
+                <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+                    <div class="b-inner">
+                        <header class="art-header">
+                            <div class="h-wrap"><h2 itemprop="name" class="h-main"><a href="#">Условный заголовок который придумал дизайнер для названия</a></h2></div>
+                            <div class="b-inner">
+                                <p class="art-author"><span class="hidden-xs">Автор: </span><span itemprop="author" class="underline">Рыбальченко Александр</span></p>
+                                <p class="art-time hidden-xs"><time itemprop="datePublished" datetime="2015-03-19">17.12.2015</time> 15:54</p>
+                                <p class="art-categ"><span class="hidden-xs">Тема: </span><a href="#" itemprop="articleSection">ЗОЖ</a></p>
+                            </div><!-- /.inner -->                        
+                        </header>
+
+                        <div class="b-art-img" style="background-image: url(images/pic-post.jpg);">
+                            <div class="b-decor"></div>
+                            <div class="b-logo">
+                                <img class="image" src="images/logotype.png" alt="logo">
+                                <p class="name">Блог Рыбальченко Александра</p>
+                            </div><!-- b-logo -->
+                        </div><!-- /.art-img -->
+                           
+                        <div itemprop="articleBody" class="b-art-body">
+                            <p>Наука начинается там, где начинают измерять. И как мы знаем, точность, это характеристика качества измерений, отражающая степень близости</p>
+                        </div>
+
+                        <footer class="b-art-footer">
+                            <p class="art-comments">Комментариев <span class="comment-count">20</span></p>
+                            <div class="b-links">
+                                <a href="#" class="but but-second hidden-xs">Оставить комментарий</a>
+                                <a href="#" class="but but-main">Подробнее</a>                            
+                            </div><!-- /.b-links -->
+                        </footer>
+                    </div><!-- /.b-inner -->
+                </article><!-- b-art-prev -->
+                <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+                    <div class="b-inner">
+                        <header class="art-header">
+                            <div class="h-wrap"><h2 itemprop="name" class="h-main"><a href="#">Условный заголовок который придумал дизайнер для названия</a></h2></div>
+                            <div class="b-inner">
+                                <p class="art-author"><span class="hidden-xs">Автор: </span><span itemprop="author" class="underline">Рыбальченко Александр</span></p>
+                                <p class="art-time hidden-xs"><time itemprop="datePublished" datetime="2015-03-19">17.12.2015</time> 15:54</p>
+                                <p class="art-categ"><span class="hidden-xs">Тема: </span><a href="#" itemprop="articleSection">ЗОЖ</a></p>
+                            </div><!-- /.inner -->                        
+                        </header>
+
+                        <div class="b-art-img" style="background-image: url(images/pic-post.jpg);">
+                            <div class="b-decor"></div>
+                            <div class="b-logo">
+                                <img class="image" src="images/logotype.png" alt="logo">
+                                <p class="name">Блог Рыбальченко Александра</p>
+                            </div><!-- b-logo -->
+                        </div><!-- /.art-img -->
+                           
+                        <div itemprop="articleBody" class="b-art-body">
+                            <p>Наука начинается там, где начинают измерять. И как мы знаем, точность, это характеристика качества измерений, отражающая степень близости</p>
+                        </div>
+
+                        <footer class="b-art-footer">
+                            <p class="art-comments">Комментариев <span class="comment-count">20</span></p>
+                            <div class="b-links">
+                                <a href="#" class="but but-second hidden-xs">Оставить комментарий</a>
+                                <a href="#" class="but but-main">Подробнее</a>                            
+                            </div><!-- /.b-links -->
+                        </footer>
+                    </div><!-- /.b-inner -->
+                </article><!-- b-art-prev -->
+
+                <nav class="navigation pagination hidden-xs" role="navigation">
+                    <div class="screen-reader-text">Навигация по записям</div>
+                    <div class="nav-links">
+                        <a class="prev page-numbers" href="#">Назад</a>
+                        <a class="page-numbers" href="#">1</a>
+                        <a class="page-numbers" href="#">2</a>
+                        <a class="page-numbers" href="#">3</a>
+                        <a class="page-numbers" href="#">4</a>
+                        <a class="page-numbers" href="#">5</a>                        
+                        <span class="page-numbers current">6</span>
+                        <a class="page-numbers" href="#">7</a>
+                        <a class="page-numbers" href="#">8</a>
+                        <span class="page-numbers dots">…</span>
+                        <a class="page-numbers" href="#">84</a>
+                        <a class="next page-numbers" href="#">Вперёд</a>
+                    </div>
+                </nav><!-- pagination -->
+
+                <nav class="navigation pagination visible-xs" role="navigation">
+                    <div class="screen-reader-text">Навигация по записям</div>
+                    <div class="nav-links">
+                        <a class="prev page-numbers" href="#"><</a>
+                        <a class="page-numbers" href="#">1</a>
+                        <a class="page-numbers" href="#">2</a>
+                        <a class="page-numbers current" href="#">3</a>
+                        <span class="page-numbers dots">…</span>
+                        <a class="page-numbers" href="#">84</a>
+                        <a class="next page-numbers" href="#">></a>
+                    </div>
+                </nav><!-- pagination -->
+            </div><!-- /.site-content -->
+
+            <aside class="site-sidebar widget-area hidden-xs" itemscope itemtype="http://schema.org/WPSideBar">
+                <div class="widget widget-search">
+                    <form role="search" method="get" class="search-form" id="searchform" action="/">
+                        <input type="search" class="search-field" value="" name="s" placeholder="Поиск по блогу..." required>
+                        <input type="submit" class="search-submit" id="searchsubmit" value="">
+                    </form>
+                </div><!-- /.b-search -->
+
+                <div class="widget widget-subscribe">                        
+                    <p class="headline">Получать обновления почтой</p>
+                    <form action="#" class="form-subscribe">
+                        <input type="email" placeholder="Введите Ваш e-mail">
+                        <input type="submit" value="Подписаться" class="but but-main">
+                    </form>                        
+                </div><!-- /.widget widget-subscribe -->
+
+                <div class="widget widget_categories">
+                    <div class="widget-header">Рубрики блога</div>
+                    <ul>
+                        <li class="cat-item zog"><a href="#">ЗОЖ <span class="post-count">12</span></a></li>
+                        <li class="cat-item med"><a href="#">Медицина <span class="post-count">12</span></a></li>
+                        <li class="cat-item narmed"><a href="#">Народная медицина <span class="post-count">12</span></a></li>
+                        <li class="cat-item put"><a href="#">Путешествия <span class="post-count">12</span></a></li>
+                        <li class="cat-item sport"><a href="#">Спорт <span class="post-count">12</span></a></li>
+                        <li class="cat-item trezv"><a href="#">Обретение трезвости <span class="post-count">12</span></a></li>
+                        <li class="cat-item uhod"><a href="#">Уход за собой <span class="post-count">12</span></a></li>
+                        <li class="cat-item sochi"><a href="#">Жильё в сочи <span class="post-count">12</span></a></li>
+                        <li class="cat-item pasek"><a href="#">Отдых на пасеке <span class="post-count">12</span></a></li>
+                        <li class="cat-item bio"><a href="#">Био едa <span class="post-count">12</span></a></li>
+                    </ul>
+                </div><!-- /.widget -->
+
+                <div class="widget widget-commenters">
+                    <div class="widget-header">Лучшие комментаторы</div>                    
+                    <ul>
+                        <li>
+                            <a href="#"><img class="thumb" src="images/userpic.jpg" alt="pic"></a>
+                            <p class="name">Игорь</p>
+                            <p class="comment-count">15</p>
+                        </li>
+                        <li>
+                            <a href="#"><img class="thumb" src="images/userpic.jpg" alt="pic"></a>
+                            <p class="name">Игорь</p>
+                            <p class="comment-count">15</p>
+                        </li>
+                        <li>
+                            <a href="#"><img class="thumb" src="images/userpic.jpg" alt="pic"></a>
+                            <p class="name">Игорь</p>
+                            <p class="comment-count">15</p>
+                        </li>
+                        <li>
+                            <a href="#"><img class="thumb" src="images/userpic.jpg" alt="pic"></a>
+                            <p class="name">Игорь</p>
+                            <p class="comment-count">15</p>
+                        </li>
+                        <li>
+                            <a href="#"><img class="thumb" src="images/userpic.jpg" alt="pic"></a>
+                            <p class="name">Игорь</p>
+                            <p class="comment-count">15</p>
+                        </li>
+                        <li>
+                            <a href="#"><img class="thumb" src="images/userpic.jpg" alt="pic"></a>
+                            <p class="name">Игорь</p>
+                            <p class="comment-count">15</p>
+                        </li>
+                    </ul>                    
+                </div><!-- widget --> 
+
+                <div class="widget widget-youtube">
+                    <div class="widget-header">Мой канал YouTube</div>                    
+                    <img src="images/youtube.png" alt="pic">                    
+                </div><!-- /.widget -->
+
+                <div class="widget widget-articles">
+                    <div class="widget-header">Лучшие статьи блога</div>
+                                        
+                    <div class="art-prev-wid">
+                        <div class="b-img">
+                            <img src="images/pic-best.jpg" alt="pic">
+                        </div>
+                        <div class="b-txt">
+                            <p class="art-time"><time itemprop="datePublished" datetime="2015-03-19">17.12.2015</time> 15:54</p>
+                            <a href="#" class="art-title">Условный заголовок который придумал дизайнер для названия</a>
+                        </div><!-- b-txt -->
+                    </div><!-- /.art-prev-wid -->
+                    <div class="art-prev-wid">
+                        <div class="b-img">
+                            <img src="images/pic-best.jpg" alt="pic">
+                        </div>
+                        <div class="b-txt">
+                            <p class="art-time"><time itemprop="datePublished" datetime="2015-03-19">17.12.2015</time> 15:54</p>
+                            <a href="#" class="art-title">Условный заголовок который придумал дизайнер для названия</a>
+                        </div><!-- b-txt -->
+                    </div><!-- /.art-prev-wid -->
+                    <div class="art-prev-wid">
+                        <div class="b-img">
+                            <img src="images/pic-best.jpg" alt="pic">
+                        </div>
+                        <div class="b-txt">
+                            <p class="art-time"><time itemprop="datePublished" datetime="2015-03-19">17.12.2015</time> 15:54</p>
+                            <a href="#" class="art-title">Условный заголовок который придумал дизайнер для названия</a>
+                        </div><!-- b-txt -->
+                    </div><!-- /.art-prev-wid -->
+                    <div class="art-prev-wid">
+                        <div class="b-img">
+                            <img src="images/pic-best.jpg" alt="pic">
+                        </div>
+                        <div class="b-txt">
+                            <p class="art-time"><time itemprop="datePublished" datetime="2015-03-19">17.12.2015</time> 15:54</p>
+                            <a href="#" class="art-title">Условный заголовок который придумал дизайнер для названия</a>
+                        </div><!-- b-txt -->
+                    </div><!-- /.art-prev-wid -->
+                </div><!-- widget -->
+
+                <div class="widget widget-posts">
+                    <div class="widget-header">Лучшие статьи блога</div>
+                                        
+                    <div class="art-prev-learn">
+                        <div class="b-img">
+                            <img src="images/pic-learn.jpg" alt="pic">
+                        </div>
+                        <div class="b-txt">
+                            <p class="art-title">Условный заголовок который придумал дизайнер для названия</p>
+                            <a href="#" class="but but-main">Подробнее</a>
+                        </div><!-- b-txt -->
+                    </div><!-- /.art-prev-pop -->
+                    <div class="art-prev-learn">
+                        <div class="b-img">
+                            <img src="images/pic-learn.jpg" alt="pic">
+                        </div>
+                        <div class="b-txt">
+                            <p class="art-title">Условный заголовок который придумал дизайнер для названия</p>
+                            <a href="#" class="but but-main">Подробнее</a>
+                        </div><!-- b-txt -->
+                    </div><!-- /.art-prev-pop -->
+                </div><!-- /.widget -->
+
+                <div class="widget widget-articles">
+                    <div class="widget-header">Лучшие статьи блога</div>
+                                        
+                    <div class="art-prev-wid">
+                        <div class="b-img">
+                            <img src="images/pic-best.jpg" alt="pic">
+                        </div>
+                        <div class="b-txt">
+                            <p class="art-time"><time itemprop="datePublished" datetime="2015-03-19">17.12.2015</time> 15:54</p>
+                            <a href="#" class="art-title">Условный заголовок который придумал дизайнер для названия</a>
+                        </div><!-- b-txt -->
+                    </div><!-- /.art-prev-wid -->
+                    <div class="art-prev-wid">
+                        <div class="b-img">
+                            <img src="images/pic-best.jpg" alt="pic">
+                        </div>
+                        <div class="b-txt">
+                            <p class="art-time"><time itemprop="datePublished" datetime="2015-03-19">17.12.2015</time> 15:54</p>
+                            <a href="#" class="art-title">Условный заголовок который придумал дизайнер для названия</a>
+                        </div><!-- b-txt -->
+                    </div><!-- /.art-prev-wid -->
+                    <div class="art-prev-wid">
+                        <div class="b-img">
+                            <img src="images/pic-best.jpg" alt="pic">
+                        </div>
+                        <div class="b-txt">
+                            <p class="art-time"><time itemprop="datePublished" datetime="2015-03-19">17.12.2015</time> 15:54</p>
+                            <a href="#" class="art-title">Условный заголовок который придумал дизайнер для названия</a>
+                        </div><!-- b-txt -->
+                    </div><!-- /.art-prev-wid -->
+                    <div class="art-prev-wid">
+                        <div class="b-img">
+                            <img src="images/pic-best.jpg" alt="pic">
+                        </div>
+                        <div class="b-txt">
+                            <p class="art-time"><time itemprop="datePublished" datetime="2015-03-19">17.12.2015</time> 15:54</p>
+                            <a href="#" class="art-title">Условный заголовок который придумал дизайнер для названия</a>
+                        </div><!-- b-txt -->
+                    </div><!-- /.art-prev-wid -->
+                </div><!-- widget -->
+
+                <div class="widget widget-ad">
+                    <div class="widget-header">На правах рекламы</div>
+                    <div class="b-banner">
+                        <p class="title"><b>Внимание!</b>
+                        Мечтаешь о путешествии?
+                        Напиши статью в блог <br>
+                        И отправляйся в путь!</p>
+                        <a href="#" class="but but-main">Подробнее тут</a>
+                        <img src="images/banner-travel.jpg" alt="pic">
+                    </div><!-- /.b-banner -->
+                </div><!-- /.widget -->
+            </aside><!-- si te-sidebar -->
+        </div><!-- /.b-main_i -->        
+        <div class="b-but-up">
+            <a href="#header" id="up" class="but-up hidden-xs" title="наверх">наверх</a>
+        </div><!-- /.b-but-up -->                    
+    </main><!-- /.container b-main -->    
+
+    <footer class="site-footer container" itemscope itemtype="http://schema.org/WPFooter">        
+        <div class="b-nav-wrap hidden-xs">
+            <div class="site-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <ul class="b-menu">
+                    <li class="menu-item"><a href="#">Главная</a></li>
+                    <li class="menu-item"><a href="#">Авторы</a></li>
+                    <li class="menu-item"><a href="#">Все статьи</a></li>
+                    <li class="menu-item"><a href="#">Контакты</a></li>
+                    <li class="menu-item"><a href="#">Конкурс</a></li>
+                    <li class="menu-item"><a href="#">Прислать статью</a></li>
+                    <li class="menu-item"><a href="#">Отчёт</a></li>
+                </ul>
+            </div><!-- site-navigation -->
+        </div><!-- /.b-nav-wrap-->
+
+        <div class="b-inner">
+                <small class="b-logo-footer">
+                    &#169; Авторский проект Рыбальченко Александра Сочи - Территория здоровья<br>                    
+                    При копировании материалов, обратная ссылка обязательна!
+                </small>
+
+                <div class="b-counter">
+                    <a href="#"><img src="images/counter.png" alt="счётчик"></a>
+                </div><!-- /.col -->
+            </div><!-- /.row -->                
+        </div><!-- b-inner -->
+    </footer><!-- /.container -->    
+</body>
+</html>
