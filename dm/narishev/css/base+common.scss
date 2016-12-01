@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700&subset=cyrillic');
+
+@mixin font-secondary() {
+  font-family: 'Roboto Slab', serif;
+}
+
+/* ==========================================================================
+   BASE
+   ========================================================================== */
+html {position: relative;min-height: 100%;}
+body {font-family: Roboto, sans-serif; color: $base-text;}
+img {max-width: 100%;max-height: 100%;}
+a {text-decoration: underline; color: $link-text;
+  &:hover,&:active,&:focus {text-decoration: none;}
+}
+table {width: 100%;}
+small {font-size: 100%;}
+p {margin: 0 0 25px 0;}
+
+.container {
+  max-width: 1200px;
+}
+
+/* ==========================================================================
+  COMMON
+  ========================================================================== */
+
+/* BUTTONS */
+@mixin but() {
+  display: inline-block;  
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;  
+  background: none;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: .5px; 
+  transition: all .2s;
+  @include font-secondary();
+  &:focus,
+  &:active:focus,
+  &.active:focus,
+  &.focus,
+  &:active.focus,
+  &.active.focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+  &:hover,
+  &:focus,
+  &.focus {text-decoration: none; color: #fff}
+  &:active,
+  &.active {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  }  
+}
+.but {@include but();}
+
+
+@mixin but-form() {
+  background: $main;
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 12px;
+  &:hover,&:active,&:focus {
+    background: lighten($main,10%);
+  }
+}
+.but-form, .search-submit, form .submit {
+  @include but();
+  @include but-form();
+}
+
+
+/* but-nav */
+.but-nav {
+  position: relative;
+  border: none;
+  background: none;
+  padding: 0;
+  height: 20px  
+}
+.hamburger.icon, .hamburger.icon:before,.hamburger.icon:after {
+  border-radius: 5px;
+}
+.hamburger.icon {
+  width: 28px;
+  height: 4px;
+  background-color: #ccc5c2;
+  margin-top: -1px;
+  transition: all .2s;
+  display: inline-block;
+  vertical-align: middle;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 4px;
+    background-color:#ccc5c2;
+    transition: all .2s;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 28px;
+    height: 4px;
+    background-color: #ccc5c2;
+    transition: all .2s;
+  }
+  &.active {
+    opacity: 0;
+    &:before {transform: rotate(30deg);}
+    &:after {transform: rotate(-30deg);}
+  }
+}
+.but-nav.active {
+  .hamburger.icon {    
+      height: 0;
+      &:before {transform: rotate(40deg);top: 8px}
+      &:after {transform: rotate(-40deg);bottom: 8px}    
+  }
+}
+
+
+/* FORMS */
+input[type="text"],
+input[type="tel"],
+input[type="search"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
+textarea,
+select {  
+  width: 100%;  
+  padding: 10px 10px;  
+  border: 1px solid #f0f0f0;
+  border-radius: 3px;
+  background: #fff;
+  &:focus {}
+}
+textarea {resize: vertical;}
+label {font-weight: normal;cursor: pointer;}
+
+
+.search-form {
+  position: relative;
+  margin: 0;
+  .search-field {padding-right: 40px;}
+  .search-submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+
+
+/*HEADINGS*/
+h1, h2, h3 {
+  @include font-secondary();
+}
+.h-main {
+  margin: 0 0 10px 0;    
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  a {text-decoration: none;color: $base-text;}
+  @media (min-width: $screen-sm-min) {
+    font-size: 24px;  
+  }
+}
+
+
+/* IMAGES */
+.aligncenter, .alignleft, .alignright {display: block;margin: 0 auto 20px;}
+@media (min-width: $screen-sm-min) {
+  .alignleft, .alignright {display: inline-block;max-width: 50%}
+  .alignleft {float: left;margin: 0 20px 15px 0;}
+  .alignright {float: right;margin: 0 0 15px 20px;}  
+}
+
+.spanlink {
+  cursor: pointer;
+
+  display: inline-block;
+  text-decoration: underline;
+  color: $link-text;
+
+}
+  
