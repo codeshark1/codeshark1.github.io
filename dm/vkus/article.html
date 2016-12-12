@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Статья - Отличный Вкус</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/vendor/modernizr-custom.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--[if lt IE 10]>
+        <p class="browserupgrade">Вы используете <b>устаревший</b> браузер. Пожалуйста, <a href="http://browsehappy.com/?locale=ru_ru">обновите свой браузер</a> чтобы улучшить опыт работы с сайтом.</p>
+    <![endif]-->
+    <header class="site-header container" itemscope itemtype="http://schema.org/WPHeader" id="header">                
+        <div class="b-header-inner">
+            <div class="b-search">
+                <form role="search" method="get" class="search-form" id="searchform" action="/">
+                    <input type="search" class="search-field" value="" name="s" placeholder="найти рецепт" required>
+                    <input type="submit" class="search-submit" id="searchsubmit">
+                </form>
+            </div><!-- /.b-search -->
+            <div class="b-logo hidden-xs">
+                <img class="logo" src="images/logotype.png" alt="Отличный Вкус">
+                <div class="hidden" itemprop="headline" hidden>Отличный Вкус</div>
+            </div><!-- /.b-logo -->
+        </div><!-- b-inner -->
+        
+        <nav class="main-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <ul id="nav-main" class="b-menu">
+                <li class="menu-item"><a href="#">Главная</a></li>
+                <li class="menu-item recepies menu-item-has-children">
+                    <a href="#">Рецепты</a>
+                    <div class="sub-menu-wrap">
+                        <div class="b-group">
+                            <div class="menu-item pervie menu-item-has-children">
+                                <a href="#">Первые блюда</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Борщи</a></li>
+                                    <li class="menu-item"><a href="#">Супы</a></li>
+                                    <li class="menu-item"><a href="#">Рассольники</a></li>
+                                    <li class="menu-item"><a href="#">Окрошки</a></li>
+                                    <li class="menu-item"><a href="#">Бульоны</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-item vtorie menu-item-has-children">
+                                <a href="#">Вторые блюда</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Блюда из рыбы</a></li>
+                                    <li class="menu-item"><a href="#">Овощные блюда</a></li>
+                                    <li class="menu-item"><a href="#">Блюда из птицы</a></li>
+                                    <li class="menu-item"><a href="#">Блюда из морепродуктов</a></li>
+                                    <li class="menu-item"><a href="#">Блюда из грибов</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-item salati menu-item-has-children">
+                                <a href="#">Салаты</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Мясные салаты</a></li>
+                                    <li class="menu-item"><a href="#">Салаты с грибами</a></li>
+                                    <li class="menu-item"><a href="#">Салаты из свежих овощей</a></li>
+                                    <li class="menu-item"><a href="#">Салаты с рыбой</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-item zakuski menu-item-has-children">
+                                <a href="#">Закуски</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Бутерброды</a></li>
+                                    <li class="menu-item"><a href="#">Холодные закуски</a></li>
+                                    <li class="menu-item"><a href="#">Горячие закуски</a></li>
+                                </ul>
+                            </div>                            
+                        </div><!-- /.b-group -->
+
+                        <div class="b-group">
+                            <div class="menu-item vipechka menu-item-has-children">
+                                <a href="#">Выпечка</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Сладкая выпечка</a></li>
+                                    <li class="menu-item"><a href="#">Несладкая выпечка</a></li>
+                                    <li class="menu-item"><a href="#">Дрожжевые пирожки</a></li>
+                                    <li class="menu-item"><a href="#">Блины</a></li>
+                                    <li class="menu-item"><a href="#">Тесто</a></li>
+                                    <li class="menu-item"><a href="#">Пироги</a></li>
+                                    <li class="menu-item"><a href="#">Кексы</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-item post">
+                                <a href="#">Постные блюда</a>
+                            </div>
+                            <div class="menu-item na-zimu menu-item-has-children">
+                                <a href="#">Заготовки на зиму</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Фрукты</a></li>
+                                    <li class="menu-item"><a href="#">Ягоды</a></li>
+                                    <li class="menu-item"><a href="#">Овощи</a></li>
+                                    <li class="menu-item"><a href="#">Заморозка овощей</a></li>
+                                    <li class="menu-item"><a href="#">Заморозка фруктов и ягод</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-item sousi menu-item-has-children">
+                                <a href="#">Соусы</a>
+                                <ul class="sub-menu">                                    
+                                    <li class="menu-item"><a href="#">Маринады для шашлыков</a></li>
+                                    <li class="menu-item"><a href="#">Заправки</a></li>
+                                    <li class="menu-item"><a href="#">Аджика</a></li>
+                                    <li class="menu-item"><a href="#">Соусы</a></li>
+                                </ul>
+                            </div>                            
+                        </div><!-- /.b-group -->
+
+                        <div class="b-group">
+                            <div class="menu-item prazdn menu-item-has-children">
+                                <a href="#">Праздничные рецепты</a>
+                                <ul class="sub-menu">                                    
+                                    <li class="menu-item"><a href="#">Новогодние салаты</a></li>
+                                    <li class="menu-item"><a href="#">Новогодние торты</a></li>
+                                    <li class="menu-item"><a href="#">Новогодние рецепты</a></li>
+                                    <li class="menu-item"><a href="#">День св. Валентина</a></li>
+                                    <li class="menu-item"><a href="#">23 февраля</a></li>
+                                    <li class="menu-item"><a href="#">8 марта</a></li>
+                                    <li class="menu-item"><a href="#">Пасха</a></li>
+                                    <li class="menu-item"><a href="#">День рождения</a></li>
+                                    <li class="menu-item"><a href="#">Масленица</a></li>
+                                    <li class="menu-item"><a href="#">Пикник</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-item deserti menu-item-has-children">
+                                <a href="#">Десерты</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Шоколадные десерты</a></li>
+                                    <li class="menu-item"><a href="#">Фруктово-ягодные десерты</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-item napitki menu-item-has-children">
+                                <a href="#">Напитки</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Лимонад</a></li>
+                                    <li class="menu-item"><a href="#">Кисель</a></li>
+                                    <li class="menu-item"><a href="#">Ликер</a></li>
+                                    <li class="menu-item"><a href="#">Кофе</a></li>
+                                    <li class="menu-item"><a href="#">Квас</a></li>
+                                    <li class="menu-item"><a href="#">Морс</a></li>
+                                    <li class="menu-item"><a href="#">Коктейль</a></li>
+                                </ul>
+                            </div>                            
+                        </div><!-- /.b-group -->
+
+                        <div class="b-group">
+                            <div class="menu-item sistema menu-item-has-children">
+                                <a href="#">Система питания</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Диеты</a></li>
+                                    <li class="menu-item"><a href="#">О здоровом питании</a></li>
+                                    <li class="menu-item"><a href="#">Питание беременных</a></li>
+                                    <li class="menu-item"><a href="#">Вегетарианство</a></li>
+                                    <li class="menu-item"><a href="#">Сыроедение</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-item dlya-tehniki menu-item-has-children">
+                                <a href="#">Блюда для кухонной техники</a>
+                                <ul class="sub-menu">                                    
+                                    <li class="menu-item"><a href="#">Мультиварка</a></li>
+                                    <li class="menu-item"><a href="#">Пароварка</a></li>
+                                    <li class="menu-item"><a href="#">Хлебопечка</a></li>
+                                    <li class="menu-item"><a href="#">Соковыжималка</a></li>
+                                    <li class="menu-item"><a href="#">Гриль</a></li>
+                                    <li class="menu-item"><a href="#">Мангал</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-item po-ingr">
+                                <a href="#">Блюда по ингредиентам</a>                                
+                            </div>
+                            <div class="menu-item obzori">
+                                <a href="#">Обзоные статьи</a>
+                            </div>
+                            <div class="menu-item melochi">
+                                <a href="#">Полезные мелочи</a>
+                            </div>                            
+                        </div><!-- /.b-group -->
+                    </div>
+                </li>
+                <li class="menu-item"><a href="#">Об авторе</a></li>
+                <li class="menu-item"><a href="#">Контакты</a></li>
+                <li class="menu-item"><a href="#">Прислать рецепт</a></li>
+            </ul>
+        </nav>
+
+        <div class="b-logo visible-xs">
+            <img src="images/logotype.png" alt="Отличный Вкус">
+        </div><!-- /.b-logo -->
+
+        <div class="b-butNav visible-xs">
+            <button id="nav-toggle" class="but-nav" href="#">Меню</button>
+        </div><!-- /.b-butNav -->        
+    </header><!-- /.container -->
+    
+    <main class="b-main container">
+        <div class="clearfix">
+            <div class="site-content">
+                <div class="b-bnr hidden-xs"><img src="images/place-banner-wide.png"></div><!-- /.bnr -->
+
+                <div class="breadcrumb" id="breadcrumbs">
+                    <span xmlns:v="http://rdf.data-vocabulary.org/#">
+                        <span typeof="v:Breadcrumb">
+                            <a href="#" rel="v:url" property="v:title">Главная</a> &rarr;
+                            <span rel="v:child" typeof="v:Breadcrumb"><a href="#" rel="v:url" property="v:title">Рецепты</a></span> &rarr;
+                            <span rel="v:child" typeof="v:Breadcrumb"><a href="#" rel="v:url" property="v:title">Вторые блюда</a></span>
+                        </span>
+                    </span>
+                </div>
+
+                <article class="b-art-main" itemscope itemtype="http://schema.org/Article">
+                    <header class="b-art-header">
+                        <h1 itemprop="name" class="h-main">Цыплята, фаршированные  творогом и виноградом H1</h1>
+                        
+                        <div class="b-art-head-info">
+                            <div class="b-art-head-author">
+                                <img src="images/userpic0.jpg" class="art-userpic" alt="userpic">
+                                <span class="art-author" itemprop="author">Анна</span>
+                                <time itemprop="datePublished" datetime="2015-03-19">19 октябля 2016</time>
+                            </div><!-- /.b-art-head-author -->
+                            <div class="b-art-head-categ">
+                                <a href="#" itemprop="articleSection">Праздничные рецепты</a href="#">                                
+                            </div><!-- /.b-art-head-categ -->
+                        </div><!-- /.b-head-info -->
+                    </header>
+                    
+                    <div class="b-slider" id="slider">
+                        <img src="images/photo.jpg" alt="pic">
+                        <img src="images/photo.jpg" alt="pic">
+                        <img src="images/photo.jpg" alt="pic">
+                    </div><!-- /.b-slider -->
+
+                    <div class="articleBody" itemprop="articleBody">
+                        <div class="b-art-recep-info">
+                            <p class="time">Приготовление: <b>1 час</b></p>
+                            <p class="persons">Рецепт на: <b>3 персоны</b></p>
+                        </div><!-- /.b-art-recep-info -->
+
+                        <hr>
+
+                        <h2>Описание H2</h2>
+
+                        <p>Вместо грудинки подойдет сало с мясными прослойками, а свежий тимьян и орегано можно заменить <em>прованскими</em> травами. Если нет варенья из инжира, возьмите сушеный и замочите его ненадолго в крепком чае или немного поварите в кипятке. </p>
+                        <p>Маринованные виноградные листья перед приготовлением нужно промыть, а затем просушить:</p>
+                        <ul>
+                            <li>И с начинкой тоже можно экспериментировать;</li>
+                            <li>Его можно приготовить на основе картофельного пюре;</li>
+                            <li>Зразы очень вкусное блюдо, которое напоминает котлеты, но не самые простые, а с начинкой. Фарш может быть самым разным: говяжьим, свиным, куриным, смешанным.</li>
+                        </ul>                       
+
+                        <h3>Ингредиенты H3</h3>
+                        
+                        <div class="b-ingredients">
+                            <ul class="ingredients">
+                                <li>курица весом 1,5 кг</li>
+                                <li>лимоны — 1 шт.</li>
+                                <li>грудинка копченая — 50 гр.</li>
+                                <li>черный виноград без косточек — 1 горсть</li>
+                                <li>орегано свежий — 2 веточки</li>
+                                <li>тимьян свежий — 2 веточки</li>
+                                <li>перец черный свежемолотый — 2 щепотки</li>
+                            </ul><!-- /.ingredients -->
+                        </div><!-- /.b-ingredients -->
+
+                        <hr>
+
+                        <h3>Пошаговый рецепт приготовления H3</h3>
+
+                        <ol>
+                            <li>
+                                <p>Духовку предварительно разогреть до 200°С.</p>
+                            </li>
+                            <li>
+                                <p>Приготовить начинку: творог размять вилкой, добавить листья орегано и тимьяна, посолить, поперчить.</p>
+                                <img src="images/step2.jpg" alt="pic">
+                            </li>
+                            <li>
+                                <p>Плоды инжира порвать руками и добавить к творогу с зеленью.</p>
+                                <img src="images/step3.jpg" alt="pic">
+                            </li>
+                            <li>
+                                <p>Грудинку порезать маленькими кусочками.</p>
+                                <img src="images/step4.jpg" alt="pic">
+                            </li>
+                            <li>
+                                <p>Цедру лимона натереть на мелкой терке.</p>
+                                <img src="images/step5.jpg" alt="pic">
+                            </li>
+                            <li>
+                                <p>Нарезанную грудинку, цедру и ягоды винограда добавить к творогу с инжиром, все тщательно перемешать. </p>
+                                <img src="images/step6.jpg" alt="pic">
+                            </li>
+                            <li>
+                                <p>Виноградные листья сложить внахлест по два-три, выложить на них начинку и свернуть рулетиками.</p>
+                                <img src="images/step7.jpg" alt="pic">
+                            </li>
+                            <li>
+                                <p>Внутрь каждого цыпленка поместить по одному рулету и по две-три веточки оставшегося орегано и тимьяна. <br>
+                                    Дно небольшой формы для выпечки выстелить оставшимися виноградными листьями, выложить фаршированных цыплят грудками вверх, рядом поместить оставшиеся творожные рулетики.</p>
+                                <img src="images/step8.jpg" alt="pic">
+                            </li>
+                        </ol>
+
+                        <hr>
+
+                        <h4>Цитата H4</h4>
+                        <blockquote>
+                            <p>Мы упускаем из виду, что наша жизнь — всего лишь миг и этот краткий миг необходимо сделать как можно более прекрасным и совершенным</p>
+                            <cite>Андре Моруа. Письма незнакомке</cite>
+                        </blockquote>
+
+                        <h5>Заголовок H5</h5>                        
+                        <p>Чичиков поднял несколько бровь, услышав такое отчасти греческое имя, которому, неизвестно почему, Манилов дал окончание на «юс», но постарался тот же час привесть лицо в обыкновенное положение.</p>
+
+                        <h6>Заголовок H6</h6>
+                        <p>Наконец Манилов поднял трубку с чубуком и поглядел снизу ему в лицо, стараясь высмотреть, не видно ли какой усмешки на губах его, не пошутил ли он; но ничего не было видно такого, напротив, лицо даже казалось степеннее обыкновенного.</p>
+
+                        <hr>
+                    </div><!-- articleBody -->
+
+
+                    <section class="b-art-social">
+                        <h2 class="headline">Мы в соцсетях</h2>
+                        <ul class="nav-social">
+                            <li class="ok"><a href="#"></a></li>
+                            <li class="fb"><a href="#"></a></li>
+                            <li class="vk"><a href="#"></a></li>
+                            <li class="gp"><a href="#"></a></li>
+                        </ul>
+
+                        <p>Буду Вам признательна, если Вы поделитесь с друзьями. Сделать это очень прото: нажмите на кнопки социальных сетей и поделитесь с Вашими друзьями. И не забудьте понравившуюся статью добавить в закладки.</p>
+                    </section><!-- /.b-social -->                    
+
+                    <section>
+                        <h2 class="h-sec">Похожие записи</h2>
+                        <div class="row">
+                            <article class="b-art-prev-square col-xs-6 col-md-4">
+                                <a href="#" class="b-inner">
+                                    <img src="images/recep-prev-1.jpg" alt="pic">
+                                    <h3 class="headline">Голубцы со сметанно-томатным соусом</h3>
+                                </a><!-- b-inner -->
+                            </article><!-- /.b-art-prev-square -->
+                            <article class="b-art-prev-square col-xs-6 col-md-4">
+                                <a href="#" class="b-inner">
+                                    <img src="images/recep-prev-2.jpg" alt="pic">
+                                    <h3 class="headline">Голубцы со сметанно-томатным соусом</h3>
+                                </a><!-- b-inner -->
+                            </article><!-- /.b-art-prev-square -->
+                            <article class="b-art-prev-square col-xs-6 col-md-4">
+                                <a href="#" class="b-inner">
+                                    <img src="images/recep-prev-3.jpg" alt="pic">
+                                    <h3 class="headline">Голубцы со сметанно-томатным соусом</h3>
+                                </a><!-- b-inner -->
+                            </article><!-- /.b-art-prev-square -->
+                            <article class="b-art-prev-square col-xs-6 col-md-4">
+                                <a href="#" class="b-inner">
+                                    <img src="images/recep-prev-4.jpg" alt="pic">
+                                    <h3 class="headline">Голубцы со сметанно-томатным соусом</h3>
+                                </a><!-- b-inner -->
+                            </article><!-- /.b-art-prev-square -->
+                            <article class="b-art-prev-square col-xs-6 col-md-4">
+                                <a href="#" class="b-inner">
+                                    <img src="images/recep-prev-5.jpg" alt="pic">
+                                    <h3 class="headline">Голубцы со сметанно-томатным соусом</h3>
+                                </a><!-- b-inner -->
+                            </article><!-- /.b-art-prev-square -->
+                            <article class="b-art-prev-square col-xs-6 col-md-4">
+                                <a href="#" class="b-inner">
+                                    <img src="images/recep-prev-6.jpg" alt="pic">
+                                    <h3 class="headline">Голубцы со сметанно-томатным соусом</h3>
+                                </a><!-- b-inner -->
+                            </article><!-- /.b-art-prev-square -->
+                        </div><!-- /.row -->
+                    </section>
+
+                    <section class="hidden-xs">
+                        <h2 class="h-sec-2">Вам также может понравиться</h2>
+                        
+                        <div class="row">
+                            <article class="b-art-prev-rel col-xs-6 col-md-4">
+                                <img src="images/art-prev-1.jpg" alt="pic">
+                                <h3 class="h-art-prev" itemprop="name"><a href="#">Как накормить ребенка супом</a></h3>
+                            </article><!-- /.art-prev-rel -->
+                            <article class="b-art-prev-rel col-xs-6 col-md-4">
+                                <img src="images/art-prev-2.jpg" alt="pic">
+                                <h3 class="h-art-prev" itemprop="name"><a href="#">Как накормить ребенка супом</a></h3>
+                            </article><!-- /.art-prev-rel -->
+                            <article class="b-art-prev-rel col-xs-6 col-md-4">
+                                <img src="images/art-prev-3.jpg" alt="pic">
+                                <h3 class="h-art-prev" itemprop="name"><a href="#">Как накормить ребенка супом</a></h3>
+                            </article><!-- /.art-prev-rel -->
+                            <article class="b-art-prev-rel col-xs-6 col-md-4">
+                                <img src="images/art-prev-4.jpg" alt="pic">
+                                <h3 class="h-art-prev" itemprop="name"><a href="#">Как накормить ребенка супом</a></h3>
+                            </article><!-- /.art-prev-rel -->
+                            <article class="b-art-prev-rel col-xs-6 col-md-4">
+                                <img src="images/art-prev-5.jpg" alt="pic">
+                                <h3 class="h-art-prev" itemprop="name"><a href="#">Как накормить ребенка супом</a></h3>
+                            </article><!-- /.art-prev-rel -->
+                            <article class="b-art-prev-rel col-xs-6 col-md-4">
+                                <img src="images/art-prev-6.jpg" alt="pic">
+                                <h3 class="h-art-prev" itemprop="name"><a href="#">Как накормить ребенка супом</a></h3>
+                            </article><!-- /.art-prev-rel -->
+                        </div><!-- /.row -->
+                    </section>
+
+
+                    <section id="comments" class="comments-area">
+                        <div class="comments-title">Комментарии — 3</div>
+
+                        <ol class="comment-list">
+                            <li class="comment depth-1" id="li-comment-1" itemprop="comment" itemscope="" itemtype="http://schema.org/Comment">
+                                <div class="comment-box" id="comment-1">
+                                    <div class="comment-header">
+                                        <img src="images/userpic0.jpg" class="avatar avatar-50 photo">                                                                                
+                                        <cite class="comment-author" itemprop="creator" data-uri="http://yandex.ru/" onclick="GoTo('_yandex.ru/')">Михаил</cite>
+                                        <time class="comment-time" itemprop="datePublished" datetime="2016-06-16">19 октябля 2016 в 16:32</time>                                       
+                                    </div><!-- comment-header -->
+
+                                    <div class="comment-body">
+                                        <div class="comment-text" itemprop="text">
+                                            <p>какое необычное сочетание!</p>
+                                        </div>
+                                        <div class="comment-footer">
+                                            <span rel="nofollow" class="comment-reply-link" data-href="#comment-2">Ответить</span>
+                                        </div>
+                                    </div><!-- comment-body -->
+                                </div><!-- comment-box -->
+
+                                <ol class="children">
+                                    <li class="comment depth-2" id="li-comment-2" itemprop="comment" itemscope="" itemtype="http://schema.org/Comment">
+                                        <div class="comment-box" id="comment-2">
+                                            <div class="comment-header">
+                                                <img alt="" src="images/userpic1.jpg" class="avatar avatar-50 photo">                                                
+                                                <cite class="comment-author" itemprop="creator" data-uri="http://yandex.ru/" onclick="GoTo('_yandex.ru/')">Камила</cite>
+                                                <time class="comment-time" itemprop="datePublished" datetime="2016-06-16">19 октября 2016  в 18:10</time>                                                
+                                            </div><!-- comment-header -->
+
+                                            <div class="comment-body">
+                                                <div class="comment-text" itemprop="text">
+                                                    <p>Виноград очень добавляет пикантность блюду. Положила две веточки по 10 штук в блюдо для украшения при готовке. Бекон лучше положить на курочку за 20 мин до окончания запекания. Блюдо очень вкусное и необычное, достойно новогоднего стола.</p>
+                                                </div>
+                                                <div class="comment-footer">
+                                                    <span rel="nofollow" class="comment-reply-link" data-href="#comment-2">Ответить</span>                                            
+                                                </div>
+                                            </div><!-- comment-body -->
+                                        </div><!-- comment-box -->
+                                    </li><!-- comment -->
+                                </ol><!-- children -->
+                            </li><!-- comment -->
+                            <li class="comment depth-1" id="li-comment-1" itemprop="comment" itemscope="" itemtype="http://schema.org/Comment">
+                                <div class="comment-box" id="comment-1">
+                                    <div class="comment-header">
+                                        <img src="images/userpic0.jpg" class="avatar avatar-50 photo">
+                                        <cite class="comment-author" itemprop="creator" data-uri="http://yandex.ru/" onclick="GoTo('_yandex.ru/')">Анна</cite>
+                                        <time class="comment-time" itemprop="datePublished" datetime="2016-06-16">19 октябля 2016 в 16:32</time>                                       
+                                    </div><!-- comment-header -->
+
+                                    <div class="comment-body">
+                                        <div class="comment-text" itemprop="text">
+                                            <p>Цыплята получились — супер! </p>
+                                        </div>
+                                        <div class="comment-footer">
+                                            <span rel="nofollow" class="comment-reply-link" data-href="#comment-2">Ответить</span>
+                                        </div>
+                                    </div><!-- comment-body -->
+                                </div><!-- comment-box -->
+                            </li>
+                        </ol><!-- comment-list -->
+
+                        <section id="respond" class="comment-respond">
+                            <div id="reply-title" class="comment-reply-title">
+                                Добавить комментарий <small><a rel="nofollow" id="cancel-comment-reply-link" href="#respond" style="display:none;">Отменить ответ</a></small>
+                            </div>                           
+                        
+                            
+                            <form action="#" method="#" id="commentform" class="comment-form">
+                                <img class="comment-avatar hidden-xs" src="images/userpic0.jpg" alt="pic">
+
+                                <textarea id="comment" name="comment" rows="7" aria-required="true" placeholder="Введите сообщение"></textarea>
+                                <div class="b-inputs">
+                                    <input id="author" name="author" type="text" value="" aria-required="true" placeholder="Ваше имя">
+                                    <input id="email" name="email" type="email" value="" aria-required="true" placeholder="Ваш e-mail">
+                                    <input id="url" name="url" type="url" value="" size="30" placeholder="Ваш сайт (если есть)">
+                                </div><!-- /.b-inputs -->
+                                
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-7 subscribe-checkbox">Подписаться на комментарии к статье</div><!-- /.col -->
+                                    <div class="col-sm-6 col-md-5 form-submit">
+                                        <input name="submit" type="submit" id="submit" class="submit" value="Отправить">                                        
+                                    </div><!-- /.col -->
+                                </div><!-- /.row -->
+                            </form>
+                        </section><!-- #respond -->
+                    </section><!-- comments-area -->
+                </article>
+            </div><!-- /.site-content -->
+            <hr class="visible-xs hr-arrow">
+            <aside class="site-sidebar widget-area" itemscope itemtype="http://schema.org/WPSideBar">            
+                <div class="widget widget_bn hidden-xs"><img src="images/place-banner.png" alt="banner"></div><!-- /.widget -->
+                <div class="widget widget_author">
+                    <div class="pic"><img class="author" src="images/author.jpg" alt="автор блога"></div>
+                    <p>
+                        Добро пожаловать! <br> 
+                        Меня зовут 
+                        <b>Татьяна Симак</b>
+                        Я рада, что вы заглянули на мою кухню! Мой блог не только о кулинарных вкусах, но и о вкусе жизни, который объединяется семью, сплачивает людей.
+                    </p>
+                </div><!-- /.widget -->
+                <div class="widget widget_subscribe">
+                    <div class="widget-header">Подписаться <br> на новости сайта!</div>
+                    <form action="/" class="form-subscribe">
+                        <input type="text" name="name" id="sub-name" class="user-name" placeholder="Ваше имя">
+                        <input type="email" name="email" id="sub-email" class="user-email" placeholder="Ваш e-mail">
+                        <button type="submit" class="but but-subscribe">Подписаться</button>
+                    </form>
+                </div><!-- /.widget -->
+                <div class="widget widget_books">
+                    <div class="pic"><img src="images/books.png" alt="pic"></div><!-- /.pic -->
+                    <p class="header">Подпишитесь на журнал <br> и скачивайте бесплатно!</p>
+                </div><!-- /.widget -->
+                <div class="widget widget_bn hidden-xs"><img src="images/place-teaser.png" alt="banner"></div><!-- /.widget -->
+                <div class="widget widget_bn hidden-xs"><img src="images/place-banner.png" alt="banner"></div><!-- /.widget -->
+                <div class="widget widget_categories hidden-xs">
+                    <div class="widget-header">БЛЮДА ПО РУБРИКАМ</div>
+                    <ul>
+                        <li class="menu-item pervie">
+                            <a href="#">Первые блюда</a>
+                        </li>
+                        <li class="menu-item vtorie">
+                            <a href="#">Вторые блюда</a>
+                        </li>
+                        <li class="menu-item salati">
+                            <a href="#">Салаты</a>
+                        </li>
+                        <li class="menu-item zakuski">
+                            <a href="#">Закуски</a>
+                        </li>
+                        <li class="menu-item vipechka">
+                            <a href="#">Выпечка</a>
+                        </li>
+                        <li class="menu-item post">
+                            <a href="#">Постные блюда</a>
+                        </li>
+                        <li class="menu-item na-zimu">
+                            <a href="#">Заготовки на зиму</a>
+                        </li>
+                        <li class="menu-item sousi">
+                            <a href="#">Соусы</a>
+                        </li>
+                        <li class="menu-item prazdn">
+                            <a href="#">Праздничные рецепты</a>
+                        </li>
+                        <li class="menu-item deserti">
+                            <a href="#">Десерты</a>
+                        </li>
+                        <li class="menu-item napitki">
+                            <a href="#">Напитки</a>
+                        </li>
+                        <li class="menu-item sistema">
+                            <a href="#">Система питания</a>
+                        </li>
+                        <li class="menu-item dlya-tehniki">
+                            <a href="#">Блюда для кухонной техники</a>
+                        </li>
+                        <li class="menu-item po-ingr">
+                            <a href="#">Блюда по ингредиентам</a>                                
+                        </li>
+                        <li class="menu-item obzori">
+                            <a href="#">Обзоные статьи</a>
+                        </li>
+                        <li class="menu-item melochi">
+                            <a href="#">Полезные мелочи</a>
+                        </li>
+                    </ul>
+                </div><!-- /.widget widget_categories-->
+            </aside><!-- site-sidebar -->
+        </div><!-- /.clearfix -->
+
+        <div class="b-but-up">
+            <a href="#header" id="up" class="but-up hidden-xs" title="наверх">наверх</a>
+        </div><!-- /.b-but-up -->                    
+    </main><!-- /.container b-main -->    
+
+    <footer class="site-footer container" itemscope itemtype="http://schema.org/WPFooter">
+        <div class="b-footer-inner">
+            <div class="b-footer-top">
+                <div class="footer-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                    <ul>
+                        <li class="menu-item"><a href="#">Главная</a></li>
+                        <li class="menu-item"><a href="#">Рецепты</a></li>
+                        <li class="menu-item"><a href="#">Об авторе</a></li>
+                        <li class="menu-item"><a href="#">Контакты</a></li>
+                        <li class="menu-item"><a href="#">Прислать рецепт</a></li>
+                        <li class="menu-item"><a href="#">Карта сайта</a></li>
+                    </ul>
+                </div><!-- footer-navigation -->
+                
+                <div class="b-social-nav-footer">
+                    <ul class="nav-social-foot">
+                        <li class="ok"><a href="#"></a></li>
+                        <li class="gp"><a href="#"></a></li>
+                        <li class="vk"><a href="#"></a></li>
+                        <li class="fb"><a href="#"></a></li>
+                    </ul>
+                </div><!-- /.b-social-icons-footer -->
+            </div><!-- /.b-top -->
+            <div class="b-footer-bottom">
+                <small class="b-copyright">
+                    <p>Отличный вкус &#169; 2016 luxvkus.ru</p>
+                    <p>Все тексты и фотографии, опубликованные на сайте luxvkus.ru, защищены законом об авторском праве.</p>
+                    <p>Любая частичная или полная перепечатка опубликованной информации без активной ссылки на источник запрещена.</p>
+                </small>
+                <div class="b-counter">
+                    <img src="images/counter.png" alt="" />
+                </div><!-- /.b-counter -->
+            </div><!-- /.bottom -->
+        </div><!-- /.b-inner -->
+    </footer><!-- /container -->
+</body>
+</html>

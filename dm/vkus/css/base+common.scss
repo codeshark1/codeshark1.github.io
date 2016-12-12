@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700i|Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,700i|Playfair+Display');
 
 @mixin font-secondary() {
   font-family: 'Playfair Display', serif;
@@ -66,19 +66,23 @@ p {margin: 0 0 25px 0;}
 }
 .but {@include but();}
 
+.comment-respond .submit {
+    border-radius: 3px;
+    background: #c20000;
+    background: -moz-linear-gradient(top, #ff0000 0%, #c20000 100%);
+    background: -webkit-linear-gradient(top, #ff0000 0%,#c20000 100%);
+    background: linear-gradient(to bottom, #ff0000 0%,#c20000 100%);
+    border:none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 40px;
 
-@mixin but-form() {
-  background: $main;
-  padding: 12px;
-  text-transform: uppercase;
-  font-size: 12px;
-  &:hover,&:active,&:focus {
-    background: lighten($main,10%);
-  }
-}
-.but-form, form .submit {
-  @include but();
-  @include but-form();
+    &:hover,&:active,&:focus {
+      background: #c14747;
+      background: -moz-linear-gradient(top, #ff5656 0%, #c14747 100%);
+      background: -webkit-linear-gradient(top, #ff5656 0%,#c14747 100%);
+      background: linear-gradient(to bottom, #ff5656 0%,#c14747 100%);
+    }
 }
 
 
@@ -107,14 +111,33 @@ label {font-weight: normal;cursor: pointer;}
 
 
 /*HEADINGS*/
-.h-sec {
-  @include font-secondary();
+.h-sec, .h-main {@include font-secondary();}
+.h-main {
+  font-size: 35px;
+  margin: 0 0 20px;
+  @media (min-width: $screen-md-min) {font-size: 45px;}
+}
+
+.h-sec {  
   font-size: 30px;
-  border-top: 1px solid $base-text;
-  position: relative;
   padding-top: 30px;
   margin: 35px 0 30px;
   line-height: 1;
+  @media (min-width: $screen-md-min) {
+    font-size: 40px;  
+  }
+}
+.main-navigation:before,
+.h-sec:before, 
+.articleBody hr:before,
+.hr-arrow:before  {
+  left: 50px;
+  @media (min-width: $screen-sm-min) {left: 165px;}
+}
+.h-sec, .articleBody hr, .hr-arrow {
+  border: none;
+  border-top: 1px solid $base-text;
+  position: relative;
   &:before {
     content: "";
     height: 15px;
@@ -128,15 +151,8 @@ label {font-weight: normal;cursor: pointer;}
     position: absolute;
     top: -8px;
   }
-  @media (min-width: $screen-md-min) {
-    font-size: 40px;  
-  }
 }
-.main-navigation:before,
-.h-sec:before {
-  left: 50px;
-  @media (min-width: $screen-sm-min) {left: 165px;}
-}
+.h-sec-2 {font-weight: 700;font-size: 20px;margin-bottom: 25px;}
 
 /* IMAGES */
 .aligncenter, .alignleft, .alignright {display: block;margin: 0 auto 20px;}
