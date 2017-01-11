@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Шахматы с Жориком</title>    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/vendor/modernizr-custom.js"></script>    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4_min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>     
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--[if lt IE 10]>
+    <p class="browserupgrade">Вы используете <b>устаревший</b> браузер. Пожалуйста, <a href="http://browsehappy.com/?locale=ru_ru">обновите свой браузер</a> чтобы улучшить опыт работы с сайтом.</p>
+<![endif]-->
+<header class="site-header container" itemscope itemtype="http://schema.org/WPHeader" id="header">                    
+    <div class="b-header-top">
+        <div class="b-logo">
+            <img class="logo-desk" src="images/logotype.png" alt="Шахматы с Жориком">
+            <img class="logo-mob" src="images/logotype-2.png" alt="Шахматы с Жориком">
+            <h1 class="site-title" itemprop="headline">Шахматы с Жориком</h1>
+            <p class="site-description" itemprop="description">Обучение, решение задач, разбор партий, игра с компьютером и живыми соперниками онлайн</p>
+        </div><!-- /.b-logo -->
+    </div><!-- /.b-header-top -->
+    <div class="b-header-play">
+        <a href="#" class="but but-main but-play">играть в шахматы онлайн</a>
+
+        <button id="nav-toggle" class="but-nav" href="#"><i class="hamburger icon"></i></button>
+    </div><!-- /.b-header-play -->
+    
+    <div id="nav-main" class="b-nav-wrap">
+        <form role="search" method="get" class="search-form" id="searchform" action="/">
+            <input type="search" class="search-field" value="" name="s" placeholder="Ключевое слово поиска..." required>
+            <input type="submit" class="search-submit" id="searchsubmit" value="">
+        </form>
+        
+        <nav class="site-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <ul class="b-menu">
+                <li class="menu-item"><a href="#">Главная</a></li>
+                <li class="menu-item"><a href="#">О Жорике</a></li>
+                <li class="menu-item"><a href="#">Видеокурс по шахматам для детей</a></li>
+                <li class="menu-item"><a href="#">Конкурсы</a></li>
+                <li class="menu-item"><a href="#">Обратная связь</a></li>
+            </ul>
+        </nav>
+    </div><!-- /.b-nav-wrap -->    
+</header><!-- сontainer -->
+
+<main class="b-main container" id="main">
+    <div class="b-decor__top"></div><!-- /.b-decor__top -->    
+    <div class="b-main_i">
+        <div class="site-content">
+            <article class="b-art-intro">
+                <div class="b-top"></div><!-- /.b-top -->
+                <div class="b-mid">                        
+                    <div class="b-wrapper">
+                        <p>Привет! Меня зовут Жорик и я очень люблю играть в шахматы! <br>
+                        Если честно, то меня хлебом не корми, только дай доску с фигурками, горячего чайку с печеньками и я засяду до поздней ночи за этой увлекательной игрой. </p>
+
+                        <p>Шахматы, иногда даже снятся мне в моих сладких снах. <br>
+                        Помню в одном из них я обыграл Гарри Каспарова, поставив ему мат в два хода, а Магнус Карлсен зевнул мне ферзя…</p>
+
+                        <p>Если ты хочешь научиться хорошо играть в шахматы (возможно даже получить шахматный разряд или звание мастера Фиде, а может и гроссмейстера), получать все свежие новости шахматного мира и постоянно прокачивать свое шахматное мастерство, тогда читай мой блог и подписывайся на обновления.</p>
+
+                        <p>Этот блог я веду вместе с моим папой Сашей, мамой Юки и дядей Валерой, который является КМС СССР. Его рейтинг ЭЛО 2370. Так что у меня много помощников, для того, чтобы интересный контент выходил на регулярной основе…</p>
+
+                        <p>Так же на этом блоге будет много классных конкурсов, задачек и кроссвордов, в которых ты можешь выиграть отличные денежные призы и подарки</p>
+                    </div><!-- /.b-wrapper -->
+                </div><!-- /.b-mid -->
+                <div class="b-bot"><a href="#" class="but but-main">подписаться на обновления</a></div><!-- /.b-bot -->
+            </article><!-- b-art-intro -->
+
+            <div class="b-main-links">
+                <ul> 
+                    <li class="menu-item jiv-igr"><a href="#">Играть в шахматы с живыми игроками</a></li>
+                    <li class="menu-item comp"><a href="#">Играть в шахматы с компьютером</a></li>
+                    <li class="menu-item zadachi"><a href="#">Шахматные задачки (Мат в 1,2,3 хода)</a></li>
+                    <li class="menu-item analiz"><a href="#">Анализ шахматной позиции</a></li>
+                    <li class="menu-item pravila"><a href="#">Основные правила шахмат</a></li>
+                    <li class="menu-item partii"><a href="#">Величайшие шахматные партии</a></li>
+                    <li class="menu-item slovar"><a href="#">Словарь шахматных терминов</a></li>
+                    <li class="menu-item reiting"><a href="#">Рейтинг ФИДЕ шахматистов</a></li>
+                </ul>
+            </div><!-- /.b-main-links -->
+
+            <section class="b-sec">
+                <h2 class="h-section">Свежиe статьи сайта</h2> <a href="#" class="h-section-lnk">Все статьи блога</a>
+
+                <div class="b-art-row">
+                    <article class="b-art-card">
+                        <div class="b-img"><img src="images/pic-prev_1.jpg" alt="pic"></div><!-- /.b-img -->
+                        <p class="art-date">22.10.2016</p>
+                        <p class="art-views">254</p>
+                        <h3 class="title"><a href="#">Условный заголовок который придумал дизайнер</a></h3>
+                    </article><!-- b-art-card -->
+                    <article class="b-art-card">
+                        <div class="b-img"><img src="images/pic-prev_2.jpg" alt="pic"></div><!-- /.b-img -->
+                        <p class="art-date">22.10.2016</p>
+                        <p class="art-views">254</p>
+                        <h3 class="title"><a href="#">Условный заголовок который придумал дизайнер</a></h3>
+                    </article><!-- b-art-card -->
+                    <article class="b-art-card">
+                        <div class="b-img"><img src="images/pic-prev_3.jpg" alt="pic"></div><!-- /.b-img -->
+                        <p class="art-date">22.10.2016</p>
+                        <p class="art-views">254</p>
+                        <h3 class="title"><a href="#">Условный заголовок который придумал дизайнер</a></h3>
+                    </article><!-- b-art-card -->
+                </div><!-- /.b-art-row -->
+
+                <p class="link-all visible-xs"><a href="#">Все статьи блога</a></p>
+            </section><!-- b-sec -->
+
+            <section class="b-sec">
+                <h2 class="h-section">Свежиe новости сайта</h2> <a href="#" class="h-section-lnk">Все новости блога</a>
+
+                <div class="b-art-row">
+                    <article class="b-art-card">
+                        <div class="b-img"><img src="images/pic-prev_1.jpg" alt="pic"></div><!-- /.b-img -->
+                        <p class="art-date">22.10.2016</p>
+                        <p class="art-views">254</p>
+                        <h3 class="title"><a href="#">Задача организации, в особенности же реализация амеченных</a></h3>
+                    </article><!-- b-art-card -->
+                    <article class="b-art-card">
+                        <div class="b-img"><img src="images/pic-prev_2.jpg" alt="pic"></div><!-- /.b-img -->
+                        <p class="art-date">22.10.2016</p>
+                        <p class="art-views">254</p>
+                        <h3 class="title"><a href="#">Задача организации, в особенности же реализация амеченных</a></h3>
+                    </article><!-- b-art-card -->
+                    <article class="b-art-card">
+                        <div class="b-img"><img src="images/pic-prev_3.jpg" alt="pic"></div><!-- /.b-img -->
+                        <p class="art-date">22.10.2016</p>
+                        <p class="art-views">254</p>
+                        <h3 class="title"><a href="#">Задача организации, в особенности же реализация амеченных</a></h3>
+                    </article><!-- b-art-card -->
+                </div><!-- /.b-art-row -->
+                <p class="link-all visible-xs"><a href="#">Все новости блога</a></p>
+            </section><!-- b-sec -->
+        </div><!-- /.site-content -->
+
+        <aside class="site-sidebar widget-area" itemscope itemtype="http://schema.org/WPSideBar">
+            <div class="widget widget_categories hidden-xs">
+                <div class="widget-header">Разделы сайта</div>
+                <ul>
+                    <li class="cat-item zadachi"><a href="#">Шахматные задачи</a></li>
+                    <li class="cat-item knigi"><a href="#">Книги по шахматам</a></li>
+                    <li class="cat-item dvijki"><a href="#">Шахматные движки</a></li>
+                    <li class="cat-item program"><a href="#">Шахматные программы</a></li>
+                    <li class="cat-item novosti"><a href="#">Новости шахмат</a></li>
+                    <li class="cat-item bio"><a href="#">Биографии шахматистов</a></li>
+                    <li class="cat-item partii"><a href="#">Все шахматные партии</a></li>
+                    <li class="cat-item istoria"><a href="#">История шахмат</a></li>
+                    <li class="cat-item gosti"><a href="#">Статьи гостей блога</a></li>
+                    <li class="cat-item uroki"><a href="#">Уроки шахмат от Жорика</a></li>
+                    <li class="cat-item jizn"><a href="#">Жизнь Жорика</a></li>
+                </ul>
+            </div><!-- /.widget widget_categories-->
+
+            <div class="widget widget-subscribe hidden-xs">
+                <div class="widget-header hidden">ПОДПИШИСЬ НА НОВОСТИ</div>
+                <p class="headline">Получай свежие статьи блога на e-mail</p>
+                <form action="#" class="form-subscribe">
+                    <input type="email" class="input-email" placeholder="ваш e-mail" required>
+                    <input type="submit" value="Подписаться" class="but but-main">
+                </form>
+            </div><!-- /.widget widget-subscribe -->
+
+            <div class="widget widget-youtube">
+                <a href="#" class="link">Подписатсья <br> на мой канал</a>
+            </div><!-- /.widget -->
+
+            <div class="widget widget-ad hidden-xs">
+                <div class="widget-header">Реклама на сайте</div>
+                <img src="images/banner.png" alt="pic">
+            </div><!-- /.widget -->
+        </aside><!-- site-sidebar -->
+    </div><!-- /.b-main_i -->    
+    <div class="b-decor__bot"></div><!-- /.b-decor__bot -->
+    <div class="b-but-up">
+        <a href="#header" id="up" class="but-up hidden-xs" title="наверх">наверх</a>
+    </div><!-- /.b-but-up -->
+</main><!-- /.container b-main -->
+
+<footer class="site-footer container" itemscope itemtype="http://schema.org/WPFooter">
+    <div id="nav-main" class="b-nav-wrap hidden-xs">
+        <div class="site-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <ul class="b-menu">
+                <li class="menu-item"><a href="#">Главная</a></li>
+                <li class="menu-item"><a href="#">О Жорике</a></li>
+                <li class="menu-item"><a href="#">Видеокурс по шахматам для детей</a></li>
+                <li class="menu-item"><a href="#">Конкурсы</a></li>
+                <li class="menu-item"><a href="#">Обратная связь</a></li>
+            </ul>
+        </div>
+    </div><!-- /.b-nav-wrap -->
+
+    <div class="b-logo">
+        <img class="hidden-xs" src="images/logotype.png" alt="Шахматы с Жориком">
+        <img class="visible-xs" src="images/logotype-3.png" alt="Шахматы с Жориком">
+        <small>&#169; 2017 Не воруйте контент у Жорика, а то объявим вам гарде... И ни какой ферзь вам не поможет =)</small>
+    </div><!-- /.b-logo -->
+    <div class="nav-social">
+        <ul>
+            <li class="list-item vk"><a href="#"></a></li>
+            <li class="list-item fb"><a href="#"></a></li>
+            <li class="list-item in"><a href="#"></a></li>
+            <li class="list-item yt"><a href="#"></a></li>
+        </ul>
+    </div><!-- /.nav-social -->
+    
+    <img src="images/graphic-footer.png" alt="pic" class="footer-graphic">
+</footer>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
