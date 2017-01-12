@@ -64,12 +64,6 @@ function clone_categs() {
     $('.widget_categories').clone().prependTo('#main').removeClass('hidden-xs').addClass('visible-xs').removeClass('widget').attr('id', 'categories').find('ul').hide();
 }
 
-function sbarHeight() {
-    if ( $('.site-sidebar').height() < $('.site-content').height() ) {
-        $('.site-sidebar').height($('.site-content').height());        
-    } 
-}
-
 
 $(document).ready(function(){
     responsiveIframe();
@@ -80,17 +74,7 @@ $(document).ready(function(){
     up(); 
     but_up();
     clone_categs();
-    categories();
-    if( $(window).width() >= 768 ) {
-        sbarHeight();        
-    }
-    $(window).resize(function() {
-        if( $(window).width() >= 768 ) {
-            sbarHeight();        
-        } else {
-            $('.site-sidebar').height('auto');
-        }
-    });        
+    categories();       
     $(window).scroll(function() {
         but_up();        
     });    
