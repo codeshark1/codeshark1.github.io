@@ -1,0 +1,81 @@
+
+.nav-social {
+	ul {@include resetUl();}
+	.list-item {display: inline-block;margin: 0 3px;}
+	a {
+		display: block;
+		background: url('images/sprite.png') no-repeat;
+		width: 40px; height: 40px;
+		box-shadow: 0px 5px 11px 0px rgba(90, 42, 22, 0.9);	
+		border-radius: 100%;
+	}
+	.fb a {background-position: 0 -1383px;}
+	.in a {background-position: 0 -1453px;}
+	.vk a {background-position: 0 -1523px;}
+	.yt a {background-position: 0 -1593px;}
+}
+
+
+border-style: solid; 
+border-width: 3px;
+background: #f9f6ef;
+border-image: url(images/border-content.png) 3 repeat;
+
+	
+.soc-fb { background-position: -116px -290px; } 
+.soc-ok { background-position: -116px -351px; } 
+.soc-sharing { background-position: -116px -412px; } 
+.soc-tw { background-position: -116px -473px; } 
+.soc-vk { background-position: -116px -534px; } 
+
+
+
+diet-pit
+dlya-kuh
+frukti
+kuh-teh
+lecheb-pit
+lifehacks
+moroj
+napitki
+	napitki-alco
+	napitki-bezalco
+novosti
+pervie
+pit-det
+pit-kras
+pit-sport
+polezno
+prazdn-stol
+salati
+solenya
+sousi
+uzhin
+varen
+veget
+vipechka
+	vipechka-blini
+	vipechka-olad
+	vipechka-pechen
+	vipechka-pirogi
+	vipechka-pirojki
+	vipechka-pirojnie
+	vipechka-pizza
+	vipechka-sirnik
+	vipechka-testo
+	vipechka-torti
+vtorie
+	vtorie-curiza
+	vtorie-grib
+	vtorie-kartof
+	vtorie-kashi
+	vtorie-macaron
+	vtorie-morep
+	vtorie-myaso
+	vtorie-pelmeni
+	vtorie-riba
+zakuski
+	zakuski-buter
+	zakuski-zaliv
+zavtrak
+zdorov
