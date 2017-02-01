@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Blogname</title>    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/vendor/modernizr-custom.js"></script>
+    <script src="js/vendor/jquery-1.12.4_min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>     
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <![endif]-->
+</head>
+<body class="home">
+<!--[if lt IE 10]>
+    <p class="browserupgrade">Вы используете <b>устаревший</b> браузер. Пожалуйста, <a href="http://browsehappy.com/?locale=ru_ru">обновите свой браузер</a> чтобы улучшить опыт работы с сайтом.</p>
+<![endif]-->
+<header class="site-header" itemscope itemtype="http://schema.org/WPHeader" id="header">
+    <div class="b-but-nav"><button id="nav-toggle" class="but-nav" href="#"><i class="hamburger icon"></i></button></div><!-- /.b-but-nav -->
+    
+    <div class="b-nav-wrap" id="nav-main">
+        <div class="container">
+            <form role="search" method="get" class="search-form" id="searchform" action="/">
+                <input type="search" class="search-field" value="" name="s" placeholder="Поиск по блогу..." required>
+                <input type="submit" class="search-submit" id="searchsubmit" value="">
+            </form>
+            
+            <nav class="site-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <h5 hidden>Основная навигация</h5>
+                <ul class="b-menu">
+                    <li class="menu-item"><a href="#">Главная</a></li>
+                    <li class="menu-item"><a href="#">Мой блог</a></li>
+                    <li class="menu-item"><a href="#">Контакты</a></li>
+                    <li class="menu-item"><a href="#">Карта сайта</a></li>
+                </ul>
+            </nav>
+        </div><!-- /.container -->
+    </div><!-- /.b-nav-wrap --> 
+
+    <div class="container b-mid">
+        <div class="row">
+            <div class="b-logo col-sm-4">
+                <img class="logo" src="images/logotype.png" alt="Blogname">
+                <h1 class="site-title hidden" itemprop="headline">Blogname</h1>
+                <p class="site-description hidden" itemprop="description">Текст слогана</p>
+            </div><!-- /.b-logo -->    
+            
+            <div class="b-bnr hidden-xs col-sm-8">
+                <img src="images/bn-728-900.png" alt="pic">
+            </div><!-- /.b-bnr -->
+        </div><!-- /.row -->
+    </div><!-- /.container b-mid-->
+
+    <nav class="container b-categs-wrap">
+        <h5 class="but but-categs" id="but-categs">Рубрики блога <i></i></h5>
+        <ul id="menu-categs" class="menu-categories">
+            <li class="menu-item"><a href="#">лучшее</a></li>
+            <li class="menu-item"><a href="#">новое</a></li>
+            <li class="menu-item"><a href="#">тесты</a></li>
+            <li class="menu-item"><a href="#">карточки</a></li>
+            <li class="menu-item menu-item-has-children"><a href="#">обзоры</a> 
+                <ul class="sub-menu">
+                    <li class="menu-item"><a href="#">Путешествия</a></li>
+                    <li class="menu-item"><a href="#">Психология</a></li>
+                    <li class="menu-item"><a href="#">Культура</a></li>
+                    <li class="menu-item"><a href="#">Авторские колонки</a></li>
+                    <li class="menu-item"><a href="#">Сделай сам</a></li>
+                    <li class="menu-item"><a href="#">Народное творчество</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="#">книги</a></li>
+            <li class="menu-item"><a href="#">лонгриды</a></li>
+            <li class="menu-item"><a href="#">видео</a></li>            
+        </ul>            
+    </nav><!-- container -->
+</header>
+
+<main class="b-main container" id="main">    
+    
+        <div class="site-content">
+            <section class="sec-fresh">
+                <div class="b-sec-header hidden-xs">
+                    <h2 class="h-section h-fresh">Самые свежие статьи</h2>
+                    <a href="#" class="link-all">Смотреть все</a>
+                </div><!-- /.b-sec-header -->
+                
+                <div class="b-ban-cont hidden-xs"><img src="images/bn-620-110.png" alt="pic"></div>
+
+                <div class="row b-art-row">
+                    <article class="col-sm-6 b-art-prev" itemscope itemtype="http://schema.org/Article">
+                        <a href="#" class="b-img">
+                            <img src="images/pic1.jpg" alt="pic">
+                            <div class="b-info">
+                                <p class="art-author-prev"><span class="spanlink" itemprop="author">Елена Петрякова</span></p>
+                                <p class="art-date-prev"><time itemprop="datePublished" datetime="2015-03-19">11.10.16</time></p>
+                                <p class="art-comcount-prev">15</p>                        
+                            </div><!-- b-info -->
+                        </a><!-- b-img -->
+                        <h2 itemprop="name" class="h-prev"><a href="#">Только настоящий шеф-повар пройдет этот кулинарный тест</a></h2>
+                        <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                    </article><!-- b-art-prev -->
+                    
+                    <article class="col-sm-6 b-art-prev" itemscope itemtype="http://schema.org/Article">
+                        <a href="#" class="b-img">
+                            <img src="images/pic2.jpg" alt="pic">
+                            <div class="b-info">
+                                <p class="art-author-prev"><span class="spanlink" itemprop="author">Елена Петрякова</span></p>
+                                <p class="art-date-prev"><time itemprop="datePublished" datetime="2015-03-19">11.10.16</time></p>
+                                <p class="art-comcount-prev">15</p>                        
+                            </div><!-- b-info -->
+                        </a><!-- b-img -->
+                        <h2 itemprop="name" class="h-prev"><a href="#">Всего три цвета в одежде, с которыми ваш образ будет</a></h2>
+                        <p>Каждая девушка знает, что цвет одежды не менее важный фактор при выборе вещей, чем качество их материала или кроя.</p>
+                    </article><!-- b-art-prev -->
+                    
+                    <hr class="hidden-xs">
+                    
+                    <article class="col-sm-6 b-art-prev" itemscope itemtype="http://schema.org/Article">
+                        <a href="#" class="b-img">
+                            <img src="images/pic3.jpg" alt="pic">
+                            <div class="b-info">
+                                <p class="art-author-prev"><span class="spanlink" itemprop="author">Елена Петрякова</span></p>
+                                <p class="art-date-prev"><time itemprop="datePublished" datetime="2015-03-19">11.10.16</time></p>
+                                <p class="art-comcount-prev">15</p>                        
+                            </div><!-- b-info -->
+                        </a><!-- b-img -->
+                        <h2 itemprop="name" class="h-prev"><a href="#">Только настоящий шеф-повар пройдет этот кулинарный тест</a></h2>
+                        <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                    </article><!-- b-art-prev -->
+                   
+                    <article class="col-sm-6 b-art-prev" itemscope itemtype="http://schema.org/Article">
+                        <a href="#" class="b-img">
+                            <img src="images/pic4.jpg" alt="pic">
+                            <div class="b-info">
+                                <p class="art-author-prev"><span class="spanlink" itemprop="author">Елена Петрякова</span></p>
+                                <p class="art-date-prev"><time itemprop="datePublished" datetime="2015-03-19">11.10.16</time></p>
+                                <p class="art-comcount-prev">15</p>                        
+                            </div><!-- b-info -->
+                        </a><!-- b-img -->
+                        <h2 itemprop="name" class="h-prev"><a href="#">Всего три цвета в одежде, с которыми ваш образ будет</a></h2>
+                        <p>Каждая девушка знает, что цвет одежды не менее важный фактор при выборе вещей, чем качество их материала или кроя.</p>
+                    </article><!-- b-art-prev -->
+                </div><!-- /.row -->
+
+                <div class="b-ban-cont hidden-xs"><img src="images/bn-620-110.png" alt="pic"></div>
+                
+                <div class="row b-art-row">
+                    <article class="col-sm-6 b-art-prev" itemscope itemtype="http://schema.org/Article">
+                        <a href="#" class="b-img">
+                            <img src="images/pic1.jpg" alt="pic">
+                            <div class="b-info">
+                                <p class="art-author-prev"><span class="spanlink" itemprop="author">Елена Петрякова</span></p>
+                                <p class="art-date-prev"><time itemprop="datePublished" datetime="2015-03-19">11.10.16</time></p>
+                                <p class="art-comcount-prev">15</p>                        
+                            </div><!-- b-info -->
+                        </a><!-- b-img -->
+                        <h2 itemprop="name" class="h-prev"><a href="#">Только настоящий шеф-повар пройдет этот кулинарный тест</a></h2>
+                        <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                    </article><!-- b-art-prev -->
+                    
+                    <article class="col-sm-6 b-art-prev" itemscope itemtype="http://schema.org/Article">
+                        <a href="#" class="b-img">
+                            <img src="images/pic2.jpg" alt="pic">
+                            <div class="b-info">
+                                <p class="art-author-prev"><span class="spanlink" itemprop="author">Елена Петрякова</span></p>
+                                <p class="art-date-prev"><time itemprop="datePublished" datetime="2015-03-19">11.10.16</time></p>
+                                <p class="art-comcount-prev">15</p>                        
+                            </div><!-- b-info -->
+                        </a><!-- b-img -->
+                        <h2 itemprop="name" class="h-prev"><a href="#">Всего три цвета в одежде, с которыми ваш образ будет</a></h2>
+                        <p>Каждая девушка знает, что цвет одежды не менее важный фактор при выборе вещей, чем качество их материала или кроя.</p>
+                    </article><!-- b-art-prev -->
+                    
+                    <hr class="hidden-xs">
+                    
+                    <article class="col-sm-6 b-art-prev" itemscope itemtype="http://schema.org/Article">
+                        <a href="#" class="b-img">
+                            <img src="images/pic3.jpg" alt="pic">
+                            <div class="b-info">
+                                <p class="art-author-prev"><span class="spanlink" itemprop="author">Елена Петрякова</span></p>
+                                <p class="art-date-prev"><time itemprop="datePublished" datetime="2015-03-19">11.10.16</time></p>
+                                <p class="art-comcount-prev">15</p>                        
+                            </div><!-- b-info -->
+                        </a><!-- b-img -->
+                        <h2 itemprop="name" class="h-prev"><a href="#">Только настоящий шеф-повар пройдет этот кулинарный тест</a></h2>
+                        <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                    </article><!-- b-art-prev -->
+                    
+                    <article class="col-sm-6 b-art-prev" itemscope itemtype="http://schema.org/Article">
+                        <a href="#" class="b-img">
+                            <img src="images/pic4.jpg" alt="pic">
+                            <div class="b-info">
+                                <p class="art-author-prev"><span class="spanlink" itemprop="author">Елена Петрякова</span></p>
+                                <p class="art-date-prev"><time itemprop="datePublished" datetime="2015-03-19">11.10.16</time></p>
+                                <p class="art-comcount-prev">15</p>                        
+                            </div><!-- b-info -->
+                        </a><!-- b-img -->
+                        <h2 itemprop="name" class="h-prev"><a href="#">Всего три цвета в одежде, с которыми ваш образ будет</a></h2>
+                        <p>Каждая девушка знает, что цвет одежды не менее важный фактор при выборе вещей, чем качество их материала или кроя.</p>
+                    </article><!-- b-art-prev -->
+
+                    <hr class="hidden-xs">
+                    
+                    <article class="col-sm-6 b-art-prev" itemscope itemtype="http://schema.org/Article">
+                        <a href="#" class="b-img">
+                            <img src="images/pic1.jpg" alt="pic">
+                            <div class="b-info">
+                                <p class="art-author-prev"><span class="spanlink" itemprop="author">Елена Петрякова</span></p>
+                                <p class="art-date-prev"><time itemprop="datePublished" datetime="2015-03-19">11.10.16</time></p>
+                                <p class="art-comcount-prev">15</p>                        
+                            </div><!-- b-info -->
+                        </a><!-- b-img -->
+                        <h2 itemprop="name" class="h-prev"><a href="#">Только настоящий шеф-повар пройдет этот кулинарный тест</a></h2>
+                        <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                    </article><!-- b-art-prev -->
+                    
+                    <article class="col-sm-6 b-art-prev" itemscope itemtype="http://schema.org/Article">
+                        <a href="#" class="b-img">
+                            <img src="images/pic2.jpg" alt="pic">
+                            <div class="b-info">
+                                <p class="art-author-prev"><span class="spanlink" itemprop="author">Елена Петрякова</span></p>
+                                <p class="art-date-prev"><time itemprop="datePublished" datetime="2015-03-19">11.10.16</time></p>
+                                <p class="art-comcount-prev">15</p>                        
+                            </div><!-- b-info -->
+                        </a><!-- b-img -->
+                        <h2 itemprop="name" class="h-prev"><a href="#">Всего три цвета в одежде, с которыми ваш образ будет</a></h2>
+                        <p>Каждая девушка знает, что цвет одежды не менее важный фактор при выборе вещей, чем качество их материала или кроя.</p>
+                    </article><!-- b-art-prev -->
+                </div><!-- /.row -->
+
+                <div class="b-ban-cont hidden-xs"><img src="images/bn-620-110.png" alt="pic"></div>
+                
+                <hr class="visible-xs">
+                
+                <div class="b-social">
+                    <div class="b-buttons"><img src="images/social.png" alt="pic"></div><!-- /.b-buttons -->
+                    <div class="b-facebook">
+                        <a href="#" class="but but-fbook">Поделиться в Facebook</a>
+                    </div><!-- /.b-facebook -->
+                </div><!-- /.b-social -->
+                
+                <hr>
+
+                <nav class="navigation pagination hidden-xs" role="navigation">
+                    <div class="screen-reader-text">Навигация по записям</div>
+                    <div class="nav-links">
+                        <span class="page-numbers">1</span>                    
+                        <a class="page-numbers" href="#">2</a>
+                        <a class="page-numbers" href="#">3</a>
+                        <span class="page-numbers current">4</span>
+                        <a class="page-numbers" href="#">5</a>
+                        <a class="page-numbers" href="#">6</a>
+                        <span class="page-numbers dots">…</span>
+                        <a class="page-numbers" href="#">100</a>
+                        <a class="next page-numbers" href="#">Следующая страница</a>
+                    </div><!-- nav-links -->
+                </nav><!-- pagination -->
+
+                <div class="navigation pagination visible-xs" role="navigation">
+                    <div class="nav-links">
+                        <span class="page-numbers current">1</span>                    
+                        <a class="page-numbers" href="#">2</a>
+                        <span class="page-numbers dots">…</span>
+                        <a class="page-numbers" href="#">99</a>
+                        <a class="next page-numbers" href="#">Следующая</a>
+                    </div><!-- nav-links -->
+                </div><!-- pagination -->
+            </section>
+        </div><!-- /.site-content -->
+
+        <aside class="site-sidebar widget-area site-sidebar-left hidden-xs" itemscope itemtype="http://schema.org/WPSideBar">
+            <div class="widget widget-pop">
+                <div class="widget-header">Популярное</div>
+                
+                <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+                    <a href="#" class="b-img"><img src="images/pic3.jpg" alt="pic"></a>
+                    <h3 itemprop="name" class="h-sbar"><a href="#">Как видят мир люди с разными формами дальтонизма</a></h3>
+                    <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                </article><!-- b-art-prev -->
+
+                <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+                    <a href="#" class="b-img"><img src="images/pic4.jpg" alt="pic"></a>
+                    <h3 itemprop="name" class="h-sbar"><a href="#">Только настоящий шеф-повар пройдет этот кулинарный тест</a></h3>
+                    <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                </article><!-- b-art-prev -->
+
+                <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+                    <a href="#" class="b-img"><img src="images/pic5.jpg" alt="pic"></a>
+                    <h3 itemprop="name" class="h-sbar"><a href="#">Только настоящий шеф-повар пройдет этот кулинарный тест</a></h3>
+                    <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                </article><!-- b-art-prev -->
+
+                <div class="b-ban-sbar"><img src="images/bn-258-400.png" alt="pic"></div><!-- /.b-ban-sbar -->
+
+                <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+                    <a href="#" class="b-img"><img src="images/pic6.jpg" alt="pic"></a>
+                    <h3 itemprop="name" class="h-sbar"><a href="#">Как видят мир люди с разными формами дальтонизма</a></h3>
+                    <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                </article><!-- b-art-prev -->
+
+                <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+                    <a href="#" class="b-img"><img src="images/pic7.jpg" alt="pic"></a>
+                    <h3 itemprop="name" class="h-sbar"><a href="#">Только настоящий шеф-повар пройдет этот кулинарный тест</a></h3>
+                    <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                </article><!-- b-art-prev -->
+            </div><!-- widget -->
+        </aside><!-- site-sidebar -->
+
+        <aside class="site-sidebar widget-area site-sidebar-right hidden-xs" itemscope itemtype="http://schema.org/WPSideBar">
+            <div class="widget widget-interest">
+                <div class="widget-header">Интересное</div>
+                
+                <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+                    <a href="#" class="b-img"><img src="images/pic6.jpg" alt="pic"></a>
+                    <h3 itemprop="name" class="h-sbar"><a href="#">Как видят мир люди с разными формами дальтонизма</a></h3>
+                    <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                </article><!-- b-art-prev -->
+
+                <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+                    <a href="#" class="b-img"><img src="images/pic7.jpg" alt="pic"></a>
+                    <h3 itemprop="name" class="h-sbar"><a href="#">Только настоящий шеф-повар пройдет этот кулинарный тест</a></h3>
+                    <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                </article><!-- b-art-prev -->
+                
+                <div class="b-ban-sbar"><img src="images/bn-258-400.png" alt="pic"></div><!-- /.b-ban-sbar -->
+
+                <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+                    <a href="#" class="b-img"><img src="images/pic3.jpg" alt="pic"></a>
+                    <h3 itemprop="name" class="h-sbar"><a href="#">Только настоящий шеф-повар пройдет этот кулинарный тест</a></h3>
+                    <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                </article><!-- b-art-prev -->
+
+                <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+                    <a href="#" class="b-img"><img src="images/pic4.jpg" alt="pic"></a>
+                    <h3 itemprop="name" class="h-sbar"><a href="#">Как видят мир люди с разными формами дальтонизма</a></h3>
+                    <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                </article><!-- b-art-prev -->
+
+                <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+                    <a href="#" class="b-img"><img src="images/pic5.jpg" alt="pic"></a>
+                    <h3 itemprop="name" class="h-sbar"><a href="#">Только настоящий шеф-повар пройдет этот кулинарный тест</a></h3>
+                    <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                </article><!-- b-art-prev -->
+            </div><!-- widget -->
+        </aside><!-- site-sidebar -->
+    
+    <div class="b-but-up">
+        <a href="#header" id="up" class="but-up hidden-xs" title="наверх">наверх</a>
+    </div><!-- /.b-but-up -->
+</main><!-- /.container b-main -->
+
+<footer class="site-footer" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="b-top">
+        <div class="container">
+            <div class="b-logo hidden-xs">
+                <img src="images/logotype.png" alt="Blogname">
+            </div><!-- /.b-logo -->
+            <div class="b-copyright">
+                <small>&#169; 2016.  Все права защищены. Копирование материалов без указания открытой ссылки запрещено.</small>
+            </div><!-- /.b-copy -->
+            <div class="b-misc hidden-xs">
+                <ul class="menu-categories-footer">
+                    <li class="menu-item"><a href="#">лучшее</a></li>
+                    <li class="menu-item"><a href="#">новое</a></li>
+                    <li class="menu-item"><a href="#">тесты</a></li>
+                    <li class="menu-item"><a href="#">карточки</a></li>
+                    <li class="menu-item"><a href="#">книги</a></li>
+                    <li class="menu-item"><a href="#">лонгриды</a></li>
+                    <li class="menu-item"><a href="#">видео</a></li>            
+                    <li class="menu-item"><a href="#">обзоры</a></li>
+                </ul>             
+
+                <div class="b-error">
+                    <p>Ошибка в тексте? Выделите её мышкой и нажмите: <span class="but but-main">Ctrl</span> <b>+</b> <span class="but but-main">Enter</span></p>
+                </div><!-- /.b-error -->
+            </div><!-- /.b-misc -->
+        </div><!-- /.container -->
+    </div><!-- /.b-top -->
+    <div class="b-bot container">
+        <ul class="b-menu-footer hidden-xs">
+            <li class="menu-item"><a href="#">Главная</a></li>
+            <li class="menu-item"><a href="#">Мой блог</a></li>
+            <li class="menu-item"><a href="#">Контакты</a></li>
+            <li class="menu-item"><a href="#">Карта сайта</a></li>
+        </ul>
+        <div class="b-counter"><img src="images/counter.png" alt="pic"></div><!-- /.b-counter -->
+    </div><!-- /.b-bot -->
+</footer>
+</body>
+</html>

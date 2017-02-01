@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Статья - Blogname</title>    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/vendor/modernizr-custom.js"></script>
+    <script src="js/vendor/jquery-1.12.4_min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>     
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--[if lt IE 10]>
+    <p class="browserupgrade">Вы используете <b>устаревший</b> браузер. Пожалуйста, <a href="http://browsehappy.com/?locale=ru_ru">обновите свой браузер</a> чтобы улучшить опыт работы с сайтом.</p>
+<![endif]-->
+<header class="site-header" itemscope itemtype="http://schema.org/WPHeader" id="header">
+    <div class="b-but-nav"><button id="nav-toggle" class="but-nav" href="#"><i class="hamburger icon"></i></button></div><!-- /.b-but-nav -->
+    
+    <div class="b-nav-wrap" id="nav-main">
+        <div class="container">
+            <form role="search" method="get" class="search-form" id="searchform" action="/">
+                <input type="search" class="search-field" value="" name="s" placeholder="Поиск по блогу..." required>
+                <input type="submit" class="search-submit" id="searchsubmit" value="">
+            </form>
+            
+            <nav class="site-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <h5 hidden>Основная навигация</h5>
+                <ul class="b-menu">
+                    <li class="menu-item"><a href="#">Главная</a></li>
+                    <li class="menu-item"><a href="#">Мой блог</a></li>
+                    <li class="menu-item"><a href="#">Контакты</a></li>
+                    <li class="menu-item"><a href="#">Карта сайта</a></li>
+                </ul>
+            </nav>
+        </div><!-- /.container -->
+    </div><!-- /.b-nav-wrap --> 
+
+    <div class="container b-mid">
+        <div class="row">
+            <div class="b-logo col-sm-4">
+                <img class="logo" src="images/logotype.png" alt="Blogname">
+                <div class="site-title hidden" itemprop="headline">Blogname</div>
+                <p class="site-description hidden" itemprop="description">Текст слогана</p>
+            </div><!-- /.b-logo -->    
+            
+            <div class="b-bnr hidden-xs col-sm-8">
+                <img src="images/bn-728-900.png" alt="pic">
+            </div><!-- /.b-bnr -->
+        </div><!-- /.row -->
+    </div><!-- /.container b-mid-->
+
+    <nav class="container b-categs-wrap">
+        <h5 class="but but-categs" id="but-categs">Рубрики блога <i></i></h5>
+        <ul id="menu-categs" class="menu-categories">
+            <li class="menu-item"><a href="#">лучшее</a></li>
+            <li class="menu-item"><a href="#">новое</a></li>
+            <li class="menu-item"><a href="#">тесты</a></li>
+            <li class="menu-item"><a href="#">карточки</a></li>
+            <li class="menu-item menu-item-has-children"><a href="#">обзоры</a> 
+                <ul class="sub-menu">
+                    <li class="menu-item"><a href="#">Путешествия</a></li>
+                    <li class="menu-item"><a href="#">Психология</a></li>
+                    <li class="menu-item"><a href="#">Культура</a></li>
+                    <li class="menu-item"><a href="#">Авторские колонки</a></li>
+                    <li class="menu-item"><a href="#">Сделай сам</a></li>
+                    <li class="menu-item"><a href="#">Народное творчество</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="#">книги</a></li>
+            <li class="menu-item"><a href="#">лонгриды</a></li>
+            <li class="menu-item"><a href="#">видео</a></li>            
+        </ul>            
+    </nav><!-- container -->
+</header>
+
+<main class="b-main container" id="main">    
+    <div class="row">
+        <div class="site-content col-sm-9">
+            <div class="breadcrumb" id="breadcrumbs">
+                <span xmlns:v="http://rdf.data-vocabulary.org/#">
+                    <span typeof="v:Breadcrumb">
+                        <a href="#" rel="v:url" property="v:title">Главная</a> 
+                        <span rel="v:child" typeof="v:Breadcrumb">Вторичная страница</span>
+                    </span>
+                </span>
+            </div>
+
+            <article class="b-art-main" itemscope itemtype="http://schema.org/Article">
+                <header class="header-article">
+                    <h1 itemprop="name" class="h-main">Всего три цвета в одежде, с которыми ваш образ будет выглядеть дороже</h1>
+                    <div class="b-info">
+                        <p class="art-author"><span class="spanlink" itemprop="author">Елена Петрякова</span></p>
+                        <p class="art-date hidden-xs"><time itemprop="datePublished" datetime="2015-03-19">11.10.16 &frasl; 12:56</time></p>
+                        <p class="art-categ"><a href="#" itemprop="articleSection">Обзоры</a></p>
+                    </div><!-- b-info -->
+                </header><!-- header-article -->
+
+                <div itemprop="articleBody" class="b-art-body b-decor-mid">
+                    <img src="images/photo.jpg" alt="pic">
+
+                    <p>Каждая девушка знает, что цвет одежды не менее важный фактор при выборе вещей, чем качество их материала или кроя. Есть всего несколько оттенков, которые вы смело можете использовать в любом своем образе. Белый цвет как бы говорит: «У меня настолько все хорошо, что я не пользуюсь общественным транспортом, а улицы в моем районе вымыты с мылом». Красный всегда был и остается оттенком роскоши. Этот цвет всегда ассоциировался со смелыми женщинами, которые привлекают внимание и заставляют мужчин оборачиваться им вслед. </p>
+                    <blockquote>Каждая девушка знает, что цвет одежды не менее важный фактор при выборе вещей, чем качество их материала или кроя. Есть всего несколько оттенков, которые вы смело можете использовать в любом своем образе. Белый цвет как бы говорит: </blockquote>
+                    <p>Каждая девушка знает, что цвет одежды не менее важный фактор при выборе вещей, чем качество их материала или кроя. Есть всего несколько оттенков, которые вы смело можете использовать в любом своем образе. Белый цвет как бы говорит: </p>
+                    <ol>
+                        <li>Каждая девушка знает, что цвет одежды не менее важный фактор при выборе вещей, чем качество их материала или кроя. Есть всего несколько оттенков, которые вы смело можете использовать в любом своем образе. Белый цвет как бы говорит: </li>
+                        <li>Красный всегда был и остается оттенком роскоши. Этот цвет всегда ассоциировался со смелыми женщинами, которые привлекают внимание и заставляют мужчин оборачиваться им вслед.</li>
+                        <li>Каждая девушка знает, что цвет одежды не менее важный фактор при выборе вещей, чем качество их материала или кроя. Есть всего несколько оттенков, которые вы смело можете использовать в любом своем образе. Белый цвет как бы говорит: </li>
+                    </ol>
+                    <p>Каждая девушка знает, что цвет одежды не менее важный фактор при выборе вещей, чем качество их материала или кроя. Есть всего несколько оттенков, которые вы смело можете использовать в любом своем образе. Белый цвет как бы говорит: «У меня настолько все хорошо, что я не пользуюсь общественным транспортом, а улицы в моем районе вымыты с мылом». Красный всегда был и остается оттенком роскоши. Этот цвет всегда ассоциировался со смелыми женщинами, которые привлекают внимание и заставляют мужчин оборачиваться им вслед. </p>
+                    <ul>
+                        <li>Каждая девушка знает, что цвет одежды не менее важный фактор при выборе вещей, чем качество их материала или кроя. Есть всего несколько оттенков, которые вы смело можете использовать в любом своем образе. Белый цвет как бы говорит:</li>
+                        <li>Каждая девушка знает, что цвет одежды не менее важный фактор при выборе вещей, чем качество их материала или кроя. Есть всего несколько оттенков, которые вы смело можете использовать в любом своем образе. Белый цвет как бы говорит:</li>
+                        <li>Каждая девушка знает, что цвет одежды не менее важный фактор при выборе вещей, чем качество их материала или кроя. Есть всего несколько оттенков, которые вы смело можете использовать в любом своем образе. Белый цвет как бы говорит:</li>
+                    </ul>
+                </div><!-- b-art-body -->               
+
+                <div class="b-ban-cont hidden-xs"><img src="images/bn-art.png" alt="pic"></div>
+
+                <div class="b-social">
+                    <div class="b-buttons"><img src="images/social.png" alt="pic"></div><!-- /.b-buttons -->
+                    <div class="b-facebook">
+                        <a href="#" class="but but-fbook">Поделиться в Facebook</a>
+                    </div><!-- /.b-facebook -->
+                </div><!-- /.b-social -->
+                <hr>
+                <section class="b-subscribe">
+                    <form class="form-subscribe">
+                        <h3 class="title">Подписаться на обновление блога! <span class="hidden-xs">Все новости нашего блога у вас на почте</span></h3>
+                        <input type="text" class="input-name" placeholder="Введите ваше имя" required>
+                        <input type="email" class="input-email" placeholder="Введите ваш e-mail" required>
+                        <button type="submit" value="получать рецепты" class="but but-main">Подписаться на новости</button>
+                    </form>
+                </section>
+
+                <section class="b-sec-rel">
+                    <h3 class="h-page">Вам так же может быть интересно:</h3>
+                    <div class="row">
+                        <article class="col-sm-4 b-art-prev b-art-prev-post" itemscope itemtype="http://schema.org/Article">
+                            <div class="b-wrp">
+                                <a href="#" class="b-img"><img src="images/pic1.jpg" alt="pic"></a><!-- b-img -->
+                                <h2 itemprop="name" class="title"><a href="#">Только настоящий шеф-повар пройдет этот кулинарный тест</a></h2>                                
+                            </div><!-- /.b-wrp -->
+                            <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                        </article><!-- b-art-prev -->
+                        <article class="col-sm-4 b-art-prev b-art-prev-post" itemscope itemtype="http://schema.org/Article">
+                            <div class="b-wrp">
+                                <a href="#" class="b-img"><img src="images/pic2.jpg" alt="pic"></a><!-- b-img -->
+                                <h2 itemprop="name" class="title"><a href="#">Только настоящий шеф-повар пройдет этот кулинарный тест</a></h2>                                
+                            </div><!-- /.b-wrp -->
+                            <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                        </article><!-- b-art-prev -->
+                        <article class="col-sm-4 b-art-prev b-art-prev-post" itemscope itemtype="http://schema.org/Article">
+                            <div class="b-wrp">
+                                <a href="#" class="b-img"><img src="images/pic3.jpg" alt="pic"></a><!-- b-img -->
+                                <h2 itemprop="name" class="title"><a href="#">Только настоящий шеф-повар пройдет этот кулинарный тест</a></h2>                                
+                            </div><!-- /.b-wrp -->
+                            <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                        </article><!-- b-art-prev -->
+                        <hr class="hidden-xs">
+                        <article class="col-sm-4 b-art-prev b-art-prev-post" itemscope itemtype="http://schema.org/Article">
+                            <div class="b-wrp">
+                                <a href="#" class="b-img"><img src="images/pic1.jpg" alt="pic"></a><!-- b-img -->
+                                <h2 itemprop="name" class="title"><a href="#">Только настоящий шеф-повар пройдет этот кулинарный тест</a></h2>                                
+                            </div><!-- /.b-wrp -->
+                            <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                        </article><!-- b-art-prev -->
+                        <article class="col-sm-4 b-art-prev b-art-prev-post" itemscope itemtype="http://schema.org/Article">
+                            <div class="b-wrp">
+                                <a href="#" class="b-img"><img src="images/pic2.jpg" alt="pic"></a><!-- b-img -->
+                                <h2 itemprop="name" class="title"><a href="#">Только настоящий шеф-повар пройдет этот кулинарный тест</a></h2>                                
+                            </div><!-- /.b-wrp -->
+                            <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                        </article><!-- b-art-prev -->
+                        <article class="col-sm-4 b-art-prev b-art-prev-post" itemscope itemtype="http://schema.org/Article">
+                            <div class="b-wrp">
+                                <a href="#" class="b-img"><img src="images/pic3.jpg" alt="pic"></a><!-- b-img -->
+                                <h2 itemprop="name" class="title"><a href="#">Только настоящий шеф-повар пройдет этот кулинарный тест</a></h2>                                
+                            </div><!-- /.b-wrp -->
+                            <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                        </article><!-- b-art-prev -->
+                        <hr class="hidden-xs">
+                    </div><!-- /.row -->
+                </section>
+
+                <section id="comments" class="comments-area">
+                    <div class="comments-title">Комментариев к статье: (3) </div>                    
+
+                    <ol class="comment-list">
+                        <li class="comment" itemprop="comment" itemscope="" itemtype="http://schema.org/Comment">
+                            <div class="comment-box">
+                                <div class="comment-body">
+                                    <div class="comment-avatar">
+                                        <img alt="" src="images/userpic1.jpg" class="avatar avatar-50 photo">
+                                    </div>
+                                    <div class="comment-text" itemprop="text">
+                                        <p>Не следует, однако забывать, что постоянное обеспечение нашей деятельности играет важную роль в формировании модели развития. С другой стороны постоянное обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. </p>
+                                    </div><!-- comment-text -->
+                                    <div class="comment-header">                                
+                                        <p class="comment-author"><cite itemprop="creator" data-uri="http://yandex.ru/" onclick="GoTo('_yandex.ru/')">Алевтина</cite></p>
+                                        <time class="comment-time" itemprop="datePublished" datetime="2016-06-16">11.10.16</time>
+                                        <p class="comment-reply"><span rel="nofollow" class="comment-reply-link" data-href="#comment-2">Ответить</span></p>
+                                    </div><!-- comment-header -->
+                                </div><!-- /.comment-body -->
+                            </div><!-- comment-box -->
+
+                            <ol class="children">
+                                <li class="comment bypostauthor" itemprop="comment" itemscope="" itemtype="http://schema.org/Comment">
+                                    <div class="comment-box">
+                                        <div class="comment-body">
+                                            <div class="comment-avatar">
+                                                <img alt="" src="images/userpic2.jpg" class="avatar avatar-50 photo">
+                                            </div>
+                                            <div class="comment-text" itemprop="text">
+                                                <p>Не следует, однако забывать, что постоянное обеспечение нашей деятельности играет важную роль в формировании модели развития. С другой стороны постоянное обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. </p>
+                                            </div><!-- comment-text -->
+                                            <div class="comment-header">                                
+                                                <p class="comment-author"><cite itemprop="creator" data-uri="http://yandex.ru/" onclick="GoTo('_yandex.ru/')">Алевтина</cite></p>
+                                                <time class="comment-time" itemprop="datePublished" datetime="2016-06-16">11.10.16</time>
+                                                <p class="comment-reply"><span rel="nofollow" class="comment-reply-link" data-href="#comment-2">Ответить</span></p>
+                                            </div><!-- comment-header -->
+                                        </div><!-- /.comment-body -->
+                                    </div><!-- comment-box -->
+                                </li><!-- comment -->
+                            </ol><!-- children -->
+                        </li><!-- comment -->
+                        <li class="comment" itemprop="comment" itemscope="" itemtype="http://schema.org/Comment">
+                            <div class="comment-box">
+                                <div class="comment-body">
+                                    <div class="comment-avatar">
+                                        <img alt="" src="images/userpic1.jpg" class="avatar avatar-50 photo">
+                                    </div>
+                                    <div class="comment-text" itemprop="text">
+                                        <p>Не следует, однако забывать, что постоянное обеспечение нашей деятельности играет важную роль в формировании модели развития. С другой стороны постоянное обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. </p>
+                                    </div><!-- comment-text -->
+                                    <div class="comment-header">                                
+                                        <p class="comment-author"><cite itemprop="creator" data-uri="http://yandex.ru/" onclick="GoTo('_yandex.ru/')">Алевтина</cite></p>
+                                        <time class="comment-time" itemprop="datePublished" datetime="2016-06-16">11.10.16</time>
+                                        <p class="comment-reply"><span rel="nofollow" class="comment-reply-link" data-href="#comment-2">Ответить</span></p>
+                                    </div><!-- comment-header -->
+                                </div><!-- /.comment-body -->
+                            </div><!-- comment-box -->
+                        </li><!-- comment -->
+                    </ol><!-- comment-list -->
+
+                    <section id="respond" class="comment-respond">
+                        <div id="reply-title" class="comment-reply-title">Оставить комментарий к статье:</div>
+                        
+                        <form action="#" method="#" id="commentform" class="comment-form form">
+                            <div class="clearfix">
+                                <input id="author" class="author" name="author" type="text" value="" aria-required="true" placeholder="Введите ваше имя">
+                                <input id="email" class="email" name="email" type="email" value="" aria-required="true" placeholder="Введите ваш e-mail">
+                                <input id="url" class="url" name="url" type="url" value="" size="30" placeholder="Ваш сайт (если есть)">
+                            </div><!-- /.clearfix -->
+                            
+                            <textarea id="comment" name="comment" rows="7" aria-required="true" placeholder="Введите  текст вашего сообщения"></textarea>
+                            
+                            <div class="b-smileys">
+                                <img src="images/smileys/1.png" alt="pic">
+                                <img src="images/smileys/2.png" alt="pic">
+                                <img src="images/smileys/3.png" alt="pic">
+                                <img src="images/smileys/4.png" alt="pic">
+                                <img src="images/smileys/5.png" alt="pic">
+                                <img src="images/smileys/6.png" alt="pic">
+                                <img src="images/smileys/7.png" alt="pic">
+                                <img src="images/smileys/8.png" alt="pic">
+                                <img src="images/smileys/9.png" alt="pic">
+                                <img src="images/smileys/10.png" alt="pic">
+                                <img src="images/smileys/11.png" alt="pic">
+                                <img src="images/smileys/12.png" alt="pic">
+                                <img src="images/smileys/13.png" alt="pic">
+                                <img src="images/smileys/14.png" alt="pic">
+                                <img src="images/smileys/15.png" alt="pic">
+                                <img src="images/smileys/16.png" alt="pic">
+                            </div><!-- /.b-smileys -->
+
+                            <div class="b-bottom">
+                                <div class="b-checkbox">Подписаться на комментарии к статье</div><!-- /.b-checkbox -->
+                                <div class="b-but">
+                                    <input name="submit" type="submit" id="submit" class="submit" value="Оставить комментарий">
+                                </div><!-- /.b-but -->
+                            </div><!-- /.b-bottom -->
+                        </form>
+                    </section><!-- #respond -->
+                </section><!-- comments-area -->
+            </article><!-- b-art-main -->
+        </div><!-- /.site-content -->
+
+        <aside class="site-sidebar col-sm-3 widget-area hidden-xs" itemscope itemtype="http://schema.org/WPSideBar">
+            <div class="widget widget-interest">
+                <div class="widget-header">Интересное</div>
+                
+                <article class="b-art-prev-mini" itemscope itemtype="http://schema.org/Article">
+                    <div class="b-wrp">
+                        <a href="#" class="b-img"><img src="images/pic6.jpg" alt="pic"></a>
+                        <h3 itemprop="name" class="title"><a href="#">Как видят мир люди с разными формами дальтонизма</a></h3>
+                    </div><!-- /.b-wrp -->
+                    <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                </article><!-- b-art-prev -->
+                <article class="b-art-prev-mini" itemscope itemtype="http://schema.org/Article">
+                    <div class="b-wrp">
+                        <a href="#" class="b-img"><img src="images/pic7.jpg" alt="pic"></a>
+                        <h3 itemprop="name" class="title"><a href="#">Как видят мир люди с разными формами дальтонизма</a></h3>
+                    </div><!-- /.b-wrp -->
+                    <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                </article><!-- b-art-prev -->
+                <article class="b-art-prev-mini" itemscope itemtype="http://schema.org/Article">
+                    <div class="b-wrp">
+                        <a href="#" class="b-img"><img src="images/pic3.jpg" alt="pic"></a>
+                        <h3 itemprop="name" class="title"><a href="#">Как видят мир люди с разными формами дальтонизма</a></h3>
+                    </div><!-- /.b-wrp -->
+                    <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                </article><!-- b-art-prev -->
+            </div><!-- widget -->
+
+            <div class="b-ban-sbar"><img src="images/bn-258-400.png" alt="pic"></div><!-- /.b-ban-sbar -->
+
+            <div class="widget widget-pop">
+                <div class="widget-header">Популярное</div>
+                
+                <article class="b-art-prev-mini" itemscope itemtype="http://schema.org/Article">
+                    <div class="b-wrp">
+                        <a href="#" class="b-img"><img src="images/pic6.jpg" alt="pic"></a>
+                        <h3 itemprop="name" class="title"><a href="#">Как видят мир люди с разными формами дальтонизма</a></h3>
+                    </div><!-- /.b-wrp -->
+                    <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                </article><!-- b-art-prev -->
+                <article class="b-art-prev-mini" itemscope itemtype="http://schema.org/Article">
+                    <div class="b-wrp">
+                        <a href="#" class="b-img"><img src="images/pic7.jpg" alt="pic"></a>
+                        <h3 itemprop="name" class="title"><a href="#">Как видят мир люди с разными формами дальтонизма</a></h3>
+                    </div><!-- /.b-wrp -->
+                    <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                </article><!-- b-art-prev -->
+                <article class="b-art-prev-mini" itemscope itemtype="http://schema.org/Article">
+                    <div class="b-wrp">
+                        <a href="#" class="b-img"><img src="images/pic3.jpg" alt="pic"></a>
+                        <h3 itemprop="name" class="title"><a href="#">Как видят мир люди с разными формами дальтонизма</a></h3>
+                    </div><!-- /.b-wrp -->
+                    <p>Некоторые люди могут превратить обычный набор продуктов в настоящее произведение</p>
+                </article><!-- b-art-prev -->
+            </div><!-- widget -->
+
+            <div class="b-ban-sbar"><img src="images/bn-258-400.png" alt="pic"></div><!-- /.b-ban-sbar -->
+
+            <div class="widget widget-commenters">
+                <div class="widget-header">Топ коментаторов</div>
+                <div class="wrp">
+                    <div class="b-commenter">
+                        <a href="#" class="b-img">
+                            <img src="images/userpic2.jpg" alt="pic" class="pic">
+                            <span class="comment-count">99</span>
+                        </a><!-- /.b-img -->
+                        <a href="#" class="name">Андрей</a>
+                    </div><!-- /.b-commenter -->
+                    <div class="b-commenter">
+                        <a href="#" class="b-img">
+                            <img src="images/userpic3.jpg" alt="pic" class="pic">
+                            <span class="comment-count">88</span>
+                        </a><!-- /.b-img -->
+                        <a href="#" class="name">Елизавет</a>
+                    </div><!-- /.b-commenter -->
+                    <div class="b-commenter">
+                        <a href="#" class="b-img">
+                            <img src="images/userpic4.jpg" alt="pic" class="pic">
+                            <span class="comment-count">77</span>
+                        </a><!-- /.b-img -->
+                        <a href="#" class="name">Евгений</a>
+                    </div><!-- /.b-commenter -->
+                    <div class="b-commenter">
+                        <a href="#" class="b-img">
+                            <img src="images/userpic2.jpg" alt="pic" class="pic">
+                            <span class="comment-count">99</span>
+                        </a><!-- /.b-img -->
+                        <a href="#" class="name">Андрей</a>
+                    </div><!-- /.b-commenter -->
+                    <div class="b-commenter">
+                        <a href="#" class="b-img">
+                            <img src="images/userpic3.jpg" alt="pic" class="pic">
+                            <span class="comment-count">88</span>
+                        </a><!-- /.b-img -->
+                        <a href="#" class="name">Елизавет</a>
+                    </div><!-- /.b-commenter -->
+                    <div class="b-commenter">
+                        <a href="#" class="b-img">
+                            <img src="images/userpic4.jpg" alt="pic" class="pic">
+                            <span class="comment-count">77</span>
+                        </a><!-- /.b-img -->
+                        <a href="#" class="name">Евгений</a>
+                    </div><!-- /.b-commenter -->
+                </div><!-- wrp -->
+            </div><!-- widget -->
+        </aside><!-- site-sidebar -->
+    </div><!-- /.row -->    
+    <div class="b-but-up">
+        <a href="#header" id="up" class="but-up hidden-xs" title="наверх">наверх</a>
+    </div><!-- /.b-but-up -->
+</main><!-- /.container b-main -->
+
+<footer class="site-footer" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="b-top">
+        <div class="container">
+            <div class="b-logo hidden-xs">
+                <img src="images/logotype.png" alt="Blogname">
+            </div><!-- /.b-logo -->
+            <div class="b-copyright">
+                <small>&#169; 2016.  Все права защищены. Копирование материалов без указания открытой ссылки запрещено.</small>
+            </div><!-- /.b-copy -->
+            <div class="b-misc hidden-xs">
+                <ul class="menu-categories-footer">
+                    <li class="menu-item"><a href="#">лучшее</a></li>
+                    <li class="menu-item"><a href="#">новое</a></li>
+                    <li class="menu-item"><a href="#">тесты</a></li>
+                    <li class="menu-item"><a href="#">карточки</a></li>
+                    <li class="menu-item"><a href="#">книги</a></li>
+                    <li class="menu-item"><a href="#">лонгриды</a></li>
+                    <li class="menu-item"><a href="#">видео</a></li>            
+                    <li class="menu-item"><a href="#">обзоры</a></li>
+                </ul>             
+
+                <div class="b-error">
+                    <p>Ошибка в тексте? Выделите её мышкой и нажмите: <span class="but but-main">Ctrl</span> <b>+</b> <span class="but but-main">Enter</span></p>
+                </div><!-- /.b-error -->
+            </div><!-- /.b-misc -->
+        </div><!-- /.container -->
+    </div><!-- /.b-top -->
+    <div class="b-bot container">
+        <ul class="b-menu-footer hidden-xs">
+            <li class="menu-item"><a href="#">Главная</a></li>
+            <li class="menu-item"><a href="#">Мой блог</a></li>
+            <li class="menu-item"><a href="#">Контакты</a></li>
+            <li class="menu-item"><a href="#">Карта сайта</a></li>
+        </ul>
+        <div class="b-counter"><img src="images/counter.png" alt="pic"></div><!-- /.b-counter -->
+    </div><!-- /.b-bot -->
+</footer>
+</body>
+</html>

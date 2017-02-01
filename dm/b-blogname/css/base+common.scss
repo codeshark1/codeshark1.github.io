@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&subset=cyrillic');
+
+/* ==========================================================================
+   BASE
+   ========================================================================== */
+html {position: relative;min-height: 100%;}
+body {font-family: 'Open Sans', sans-serif; color: $base-text;}
+img {max-width: 100%;height: auto;}
+a {color: $link-text; transition:  all .15s;
+  &:hover,&:active,&:focus {text-decoration: none;color: $hover;border-color: $hover !important}
+}
+table {width: 100%;}
+hr {clear: both}
+p {margin: 0}
+
+.container {
+  @media (min-width: $screen-sm-min) {width: 1230px;}  
+}
+.b-mg {margin-top: 25px;}
+/* ==========================================================================
+  COMMON
+  ========================================================================== */
+
+/* BUTTONS */
+@mixin but() {
+  display: inline-block;  
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;  
+  background: none;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: .5px; 
+  transition: all .2s;
+  &:focus,
+  &:active:focus,
+  &.active:focus,
+  &.focus,
+  &:active.focus,
+  &.active.focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+  &:hover,
+  &:focus,
+  &.focus {text-decoration: none; color: #fff}
+  &:active,
+  &.active {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  }  
+}
+.but, .submit {@include but();}
+
+@mixin but-main() {  
+  padding: 6px 16px 8px;
+  font-weight: 700;
+  border-radius: 6px;
+  background: $main;
+  color: #fff;
+  &:hover,&:active,&:focus {
+    background: lighten($main,10%);
+  }
+}
+
+
+.but-main, 
+.submit {@include but-main();}
+
+
+.but-fbook {
+  text-shadow: 0px 2px 0px rgba(30, 55, 107, 0.75);
+  background: #39579a url('images/sprite.png') 10px -275px no-repeat;
+  position: relative;
+  border-radius: 4px;
+  padding: 6px 10px 6px 45px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: -.2px;  
+  &:after {
+    content: "";
+    top:0;left: 32px;
+    position: absolute;
+    height: 100%;
+    border-left: 1px solid #263978;
+    border-left: 1px solid #4c74bb;
+    display: block;
+  }
+  &:hover,&:active,&:focus{
+    background-color: lighten(#39579a,5%);
+  }
+}
+
+
+
+/* FORMS */
+input[type="text"],
+input[type="tel"],
+input[type="search"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
+textarea,
+select {  
+  width: 100%;  
+  padding: 8px 14px;  
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  &::-webkit-input-placeholder {font-style: italic}
+  &::-moz-placeholder {font-style: italic}
+  &::-ms-input-placeholder {font-style: italic}
+}
+textarea {resize: vertical;height: 80px;}
+label {font-weight: normal;cursor: pointer;}
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+
+
+/* ==========================================================================
+   HEADINGS
+   ========================================================================== */
+.h-main {
+  font-weight: 700;
+  font-size: 20px;
+  @media (min-width: $screen-sm-min) {
+    font-size: 30px;
+    max-width: 730px;
+  }
+}
+.h-page,.comments-title,.comment-reply-title {margin: 0 0 20px 0;}
+.h-page, .h-section, .widget-header,.comments-title,.comment-reply-title {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.h-section, .widget-header {
+  background-image: url('images/sprite.png'), url('images/sprite.png');  
+  background-repeat: no-repeat, no-repeat;
+  padding: 7px 0 0 50px;
+  min-height: 47px;
+  margin: 0 0 10px 0;
+  letter-spacing: -0.8px;
+}
+.sec-fresh .h-section {background-position: 10px -118px, 0 -714px;}
+.widget-pop .widget-header {background-position: 9px -158px, 0 -714px;}
+.widget-interest .widget-header {background-position: 12px -200px, 0 -714px;}
+.widget-commenters .widget-header {background-position: 11px -80px, 0 -714px;}
+
+.h-prev, .h-sbar {
+  font-weight: 700;
+  font-size: 1.1em;
+  margin: 5px 0;
+  line-height: 1.3;
+}
+.h-prev {  
+  @media (min-width: $screen-sm-min) {font-size: 20px;}
+}
+
+
+
+
+/* ==========================================================================
+   IMAGES
+   ========================================================================== */
+
+.aligncenter, .alignleft, .alignright {display: block;margin: 0 auto 20px;}
+@media (min-width: $screen-sm-min) {
+  .alignleft, .alignright {display: inline-block;max-width: 75%}
+  .alignleft {float: left;margin: 5px 20px 8px 0;}
+  .alignright {float: right;margin: 5px 0 8px 20px;}  
+}
+
+/* fake links */
+.spanlink {
+  cursor: pointer;
+  display: inline-block;
+  border-bottom: 1px solid $link-text;
+  color: $link-text;
+}
