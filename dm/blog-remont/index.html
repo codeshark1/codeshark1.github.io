@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SebeRemont</title>    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/vendor/modernizr-custom.js"></script>
+    <script src="js/vendor/jquery-1.12.4_min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>     
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <![endif]-->
+</head>
+<body class="home">
+<!--[if lt IE 10]>
+    <p class="browserupgrade">Вы используете <b>устаревший</b> браузер. Пожалуйста, <a href="http://browsehappy.com/?locale=ru_ru">обновите свой браузер</a> чтобы улучшить опыт работы с сайтом.</p>
+<![endif]-->
+<header class="site-header container" itemscope itemtype="http://schema.org/WPHeader" id="header">   
+    <div class="b-logo">
+        <a href="#"><img class="logo" src="images/logotype.png" alt="SebeRemont - Всё о ремонте и строительстве"></a>
+        <h1 class="site-title hidden" itemprop="headline">SebeRemont</h1>
+        <p class="site-description hidden" itemprop="description">Всё о ремонте и строительстве</p>
+    </div><!-- /.b-logo -->   
+
+    <ul class="b-menu b-menu-header hidden-xs">
+        <li class="menu-item obuchenie"><a href="#">Обучение для новичков</a></li>
+        <li class="menu-item remont"><a href="#">Ремонт и отделка квартир и помещений</a></li>
+        <li class="menu-item stroit"><a href="#">Строительство дома и дачи</a></li>
+        <li class="menu-item prochee"><a href="#">Прочие постройки</a></li>
+        <li class="menu-item pridom"><a href="#">Придомовые территории и участки</a></li>
+        <li class="menu-item kursi"><a href="#">Курсы</a></li>
+    </ul><!-- b-menu -->
+</header>
+
+<div class="b-but-nav">
+    <button id="nav-toggle" class="but-nav" href="#"><i class="hamburger icon"></i></button>
+    <span>меню</span>
+</div><!-- /.b-but-nav -->
+
+<div class="b-sidepanel" id="nav-panel">
+    <div class="b-wrapper">
+        <form role="search" method="get" class="search-form" id="searchform" action="/">
+            <input type="search" class="search-field" value="" name="s" placeholder="Что ищем?" required>
+            <input type="submit" class="search-submit" id="searchsubmit" value="">
+        </form>
+        <nav class="site-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <h5 hidden>Основная навигация</h5>
+            <ul class="b-menu b-menu-main" id="nav-main">
+                <li class="menu-item obuchenie"><a href="#">Обучение для новичков</a></li>
+                <li class="menu-item remont"><a href="#">Ремонт и отделка квартир и помещений</a></li>
+                <li class="menu-item stroit menu-item-has-children">
+                    <a href="#">Строительство дома и дачи</a>
+                    <div class="sub-menu-wrap">
+                        <h6 class="heading">Строительство дома и дачи</h6>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Баня</a></li>
+                            <li class="menu-item"><a href="#">Гараж</a></li>
+                            <li class="menu-item"><a href="#">Беседки</a></li>
+                            <li class="menu-item"><a href="#">Ворота, заборы и ограждения</a></li>
+                            <li class="menu-item"><a href="#">Хоз. постройки</a></li>
+                        </ul>                        
+                    </div><!-- /.sub-menu-wrap -->
+                </li>
+                <li class="menu-item prochee menu-item-has-children">
+                    <a href="#">Прочие постройки</a>
+                    <div class="sub-menu-wrap">
+                        <h6 class="heading">Прочие постройки</h6>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Баня</a></li>
+                            <li class="menu-item"><a href="#">Гараж</a></li>
+                            <li class="menu-item"><a href="#">Беседки</a></li>
+                            <li class="menu-item"><a href="#">Ворота, заборы и ограждения</a></li>
+                            <li class="menu-item"><a href="#">Хоз. постройки</a></li>
+                        </ul>                        
+                    </div><!-- /.sub-menu-wrap -->
+                </li>
+                <li class="menu-item pridom"><a href="#">Придомовые территории и участки</a></li>
+                <li class="menu-item kursi menu-item-has-children">
+                    <a href="#">Курсы</a>
+                    <div class="sub-menu-wrap">
+                        <h6 class="heading">Курсы</h6>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Баня</a></li>
+                            <li class="menu-item"><a href="#">Гараж</a></li>
+                            <li class="menu-item"><a href="#">Беседки</a></li>
+                            <li class="menu-item"><a href="#">Ворота, заборы и ограждения</a></li>
+                            <li class="menu-item"><a href="#">Хоз. постройки</a></li>
+                        </ul>                        
+                    </div><!-- /.sub-menu-wrap -->
+                </li>
+            </ul>
+        </nav>
+    </div><!-- /.b-wrapper -->
+</div><!-- /.b-sidepanel -->
+<div class="b-overlay" id="overlay"></div><!-- /.b-overlay -->
+
+<main class="b-main container" id="main">    
+    <div class="site-content">
+        <div class="b-masonry">
+            <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+                <a href="#" class="b-art-img"><img src="images/photo1.jpg" alt="pic" class="image"></a><!-- /.b-art-img -->
+                <div class="b-wrapper">
+                    <header class="b-art-header">
+                        <p itemprop="articleSection" class="art-category">Новости</p>
+                        <h2 class="h-art-lg"><a href="#">6 иностранных трендов, которым найдется место в вашем интерьере</a></h2>
+                    </header>
+                    <div itemprop="articleBody">
+                        <p class="excerpt">Яркие мексиканские коврики или необычная камерунская шляпа – прошли времена, когда они были уместны только у себя на родине. Фантазируйте и берите из западных интерьеров самое лучшее</p>
+                    </div>                
+                    <footer class="b-art-footer">
+                        <p class="art-views">173</p>
+                        <p class="art-comments">0</p>
+                    </footer>
+                </div><!-- /.b-wrapper -->
+            </article><!-- /.b-art-prev -->
+            <article class="b-art-prev b-art-prev-sm" itemscope itemtype="http://schema.org/Article">
+                <a href="#" class="b-art-img"><img src="images/photo2.jpg" alt="pic" class="image"></a><!-- /.b-art-img -->
+                <div class="b-wrapper">
+                    <header class="b-art-header">
+                        <p itemprop="articleSection" class="art-category">Прочие постройки</p>
+                        <h2 class="h-art-lg"><a href="#">Дизайн квартиры со скрытыми системами хранения в Москве</a></h2>
+                    </header>
+                    <div itemprop="articleBody">
+                        <p class="excerpt">Яркие мексиканские коврики или необычная камерунская шляпа – прошли времена, когда они были уместны только у себя на родине. Фантазируйте и берите из западных интерьеров самое лучшее</p>
+                    </div>                
+                    <footer class="b-art-footer">
+                        <p class="art-views">173</p>
+                        <p class="art-comments">0</p>
+                    </footer>
+                </div><!-- /.b-wrapper -->
+            </article><!-- /.b-art-prev -->
+            <article class="b-art-prev b-art-prev-sm" itemscope itemtype="http://schema.org/Article">
+                <a href="#" class="b-art-img"><img src="images/photo2.jpg" alt="pic" class="image"></a><!-- /.b-art-img -->
+                <div class="b-wrapper">
+                    <header class="b-art-header">
+                        <p itemprop="articleSection" class="art-category">Прочие постройки</p>
+                        <h2 class="h-art-lg"><a href="#">Дизайн квартиры со скрытыми системами хранения в Москве</a></h2>
+                    </header>
+                    <div itemprop="articleBody">
+                        <p class="excerpt">Яркие мексиканские коврики или необычная камерунская шляпа – прошли времена, когда они были уместны только у себя на родине. Фантазируйте и берите из западных интерьеров самое лучшее</p>
+                    </div>                
+                    <footer class="b-art-footer">
+                        <p class="art-views">173</p>
+                        <p class="art-comments">0</p>
+                    </footer>
+                </div><!-- /.b-wrapper -->
+            </article><!-- /.b-art-prev -->
+            <article class="b-art-prev b-art-prev-sm" itemscope itemtype="http://schema.org/Article">
+                <a href="#" class="b-art-img"><img src="images/photo2.jpg" alt="pic" class="image"></a><!-- /.b-art-img -->
+                <div class="b-wrapper">
+                    <header class="b-art-header">
+                        <p itemprop="articleSection" class="art-category">Прочие постройки</p>
+                        <h2 class="h-art-lg"><a href="#">Дизайн квартиры со скрытыми системами хранения в Москве</a></h2>
+                    </header>
+                    <div itemprop="articleBody">
+                        <p class="excerpt">Яркие мексиканские коврики или необычная камерунская шляпа – прошли времена, когда они были уместны только у себя на родине. Фантазируйте и берите из западных интерьеров самое лучшее</p>
+                    </div>                
+                    <footer class="b-art-footer">
+                        <p class="art-views">173</p>
+                        <p class="art-comments">0</p>
+                    </footer>
+                </div><!-- /.b-wrapper -->
+            </article><!-- /.b-art-prev -->
+            <article class="b-art-prev b-art-prev-sm" itemscope itemtype="http://schema.org/Article">
+                <a href="#" class="b-art-img"><img src="images/photo2.jpg" alt="pic" class="image"></a><!-- /.b-art-img -->
+                <div class="b-wrapper">
+                    <header class="b-art-header">
+                        <p itemprop="articleSection" class="art-category">Прочие постройки</p>
+                        <h2 class="h-art-lg"><a href="#">Дизайн квартиры со скрытыми системами хранения в Москве</a></h2>
+                    </header>
+                    <div itemprop="articleBody">
+                        <p class="excerpt">Яркие мексиканские коврики или необычная камерунская шляпа – прошли времена, когда они были уместны только у себя на родине. Фантазируйте и берите из западных интерьеров самое лучшее</p>
+                    </div>                
+                    <footer class="b-art-footer">
+                        <p class="art-views">173</p>
+                        <p class="art-comments">0</p>
+                    </footer>
+                </div><!-- /.b-wrapper -->
+            </article><!-- /.b-art-prev -->
+            <article class="b-art-prev b-art-prev-sm" itemscope itemtype="http://schema.org/Article">
+                <a href="#" class="b-art-img"><img src="images/photo2.jpg" alt="pic" class="image"></a><!-- /.b-art-img -->
+                <div class="b-wrapper">
+                    <header class="b-art-header">
+                        <p itemprop="articleSection" class="art-category">Прочие постройки</p>
+                        <h2 class="h-art-lg"><a href="#">Дизайн квартиры со скрытыми системами хранения в Москве</a></h2>
+                    </header>
+                    <div itemprop="articleBody">
+                        <p class="excerpt">Яркие мексиканские коврики или необычная камерунская шляпа – прошли времена, когда они были уместны только у себя на родине. Фантазируйте и берите из западных интерьеров самое лучшее</p>
+                    </div>                
+                    <footer class="b-art-footer">
+                        <p class="art-views">173</p>
+                        <p class="art-comments">0</p>
+                    </footer>
+                </div><!-- /.b-wrapper -->
+            </article><!-- /.b-art-prev -->
+            <article class="b-art-prev b-art-prev-sm" itemscope itemtype="http://schema.org/Article">
+                <a href="#" class="b-art-img"><img src="images/photo2.jpg" alt="pic" class="image"></a><!-- /.b-art-img -->
+                <div class="b-wrapper">
+                    <header class="b-art-header">
+                        <p itemprop="articleSection" class="art-category">Прочие постройки</p>
+                        <h2 class="h-art-lg"><a href="#">Дизайн квартиры со скрытыми системами хранения в Москве</a></h2>
+                    </header>
+                    <div itemprop="articleBody">
+                        <p class="excerpt">Яркие мексиканские коврики или необычная камерунская шляпа – прошли времена, когда они были уместны только у себя на родине. Фантазируйте и берите из западных интерьеров самое лучшее</p>
+                    </div>                
+                    <footer class="b-art-footer">
+                        <p class="art-views">173</p>
+                        <p class="art-comments">0</p>
+                    </footer>
+                </div><!-- /.b-wrapper -->
+            </article><!-- /.b-art-prev -->
+            <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+                <a href="#" class="b-art-img"><img src="images/photo1.jpg" alt="pic" class="image"></a><!-- /.b-art-img -->
+                <div class="b-wrapper">
+                    <header class="b-art-header">
+                        <p itemprop="articleSection" class="art-category">Новости</p>
+                        <h2 class="h-art-lg"><a href="#">6 иностранных трендов, которым найдется место в вашем интерьере</a></h2>
+                    </header>
+                    <div itemprop="articleBody">
+                        <p class="excerpt">Яркие мексиканские коврики или необычная камерунская шляпа – прошли времена, когда они были уместны только у себя на родине. Фантазируйте и берите из западных интерьеров самое лучшее</p>
+                    </div>                
+                    <footer class="b-art-footer">
+                        <p class="art-views">173</p>
+                        <p class="art-comments">0</p>
+                    </footer>
+                </div><!-- /.b-wrapper -->
+            </article><!-- /.b-art-prev -->
+            <article class="b-art-prev b-art-prev-sm" itemscope itemtype="http://schema.org/Article">
+                <a href="#" class="b-art-img"><img src="images/photo2.jpg" alt="pic" class="image"></a><!-- /.b-art-img -->
+                <div class="b-wrapper">
+                    <header class="b-art-header">
+                        <p itemprop="articleSection" class="art-category">Прочие постройки</p>
+                        <h2 class="h-art-lg"><a href="#">Дизайн квартиры со скрытыми системами хранения в Москве</a></h2>
+                    </header>
+                    <div itemprop="articleBody">
+                        <p class="excerpt">Яркие мексиканские коврики или необычная камерунская шляпа – прошли времена, когда они были уместны только у себя на родине. Фантазируйте и берите из западных интерьеров самое лучшее</p>
+                    </div>                
+                    <footer class="b-art-footer">
+                        <p class="art-views">173</p>
+                        <p class="art-comments">0</p>
+                    </footer>
+                </div><!-- /.b-wrapper -->
+            </article><!-- /.b-art-prev -->
+
+            <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+                <a href="#" class="b-art-img"><img src="images/photo1.jpg" alt="pic" class="image"></a><!-- /.b-art-img -->
+                <div class="b-wrapper">
+                    <header class="b-art-header">
+                        <p itemprop="articleSection" class="art-category">Новости</p>
+                        <h2 class="h-art-lg"><a href="#">6 иностранных трендов, которым найдется место в вашем интерьере</a></h2>
+                    </header>
+                    <div itemprop="articleBody">
+                        <p class="excerpt">Яркие мексиканские коврики или необычная камерунская шляпа – прошли времена, когда они были уместны только у себя на родине. Фантазируйте и берите из западных интерьеров самое лучшее</p>
+                    </div>                
+                    <footer class="b-art-footer">
+                        <p class="art-views">173</p>
+                        <p class="art-comments">0</p>
+                    </footer>
+                </div><!-- /.b-wrapper -->
+            </article><!-- /.b-art-prev -->
+            <article class="b-art-prev b-art-prev-sm" itemscope itemtype="http://schema.org/Article">
+                <a href="#" class="b-art-img"><img src="images/photo2.jpg" alt="pic" class="image"></a><!-- /.b-art-img -->
+                <div class="b-wrapper">
+                    <header class="b-art-header">
+                        <p itemprop="articleSection" class="art-category">Прочие постройки</p>
+                        <h2 class="h-art-lg"><a href="#">Дизайн квартиры со скрытыми системами хранения в Москве</a></h2>
+                    </header>
+                    <div itemprop="articleBody">
+                        <p class="excerpt">Яркие мексиканские коврики или необычная камерунская шляпа – прошли времена, когда они были уместны только у себя на родине. Фантазируйте и берите из западных интерьеров самое лучшее</p>
+                    </div>                
+                    <footer class="b-art-footer">
+                        <p class="art-views">173</p>
+                        <p class="art-comments">0</p>
+                    </footer>
+                </div><!-- /.b-wrapper -->
+            </article><!-- /.b-art-prev -->
+            <article class="b-art-prev b-art-prev-sm" itemscope itemtype="http://schema.org/Article">
+                <a href="#" class="b-art-img"><img src="images/photo2.jpg" alt="pic" class="image"></a><!-- /.b-art-img -->
+                <div class="b-wrapper">
+                    <header class="b-art-header">
+                        <p itemprop="articleSection" class="art-category">Прочие постройки</p>
+                        <h2 class="h-art-lg"><a href="#">Дизайн квартиры со скрытыми системами хранения в Москве</a></h2>
+                    </header>
+                    <div itemprop="articleBody">
+                        <p class="excerpt">Яркие мексиканские коврики или необычная камерунская шляпа – прошли времена, когда они были уместны только у себя на родине. Фантазируйте и берите из западных интерьеров самое лучшее</p>
+                    </div>                
+                    <footer class="b-art-footer">
+                        <p class="art-views">173</p>
+                        <p class="art-comments">0</p>
+                    </footer>
+                </div><!-- /.b-wrapper -->
+            </article><!-- /.b-art-prev -->
+        </div><!-- /.b-art-row -->
+        
+        <a href="#" class="but but-load">Загрузить еще..</a>
+
+        <nav class="navigation pagination hidden-xs" role="navigation">
+            <div class="screen-reader-text">Навигация по записям</div>
+            <div class="nav-links">
+                <a class="prev page-numbers" href="#">Назад</a>
+                
+                <a class="page-numbers" href="#">1</a>                
+                <a class="page-numbers" href="#">2</a>                
+                <a class="page-numbers" href="#">3</a>
+                <a class="page-numbers" href="#">4</a>
+                <span class="page-numbers current">5</span>
+                <a class="page-numbers" href="#">6</a>
+                <a class="page-numbers" href="#">7</a>
+                <a class="page-numbers" href="#">8</a>
+                <a class="page-numbers" href="#">9</a>
+                <a class="page-numbers" href="#">10</a>
+                <a class="next page-numbers" href="#">Вперед</a>
+            </div>
+        </nav>
+    </div><!-- /.site-content -->
+
+    <aside class="site-sidebar widget-area" itemscope itemtype="http://schema.org/WPSideBar">
+        <div class="widget widget-subscribe">
+            <img src="images/pic-subscribe.jpg" alt="pic">
+            <p class="heading">Получать статьи блога <br> на E-mail</p>
+            <form action="#" class="form-subscribe">
+                <input type="email" class="email" placeholder="Введите Ваш E-mail" required>
+                <button class="but but-main">Подписаться</button>
+            </form>
+        </div><!-- widget -->
+
+        <div class="widget widget-book">
+            <img src="images/pic-book.jpg" alt="pic">
+            <div class="b-wrap">
+                <p class="heading">Счастливая жизнь без панических атак </p>
+                <a href="#" class="but but-main">Перейти</a>                
+            </div><!-- /.b-wrap -->
+        </div><!-- widget -->
+
+        <div class="widget widget-social">
+            <div class="b-wrap">
+                <a href="#" class="link-main link-tele"></a>
+            </div><!-- /.b-wrap -->
+            <ul class="nav-social">
+                <li class="menu-item"><a href="#" class="tl"></a></li>
+                <li class="menu-item"><a href="#" class="vk"></a></li>
+                <li class="menu-item"><a href="#" class="fb"></a></li>
+                <li class="menu-item"><a href="#" class="tw"></a></li>
+                <li class="menu-item"><a href="#" class="ok"></a></li>
+            </ul>
+        </div><!-- widget -->
+
+        <div class="widget widget-articles">
+            <div class="widget-header">Новое на сайте</div>            
+            <article class="b-art-sm" itemscope itemtype="http://schema.org/Article">
+                <a href="#" class="b-img"><img src="images/thumb.jpg" alt="pic"></a>
+                <div class="b-wrap">
+                    <p itemprop="articleSection" class="art-category">Категория</p>
+                    <h3 itemprop="name" class="h-art-sm"><a href="#">11 советов, как без усилий подготовить дом к Новому году</a></h3>
+                </div><!-- /.b-wrap -->                
+            </article><!-- b-art-sm -->
+            <article class="b-art-sm" itemscope itemtype="http://schema.org/Article">
+                <a href="#" class="b-img"><img src="images/thumb.jpg" alt="pic"></a>
+                <div class="b-wrap">
+                    <p itemprop="articleSection" class="art-category">Категория</p>
+                    <h3 itemprop="name" class="h-art-sm"><a href="#">11 советов, как без усилий подготовить дом к Новому году</a></h3>
+                </div><!-- /.b-wrap -->                
+            </article><!-- b-art-sm -->
+            <article class="b-art-sm" itemscope itemtype="http://schema.org/Article">
+                <a href="#" class="b-img"><img src="images/thumb.jpg" alt="pic"></a>
+                <div class="b-wrap">
+                    <p itemprop="articleSection" class="art-category">Категория</p>
+                    <h3 itemprop="name" class="h-art-sm"><a href="#">11 советов, как без усилий подготовить дом к Новому году</a></h3>
+                </div><!-- /.b-wrap -->                
+            </article><!-- b-art-sm -->
+            <article class="b-art-sm" itemscope itemtype="http://schema.org/Article">
+                <a href="#" class="b-img"><img src="images/thumb.jpg" alt="pic"></a>
+                <div class="b-wrap">
+                    <p itemprop="articleSection" class="art-category">Категория</p>
+                    <h3 itemprop="name" class="h-art-sm"><a href="#">11 советов, как без усилий подготовить дом к Новому году</a></h3>
+                </div><!-- /.b-wrap -->                
+            </article><!-- b-art-sm -->
+            <article class="b-art-sm" itemscope itemtype="http://schema.org/Article">
+                <a href="#" class="b-img"><img src="images/thumb.jpg" alt="pic"></a>
+                <div class="b-wrap">
+                    <p itemprop="articleSection" class="art-category">Категория</p>
+                    <h3 itemprop="name" class="h-art-sm"><a href="#">11 советов, как без усилий подготовить дом к Новому году</a></h3>
+                </div><!-- /.b-wrap -->                
+            </article><!-- b-art-sm -->
+        </div><!-- widget -->
+    </aside><!-- site-sidebar -->
+</main><!-- /.container b-main -->
+
+<footer class="site-footer" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col">
+                <h6 class="heading">Обучающие материалы</h6>
+                <ul class="nav-footer">                    
+                    <li class="menu-item"><a href="#">Обучение для новичков</a></li>
+                    <li class="menu-item"><a href="#">Ремонт и отделка квартир и помещений</a></li>
+                    <li class="menu-item"><a href="#">Строительство дома и дачи</a></li>
+                    <li class="menu-item"><a href="#">Прочие постройки</a></li>
+                    <li class="menu-item"><a href="#">Придомовые территории</a></li>
+                    <li class="menu-item"><a href="#">Курсы</a></li>
+                </ul>
+            </div><!-- /.col -->
+            <div class="col-sm-3 col">
+                <h6 class="heading">Мы в соц. сетях</h6>
+                <ul class="nav-footer">
+                    <li class="menu-item"><a href="#">TeleGram</a></li>
+                    <li class="menu-item"><a href="#">Twitter</a></li>
+                    <li class="menu-item"><a href="#">Вконтакте</a></li>
+                    <li class="menu-item"><a href="#">FaceBook</a></li>
+                    <li class="menu-item"><a href="#">Одноклассники</a></li>
+                </ul>
+            </div><!-- /.col -->
+            <div class="col-sm-3 col">
+                <h6 class="heading">Связь</h6>
+                <ul class="nav-footer">
+                    <li class="menu-item"><a href="#">Служба поддержки</a></li>
+                    <li class="menu-item"><a href="#">E-mail</a></li>                    
+                </ul>
+            </div><!-- /.col -->
+            <div class="col-sm-2 col">
+                <h6 class="heading">Информация</h6>
+                <ul class="nav-footer">
+                    <li class="menu-item"><a href="#">Отказ от ответственности</a></li>
+                    <li class="menu-item"><a href="#">Политика конфидециальности</a></li>
+                    <li class="menu-item"><a href="#">Согласие с рассылкой</a></li>
+                    <li class="menu-item"><a href="#">Правообладателю</a></li>
+                </ul>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+        <hr>
+        <div class="row">
+            <div class="col-sm-6"><small>Все права защищены &#169; 2017 ИП Рог Виктор Михайлович</small></div><!-- /.col -->
+            <div class="col-sm-6 designer"><b>Дизайн сайта</b>: Design-DVD.ru</div><!-- /.col -->            
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</footer>
+</body>
+</html>
