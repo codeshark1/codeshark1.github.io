@@ -98,7 +98,12 @@ function menu_desktop_hoverintent() {
         }
     }
 
-    $($panel).hoverIntent(showPanel, hidePanel);
+    //$($panel).hoverIntent(showPanel, hidePanel, 10000);
+    $($panel).hoverIntent({
+        over: showPanel, 
+        out: hidePanel, 
+        timeout: 500
+    });
 
     function showPanelSubmenu() {
         if (($(window).width() >= 768) && ($($panel).hasClass('opened'))) {
