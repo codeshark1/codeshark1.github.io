@@ -83,6 +83,36 @@ function menu_desktop() {
     });
 }
 
+function menu_desktop_hoverintent() {
+    var $panel = $('#nav-panel');
+    function showPanel() {
+        if($(window).width() >= 768) {
+            $($panel).stop(true,true).animate({'width':265}, 500).delay(500).addClass('opened');
+            $('#overlay').stop(true,true).fadeIn();
+        }        
+    }
+    function hidePanel() {
+        if($(window).width() >= 768) {
+            $($panel).stop(true,true).animate({'width':60}, 500).delay(500).removeClass('opened');
+            $('#overlay').stop(true,true).fadeOut();
+        }
+    }
+
+    $($panel).hoverIntent(showPanel, hidePanel);
+
+    function showPanelSubmenu() {
+        if (($(window).width() >= 768) && ($($panel).hasClass('opened'))) {
+            $($panel).stop(true,true).animate({'width':470});
+        }        
+    }
+    function hidePanelSubmenu() {
+        if($(window).width() >= 768) {
+            $($panel).animate({'width':265});
+        }
+    }
+    $('#nav-main .menu-item-has-children').hoverIntent(showPanelSubmenu, hidePanelSubmenu);
+}
+
 $(document).ready(function($){
     responsiveIframe();
     $(window).resize(function(){
@@ -90,7 +120,7 @@ $(document).ready(function($){
     });
     //mainNav();
     masonry_init();
-    menu_desktop();
+    menu_desktop_hoverintent();
     menu_mobile();
     menu_mobile_nesting()
 });
