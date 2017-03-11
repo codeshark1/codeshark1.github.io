@@ -43,44 +43,16 @@ function menu_mobile_nesting() {
 }
 
 function masonry_init() {
-    if($(window).width() >= 768) {
+    if($(window).width() >= 1200) {
        $('.b-masonry').masonry({
           itemSelector: '.b-art-prev',
           columnWidth: '.b-art-prev-sm',
-          gutter: 20,
-          percentPosition: true
+          gutter: 19,
+          //percentPosition: true
         });
+    } else {
+        $('.b-masonry').masonry('destroy');
     }
-}
-
-function menu_desktop() {
-    var $panel = $('#nav-panel');
-
-    $($panel).on( "mouseenter", function() {
-        if($(window).width() >= 768) {
-            $($panel).stop(true,true).animate({'width':265});
-            $('#overlay').stop(true,true).fadeIn();
-        }
-    });
-
-    $('#nav-main .menu-item-has-children').on( "mouseenter", function() {
-        if($(window).width() >= 768) {
-            $($panel).stop(true,true).animate({'width':470});
-        }
-    });
-
-    $('#nav-main .menu-item-has-children', $panel).on( "mouseleave", function() {
-        if($(window).width() >= 768) {
-            $($panel).animate({'width':265});
-        }
-    });
-
-    $($panel).on( "mouseleave", function() {
-        if($(window).width() >= 768) {
-            $($panel).stop(true,true).animate({'width':60});
-            $('#overlay').stop(true,true).fadeOut();
-        }
-    });
 }
 
 function menu_desktop_hoverintent() {
@@ -97,8 +69,6 @@ function menu_desktop_hoverintent() {
             $('#overlay').stop(true,true).fadeOut();
         }
     }
-
-    //$($panel).hoverIntent(showPanel, hidePanel, 10000);
     $($panel).hoverIntent({
         over: showPanel, 
         out: hidePanel, 
