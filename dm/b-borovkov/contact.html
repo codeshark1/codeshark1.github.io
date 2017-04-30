@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Обратная связь - Блог Алексея Боровкова</title>    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/vendor/modernizr-custom.js"></script>
+    <script src="js/vendor/jquery-1.12.4_min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>     
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <![endif]-->
+</head>
+<body class="home">
+<!--[if lt IE 10]>
+    <p class="browserupgrade">Вы используете <b>устаревший</b> браузер. Пожалуйста, <a href="http://browsehappy.com/?locale=ru_ru">обновите свой браузер</a> чтобы улучшить опыт работы с сайтом.</p>
+<![endif]-->
+<header class="site-header container" itemscope itemtype="http://schema.org/WPHeader" id="header">   
+    <div class="b-but-nav">
+        <button id="nav-toggle" class="but-nav" href="#"><i class="hamburger icon"></i></button>
+    </div><!-- /.b-but-nav -->
+
+    <div class="b-logo">
+        <a href="#"><img class="logo" src="images/logotype.png" alt="Блог Алексея Боровкова"></a>
+        <p class="site-title" itemprop="headline">Блог Алексея Боровкова</p>
+        <p class="site-description" itemprop="description">Только полезная информация с практическим смыслом.</p>
+    </div><!-- /.b-logo -->   
+
+    <div class="b-menu-wrapper">
+        <div class="b-search-form">
+            <div class="b-inner">
+                <div class="b-inner-2">
+                    <form role="search" method="get" class="search-form" id="searchform" action="/">
+                        <input type="search" class="search-field" value="" name="s" placeholder="Ключевое слово поиска" required>
+                        <input type="submit" class="search-submit" id="searchsubmit" value="">
+                    </form>                    
+                </div><!-- /.b-inner-2 -->
+            </div><!-- /.b-inner -->
+        </div><!-- /.search-form -->
+
+        <nav class="site-navigation" role="navigation" id="nav-main" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <h5 hidden>Основная навигация</h5>
+            <ul class="b-menu">
+                <li class="menu-item"><a href="#">Главная</a></li>
+                <li class="menu-item"><a href="#">Статьи</a></li>
+                <li class="menu-item"><a href="#">Блог</a></li>
+                <li class="menu-item"><a href="#">Автор</a></li>
+                <li class="menu-item"><a href="#">Контакты/реклама</a></li>
+                <li class="menu-item"><a href="#">рекомендую</a></li>
+            </ul>
+        </nav>
+    </div><!-- /.b-menu-wrapper -->
+
+    <img src="images/pic-header.jpg" alt="pic" class="visible-xs pic-header">
+
+    <a href="#" class="but but-cats categ-toggle">Рубрики блога</a>
+    <div class="site-categories" id="nav-categs">
+        <ul>
+            <li class="cat-item"><a href="#">Новости</a></li>
+            <li class="cat-item"><a href="#">Продукты питания</a></li>
+            <li class="cat-item"><a href="#">Витамины и минералы</a></li>
+            <li class="cat-item"><a href="#">Системы питания</a></li>
+            <li class="cat-item"><a href="#">Пищевые добавки</a></li>
+            <li class="cat-item"><a href="#">Наука и физиология</a></li>
+            <li class="cat-item"><a href="#">Калькуляторы и таблицы</a></li>
+            <li class="cat-item"><a href="#">Образ жизни и мотивация</a></li>
+            <li class="cat-item">
+                <a href="#">Спорт, туризм, активность</a>
+                <ul class="children">
+                    <li class="cat-item"><a href="#">Физическая активность</a></li>
+                    <li class="cat-item"><a href="#">Путешествия и приключения</a></li>
+                    <li class="cat-item"><a href="#">Cнаряжение</a></li>
+                </ul>
+            </li>
+            <li class="cat-item"><a href="#">Разное</a></li>
+        </ul>
+    </div><!-- /.-->
+</header><!-- site-header -->
+
+<main class="b-main container" id="main">    
+    <div class="b-main_i">
+        <div class="site-content">
+            <div class="breadcrumb" id="breadcrumbs">
+                <span xmlns:v="http://rdf.data-vocabulary.org/#">
+                    <span typeof="v:Breadcrumb">
+                        <a href="#" rel="v:url" property="v:title">Главная</a> /
+                        <span rel="v:child" typeof="v:Breadcrumb">Обратная связь</span>
+                    </span>
+                </span>
+            </div>
+
+            <section class="comment-contact b-section">
+                <div class="b-inner">
+                    <div id="reply-title" class="comment-reply-title">Обратная связь</div>
+                    
+                    <form action="#" method="#" id="commentform" class="comment-form form">
+                        <div class="b-inputs-3">
+                            <input id="author" name="author" type="text" value="" aria-required="true" placeholder="Введите ваше имя">
+                            <input id="email" name="email" type="email" value="" aria-required="true" placeholder="Введите ваш e-mail">
+                        </div><!-- /.b-inputs -->
+                        <input id="topic" name="topic" type="text" value="" aria-required="true" placeholder="Тема вашего сообщения">
+                        <textarea id="comment" name="comment" class="comment" rows="7" aria-required="true" placeholder="Текст вашего сообщения"></textarea>
+                        
+                        <div class="b-but">
+                            <input name="submit" type="submit" id="submit" class="submit" value="отправить">
+                        </div><!-- /.b-but -->
+                        
+                    </form>
+                </div><!-- /.b-inner -->
+            </section><!-- #respond --> 
+
+            <section class="sec-subscribe b-section">
+                <img src="images/graphic-sub-article.png" alt="pic" class="graphic">
+                <div class="b-inner">                        
+                    <p class="heading">Тысячи людей получают новости этого блога, получай и ты!</p>                        
+                    <form action="#" class="form-subscribe">
+                        <input type="text" class="name" placeholder="Введите ваше имя" required>
+                        <input type="email" class="email" placeholder="Введите ваш e-mail" required>
+                        <button class="but but-main">Подписаться</button>
+                    </form>
+                    <p class="info hidden-xs">Адреса электронной рассылки не предоставляются третьим лицам. Никакого спама, только полезная информация. Гарантирую</p><!-- /.info -->                        
+                </div><!-- /.b-inner -->
+            </section><!-- /.sec-subscribe -->                
+
+            <section class="sec-related b-section">
+                <div class="b-inner">
+                    <h3 class="h-section">Вам так же может быть интересно:</h3>
+                    <div class="row">
+                        <article class="b-art-rel col-sm-6">
+                            <a href="#" class="b-art-rel-img">
+                                <div class="b-inner">
+                                    <div class="b-inner-2">
+                                        <img src="images/photo.jpg" alt="pic">
+                                    </div><!-- /.b-inner-2 -->
+                                </div><!-- /.b-inner -->
+                            </a><!-- /.b-art-img -->
+                            <h3 class="heading"><a href="#">Активный отдых, Когда для вас движение – это жизнь!</a></h3>
+                            <div class="clearfix">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">12.02.2017</p>
+                                <p class="p-rating">Оценка: <span>4.1</span></p>
+                            </div><!-- /.clearfix -->
+                        </article><!-- b-art-->
+                        <article class="b-art-rel col-sm-6">
+                            <a href="#" class="b-art-rel-img">
+                                <div class="b-inner">
+                                    <div class="b-inner-2">
+                                        <img src="images/photo.jpg" alt="pic">
+                                    </div><!-- /.b-inner-2 -->
+                                </div><!-- /.b-inner -->
+                            </a><!-- /.b-art-img -->
+                            <h3 class="heading"><a href="#">Активный отдых, Когда для вас движение – это жизнь!</a></h3>
+                            <div class="clearfix">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">12.02.2017</p>
+                                <p class="p-rating">Оценка: <span>4.1</span></p>
+                            </div><!-- /.clearfix -->
+                        </article><!-- b-art-->
+                    </div><!-- /.row -->
+                </div><!-- /.b-inner -->
+            </section><!-- /.sec-related-->
+        </div><!-- /.site-content -->
+
+        <aside class="site-sidebar widget-area" itemscope itemtype="http://schema.org/WPSideBar">
+            <section class="widget widget-subscribe">
+                <div class="b-graphic"></div>
+                <div class="b-inner">
+                    <p class="heading">Последние новости блога у вас на почте</p>                
+                    <form action="#" class="form-subscribe">
+                        <input type="email" class="email" placeholder="Введите ваш e-mail" required>
+                        <button class="but but-main">Подписаться</button>
+                        <p class="info">Адреса электронной рассылки не предоставляются третьим лицам. Никакого спама, только полезная информация. Гарантирую</p>
+                    </form>
+                </div><!-- /.b-inner -->
+            </section><!-- /.widget -->
+
+            <section class="widget widget-youtube">
+                <a href="#" class="link">Не хотите читать? Смотрите на Youtube</a>
+            </section><!-- /.widget -->
+
+            <section class="widget widget-categories">
+                <div class="widget-header">Рубрики блога</div>
+                <ul>
+                    <li class="cat-item"><a href="#">Новости</a></li>
+                    <li class="cat-item"><a href="#">Продукты питания</a></li>
+                    <li class="cat-item"><a href="#">Витамины и минералы</a></li>
+                    <li class="cat-item"><a href="#">Системы питания</a></li>
+                    <li class="cat-item"><a href="#">Пищевые добавки</a></li>
+                    <li class="cat-item"><a href="#">Наука и физиология</a></li>
+                    <li class="cat-item"><a href="#">Калькуляторы и таблицы</a></li>
+                    <li class="cat-item"><a href="#">Образ жизни и мотивация</a></li>
+                    <li class="cat-item">
+                        <a href="#">Спорт, туризм, активность</a>
+                        <ul class="children">
+                            <li class="cat-item"><a href="#">Физическая активность</a></li>
+                            <li class="cat-item"><a href="#">Путешествия и приключения</a></li>
+                            <li class="cat-item"><a href="#">Cнаряжение</a></li>
+                        </ul>
+                    </li>
+                    <li class="cat-item"><a href="#">Разное</a></li>
+                </ul>
+            </section><!-- /.widget -->
+
+            <section class="widget widget-commenters">
+                <div class="widget-header">Самые общительные</div>            
+                
+                <div class="b-commenter">
+                    <div class="b-userpic">
+                        <div class="b-inner"><div class="b-inner-2"><p class="p-commentcount">99</p><img src="images/userpic1.jpg" alt="" /></div></div>
+                    </div><!-- /.b-userpic -->
+                    <p class="p-name">Евгений</p>
+                </div><!-- /.b-commenter -->
+                <div class="b-commenter">
+                    <div class="b-userpic">
+                        <div class="b-inner"><div class="b-inner-2"><p class="p-commentcount">99</p><img src="images/userpic2.jpg" alt="" /></div></div>
+                    </div><!-- /.b-userpic -->
+                    <p class="p-name">Марина</p>
+                </div><!-- /.b-commenter -->
+                <div class="b-commenter">
+                    <div class="b-userpic">
+                        <div class="b-inner"><div class="b-inner-2"><p class="p-commentcount">99</p><img src="images/userpic3.jpg" alt="" /></div></div>
+                    </div><!-- /.b-userpic -->
+                    <p class="p-name">Игнат</p>
+                </div><!-- /.b-commenter -->
+                <div class="b-commenter">
+                    <div class="b-userpic">
+                        <div class="b-inner"><div class="b-inner-2"><p class="p-commentcount">99</p><img src="images/userpic4.jpg" alt="" /></div></div>
+                    </div><!-- /.b-userpic -->
+                    <p class="p-name">Алефтина</p>
+                </div><!-- /.b-commenter -->
+                <div class="b-commenter">
+                    <div class="b-userpic">
+                        <div class="b-inner"><div class="b-inner-2"><p class="p-commentcount">99</p><img src="images/userpic5.jpg" alt="" /></div></div>
+                    </div><!-- /.b-userpic -->
+                    <p class="p-name">Леонид</p>
+                </div><!-- /.b-commenter -->
+                <div class="b-commenter">
+                    <div class="b-userpic">
+                        <div class="b-inner"><div class="b-inner-2"><p class="p-commentcount">99</p><img src="images/userpic6.jpg" alt="" /></div></div>
+                    </div><!-- /.b-userpic -->
+                    <p class="p-name">Егорка</p>
+                </div><!-- /.b-commenter -->
+            </section><!-- /.widget -->
+
+            <section class="widget widget-articles">
+                <div class="widget-header">Читателям нравится</div>            
+                <div id="carousel-articles">
+                    <article class="b-art-car">
+                        <a href="#" class="b-art-car--img"><div class="b-inner"><div class="b-inner-2"><img src="images/photo.jpg" alt="pic"></div></div></a>
+                        <h3 class="heading"><a href="#">Активный отдых, Когда для вас движение – это жизнь!</a></h3>
+                        <div class="clearfix">
+                            <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">12.02.2017</p>
+                            <p class="p-rating">Оценка: <span>4.1</span></p>
+                        </div><!-- /.clearfix -->
+                    </article><!-- b-art-car-->
+                    <article class="b-art-car">
+                        <a href="#" class="b-art-car--img"><div class="b-inner"><div class="b-inner-2"><img src="images/photo.jpg" alt="pic"></div></div></a>
+                        <h3 class="heading"><a href="#">Активный отдых, Когда для вас движение – это жизнь!</a></h3>
+                        <div class="clearfix">
+                            <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">12.02.2017</p>
+                            <p class="p-rating">Оценка: <span>4.1</span></p>
+                        </div><!-- /.clearfix -->
+                    </article><!-- b-art-car-->
+                    <article class="b-art-car">
+                        <a href="#" class="b-art-car--img"><div class="b-inner"><div class="b-inner-2"><img src="images/photo.jpg" alt="pic"></div></div></a>
+                        <h3 class="heading"><a href="#">Активный отдых, Когда для вас движение – это жизнь!</a></h3>
+                        <div class="clearfix">
+                            <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">12.02.2017</p>
+                            <p class="p-rating">Оценка: <span>4.1</span></p>
+                        </div><!-- /.clearfix -->
+                    </article><!-- b-art-car-->
+                </div><!-- /#carousel-articles -->
+            </section><!-- /.widget -->
+
+            <section class="widget widget-banner">
+                <div class="b-inner">
+                    <img src="images/banner.png" alt="баннер">                    
+                </div><!-- /.b-inner -->
+            </section><!-- /.widget -->
+        </aside><!-- site-sidebar -->
+    </div><!-- /.b-main_i -->
+
+    <div class="b-but-up">
+        <a href="#header" id="up" class="but-up hidden-xs" title="наверх">наверх</a>
+    </div><!-- /.b-but-up -->
+</main><!-- /.container b-main -->
+
+<footer class="site-footer" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="container">
+        <div class="b-menu-wrapper hidden-xs">
+            <div class="b-search-form">
+                <form role="search" method="get" class="search-form" id="searchform" action="/">
+                    <input type="search" class="search-field" value="" name="s" placeholder="Ключевое слово поиска" required>
+                    <input type="submit" class="search-submit" id="searchsubmit" value="">
+                </form>
+            </div><!-- /.b-search-form -->
+
+            <nav class="site-navigation" role="navigation" id="nav-main" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <h5 hidden>Основная навигация</h5>
+                <ul class="b-menu">
+                    <li class="menu-item"><a href="#">Главная</a></li>
+                    <li class="menu-item"><a href="#">Статьи</a></li>
+                    <li class="menu-item"><a href="#">Блог</a></li>
+                    <li class="menu-item"><a href="#">Автор</a></li>
+                    <li class="menu-item"><a href="#">Контакты/реклама</a></li>
+                    <li class="menu-item"><a href="#">рекомендую</a></li>
+                </ul>
+            </nav>
+        </div><!-- /.b-menu-wrapper -->
+
+        <div class="b-bottom">
+            <div class="b-logo">
+                <a href="#"><img class="logo" src="images/logotype.png" alt="Блог Алексея Боровкова"></a>
+                <p class="site-title hidden-xs" itemprop="headline">Блог Алексея Боровкова</p>
+                <small class="copyright">&#169; 2016 – 2017 Все права защищены. <br> При копировании и использовании материалов блога, ссылка на первоисточник обязательна. С уважением, Боровков Алексей.</small>
+            </div><!-- /.b-logo -->
+
+            <div class="b-counter">
+                <img src="images/counter.png" alt="pic">
+                <a href="#" class="link-info">Правовая информация</a>
+            </div><!-- /.b-counter -->
+        </div><!-- /.b-bottom -->
+    </div><!-- /.container -->
+</footer>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
