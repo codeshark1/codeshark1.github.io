@@ -14,7 +14,12 @@ a {color: $text-link; transition:  color, background-color, border .15s; text-de
   &:hover,&:active,&:focus {text-decoration: none;color: $text-link-hover}
 }
 table {width: 100%;}
-hr {clear: both}
+hr {
+  clear: both;
+  border: none;
+  height: 2px;
+  background: rgba(black,.1);
+}
 p {margin: 0}
 ul {@include resetUl();}
 small {font-size: 100%;}
@@ -106,9 +111,9 @@ small {font-size: 100%;}
   }
 }
 
-.but-main {@include but-main();}
+.but-main, .submit {@include but-main();}
 
-.but-second,.submit {@include but-second();}
+.but-second {@include but-second();}
 
 .but-go {
   box-shadow: none;
@@ -132,7 +137,7 @@ select {
   width: 100%;
   border: 1px solid #d4d8d4;  
   padding: 9px 14px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   box-sizing: border-box;
   background-color: #fff;
   box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.1);
@@ -175,8 +180,20 @@ label {font-weight: normal;cursor: pointer;display: block;}
     }
   }
 }
+.b-art-main {
+  .h-main {
+    background: #fbf5e3;
+    padding: 20px 20px 25px;
+    margin: 5px -10px 10px;
+    @media (min-width: $screen-sm-min) {
+      padding: 15px 35px 20px;
+      margin: 5px -25px 15px;
+    }
+  }
+}
 
-.h-section, .comments-title, .comment-reply-title {
+
+.h-section, .comments-title {
   font-weight: 600;
   font-size: 16px;
   line-height: 1;  
@@ -213,8 +230,8 @@ label {font-weight: normal;cursor: pointer;display: block;}
 .spanlink {
   cursor: pointer;
   display: inline-block;
-  border-bottom: 1px solid $text-link;
   line-height: 1;
   color: $text-link;
-  //text-decoration: underline;
+  text-decoration: underline;
+  &:hover {color: $orange}
 }

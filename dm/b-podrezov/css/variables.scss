@@ -56,10 +56,3 @@ $main: #19af5a;
 $secondary: #fbd967;
 $light-text: #8a7751;
 $gray: #d6d6d6;
-
-@mixin green-grad() {
-	background: #8faf2c;
-	background: -moz-linear-gradient(top, #8faf2c 0%, #608422 100%);
-	background: -webkit-linear-gradient(top, #8faf2c 0%,#608422 100%);
-	background: linear-gradient(to bottom, #8faf2c 0%,#608422 100%);	
-}

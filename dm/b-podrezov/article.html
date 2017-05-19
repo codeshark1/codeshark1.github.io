@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Статья - Блог Александра Подрезова</title>    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/vendor/modernizr-custom.js"></script>
+    <script src="js/vendor/jquery-1.12.4_min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>     
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <![endif]-->
+</head>
+<body class="home">
+<!--[if lt IE 10]>
+    <p class="browserupgrade">Вы используете <b>устаревший</b> браузер. Пожалуйста, <a href="http://browsehappy.com/?locale=ru_ru">обновите свой браузер</a> чтобы улучшить опыт работы с сайтом.</p>
+<![endif]-->
+<header class="site-header" itemscope itemtype="http://schema.org/WPHeader" id="header">    
+    <div class="b-but-nav">
+        <button id="nav-toggle" class="but-nav" href="#"><i class="hamburger icon"></i></button>
+    </div><!-- /.b-but-nav --> 
+
+    <div class="b-top">
+        <div class="container">
+            <nav class="site-navigation" role="navigation" id="nav-main" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <h5 hidden>Основная навигация</h5>
+                <ul class="b-menu">
+                    <li class="menu-item"><a href="#">Главная</a></li>
+                    <li class="menu-item"><a href="#">ИНФО - Визуализация</a></li>
+                    <li class="menu-item"><a href="#">Контент - Маркетинг</a></li>
+                    <li class="menu-item"><a href="#">НОвости</a></li>
+                    <li class="menu-item"><a href="#">Инструменты</a></li>
+                    <li class="menu-item"><a href="#">Курсы</a></li>
+                    <li class="menu-item"><a href="#">О Блоге</a></li>
+                    <li class="menu-item"><a href="#">Автор</a></li>
+                    <li class="menu-item"><a href="#">Карта сайта</a></li>
+                </ul>
+            </nav>
+        </div><!-- /.container -->
+    </div><!-- /.b-menu-wrapper -->
+    
+    <div class="b-mid">
+        <div class="container">
+            <div class="b-logo">
+                <a href="#" class="logo"><img src="images/logotype.png" alt="Блог Александра Подрезова"></a>
+                <p class="site-title" itemprop="headline">Блог Александра Подрезова</p>
+                <p class="sub-title">Инфо - визуализация и контент - маркетинг</p>
+                <p class="site-description" itemprop="description">Реальный способ выживания и развития в новой эпохе «Информационного взрыва»</p>
+            </div><!-- /.b-logo -->          
+            <div class="b-misc">
+                <div class="b-misc-1">
+                    <div class="b-search-form">
+                        <form role="search" method="get" class="search-form" id="searchform" action="/">
+                            <input type="search" class="search-field" value="" name="s" placeholder="Поиск по блогу" required>
+                            <input type="submit" class="search-submit" id="searchsubmit" value="">
+                        </form>
+                    </div><!-- /.search-form -->
+                    <div class="b-lang hidden-xs">
+                        <ul>
+                            <li class="menu-item active">Ru</li>
+                            <li class="menu-item"><a href="#">EN</a></li>
+                        </ul>
+                    </div><!-- /.b-lang -->
+                </div><!-- /.b-misc-1 -->
+                <div class="b-misc-2 hidden-xs">
+                    <a href="#" class="but but-header"><i class="i-begin"></i>С чего начать</a>
+                    <a href="#" class="but but-header"><i class="i-author"></i>Стань автором</a>
+                    <a href="#" class="but but-radio"><i class="i-radio"></i>Радио</a>
+                    <a href="#" class="but but-toggle"><i class="i-toggle"></i></a>
+                </div><!-- /.b-misc-2 -->
+            </div><!-- /.b-misc -->
+        </div><!-- /.container -->
+    </div><!-- /.b-mid -->
+
+    <div class="b-graphic" id="b-graphic"></div><!-- /.b-graphic -->
+
+    <div class="container visible-xs">
+        <a href="#" class="but but-second categ-toggle">Рубрики блога</a>
+    </div><!-- /.container -->
+    <div class="site-categories" id="nav-categs">
+        <ul>
+            <li class="cat-item info-vizualizaciya">
+                <a href="#">Инфо-Визуализация</a>
+                <ul class="children">
+                    <li class="cat-item vizualnoe-mishlenie"><a href="#">Визуальное Мышление <span>214</span></a></li>
+                    <li class="cat-item info-prostranstvo"><a href="#">Инфо-Пространство <span>24</span></a></li>
+                    <li class="cat-item mentalnaya-karta"><a href="#">Ментальная Карта <span>200</span></a></li>
+                    <li class="cat-item biznes-processi"><a href="#">Бизнес-Процессы <span>45</span></a></li>
+                    <li class="cat-item dorozhnaya-karta"><a href="#">Дорожная Карта <span>52</span></a></li>
+                    <li class="cat-item infografika"><a href="#">ИнфоГрафика <span>1045</span></a></li>
+                    <li class="cat-item tipografika"><a href="#">ТипоГрафика <span>69</span></a></li>
+                    <li class="cat-item svet-i-cvet"><a href="#">Свет и Цвет <span>214</span></a></li>
+                    <li class="cat-item video-kontent"><a href="#">Видео Контент <span>275</span></a></li>
+                    <li class="cat-item zvukovaya-palitra"><a href="#">Звуковая Палитра <span>15</span></a></li>
+                    <li class="cat-item interaktivniy-kontent"><a href="#">Интерактивный Контент <span>4</span></a></li>
+                    <li class="cat-item biblioteka-vizualizaciy"><a href="#">Библиотека визуализаций <span>58</span></a></li>
+                </ul>
+            </li>
+            <li class="cat-item kontent-marketing">
+                <a href="#">Контент-Маркетинг</a>
+                <ul class="children">
+                    <li class="cat-item dlya-zhizni"><a href="#">Для Жизни <span>15</span></a></li>
+                    <li class="cat-item dlya-biznesa"><a href="#">Для Бизнеса <span>4</span></a></li>
+                    <li class="cat-item dlya-gossektora"><a href="#">Для Гос.Сектора <span>58</span></a></li>
+                </ul>
+            </li>
+        </ul>        
+    </div><!-- /.site-categories -->        
+</header><!-- site-header -->
+
+<main class="b-main container" id="main">    
+    <div class="site-content">
+        <div class="breadcrumb" id="breadcrumbs">
+            <ul>
+                <li><a href="#">Инфо-визуализация</a></li>
+                <li><a href="#">Визуальное мышление</a></li>
+            </ul>
+        </div><!-- breadcrumb -->          
+
+        <article class="b-art-main" itemscope itemtype="http://schema.org/Article">
+            <div class="b-wrapper">
+                <div class="b-img">
+                    <img src="images/photo1.jpg" alt="pic">
+                </div><!-- /.b-img -->
+                
+                <div class="b-art-inner">
+                    <div class="b-art-header">
+                        <div class="b-art-head-1">
+                            <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                            <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                            
+                            <p class="p-author" itemprop="author">Александр Подрезов</p>
+
+                            <ul class="menu-view">
+                                <li class="menu-item"><a href="#"><i class="view-1"></i></a></li>
+                                <li class="menu-item"><a href="#"><i class="view-2"></i></a></li>
+                                <li class="menu-item"><a href="#"><i class="view-3"></i></a></li>
+                            </ul><!-- menu-view -->                            
+                        </div><!-- /.b-art-head-1 -->
+                        <div class="b-art-head-2">
+                            <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                            <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                            <p class="p-author" itemprop="author">Александр Подрезов</p>
+                            
+                            <div class="b-right">
+                                <p class="p-commentcount">152</p>
+                                <p class="p-views">200</p>
+                            </div><!-- /.b-right -->
+                        </div><!-- /.b-art-head-2 -->
+                    </div><!-- /.b-art-header -->
+
+                    <h1 class="h-main" itemprop="name">Здесь будет заголовок, который придумал дизайнер в две строки исключительно для ознакомления и примера заголовка</h1>
+                    
+                    <div itemprop="articleBody" class="b-art-body">
+                        <p>Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности требуют определения и уточнения новых предложений. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности способствует подготовки и реализации направлений прогрессивного развития.</p>
+                        <p>Задача организации, в особенности же начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации модели развития. С другой стороны новая модель организационной деятельности позволяет выполнять важные задания по разработке дальнейших направлений развития. Повседневная практика показывает, что начало повседневной работы по формированию позиции требуют от нас анализа новых предложений. Идейные соображения высшего порядка, а также укрепление и развитие структуры позволяет оценить значение соответствующий условий активизации. Задача организации, в особенности же сложившаяся структура организации требуют от нас анализа соответствующий условий активизации. Не следует, однако забывать, что сложившаяся структура организации позволяет оценить значение </p>
+
+                        <h2>Заголовок второго уровня</h2>
+                        <p>Значимость этих проблем настолько очевидна, что консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки модели развития. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание дальнейших направлений развития. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры позволяет оценить значение соответствующий условий активизации.</p>
+                        <p>Таким образом рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Повседневная практика показывает, что рамки и место обучения кадров требуют определения и уточнения новых предложений. Равным образом постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что укрепление и развитие структуры способствует подготовки и реализации новых предложений. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании форм развития.</p>
+
+                        <h3>Заголовок третьего уровня</h3>
+                        <p>Задача организации, в особенности же начало повседневной работы по формированию позиции способствует подготовки и реализации новых предложений. Товарищи! дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки дальнейших направлений развития.</p>
+                        <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки модели развития. Товарищи! постоянный количественный рост и сфера нашей активности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности способствует подготовки и реализации существенных финансовых и административных условий. Повседневная практика показывает, что дальнейшее развитие различных форм <br>
+                        Задача организации, в особенности же начало повседневной работы по формированию позиции способствует подготовки и реализации новых предложений. Товарищи! дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Таким образом консультация с широким активом представляет собой                         
+                        </p>
+
+                        <img src="images/photo2.jpg" alt="pic">
+
+                        <p>Задача организации, в особенности же начало повседневной работы по формированию позиции способствует подготовки и реализации новых предложений. Товарищи! дальнейшее развитие различных форм деятельности позволяет выпо лнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько </p>
+
+                        <img src="images/photo3.jpg" alt="pic" class="alignleft">
+
+                        <p>Задача организации, в особенности же начало повседневной работы по формированию позиции способствует подготовки и реализации новых предложений. Товарищи! дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.Значимость этих проблем настолько очевидна, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. 
+                        Задача организации, в особенности же начало повседневной работы по формированию позиции способствует подготовки и реализации новых предложений. Товарищи! дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько</p>
+
+                        <img src="images/photo3.jpg" alt="pic" class="alignright">
+                        <p>Задача организации, в особенности же начало повседневной работы по формированию позиции способствует подготовки и реализации новых предложений. Товарищи! дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Таким образом консультация с широким активом представляет собой интересный эксперимент </p>
+
+                        <blockquote>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в формировании системы обучения кадров, соответствует насущным</blockquote>
+
+                        <p>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт консультация с широким активом играет важную роль в формировании дальнейших направлений</p>
+
+                        <ol>
+                            <li>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в</li>
+                            <li>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в</li>
+                            <li>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в</li>
+                            <li>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в</li>
+                        </ol>
+
+                        <p>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт консультация с широким активом играет важную роль в формировании дальнейших направлений </p>
+
+                        <ul>
+                            <li>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в</li>
+                            <li>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в</li>
+                            <li>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в</li>
+                            <li>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в</li>
+                        </ul>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>№</th>
+                                    <th>Название</th>
+                                    <th>Категория 1</th>
+                                    <th>Категория 2</th>
+                                    <th>Категория 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Жираф</td>
+                                    <td>Животное</td>
+                                    <td>Описание 1</td>
+                                    <td>Комментарий 1</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Роза</td>
+                                    <td>Растение</td>
+                                    <td>Описание 2</td>
+                                    <td>Комментарий 2</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Гитара</td>
+                                    <td>Инструмент</td>
+                                    <td>Описание 3</td>
+                                    <td>Комментарий 3</td>
+                                </tr>
+                            </tbody>
+                        </table>                        
+                    </div><!-- /.b-art-body -->
+
+                    <section class="b-sharing">
+                        <h6 class="heading">Рассказать друзьям:</h6>
+                        <ul class="menu-social">
+                            <li class="menu-item vk"><a href="#"></a></li>
+                            <li class="menu-item fb"><a href="#"></a></li>
+                            <li class="menu-item tw"><a href="#"></a></li>
+                            <li class="menu-item ok"><a href="#"></a></li>
+                            <li class="menu-item gp"><a href="#"></a></li>
+                            <li class="menu-item add"><a href="#"></a></li>
+                        </ul>
+                    </section><!-- /.b-sharing -->                    
+                </div><!-- /.b-art-inner -->
+            </div><!-- /.b-wrapper -->
+            
+            <hr>
+
+            <section class="sec-subscribe article-subscribe">
+                <p class="heading">Подпишись на обновления блога</p>                
+                <form action="#" class="form-subscribe">
+                    <input type="email" class="email" placeholder="Введите ваш e-mail" required>
+                    <button class="but but-main">Подписаться</button>
+                </form>                
+                <p class="info">Ваши данные не будут переданы третьим лицам. <br> Вы в любое время можете отписаться от рассылки</p>
+            </section><!-- /.article-subscribe -->
+
+            <hr>
+
+            <section class="sec-related">
+                <h2 class="h-section">Вам также может быть интересно:</h2>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="#" class="b-art-related">
+                            <div class="b-img"><img src="images/pop1.jpg" alt="pic"></div>
+                            <span class="b-info">
+                                <h3 class="heading">Условный заголовок который придумал дизайнер для этой статьи</h3>
+                                <div class="clearfix">
+                                    <p class="p-commentcount">152</p>
+                                    <p class="p-views">200</p>
+                                </div><!-- /.clearfix -->
+                            </span>
+                        </a><!-- b-art-related-->
+                    </div><!-- /.col -->
+                    <div class="col-sm-4">
+                        <a href="#" class="b-art-related">
+                            <div class="b-img"><img src="images/pop2.jpg" alt="pic"></div>
+                            <span class="b-info">
+                                <h3 class="heading">Условный заголовок который придумал дизайнер для этой статьи</h3>
+                                <div class="clearfix">
+                                    <p class="p-commentcount">152</p>
+                                    <p class="p-views">200</p>
+                                </div><!-- /.clearfix -->
+                            </span>
+                        </a><!-- b-art-related-->
+                    </div><!-- /.col -->
+                    <div class="col-sm-4">
+                        <a href="#" class="b-art-related">
+                            <div class="b-img"><img src="images/pop3.jpg" alt="pic"></div>
+                            <span class="b-info">
+                                <h3 class="heading">Условный заголовок который придумал дизайнер для этой статьи</h3>
+                                <div class="clearfix">
+                                    <p class="p-commentcount">152</p>
+                                    <p class="p-views">200</p>
+                                </div><!-- /.clearfix -->
+                            </span>
+                        </a><!-- b-art-related-->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </section><!-- sec-related -->
+
+            <hr>
+
+            <section id="comments" class="comments-area">                
+                <div class="comments-title">Комментарии к статье: <span>3</span></div>
+                <ol class="comment-list">
+                    <li class="comment" itemprop="comment" itemscope="" itemtype="http://schema.org/Comment">
+                        <div class="comment-box">
+                            <div class="comment-header">                                
+                                <div class="comment-avatar">
+                                    <img alt="pic" src="images/userpic4.jpg" class="avatar avatar-50 photo">
+                                </div><!-- /.comment-avatar -->
+                                <cite class="comment-author" itemprop="creator" data-uri="http://yandex.ru/" onclick="GoTo('_yandex.ru/')">Олег</cite>
+                                <p class="p-date"><time class="comment-time" itemprop="datePublished" datetime="2016-06-16">27.12.2016 | 13:08</time></p>
+                            </div><!-- comment-header -->
+                            <div class="comment-body">
+                                <div class="comment-text" itemprop="text">
+                                    <p>Товарищи! постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание новых предложений. Разнообразный и богатый опыт укрепление и развитие структуры позволяет выполнять важные задания по разработке</p>
+                                </div><!-- comment-text -->
+                            </div><!-- /.comment-body -->                            
+                            <div class="comment-footer">
+                                <span rel="nofollow" class="comment-reply-link spanlink" data-href="#comment-2">Ответить</span>
+                            </div><!-- /.comment-footer -->
+                        </div><!-- comment-box -->
+                        <ol class="children">
+                            <li class="comment bypostauthor" itemprop="comment" itemscope="" itemtype="http://schema.org/Comment">
+                                <div class="comment-box">
+                                    <div class="comment-header">                                
+                                        <div class="comment-avatar">
+                                            <img alt="pic" src="images/userpic0.jpg" class="avatar avatar-50 photo">
+                                        </div><!-- /.comment-avatar -->
+                                        <cite class="comment-author" itemprop="creator" data-uri="http://yandex.ru/" onclick="GoTo('_yandex.ru/')">Олег</cite>
+                                        <p class="p-date"><time class="comment-time" itemprop="datePublished" datetime="2016-06-16">27.12.2016 | 13:08</time></p>
+                                    </div><!-- comment-header -->
+                                    <div class="comment-body">
+                                        <div class="comment-text" itemprop="text">
+                                            <p>Товарищи! постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание новых предложений. Разнообразный и богатый опыт укрепление и развитие структуры позволяет выполнять важные задания по разработке</p>
+                                        </div><!-- comment-text -->
+                                    </div><!-- /.comment-body -->                            
+                                    <div class="comment-footer">
+                                        <span rel="nofollow" class="comment-reply-link spanlink" data-href="#comment-2">Ответить</span>
+                                    </div><!-- /.comment-footer -->
+                                </div><!-- comment-box -->
+                            </li><!-- comment -->                                        
+                        </ol><!-- children -->                                    
+                    </li><!-- comment -->
+                    <li class="comment" itemprop="comment" itemscope="" itemtype="http://schema.org/Comment">
+                        <div class="comment-box">
+                            <div class="comment-header">                                
+                                <div class="comment-avatar">
+                                    <img alt="pic" src="images/userpic4.jpg" class="avatar avatar-50 photo">
+                                </div><!-- /.comment-avatar -->
+                                <cite class="comment-author" itemprop="creator" data-uri="http://yandex.ru/" onclick="GoTo('_yandex.ru/')">Олег</cite>
+                                <p class="p-date"><time class="comment-time" itemprop="datePublished" datetime="2016-06-16">27.12.2016 | 13:08</time></p>
+                            </div><!-- comment-header -->
+                            <div class="comment-body">
+                                <div class="comment-text" itemprop="text">
+                                    <p>Товарищи! постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание новых предложений. Разнообразный и богатый опыт укрепление и развитие структуры позволяет выполнять важные задания по разработке</p>
+                                </div><!-- comment-text -->
+                            </div><!-- /.comment-body -->                            
+                            <div class="comment-footer">
+                                <span rel="nofollow" class="comment-reply-link spanlink" data-href="#comment-2">Ответить</span>
+                            </div><!-- /.comment-footer -->
+                        </div><!-- comment-box -->
+                    </li><!-- comment -->                                
+                </ol> <!-- comment-list -->
+
+                <hr>
+
+                <section id="respond" class="comment-respond">                    
+                    <div id="reply-title" class="comment-reply-title">Оставить комментарий к статье:</div>
+                    
+                    <form action="#" method="#" id="commentform" class="comment-form form">
+                        <div class="b-inputs-3">
+                            <input id="author" name="author" type="text" value="" aria-required="true" placeholder="Введите ваше имя">
+                            <input id="email" name="email" type="email" value="" aria-required="true" placeholder="Введите ваш e-mail">
+                            <input id="url" name="url" type="url" value="" aria-required="false" placeholder="Ваш сайт (если есть)">
+                        </div><!-- /.b-inputs -->
+                        <textarea id="comment" name="comment" class="comment" rows="7" aria-required="true" placeholder="Ваш комментарий"></textarea>
+                        <div class="b-emojis">
+                            <img src="images/emojis/1.png" alt="pic">
+                            <img src="images/emojis/2.png" alt="pic">
+                            <img src="images/emojis/3.png" alt="pic">
+                            <img src="images/emojis/4.png" alt="pic">
+                            <img src="images/emojis/5.png" alt="pic">
+                            <img src="images/emojis/6.png" alt="pic">
+                            <img src="images/emojis/7.png" alt="pic">
+                            <img src="images/emojis/8.png" alt="pic">
+                            <img src="images/emojis/9.png" alt="pic">
+                            <img src="images/emojis/10.png" alt="pic">
+                            <img src="images/emojis/11.png" alt="pic">
+                            <img src="images/emojis/12.png" alt="pic">
+                            <img src="images/emojis/13.png" alt="pic">
+                            <img src="images/emojis/14.png" alt="pic">
+                            <img src="images/emojis/15.png" alt="pic">                       
+                        </div><!-- /.b-emojis -->
+                        <div class="b-bottom">
+                            <div class="b-checkbox">Я хочу получать обновления на почту</div><!-- /.b-checkbox -->
+                            <div class="b-but">
+                                <input name="submit" type="submit" id="submit" class="submit" value="Отправить комментарий">
+                            </div><!-- /.b-but -->
+                        </div><!-- /.b-bottom -->
+                    </form>                    
+                </section><!-- #respond -->
+            </section><!-- comments-area -->
+        </article><!-- /.b-art-main -->           
+    </div><!-- /.site-content -->
+
+    <aside class="site-sidebar widget-area" itemscope itemtype="http://schema.org/WPSideBar">
+        <section class="widget widget-categories">
+            <div class="widget-header">Рубрики блога</div>
+            <ul>
+                <li class="cat-item info-vizualizaciya">
+                    <a href="#">Инфо-Визуализация</a>
+                    <ul class="children">
+                        <li class="cat-item vizualnoe-mishlenie"><a href="#">Визуальное Мышление <span>214</span></a></li>
+                        <li class="cat-item info-prostranstvo"><a href="#">Инфо-Пространство <span>24</span></a></li>
+                        <li class="cat-item mentalnaya-karta"><a href="#">Ментальная Карта <span>200</span></a></li>
+                        <li class="cat-item biznes-processi"><a href="#">Бизнес-Процессы <span>45</span></a></li>
+                        <li class="cat-item dorozhnaya-karta"><a href="#">Дорожная Карта <span>52</span></a></li>
+                        <li class="cat-item infografika"><a href="#">ИнфоГрафика <span>1045</span></a></li>
+                        <li class="cat-item tipografika"><a href="#">ТипоГрафика <span>69</span></a></li>
+                        <li class="cat-item svet-i-cvet"><a href="#">Свет и Цвет <span>214</span></a></li>
+                        <li class="cat-item video-kontent"><a href="#">Видео Контент <span>275</span></a></li>
+                        <li class="cat-item zvukovaya-palitra"><a href="#">Звуковая Палитра <span>15</span></a></li>
+                        <li class="cat-item interaktivniy-kontent"><a href="#">Интерактивный Контент <span>4</span></a></li>
+                        <li class="cat-item biblioteka-vizualizaciy"><a href="#">Библиотека визуализаций <span>58</span></a></li>
+                    </ul>
+                </li>
+                <li class="cat-item kontent-marketing">
+                    <a href="#">Контент-Маркетинг</a>
+                    <ul class="children">
+                        <li class="cat-item dlya-zhizni"><a href="#">Для Жизни <span>15</span></a></li>
+                        <li class="cat-item dlya-biznesa"><a href="#">Для Бизнеса <span>4</span></a></li>
+                        <li class="cat-item dlya-gossektora"><a href="#">Для Гос.Сектора <span>58</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section><!-- /.widget -->
+
+        <section class="widget widget-subscribe">
+            <p class="heading">Подпишись на обновления блога</p>                
+            <form action="#" class="form-subscribe">
+                <input type="email" class="email" placeholder="Введите ваш e-mail" required>
+                <button class="but but-main">Подписаться</button>
+            </form>                
+            <p class="info">Ваши данные не будут переданы третьим лицам. <br> Вы в любое время можете отписаться от рассылки</p>
+        </section><!-- /.widget -->
+
+        <section class="widget widget-articles">
+            <div class="widget-header">Популярные СТАТЬИ</div>            
+            
+            <ul class="tabs-links">
+                <li><a href="#tab-comments">по КОММЕНТАРИЯМ</a></li>
+                <li class="active"><a href="#tab-views">по ПРОСМОТРАМ</a></li>
+            </ul><!-- /.tabs-links -->
+
+            <div class="b-wrapper">
+                <div class="b-tab" id="tab-views">
+                    <a href="#" class="b-art-pop">
+                        <div class="b-img"><img src="images/pop1.jpg" alt="pic"></div>
+                        <span class="b-info">
+                            <h3 class="heading">Условный заголовок который придумал дизайнер для этой статьи</h3>
+                            <div class="clearfix">
+                                <p class="p-commentcount">152</p>
+                                <p class="p-views">200</p>
+                            </div><!-- /.clearfix -->
+                        </span>
+                    </a><!-- b-art-pop-->
+                    <a href="#" class="b-art-pop">
+                        <div class="b-img"><img src="images/pop2.jpg" alt="pic"></div>
+                        <span class="b-info">
+                            <h3 class="heading">Условный заголовок который придумал дизайнер для этой статьи</h3>
+                            <div class="clearfix">
+                                <p class="p-commentcount">152</p>
+                                <p class="p-views">200</p>
+                            </div><!-- /.clearfix -->
+                        </span>
+                    </a><!-- b-art-pop-->
+                    <a href="#" class="b-art-pop">
+                        <div class="b-img"><img src="images/pop3.jpg" alt="pic"></div>
+                        <span class="b-info">
+                            <h3 class="heading">Условный заголовок который придумал дизайнер для этой статьи</h3>
+                            <div class="clearfix">
+                                <p class="p-commentcount">152</p>
+                                <p class="p-views">200</p>
+                            </div><!-- /.clearfix -->
+                        </span>
+                    </a><!-- b-art-pop-->
+                    <a href="#" class="b-art-pop">
+                        <div class="b-img"><img src="images/pop4.jpg" alt="pic"></div>
+                        <span class="b-info">
+                            <h3 class="heading">Условный заголовок который придумал дизайнер для этой статьи</h3>
+                            <div class="clearfix">
+                                <p class="p-commentcount">152</p>
+                                <p class="p-views">200</p>
+                            </div><!-- /.clearfix -->
+                        </span>
+                    </a><!-- b-art-pop-->
+                </div><!-- /.b-tab -->
+                <div class="b-tab" id="tab-comments">
+                    <a href="#" class="b-art-pop">
+                        <div class="b-img"><img src="images/pop1.jpg" alt="pic"></div>
+                        <span class="b-info">
+                            <h3 class="heading">Условный заголовок который придумал дизайнер для этой статьи</h3>
+                            <div class="clearfix">
+                                <p class="p-commentcount">152</p>
+                                <p class="p-views">200</p>
+                            </div><!-- /.clearfix -->
+                        </span>
+                    </a><!-- b-art-pop-->
+                    <a href="#" class="b-art-pop">
+                        <div class="b-img"><img src="images/pop2.jpg" alt="pic"></div>
+                        <span class="b-info">
+                            <h3 class="heading">Условный заголовок который придумал дизайнер для этой статьи</h3>
+                            <div class="clearfix">
+                                <p class="p-commentcount">152</p>
+                                <p class="p-views">200</p>
+                            </div><!-- /.clearfix -->
+                        </span>
+                    </a><!-- b-art-pop-->
+                    <a href="#" class="b-art-pop">
+                        <div class="b-img"><img src="images/pop3.jpg" alt="pic"></div>
+                        <span class="b-info">
+                            <h3 class="heading">Условный заголовок который придумал дизайнер для этой статьи</h3>
+                            <div class="clearfix">
+                                <p class="p-commentcount">152</p>
+                                <p class="p-views">200</p>
+                            </div><!-- /.clearfix -->
+                        </span>
+                    </a><!-- b-art-pop-->
+                    <a href="#" class="b-art-pop">
+                        <div class="b-img"><img src="images/pop4.jpg" alt="pic"></div>
+                        <span class="b-info">
+                            <h3 class="heading">Условный заголовок который придумал дизайнер для этой статьи</h3>
+                            <div class="clearfix">
+                                <p class="p-commentcount">152</p>
+                                <p class="p-views">200</p>
+                            </div><!-- /.clearfix -->
+                        </span>
+                    </a><!-- b-art-pop-->
+                </div><!-- /.b-tab -->                
+            </div><!-- / b-wrapper-->
+        </section><!-- /.widget -->
+
+        <section class="widget widget-youtube">
+            <a href="#"><img src="images/youtube.png" alt="pic"></a>
+        </section><!-- /.widget -->
+
+        <section class="widget widget-books">
+            <ul class="tabs-links">
+                <li><a href="#tab-courses">КУРСЫ</a></li>
+                <li class="active"><a href="#tab-books">КНИГИ</a></li>
+            </ul><!-- /.tabs-links -->
+
+            <div class="b-wrapper">
+                <div class="b-tab" id="tab-books">
+                    <div class="b-scrollArea">
+                        <a href="#" class="b-book">
+                            <img src="images/book1.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book2.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book1.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book2.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book1.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book2.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book1.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book2.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->                            
+                    </div><!-- /.b-scrollArea -->
+                </div><!-- /.b-tab -->
+                <div class="b-tab" id="tab-courses">
+                    <div class="b-scrollArea">
+                        <a href="#" class="b-book">
+                            <img src="images/book1.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book2.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book1.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book2.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book1.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book2.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book1.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book2.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->                            
+                    </div><!-- /.b-scrollArea -->
+                </div><!-- /.b-tab -->                
+            </div><!-- / b-wrapper-->
+        </section><!-- /.widget -->            
+
+        <section class="widget widget-poll">
+            <ul class="tabs-links">
+                <li class="active"><a href="#tab-poll">ОПРОС</a></li>
+                <li><a href="#tab-polls">ОПРОСЫ</a></li>
+            </ul><!-- /.tabs-links -->
+
+            <div class="b-wrapper">
+                <div class="b-tab" id="tab-poll">
+                    <h3 class="heading">Условный текст который придумал дизанер для примера вопроса?</h3>
+                    <form action="#" class="form-poll">
+                        <label class="radio"><input type="radio" name="1" id="1" value="1" checked>Ответ на вопрос первый</label>
+                        <label class="radio"><input type="radio" name="1" id="2" value="2">Ответ на вопрос второй</label>
+                        <label class="radio"><input type="radio" name="1" id="3" value="3">Ответ на вопрос третий</label>
+                        <label class="radio"><input type="radio" name="1" id="4" value="4">Ответ на вопрос четвертый</label>
+                        <button class="submit" type="submit">Мой выбор</button>
+                    </form>
+                </div><!-- /.b-tab -->
+                <div class="b-tab" id="tab-polls">
+                    <h3 class="heading">Условный текст который придумал дизанер для примера вопроса?</h3>
+                </div><!-- /.b-tab -->                
+            </div><!-- / b-wrapper-->
+        </section><!-- /.widget -->            
+
+        <section class="widget widget-tags">
+            <div class="widget-header">Теги</div>
+            <div class="b-tags">
+                <img src="images/place-tags.png" alt="pic">
+            </div><!-- /.b-tags -->
+        </section><!-- /.widget -->
+
+        <section class="widget widget-social">
+            <ul class="tabs-links tabs-links-social">
+                <li class="vk active"><a href="#tab-vk"><i></i>ВКОНТАКТЕ</a></li>
+                <li class="fb"><a href="#tab-fb"><i></i>FACEBOOK</a></li>
+                <li class="tw"><a href="#tab-tw"><i></i>TWITTER</a></li>
+            </ul><!-- /.tabs-links -->
+
+            <div class="b-wrapper">
+                <div class="b-tab" id="tab-vk">
+                    <img src="images/place-vk.jpg" alt="vk">
+                </div><!-- /.b-tab -->
+                <div class="b-tab" id="tab-fb">
+                    <img src="images/place-vk.jpg" alt="vk">
+                </div><!-- /.b-tab -->
+                <div class="b-tab" id="tab-tw">
+                    <img src="images/place-vk.jpg" alt="vk">
+                </div><!-- /.b-tab -->
+            </div><!-- / b-wrapper-->
+        </section><!-- /.widget -->  
+
+        <section class="widget widget-users">
+            <div class="widget-header">ТОП</div>
+            
+            <ul class="tabs-links">
+                <li><a href="#tab-commenters">КОММЕНТАТОРОВ</a></li>
+                <li class="active"><a href="#tab-authors">АВТОРОВ</a></li>
+            </ul><!-- /.tabs-links -->
+
+            <div class="b-wrapper">
+                <div class="b-tab" id="tab-commenters">
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic1.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic2.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic3.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic1.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic2.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic3.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                </div><!-- /.b-tab -->
+                <div class="b-tab" id="tab-authors">
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic1.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic2.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic3.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic1.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic2.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic3.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                </div><!-- /.b-tab -->                
+            </div><!-- / b-wrapper-->
+        </section><!-- /.widget -->
+
+
+        <section class="widget widget-banner">
+            <div class="widget-header">На правах рекламы</div>
+
+            <div class="b-inner">
+                <img src="images/banner-300x600.png" alt="баннер" class="banner">
+            </div><!-- /.b-inner -->
+        </section><!-- /.widget -->
+    </aside><!-- site-sidebar -->    
+
+    <div class="b-but-up">
+        <a href="#header" id="up" class="but-up hidden-xs" title="наверх">наверх</a>
+    </div><!-- /.b-but-up -->
+</main><!-- /.container b-main -->
+
+<footer class="site-footer" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="b-top hidden-xs">
+        <div class="site-navigation container">
+            <h5 hidden>Основная навигация</h5>
+            <ul class="b-menu">
+                <li class="menu-item"><a href="#">Главная</a></li>
+                <li class="menu-item"><a href="#">ИНФО - Визуализация</a></li>
+                <li class="menu-item"><a href="#">Контент - Маркетинг</a></li>
+                <li class="menu-item"><a href="#">НОвости</a></li>
+                <li class="menu-item"><a href="#">Инструменты</a></li>
+                <li class="menu-item"><a href="#">Курсы</a></li>
+                <li class="menu-item"><a href="#">О Блоге</a></li>
+                <li class="menu-item"><a href="#">Автор</a></li>
+                <li class="menu-item"><a href="#">Карта сайта</a></li>
+            </ul>
+        </div>        
+    </div><!-- /.b-top -->
+    
+    <div class="container b-bottom">        
+        <div class="b-logo-footer">
+            <a href="#" class="logo"><img class="logo" src="images/logotype.png" alt="Блог Александра Подрезова"></a>
+            <p>&#169; 2017 infoviz.ru | <a href="#">Карта сайта</a></p>
+            <p>Блог Александра Подрезова: «ИНФО-Визуализация» и Контент-Маркетинг»</p>            
+            <p class="stealing">Друзья, уважайте наш труд, не воруйте контент. Все права на статьи и авторский дизайн принадлежат автору блога, защищены и преследуются по закону об авторском праве. Копирование материалов, без указания открытой индексируемой ссылки на блог – запрещено! <a href="#">Политика конфиденциальности</a></p>
+
+            <div class="b-counter">
+                <img src="images/counter.png" alt="pic">
+            </div><!-- /.b-counter -->
+        </div><!-- /.b-logo -->
+        <div class="b-social-footer">
+            <p class="headline">Ждем Вас в соцсетях:</p>
+            <ul class="menu-social">
+                <li class="menu-item vk"><a href="#"></a></li>
+                <li class="menu-item fb"><a href="#"></a></li>
+                <li class="menu-item tw"><a href="#"></a></li>
+                <li class="menu-item gp"><a href="#"></a></li>
+            </ul><!-- /.menu-social -->
+        </div><!-- /.b-social-footer -->        
+    </div><!-- /.container .b-bottom-->
+</footer>
+</body>
+</html>
