@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&subset=cyrillic');
+
+/* ==========================================================================
+   BASE
+   ========================================================================== */
+html {position: relative; min-height: 100%;}
+body {font-family: 'PT Sans', sans-serif; color: $text-base; font-size: 14px;
+  @media (min-width: $screen-sm-min) {
+    font-size: 16px;
+  }
+}
+img {max-width: 100%;height: auto;}
+a {color: $text-link; transition:  color, background-color, border .15s; text-decoration: underline;
+  &:hover,&:active,&:focus {text-decoration: none;color: $text-link-hover}
+}
+table {width: 100%;}
+hr {clear: both}
+p {margin: 0}
+ul {@include resetUl();}
+small {font-size: 100%;}
+.container {  
+  @media (min-width: $screen-sm-min) {width: 1190px;}
+}
+
+
+/* ==========================================================================
+  COMMON
+  ========================================================================== */
+
+/* BUTTONS */
+@mixin but() {
+  display: inline-block;  
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;  
+  background: none;
+  text-decoration: none;
+  letter-spacing: .5px; 
+  transition: color, background-color,transform .2s;
+  &:focus,
+  &:active:focus,
+  &.active:focus,
+  &.focus,
+  &:active.focus,
+  &.active.focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+  &:hover,
+  &:focus,
+  &.focus {text-decoration: none;}
+
+  &:active,
+  &.active {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  }  
+  padding: 10px 16px;
+  font-weight: 700;
+  box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.1);  
+  text-align: center;
+  color: $text-base;
+  text-transform: uppercase;
+  
+  &:hover,&:active,&:focus {
+    color: $text-base
+  }
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  i {
+    display: inline-block;    
+    font-style: normal;
+    vertical-align: middle;
+    margin-right: 7px;
+  }
+}
+.but, .submit {@include but();}
+
+@mixin but-main() {
+  background: $orange;
+  text-transform: uppercase;
+  color: #fff;
+  &:hover,&:active,&:focus {
+    color: #fff;
+  }
+}
+
+@mixin but-second() {
+  text-transform: uppercase;
+  background: #5cb0e5;
+  color: #fff;
+  &:hover,&:active,&:focus {
+    color: #fff;
+  }
+}
+
+.but-main {@include but-main();}
+
+.but-second,.submit {@include but-second();}
+
+.but-go {
+  box-shadow: none;
+  background: url('images/sprite.png') 0 -664px no-repeat;
+  width: 46px; height: 35px;
+  &:hover,&:active,&:focus {
+    background-position: 0 -709px;
+  }
+}
+
+
+/* FORMS */
+input[type="text"],
+input[type="tel"],
+input[type="search"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
+textarea,
+select {  
+  width: 100%;
+  border: 1px solid #d4d8d4;  
+  padding: 9px 14px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
+  transition: box-shadow .15s;
+  &:focus {
+    box-shadow: 0 0 3px 1px $text-blue, 
+      5px 5px 2px 0px rgba(0, 0, 0, 0.1);
+  }
+  &::-webkit-input-placeholder {}
+  &::-moz-placeholder {}
+  &::-ms-input-placeholder {}
+  @media (min-width: $screen-sm-min) {
+    padding: 9px 20px;
+  }
+}
+textarea {resize: vertical;height: 80px;}
+label {font-weight: normal;cursor: pointer;display: block;}
+
+
+
+
+/* ==========================================================================
+   HEADINGS
+   ========================================================================== */
+.h-main {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0 0 10px;
+  @media (min-width: $screen-sm-min) {
+    font-size: 24px;
+  }
+  a {
+    color: $text-base; 
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      color: $blue;
+    }
+  }
+}
+
+.h-section, .comments-title, .comment-reply-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;  
+  margin: 0 0 15px 0;
+  @media (min-width: $screen-sm-min) {
+    font-size: 18px;
+    margin: 0 0 25px 0;
+  }
+}
+
+.h-prev {
+  font-size: 16px;  
+  font-weight: 400;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
+  @media (min-width: $screen-sm-min) {font-size: 15px;}
+}
+
+
+
+
+/* ==========================================================================
+   IMAGES
+   ========================================================================== */
+
+.aligncenter, .alignleft, .alignright {display: block;margin: 0 auto 20px;}
+@media (min-width: $screen-sm-min) {
+  .alignleft, .alignright {display: inline-block;max-width: 75%}
+  .alignleft {float: left;margin: 5px 20px 8px 0;}
+  .alignright {float: right;margin: 5px 0 8px 20px;}  
+}
+
+/* fake links */
+.spanlink {
+  cursor: pointer;
+  display: inline-block;
+  border-bottom: 1px solid $text-link;
+  line-height: 1;
+  color: $text-link;
+  //text-decoration: underline;
+}

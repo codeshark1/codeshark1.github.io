@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Блог Александра Подрезова</title>    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/vendor/modernizr-custom.js"></script>
+    <script src="js/vendor/jquery-1.12.4_min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>     
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <![endif]-->
+</head>
+<body class="home">
+<!--[if lt IE 10]>
+    <p class="browserupgrade">Вы используете <b>устаревший</b> браузер. Пожалуйста, <a href="http://browsehappy.com/?locale=ru_ru">обновите свой браузер</a> чтобы улучшить опыт работы с сайтом.</p>
+<![endif]-->
+<header class="site-header" itemscope itemtype="http://schema.org/WPHeader" id="header">    
+    <div class="b-but-nav">
+        <button id="nav-toggle" class="but-nav" href="#"><i class="hamburger icon"></i></button>
+    </div><!-- /.b-but-nav --> 
+
+    <div class="b-top">
+        <div class="container">
+            <nav class="site-navigation" role="navigation" id="nav-main" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <h5 hidden>Основная навигация</h5>
+                <ul class="b-menu">
+                    <li class="menu-item"><a href="#">Главная</a></li>
+                    <li class="menu-item"><a href="#">ИНФО - Визуализация</a></li>
+                    <li class="menu-item"><a href="#">Контент - Маркетинг</a></li>
+                    <li class="menu-item"><a href="#">НОвости</a></li>
+                    <li class="menu-item"><a href="#">Инструменты</a></li>
+                    <li class="menu-item"><a href="#">Курсы</a></li>
+                    <li class="menu-item"><a href="#">О Блоге</a></li>
+                    <li class="menu-item"><a href="#">Автор</a></li>
+                    <li class="menu-item"><a href="#">Карта сайта</a></li>
+                </ul>
+            </nav>
+        </div><!-- /.container -->
+    </div><!-- /.b-menu-wrapper -->
+    
+    <div class="b-mid">
+        <div class="container">
+            <div class="b-logo">
+                <a href="#" class="logo"><img src="images/logotype.png" alt="Блог Александра Подрезова"></a>
+                <h1 class="site-title" itemprop="headline">Блог Александра Подрезова</h1>
+                <p class="sub-title">Инфо - визуализация и контент - маркетинг</p>
+                <p class="site-description" itemprop="description">Реальный способ выживания и развития в новой эпохе «Информационного взрыва»</p>
+            </div><!-- /.b-logo -->          
+            <div class="b-misc">
+                <div class="b-misc-1">
+                    <div class="b-search-form">
+                        <form role="search" method="get" class="search-form" id="searchform" action="/">
+                            <input type="search" class="search-field" value="" name="s" placeholder="Поиск по блогу" required>
+                            <input type="submit" class="search-submit" id="searchsubmit" value="">
+                        </form>
+                    </div><!-- /.search-form -->
+                    <div class="b-lang hidden-xs">
+                        <ul>
+                            <li class="menu-item active">Ru</li>
+                            <li class="menu-item"><a href="#">EN</a></li>
+                        </ul>
+                    </div><!-- /.b-lang -->
+                </div><!-- /.b-misc-1 -->
+                <div class="b-misc-2 hidden-xs">
+                    <a href="#" class="but but-header"><i class="i-begin"></i>С чего начать</a>
+                    <a href="#" class="but but-header"><i class="i-author"></i>Стань автором</a>
+                    <a href="#" class="but but-radio"><i class="i-radio"></i>Радио</a>
+                    <a href="#" class="but but-toggle"><i class="i-toggle"></i></a>
+                </div><!-- /.b-misc-2 -->
+            </div><!-- /.b-misc -->
+        </div><!-- /.container -->
+    </div><!-- /.b-mid -->
+
+    <div class="b-graphic" id="b-graphic"></div><!-- /.b-graphic -->
+
+    <div class="container visible-xs">
+        <a href="#" class="but but-second categ-toggle">Рубрики блога</a>
+    </div><!-- /.container -->
+    <div class="site-categories" id="nav-categs">
+        <ul>
+            <li class="cat-item info-vizualizaciya">
+                <a href="#">Инфо-Визуализация</a>
+                <ul class="children">
+                    <li class="cat-item vizualnoe-mishlenie"><a href="#">Визуальное Мышление <span>214</span></a></li>
+                    <li class="cat-item info-prostranstvo"><a href="#">Инфо-Пространство <span>24</span></a></li>
+                    <li class="cat-item mentalnaya-karta"><a href="#">Ментальная Карта <span>200</span></a></li>
+                    <li class="cat-item biznes-processi"><a href="#">Бизнес-Процессы <span>45</span></a></li>
+                    <li class="cat-item dorozhnaya-karta"><a href="#">Дорожная Карта <span>52</span></a></li>
+                    <li class="cat-item infografika"><a href="#">ИнфоГрафика <span>1045</span></a></li>
+                    <li class="cat-item tipografika"><a href="#">ТипоГрафика <span>69</span></a></li>
+                    <li class="cat-item svet-i-cvet"><a href="#">Свет и Цвет <span>214</span></a></li>
+                    <li class="cat-item video-kontent"><a href="#">Видео Контент <span>275</span></a></li>
+                    <li class="cat-item zvukovaya-palitra"><a href="#">Звуковая Палитра <span>15</span></a></li>
+                    <li class="cat-item interaktivniy-kontent"><a href="#">Интерактивный Контент <span>4</span></a></li>
+                    <li class="cat-item biblioteka-vizualizaciy"><a href="#">Библиотека визуализаций <span>58</span></a></li>
+                </ul>
+            </li>
+            <li class="cat-item kontent-marketing">
+                <a href="#">Контент-Маркетинг</a>
+                <ul class="children">
+                    <li class="cat-item dlya-zhizni"><a href="#">Для Жизни <span>15</span></a></li>
+                    <li class="cat-item dlya-biznesa"><a href="#">Для Бизнеса <span>4</span></a></li>
+                    <li class="cat-item dlya-gossektora"><a href="#">Для Гос.Сектора <span>58</span></a></li>
+                </ul>
+            </li>
+        </ul>        
+    </div><!-- /.site-categories -->        
+</header><!-- site-header -->
+
+<main class="b-main container" id="main">    
+    <div class="site-content">
+        <div class="breadcrumb" id="breadcrumbs">
+            <ul>
+                <li><a href="#">Инфо-визуализация</a></li>
+                <li><a href="#">Визуальное мышление</a></li>
+            </ul>
+        </div><!-- breadcrumb -->          
+
+        <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+            <div class="clearfix">
+                <div class="b-img">
+                    <img src="images/pic1.jpg" alt="pic">
+                </div><!-- /.b-img -->
+                <div class="b-info">
+                    <div class="b-art-inner">
+                        <div class="b-art-header">
+                            <div class="b-art-head-1">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                                <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                                
+                                <p class="p-author" itemprop="author">Александр Подрезов</p>
+
+                                <ul class="menu-view">
+                                    <li class="menu-item"><a href="#"><i class="view-1"></i></a></li>
+                                    <li class="menu-item"><a href="#"><i class="view-2"></i></a></li>
+                                    <li class="menu-item"><a href="#"><i class="view-3"></i></a></li>
+                                </ul><!-- menu-view -->                            
+                            </div><!-- /.b-art-head-1 -->
+                            <div class="b-art-head-2">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                                <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                                <p class="p-author" itemprop="author">Александр Подрезов</p>
+                            </div><!-- /.b-art-head-2 -->
+                        </div><!-- /.b-art-header -->
+
+                        <h2 class="h-main" itemprop="name"><a href="#">Здесь будет заголовок, который придумал дизайнер в две строки</a></h2>
+                        
+                        <div itemprop="articleBody" class="b-art-body">
+                            <p>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную</p>
+                        </div>
+                    </div><!-- /.b-art-inner -->
+
+                    <footer class="b-art-footer">
+                        <p class="p-commentcount">152</p>
+                        <p class="p-views">200</p>
+                        <a href="#" class="but but-go"></a>
+                    </footer><!-- /.b-art-footer -->
+                </div><!-- /.b-info -->
+            </div><!-- /.clearfix -->
+        </article><!-- b-art-prev -->
+
+        <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+            <div class="clearfix">
+                <div class="b-img">
+                    <img src="images/pic2.jpg" alt="pic">
+                </div><!-- /.b-img -->
+                <div class="b-info">
+                    <div class="b-art-inner">
+                        <div class="b-art-header">
+                            <div class="b-art-head-1">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                                <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                                
+                                <p class="p-author" itemprop="author">Александр Подрезов</p>
+
+                                <ul class="menu-view">
+                                    <li class="menu-item"><a href="#"><i class="view-1"></i></a></li>
+                                    <li class="menu-item"><a href="#"><i class="view-2"></i></a></li>
+                                    <li class="menu-item"><a href="#"><i class="view-3"></i></a></li>
+                                </ul><!-- menu-view -->                            
+                            </div><!-- /.b-art-head-1 -->
+                            <div class="b-art-head-2">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                                <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                                <p class="p-author" itemprop="author">Александр Подрезов</p>
+                            </div><!-- /.b-art-head-2 -->
+                        </div><!-- /.b-art-header -->
+
+                        <h2 class="h-main" itemprop="name"><a href="#">Здесь будет заголовок, который придумал дизайнер в две строки</a></h2>
+                        
+                        <div itemprop="articleBody" class="b-art-body">
+                            <p>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную</p>
+                        </div>
+                    </div><!-- /.b-art-inner -->
+
+                    <footer class="b-art-footer">
+                        <p class="p-commentcount">152</p>
+                        <p class="p-views">200</p>
+                        <a href="#" class="but but-go"></a>
+                    </footer><!-- /.b-art-footer -->
+                </div><!-- /.b-info -->
+            </div><!-- /.clearfix -->
+        </article><!-- b-art-prev -->
+
+        <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+            <div class="clearfix">
+                <div class="b-img">
+                    <img src="images/pic3.jpg" alt="pic">
+                </div><!-- /.b-img -->
+                <div class="b-info">
+                    <div class="b-art-inner">
+                        <div class="b-art-header">
+                            <div class="b-art-head-1">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                                <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                                
+                                <p class="p-author" itemprop="author">Александр Подрезов</p>
+
+                                <ul class="menu-view">
+                                    <li class="menu-item"><a href="#"><i class="view-1"></i></a></li>
+                                    <li class="menu-item"><a href="#"><i class="view-2"></i></a></li>
+                                    <li class="menu-item"><a href="#"><i class="view-3"></i></a></li>
+                                </ul><!-- menu-view -->                            
+                            </div><!-- /.b-art-head-1 -->
+                            <div class="b-art-head-2">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                                <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                                <p class="p-author" itemprop="author">Александр Подрезов</p>
+                            </div><!-- /.b-art-head-2 -->
+                        </div><!-- /.b-art-header -->
+
+                        <h2 class="h-main" itemprop="name"><a href="#">Здесь будет заголовок, который придумал дизайнер в две строки</a></h2>
+                        
+                        <div itemprop="articleBody" class="b-art-body">
+                            <p>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную</p>
+                        </div>
+                    </div><!-- /.b-art-inner -->
+
+                    <footer class="b-art-footer">
+                        <p class="p-commentcount">152</p>
+                        <p class="p-views">200</p>
+                        <a href="#" class="but but-go"></a>
+                    </footer><!-- /.b-art-footer -->
+                </div><!-- /.b-info -->
+            </div><!-- /.clearfix -->
+        </article><!-- b-art-prev -->        
+
+        <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+            <div class="clearfix">
+                <div class="b-img">
+                    <img src="images/pic1.jpg" alt="pic">
+                </div><!-- /.b-img -->
+                <div class="b-info">
+                    <div class="b-art-inner">
+                        <div class="b-art-header">
+                            <div class="b-art-head-1">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                                <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                                
+                                <p class="p-author" itemprop="author">Александр Подрезов</p>
+
+                                <ul class="menu-view">
+                                    <li class="menu-item"><a href="#"><i class="view-1"></i></a></li>
+                                    <li class="menu-item"><a href="#"><i class="view-2"></i></a></li>
+                                    <li class="menu-item"><a href="#"><i class="view-3"></i></a></li>
+                                </ul><!-- menu-view -->                            
+                            </div><!-- /.b-art-head-1 -->
+                            <div class="b-art-head-2">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                                <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                                <p class="p-author" itemprop="author">Александр Подрезов</p>
+                            </div><!-- /.b-art-head-2 -->
+                        </div><!-- /.b-art-header -->
+
+                        <h2 class="h-main" itemprop="name"><a href="#">Здесь будет заголовок, который придумал дизайнер в две строки</a></h2>
+                        
+                        <div itemprop="articleBody" class="b-art-body">
+                            <p>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную</p>
+                        </div>
+                    </div><!-- /.b-art-inner -->
+
+                    <footer class="b-art-footer">
+                        <p class="p-commentcount">152</p>
+                        <p class="p-views">200</p>
+                        <a href="#" class="but but-go"></a>
+                    </footer><!-- /.b-art-footer -->
+                </div><!-- /.b-info -->
+            </div><!-- /.clearfix -->
+        </article><!-- b-art-prev -->
+
+        <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+            <div class="clearfix">
+                <div class="b-img">
+                    <img src="images/pic2.jpg" alt="pic">
+                </div><!-- /.b-img -->
+                <div class="b-info">
+                    <div class="b-art-inner">
+                        <div class="b-art-header">
+                            <div class="b-art-head-1">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                                <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                                
+                                <p class="p-author" itemprop="author">Александр Подрезов</p>
+
+                                <ul class="menu-view">
+                                    <li class="menu-item"><a href="#"><i class="view-1"></i></a></li>
+                                    <li class="menu-item"><a href="#"><i class="view-2"></i></a></li>
+                                    <li class="menu-item"><a href="#"><i class="view-3"></i></a></li>
+                                </ul><!-- menu-view -->                            
+                            </div><!-- /.b-art-head-1 -->
+                            <div class="b-art-head-2">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                                <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                                <p class="p-author" itemprop="author">Александр Подрезов</p>
+                            </div><!-- /.b-art-head-2 -->
+                        </div><!-- /.b-art-header -->
+
+                        <h2 class="h-main" itemprop="name"><a href="#">Здесь будет заголовок, который придумал дизайнер в две строки</a></h2>
+                        
+                        <div itemprop="articleBody" class="b-art-body">
+                            <p>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную</p>
+                        </div>
+                    </div><!-- /.b-art-inner -->
+
+                    <footer class="b-art-footer">
+                        <p class="p-commentcount">152</p>
+                        <p class="p-views">200</p>
+                        <a href="#" class="but but-go"></a>
+                    </footer><!-- /.b-art-footer -->
+                </div><!-- /.b-info -->
+            </div><!-- /.clearfix -->
+        </article><!-- b-art-prev -->
+
+        <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+            <div class="clearfix">
+                <div class="b-img">
+                    <img src="images/pic3.jpg" alt="pic">
+                </div><!-- /.b-img -->
+                <div class="b-info">
+                    <div class="b-art-inner">
+                        <div class="b-art-header">
+                            <div class="b-art-head-1">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                                <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                                
+                                <p class="p-author" itemprop="author">Александр Подрезов</p>
+
+                                <ul class="menu-view">
+                                    <li class="menu-item"><a href="#"><i class="view-1"></i></a></li>
+                                    <li class="menu-item"><a href="#"><i class="view-2"></i></a></li>
+                                    <li class="menu-item"><a href="#"><i class="view-3"></i></a></li>
+                                </ul><!-- menu-view -->                            
+                            </div><!-- /.b-art-head-1 -->
+                            <div class="b-art-head-2">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                                <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                                <p class="p-author" itemprop="author">Александр Подрезов</p>
+                            </div><!-- /.b-art-head-2 -->
+                        </div><!-- /.b-art-header -->
+
+                        <h2 class="h-main" itemprop="name"><a href="#">Здесь будет заголовок, который придумал дизайнер в две строки</a></h2>
+                        
+                        <div itemprop="articleBody" class="b-art-body">
+                            <p>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную</p>
+                        </div>
+                    </div><!-- /.b-art-inner -->
+
+                    <footer class="b-art-footer">
+                        <p class="p-commentcount">152</p>
+                        <p class="p-views">200</p>
+                        <a href="#" class="but but-go"></a>
+                    </footer><!-- /.b-art-footer -->
+                </div><!-- /.b-info -->
+            </div><!-- /.clearfix -->
+        </article><!-- b-art-prev -->  
+
+        <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+            <div class="clearfix">
+                <div class="b-img">
+                    <img src="images/pic1.jpg" alt="pic">
+                </div><!-- /.b-img -->
+                <div class="b-info">
+                    <div class="b-art-inner">
+                        <div class="b-art-header">
+                            <div class="b-art-head-1">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                                <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                                
+                                <p class="p-author" itemprop="author">Александр Подрезов</p>
+
+                                <ul class="menu-view">
+                                    <li class="menu-item"><a href="#"><i class="view-1"></i></a></li>
+                                    <li class="menu-item"><a href="#"><i class="view-2"></i></a></li>
+                                    <li class="menu-item"><a href="#"><i class="view-3"></i></a></li>
+                                </ul><!-- menu-view -->                            
+                            </div><!-- /.b-art-head-1 -->
+                            <div class="b-art-head-2">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                                <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                                <p class="p-author" itemprop="author">Александр Подрезов</p>
+                            </div><!-- /.b-art-head-2 -->
+                        </div><!-- /.b-art-header -->
+
+                        <h2 class="h-main" itemprop="name"><a href="#">Здесь будет заголовок, который придумал дизайнер в две строки</a></h2>
+                        
+                        <div itemprop="articleBody" class="b-art-body">
+                            <p>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную</p>
+                        </div>
+                    </div><!-- /.b-art-inner -->
+
+                    <footer class="b-art-footer">
+                        <p class="p-commentcount">152</p>
+                        <p class="p-views">200</p>
+                        <a href="#" class="but but-go"></a>
+                    </footer><!-- /.b-art-footer -->
+                </div><!-- /.b-info -->
+            </div><!-- /.clearfix -->
+        </article><!-- b-art-prev -->
+
+        <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+            <div class="clearfix">
+                <div class="b-img">
+                    <img src="images/pic2.jpg" alt="pic">
+                </div><!-- /.b-img -->
+                <div class="b-info">
+                    <div class="b-art-inner">
+                        <div class="b-art-header">
+                            <div class="b-art-head-1">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                                <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                                
+                                <p class="p-author" itemprop="author">Александр Подрезов</p>
+
+                                <ul class="menu-view">
+                                    <li class="menu-item"><a href="#"><i class="view-1"></i></a></li>
+                                    <li class="menu-item"><a href="#"><i class="view-2"></i></a></li>
+                                    <li class="menu-item"><a href="#"><i class="view-3"></i></a></li>
+                                </ul><!-- menu-view -->                            
+                            </div><!-- /.b-art-head-1 -->
+                            <div class="b-art-head-2">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                                <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                                <p class="p-author" itemprop="author">Александр Подрезов</p>
+                            </div><!-- /.b-art-head-2 -->
+                        </div><!-- /.b-art-header -->
+
+                        <h2 class="h-main" itemprop="name"><a href="#">Здесь будет заголовок, который придумал дизайнер в две строки</a></h2>
+                        
+                        <div itemprop="articleBody" class="b-art-body">
+                            <p>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную</p>
+                        </div>
+                    </div><!-- /.b-art-inner -->
+
+                    <footer class="b-art-footer">
+                        <p class="p-commentcount">152</p>
+                        <p class="p-views">200</p>
+                        <a href="#" class="but but-go"></a>
+                    </footer><!-- /.b-art-footer -->
+                </div><!-- /.b-info -->
+            </div><!-- /.clearfix -->
+        </article><!-- b-art-prev -->
+
+        <article class="b-art-prev" itemscope itemtype="http://schema.org/Article">
+            <div class="clearfix">
+                <div class="b-img">
+                    <img src="images/pic3.jpg" alt="pic">
+                </div><!-- /.b-img -->
+                <div class="b-info">
+                    <div class="b-art-inner">
+                        <div class="b-art-header">
+                            <div class="b-art-head-1">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                                <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                                
+                                <p class="p-author" itemprop="author">Александр Подрезов</p>
+
+                                <ul class="menu-view">
+                                    <li class="menu-item"><a href="#"><i class="view-1"></i></a></li>
+                                    <li class="menu-item"><a href="#"><i class="view-2"></i></a></li>
+                                    <li class="menu-item"><a href="#"><i class="view-3"></i></a></li>
+                                </ul><!-- menu-view -->                            
+                            </div><!-- /.b-art-head-1 -->
+                            <div class="b-art-head-2">
+                                <p class="p-date"><time itemprop="datePublished" datetime="2015-03-19">10.11.2017</time></p>
+                                <p class="p-categ"><a href="#" itemprop="articleSection">Визуальное мышление</a></p>
+                                <p class="p-author" itemprop="author">Александр Подрезов</p>
+                            </div><!-- /.b-art-head-2 -->
+                        </div><!-- /.b-art-header -->
+
+                        <h2 class="h-main" itemprop="name"><a href="#">Здесь будет заголовок, который придумал дизайнер в две строки</a></h2>
+                        
+                        <div itemprop="articleBody" class="b-art-body">
+                            <p>Товарищи! постоянный количественный рост и сфера нашей активности играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную</p>
+                        </div>
+                    </div><!-- /.b-art-inner -->
+
+                    <footer class="b-art-footer">
+                        <p class="p-commentcount">152</p>
+                        <p class="p-views">200</p>
+                        <a href="#" class="but but-go"></a>
+                    </footer><!-- /.b-art-footer -->
+                </div><!-- /.b-info -->
+            </div><!-- /.clearfix -->
+        </article><!-- b-art-prev -->  
+                
+        <nav class="navigation pagination hidden-xs" role="navigation">
+            <div class="screen-reader-text">Навигация по записям</div>
+            <div class="nav-links">
+                <a class="prev page-numbers" href="#">назад</a>
+                <span class="page-numbers current">1</span>
+                <a class="page-numbers" href="#">2</a>
+                <a class="page-numbers" href="#">3</a>
+                <a class="page-numbers" href="#">4</a>
+                <a class="page-numbers" href="#">5</a>
+                <a class="page-numbers" href="#">6</a>
+                <a class="page-numbers" href="#">7</a>
+                <a class="page-numbers" href="#">8</a>
+                <a class="page-numbers" href="#">9</a>
+                <span class="page-numbers dots">…</span>
+                <a class="page-numbers" href="#">254</a>
+                <a class="next page-numbers" href="#">Вперед</a>
+            </div>
+        </nav>
+
+        <div class="navigation pagination visible-xs" role="navigation">
+            <div class="screen-reader-text">Навигация по записям</div>
+            <div class="nav-links">
+                <a class="prev page-numbers" href="#"><</a>
+                <span class="page-numbers current">1</span>
+                <a class="page-numbers" href="#">2</a>
+                <a class="page-numbers" href="#">3</a>
+                <a class="page-numbers" href="#">4</a>
+                <span class="page-numbers dots">…</span>
+                <a class="page-numbers" href="#">254</a>
+                <a class="next page-numbers" href="#">></a>
+            </div>
+        </div>             
+    </div><!-- /.site-content -->
+
+    <aside class="site-sidebar widget-area" itemscope itemtype="http://schema.org/WPSideBar">
+        <section class="widget widget-categories">
+            <div class="widget-header">Рубрики блога</div>
+            <ul>
+                <li class="cat-item info-vizualizaciya">
+                    <a href="#">Инфо-Визуализация</a>
+                    <ul class="children">
+                        <li class="cat-item vizualnoe-mishlenie"><a href="#">Визуальное Мышление <span>214</span></a></li>
+                        <li class="cat-item info-prostranstvo"><a href="#">Инфо-Пространство <span>24</span></a></li>
+                        <li class="cat-item mentalnaya-karta"><a href="#">Ментальная Карта <span>200</span></a></li>
+                        <li class="cat-item biznes-processi"><a href="#">Бизнес-Процессы <span>45</span></a></li>
+                        <li class="cat-item dorozhnaya-karta"><a href="#">Дорожная Карта <span>52</span></a></li>
+                        <li class="cat-item infografika"><a href="#">ИнфоГрафика <span>1045</span></a></li>
+                        <li class="cat-item tipografika"><a href="#">ТипоГрафика <span>69</span></a></li>
+                        <li class="cat-item svet-i-cvet"><a href="#">Свет и Цвет <span>214</span></a></li>
+                        <li class="cat-item video-kontent"><a href="#">Видео Контент <span>275</span></a></li>
+                        <li class="cat-item zvukovaya-palitra"><a href="#">Звуковая Палитра <span>15</span></a></li>
+                        <li class="cat-item interaktivniy-kontent"><a href="#">Интерактивный Контент <span>4</span></a></li>
+                        <li class="cat-item biblioteka-vizualizaciy"><a href="#">Библиотека визуализаций <span>58</span></a></li>
+                    </ul>
+                </li>
+                <li class="cat-item kontent-marketing">
+                    <a href="#">Контент-Маркетинг</a>
+                    <ul class="children">
+                        <li class="cat-item dlya-zhizni"><a href="#">Для Жизни <span>15</span></a></li>
+                        <li class="cat-item dlya-biznesa"><a href="#">Для Бизнеса <span>4</span></a></li>
+                        <li class="cat-item dlya-gossektora"><a href="#">Для Гос.Сектора <span>58</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section><!-- /.widget -->
+
+        <section class="widget widget-subscribe">
+            <p class="heading">Подпишись на обновления блога</p>                
+            <form action="#" class="form-subscribe">
+                <input type="email" class="email" placeholder="Введите ваш e-mail" required>
+                <button class="but but-main">Подписаться</button>
+                <p class="info">Ваши данные не будут переданы третьим лицам. <br> Вы в любое время можете отписаться от рассылки</p>
+            </form>                
+        </section><!-- /.widget -->
+
+        <section class="widget widget-articles">
+            <div class="widget-header">Популярные СТАТЬИ</div>            
+            
+            <ul class="tabs-links">
+                <li><a href="#tab-comments">по КОММЕНТАРИЯМ</a></li>
+                <li class="active"><a href="#tab-views">по ПРОСМОТРАМ</a></li>
+            </ul><!-- /.tabs-links -->
+
+            <div class="b-wrapper">
+                <div class="b-tab" id="tab-views">
+                    <a href="#" class="b-art-pop">
+                        <div class="b-img"><img src="images/pop1.jpg" alt="pic"></div>
+                        <span class="b-info">
+                            <h3 class="heading">Условный заголовок который придумал дизайнер для этой статьи</h3>
+                            <div class="clearfix">
+                                <p class="p-commentcount">152</p>
+                                <p class="p-views">200</p>
+                            </div><!-- /.clearfix -->
+                        </span>
+                    </a><!-- b-art-pop-->
+                    <a href="#" class="b-art-pop">
+                        <div class="b-img"><img src="images/pop2.jpg" alt="pic"></div>
+                        <span class="b-info">
+                            <h3 class="heading">Условный заголовок который придумал дизайнер для этой статьи</h3>
+                            <div class="clearfix">
+                                <p class="p-commentcount">152</p>
+                                <p class="p-views">200</p>
+                            </div><!-- /.clearfix -->
+                        </span>
+                    </a><!-- b-art-pop-->
+                    <a href="#" class="b-art-pop">
+                        <div class="b-img"><img src="images/pop3.jpg" alt="pic"></div>
+                        <span class="b-info">
+                            <h3 class="heading">Условный заголовок который придумал дизайнер для этой статьи</h3>
+                            <div class="clearfix">
+                                <p class="p-commentcount">152</p>
+                                <p class="p-views">200</p>
+                            </div><!-- /.clearfix -->
+                        </span>
+                    </a><!-- b-art-pop-->
+                    <a href="#" class="b-art-pop">
+                        <div class="b-img"><img src="images/pop4.jpg" alt="pic"></div>
+                        <span class="b-info">
+                            <h3 class="heading">Условный заголовок который придумал дизайнер для этой статьи</h3>
+                            <div class="clearfix">
+                                <p class="p-commentcount">152</p>
+                                <p class="p-views">200</p>
+                            </div><!-- /.clearfix -->
+                        </span>
+                    </a><!-- b-art-pop-->
+                </div><!-- /.b-tab -->
+                <div class="b-tab" id="tab-comments">
+                    <a href="#" class="b-art-pop">
+                        <div class="b-img"><img src="images/pop1.jpg" alt="pic"></div>
+                        <span class="b-info">
+                            <h3 class="heading">Условный заголовок который придумал дизайнер для этой статьи</h3>
+                            <div class="clearfix">
+                                <p class="p-commentcount">152</p>
+                                <p class="p-views">200</p>
+                            </div><!-- /.clearfix -->
+                        </span>
+                    </a><!-- b-art-pop-->
+                    <a href="#" class="b-art-pop">
+                        <div class="b-img"><img src="images/pop2.jpg" alt="pic"></div>
+                        <span class="b-info">
+                            <h3 class="heading">Условный заголовок который придумал дизайнер для этой статьи</h3>
+                            <div class="clearfix">
+                                <p class="p-commentcount">152</p>
+                                <p class="p-views">200</p>
+                            </div><!-- /.clearfix -->
+                        </span>
+                    </a><!-- b-art-pop-->
+                    <a href="#" class="b-art-pop">
+                        <div class="b-img"><img src="images/pop3.jpg" alt="pic"></div>
+                        <span class="b-info">
+                            <h3 class="heading">Условный заголовок который придумал дизайнер для этой статьи</h3>
+                            <div class="clearfix">
+                                <p class="p-commentcount">152</p>
+                                <p class="p-views">200</p>
+                            </div><!-- /.clearfix -->
+                        </span>
+                    </a><!-- b-art-pop-->
+                    <a href="#" class="b-art-pop">
+                        <div class="b-img"><img src="images/pop4.jpg" alt="pic"></div>
+                        <span class="b-info">
+                            <h3 class="heading">Условный заголовок который придумал дизайнер для этой статьи</h3>
+                            <div class="clearfix">
+                                <p class="p-commentcount">152</p>
+                                <p class="p-views">200</p>
+                            </div><!-- /.clearfix -->
+                        </span>
+                    </a><!-- b-art-pop-->
+                </div><!-- /.b-tab -->                
+            </div><!-- / b-wrapper-->
+        </section><!-- /.widget -->
+
+        <section class="widget widget-youtube">
+            <a href="#"><img src="images/youtube.png" alt="pic"></a>
+        </section><!-- /.widget -->
+
+        <section class="widget widget-books">
+            <ul class="tabs-links">
+                <li><a href="#tab-courses">КУРСЫ</a></li>
+                <li class="active"><a href="#tab-books">КНИГИ</a></li>
+            </ul><!-- /.tabs-links -->
+
+            <div class="b-wrapper">
+                <div class="b-tab" id="tab-books">
+                    <div class="b-scrollArea">
+                        <a href="#" class="b-book">
+                            <img src="images/book1.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book2.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book1.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book2.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book1.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book2.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book1.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book2.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->                            
+                    </div><!-- /.b-scrollArea -->
+                </div><!-- /.b-tab -->
+                <div class="b-tab" id="tab-courses">
+                    <div class="b-scrollArea">
+                        <a href="#" class="b-book">
+                            <img src="images/book1.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book2.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book1.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book2.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book1.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book2.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book1.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->
+                        <a href="#" class="b-book">
+                            <img src="images/book2.jpg" alt="pic">
+                            <h3 class="title">Наименование курса в две строки</h3>
+                        </a><!-- b-book -->                            
+                    </div><!-- /.b-scrollArea -->
+                </div><!-- /.b-tab -->                
+            </div><!-- / b-wrapper-->
+        </section><!-- /.widget -->            
+
+        <section class="widget widget-poll">
+            <ul class="tabs-links">
+                <li class="active"><a href="#tab-poll">ОПРОС</a></li>
+                <li><a href="#tab-polls">ОПРОСЫ</a></li>
+            </ul><!-- /.tabs-links -->
+
+            <div class="b-wrapper">
+                <div class="b-tab" id="tab-poll">
+                    <h3 class="heading">Условный текст который придумал дизанер для примера вопроса?</h3>
+                    <form action="#" class="form-poll">
+                        <label class="radio"><input type="radio" name="1" id="1" value="1" checked>Ответ на вопрос первый</label>
+                        <label class="radio"><input type="radio" name="1" id="2" value="2">Ответ на вопрос второй</label>
+                        <label class="radio"><input type="radio" name="1" id="3" value="3">Ответ на вопрос третий</label>
+                        <label class="radio"><input type="radio" name="1" id="4" value="4">Ответ на вопрос четвертый</label>
+                        <button class="submit" type="submit">Мой выбор</button>
+                    </form>
+                </div><!-- /.b-tab -->
+                <div class="b-tab" id="tab-polls">
+                    <h3 class="heading">Условный текст который придумал дизанер для примера вопроса?</h3>
+                </div><!-- /.b-tab -->                
+            </div><!-- / b-wrapper-->
+        </section><!-- /.widget -->            
+
+        <section class="widget widget-tags">
+            <div class="widget-header">Теги</div>
+            <div class="b-tags">
+                <img src="images/place-tags.png" alt="pic">
+            </div><!-- /.b-tags -->
+        </section><!-- /.widget -->
+
+        <section class="widget widget-social">
+            <ul class="tabs-links tabs-links-social">
+                <li class="vk active"><a href="#tab-vk"><i></i>ВКОНТАКТЕ</a></li>
+                <li class="fb"><a href="#tab-fb"><i></i>FACEBOOK</a></li>
+                <li class="tw"><a href="#tab-tw"><i></i>TWITTER</a></li>
+            </ul><!-- /.tabs-links -->
+
+            <div class="b-wrapper">
+                <div class="b-tab" id="tab-vk">
+                    <img src="images/place-vk.jpg" alt="vk">
+                </div><!-- /.b-tab -->
+                <div class="b-tab" id="tab-fb">
+                    <img src="images/place-vk.jpg" alt="vk">
+                </div><!-- /.b-tab -->
+                <div class="b-tab" id="tab-tw">
+                    <img src="images/place-vk.jpg" alt="vk">
+                </div><!-- /.b-tab -->
+            </div><!-- / b-wrapper-->
+        </section><!-- /.widget -->  
+
+        <section class="widget widget-users">
+            <div class="widget-header">ТОП</div>
+            
+            <ul class="tabs-links">
+                <li><a href="#tab-commenters">КОММЕНТАТОРОВ</a></li>
+                <li class="active"><a href="#tab-authors">АВТОРОВ</a></li>
+            </ul><!-- /.tabs-links -->
+
+            <div class="b-wrapper">
+                <div class="b-tab" id="tab-commenters">
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic1.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic2.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic3.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic1.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic2.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic3.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                </div><!-- /.b-tab -->
+                <div class="b-tab" id="tab-authors">
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic1.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic2.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic3.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic1.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic2.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                    <div class="b-user">
+                        <img class="pic" src="images/userpic3.jpg" alt="pic">
+                        <p class="name">Мария</p>
+                        <p class="p-comments">45</p>
+                    </div><!-- /.b-user -->
+                </div><!-- /.b-tab -->                
+            </div><!-- / b-wrapper-->
+        </section><!-- /.widget -->
+
+
+        <section class="widget widget-banner">
+            <div class="widget-header">На правах рекламы</div>
+
+            <div class="b-inner">
+                <img src="images/banner-300x600.png" alt="баннер" class="banner">
+            </div><!-- /.b-inner -->
+        </section><!-- /.widget -->
+    </aside><!-- site-sidebar -->    
+
+    <div class="b-but-up">
+        <a href="#header" id="up" class="but-up hidden-xs" title="наверх">наверх</a>
+    </div><!-- /.b-but-up -->
+</main><!-- /.container b-main -->
+
+<footer class="site-footer" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="b-top hidden-xs">
+        <div class="site-navigation container">
+            <h5 hidden>Основная навигация</h5>
+            <ul class="b-menu">
+                <li class="menu-item"><a href="#">Главная</a></li>
+                <li class="menu-item"><a href="#">ИНФО - Визуализация</a></li>
+                <li class="menu-item"><a href="#">Контент - Маркетинг</a></li>
+                <li class="menu-item"><a href="#">НОвости</a></li>
+                <li class="menu-item"><a href="#">Инструменты</a></li>
+                <li class="menu-item"><a href="#">Курсы</a></li>
+                <li class="menu-item"><a href="#">О Блоге</a></li>
+                <li class="menu-item"><a href="#">Автор</a></li>
+                <li class="menu-item"><a href="#">Карта сайта</a></li>
+            </ul>
+        </div>        
+    </div><!-- /.b-top -->
+    
+    <div class="container b-bottom">        
+        <div class="b-logo-footer">
+            <a href="#" class="logo"><img class="logo" src="images/logotype.png" alt="Блог Александра Подрезова"></a>
+            <p>&#169; 2017 infoviz.ru | <a href="#">Карта сайта</a></p>
+            <p>Блог Александра Подрезова: «ИНФО-Визуализация» и Контент-Маркетинг»</p>            
+            <p class="stealing">Друзья, уважайте наш труд, не воруйте контент. Все права на статьи и авторский дизайн принадлежат автору блога, защищены и преследуются по закону об авторском праве. Копирование материалов, без указания открытой индексируемой ссылки на блог – запрещено! <a href="#">Политика конфиденциальности</a></p>
+
+            <div class="b-counter">
+                <img src="images/counter.png" alt="pic">
+            </div><!-- /.b-counter -->
+        </div><!-- /.b-logo -->
+        <div class="b-social-footer">
+            <p class="headline">Ждем Вас в соцсетях:</p>
+            <ul class="navigation-social">
+                <li class="menu-item vk"><a href="#"></a></li>
+                <li class="menu-item fb"><a href="#"></a></li>
+                <li class="menu-item tw"><a href="#"></a></li>
+                <li class="menu-item gp"><a href="#"></a></li>
+            </ul><!-- /.navigation-social -->
+        </div><!-- /.b-social-footer -->        
+    </div><!-- /.container .b-bottom-->
+</footer>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
